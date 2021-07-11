@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="D2L_139892" xmlns:d2l_2p0="http://desire2learn.com/xsd/d2lcp_v2p0" xmlns:scorm_1p2="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1">
+    <metadata>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:title>
+                    <imsmd:langstring xml:lang="en-gb">Sergei Medvedev Sandbox</imsmd:langstring>
+                </imsmd:title>
+                <imsmd:keyword>
+                    <imsmd:langstring xml:lang="en-gb">SM_Sandbox</imsmd:langstring>
+                </imsmd:keyword>
+                <imsmd:language>en-gb</imsmd:language>
+            </imsmd:general>
+        </imsmd:lom>
+    </metadata>
+    <organizations default="d2l_orgs">
+        <organization identifier="d2l_org">
+            <item identifier="820679" identifierref="RES_CONTENT_820679" d2l_2p0:id="2" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383229" description="&lt;h2&gt;&lt;img src=&quot;maxresdefault.jpg&quot; alt=&quot;&quot; title=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;&lt;/h2&gt;&#xA;&lt;h2&gt;Course structure&lt;/h2&gt;&#xA;&lt;hr style=&quot;width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;&quot; /&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=content&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383248&quot; target=&quot;_self&quot;&gt;Week 1 - Introduction to Machine Learning&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=content&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383263&quot; target=&quot;_self&quot;&gt;Week 2 - Regression&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=content&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742588&quot; target=&quot;_top&quot;&gt;Week 3 - Classification&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Week 4 - Clustering&lt;/p&gt;&#xA;&lt;p&gt;Week 5 - Time Series&lt;/p&gt;&#xA;&lt;p&gt;Week 6 -&amp;nbsp;Recommender System&lt;/p&gt;&#xA;&lt;p&gt;&lt;/p&gt;&#xA;&lt;h2&gt;Additional pages&lt;/h2&gt;&#xA;&lt;hr style=&quot;width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;&quot; /&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=content&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742657&quot; target=&quot;_top&quot;&gt;Links to webinars&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=content&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742658&quot; target=&quot;_self&quot;&gt;List of assignments&lt;/a&gt;&lt;/p&gt;" completion_type="2">
+                <title>Welcome</title>
+                <item identifier="831708" identifierref="RES_CONTENT_831708" d2l_2p0:id="3" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-396673" description="" completion_type="2">
+                    <title>What you will learn from this course</title>
+                </item>
+                <item identifier="1098281" identifierref="RES_CONTENT_1098281" d2l_2p0:id="4" description="" completion_type="2" resource_type_key="D2L.LE.Discussions.DiscussionForum">
+                    <title>Questions to the lecturer</title>
+                </item>
+                <item identifier="831778" identifierref="RES_CONTENT_831778" d2l_2p0:id="5" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-396754" description="" completion_type="2">
+                    <title>Recommender System with Spark and IBM Watson Studio</title>
+                </item>
+            </item>
+            <item identifier="820689" identifierref="RES_CONTENT_820689" d2l_2p0:id="6" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383248" description="&lt;p&gt;&lt;img src=&quot;maxresdefault.jpg&quot; alt=&quot;&quot; title=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this week, you will learn about applications of Machine Learning in different fields such as health care, banking, telecommunication, and so on.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll get a general overview of Machine Learning topics such as supervised vs unsupervised learning, and the usage of each algorithm. Also, you understand the advantage of using Python libraries for implementing Machine Learning models.&lt;/p&gt;" completion_type="2">
+                <title>Week 1 - Introduction to Machine Learning</title>
+                <item identifier="832711" identifierref="RES_CONTENT_832711" d2l_2p0:id="7" description="" completion_type="2">
+                    <title>1.1 Introduction to Machine Learning</title>
+                    <item identifier="1098236" identifierref="RES_CONTENT_1098236" d2l_2p0:id="8" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742599" description="" completion_type="2">
+                        <title>Lecture 1 - Introduction</title>
+                    </item>
+                </item>
+                <item identifier="832712" identifierref="RES_CONTENT_832712" d2l_2p0:id="9" description="" completion_type="2">
+                    <title>1.2 Python for Machine Learning</title>
+                </item>
+                <item identifier="832715" identifierref="RES_CONTENT_832715" d2l_2p0:id="10" description="" completion_type="2">
+                    <title>1.3 Supervised vs Unsupervised</title>
+                </item>
+                <item identifier="820713" identifierref="RES_CONTENT_820713" d2l_2p0:id="11" description="" completion_type="2" resource_type_key="D2L.LE.Dropbox.Dropbox">
+                    <title>Assignment - Week 1</title>
+                </item>
+            </item>
+            <item identifier="820715" identifierref="RES_CONTENT_820715" d2l_2p0:id="12" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383263" description="&lt;p&gt;&lt;img src=&quot;maxresdefault.jpg&quot; alt=&quot;&quot; title=&quot;&quot; data-d2l-editor-default-img-style=&quot;true&quot; style=&quot;max-width: 100%;&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this week, you will get a brief intro to regression. You learn about Linear, Non-linear, Simple and Multiple regression, and their applications. You apply all these methods on two different datasets, in the lab part. Also, you learn how to evaluate your regression model, and calculate its accuracy.&lt;/p&gt;" completion_type="2">
+                <title>Week 2 - Regression</title>
+                <item identifier="832717" identifierref="RES_CONTENT_832717" d2l_2p0:id="13" description="" completion_type="2">
+                    <title>2.1 Introduction to Regression</title>
+                </item>
+                <item identifier="832716" identifierref="RES_CONTENT_832716" d2l_2p0:id="14" description="" completion_type="2">
+                    <title>2.2 Simple Linear Regression</title>
+                </item>
+                <item identifier="832718" identifierref="RES_CONTENT_832718" d2l_2p0:id="15" description="" completion_type="2">
+                    <title>2.3 Model Evaluation in Regression Models</title>
+                </item>
+                <item identifier="820716" identifierref="RES_CONTENT_820716" d2l_2p0:id="16" description="" completion_type="2" resource_type_key="D2L.LE.Dropbox.Dropbox">
+                    <title>Assignment - Week 2</title>
+                </item>
+            </item>
+            <item identifier="836042" identifierref="RES_CONTENT_836042" d2l_2p0:id="17" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742588" description="&lt;p&gt;&lt;img src=&quot;maxresdefault.jpg&quot; alt=&quot;&quot; title=&quot;&quot; data-d2l-editor-default-img-style=&quot;true&quot; style=&quot;max-width: 100%;&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this week, you will learn about classification technique. You practice with different classification algorithms, such as KNN, Decision Trees, Logistic Regression and SVM. Also, you learn about pros and cons of each method, and different classification accuracy metrics.&lt;/p&gt;" completion_type="2" date_start="2020-11-09T12:00:00" date_end="2020-11-15T23:30:00">
+                <title>Week 3 - Classification</title>
+            </item>
+            <item identifier="826999" identifierref="RES_CONTENT_826999" d2l_2p0:id="18" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742657" description="&lt;p&gt;&lt;img src=&quot;maxresdefault.jpg&quot; alt=&quot;&quot; title=&quot;&quot; data-d2l-editor-default-img-style=&quot;true&quot; style=&quot;max-width: 100%;&quot; /&gt;&lt;/p&gt;" completion_type="2">
+                <title>Webinars</title>
+                <item identifier="1098276" identifierref="RES_CONTENT_1098276" d2l_2p0:id="19" description="" completion_type="2" resource_type_key="D2L.LE.Lti.Link">
+                    <title>Live Lecture 1. Introduction to Machine Learning.</title>
+                </item>
+                <item identifier="1098282" identifierref="RES_CONTENT_1098282" d2l_2p0:id="20" description="" completion_type="2" resource_type_key="D2L.LE.Lti.Link">
+                    <title>Live Lecture 2. Regression (16/07/2021, 11:00AM)</title>
+                </item>
+            </item>
+            <item identifier="820717" identifierref="RES_CONTENT_820717" d2l_2p0:id="21" d2l_2p0:resource_code="4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742658" description="&lt;p&gt;&lt;img src=&quot;maxresdefault.jpg&quot; alt=&quot;&quot; title=&quot;&quot; data-d2l-editor-default-img-style=&quot;true&quot; style=&quot;max-width: 100%;&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is the list of assignments for this course:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=dropbox&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383254&quot; target=&quot;_self&quot;&gt;Week 1 Individual Assignment&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=dropbox&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383262&quot; target=&quot;_self&quot;&gt;Week 2 Individual Assignment&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a rel=&quot;noopener&quot; href=&quot;/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;amp;type=lti&amp;amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-398368&amp;amp;srcou=139892&quot; target=&quot;_self&quot;&gt;Week 3 Group Assignment&lt;/a&gt;&lt;/p&gt;" completion_type="2">
+                <title>Assignments</title>
+                <item identifier="1098277" identifierref="RES_CONTENT_1098277" d2l_2p0:id="22" description="" completion_type="2" resource_type_key="D2L.LE.Dropbox.Dropbox">
+                    <title>Assignment - Week 1</title>
+                </item>
+                <item identifier="1098278" identifierref="RES_CONTENT_1098278" d2l_2p0:id="23" description="" completion_type="2" resource_type_key="D2L.LE.Dropbox.Dropbox">
+                    <title>Practical Project. Week 2</title>
+                </item>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="res_rubrics" type="webcontent" d2l_2p0:material_type="d2lrubrics" d2l_2p0:link_target="" href="rubrics_d2l.xml" title="" />
+        <resource identifier="RES_CONTENT_820679" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_831708" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Course Timeline.html" title="" />
+        <resource identifier="RES_CONTENT_1098281" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742454" title="" />
+        <resource identifier="RES_CONTENT_831778" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Recommender System with Spark and IBM Watson Studio.html" title="" />
+        <resource identifier="RES_CONTENT_820689" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_832711" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_1098236" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_blank" href="https://javamedvedev.github.io/1/lecture1.html" title="" />
+        <resource identifier="RES_CONTENT_832712" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_832715" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_820713" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383254" title="" />
+        <resource identifier="RES_CONTENT_820715" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_832717" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_832716" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_832718" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_820716" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383262" title="" />
+        <resource identifier="RES_CONTENT_836042" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_826999" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_1098276" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=lti&amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742655&amp;srcou={DestinationOrgUnitId}" title="" identifierref="RES_LTI_CONTENT_141886" />
+        <resource identifier="RES_CONTENT_1098282" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=lti&amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-742673&amp;srcou={DestinationOrgUnitId}" title="" identifierref="RES_LTI_CONTENT_141892" />
+        <resource identifier="RES_CONTENT_820717" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_1098277" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383254" title="" />
+        <resource identifier="RES_CONTENT_1098278" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rcode=4EAAD6F1-BECE-42E8-A5C8-884D621E0300-383262" title="" />
+        <resource identifier="res_syllabus" type="webcontent" d2l_2p0:material_type="d2lsyllabus" d2l_2p0:link_target="" href="syllabus_d2l.xml" title="" />
+        <resource identifier="res_discuss_1" type="webcontent" d2l_2p0:material_type="d2ldiscussion" d2l_2p0:link_target="" href="discussion_d2l_1.xml" title="" />
+        <resource identifier="res_news" type="webcontent" d2l_2p0:material_type="d2lnews" d2l_2p0:link_target="" href="news_d2l.xml" title="" />
+        <resource identifier="res_dropbox" type="webcontent" d2l_2p0:material_type="d2ldropbox" d2l_2p0:link_target="" href="dropbox_d2l.xml" title="" />
+        <resource identifier="res_chklist" type="webcontent" d2l_2p0:material_type="d2lchecklist" d2l_2p0:link_target="" href="checklist_d2l.xml" title="" />
+        <resource identifier="res_schedule" type="webcontent" d2l_2p0:material_type="d2lschedule" d2l_2p0:link_target="" href="schedule_d2l.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_48831" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_48831.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_48862" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_48862.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_49309" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_49309.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_141886" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_141886.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_141892" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_141892.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_48877" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_48877.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_49261" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_49261.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_141695" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_141695.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_77136" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_77136.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_50634" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_50634.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_49286" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_49286.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51315" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51315.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51322" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51322.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51583" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51583.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51732" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51732.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51737" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51737.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51743" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51743.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_52091" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_52091.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_52644" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_52644.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_52909" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_52909.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_52631" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_52631.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51323" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51323.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51344" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51344.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_51321" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_51321.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_49302" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_49302.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_50635" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_50635.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_49933" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_49933.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_50657" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_50657.xml" title="" />
+        <resource identifier="res_courseimage" type="webcontent" d2l_2p0:material_type="d2lcourseimage" d2l_2p0:link_target="" href="courseimage_d2l.xml" title="" />
+    </resources>
+</manifest>
