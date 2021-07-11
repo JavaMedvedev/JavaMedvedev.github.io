@@ -1,0 +1,561 @@
+/*** Bootstrap Overrides ***/
+@import "https://fonts.googleapis.com/css?family=Lato:300, 400,700";
+.btn-group-justified {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal {
+  padding-right: 0;
+}
+
+/*** Typography ***/
+/** Responsive Breakpoints **/
+/** Typography - Global **/
+html,
+body {
+  color: #006FBF;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* Typography - Extra Small, Small */
+h1,
+.header-one {
+  color: #006FBF;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 2.1875rem;
+  letter-spacing: -0.03125rem;
+}
+
+h2,
+.header-two {
+  color: #FFBA59;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: -0.01875rem;
+}
+
+h3,
+.header-three {
+  color: #006FBF;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.03125rem;
+}
+
+/* Typography - Medium, Large, Extra Large */
+@media (min-width: 768px) {
+  h1,
+  .header-one {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+    letter-spacing: -0.03125rem;
+    margin-bottom: 35px;
+  }
+  h2,
+  .header-two {
+    font-size: 2.125rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: -0.01875rem;
+    margin-bottom: 30px;
+  }
+  h3,
+  .header-three {
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    letter-spacing: 0.03125rem;
+    margin-bottom: 20px;
+  }
+}
+
+/*** Common Elements ***/
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-standard,
+.btn-close {
+  font-family: "Lato", sans-serif;
+}
+
+.btn-primary,
+.btn-standard {
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0 15px 20px 0;
+  padding: 11px 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-primary img,
+.btn-standard img {
+  padding-right: 0.625rem;
+}
+
+.btn-primary.disabled img,
+.btn-standard.disabled img {
+  opacity: 0.6;
+}
+
+.btn-left {
+  margin: 0 15px 15px 0;
+}
+
+.btn-right {
+  margin: 0 0 15px 15px;
+}
+
+/* Button Primary */
+.btn-primary {
+  background-color: #006FBF;
+  border-color: #006FBF;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover, .btn-primary.active:hover {
+  background-color: #005694;
+  border-color: rgba(0, 111, 191, 0.4);
+  color: #FFFFFF;
+  outline: none;
+}
+
+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active, .btn-primary.active:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover {
+  background-color: #005694;
+  border-color: #005694;
+  box-shadow: 0 0 0 4px rgba(0, 111, 191, 0.3);
+  color: #FFFFFF;
+  outline: none;
+}
+
+.btn-primary:disabled, .btn-primary.disabled, .btn-primary[aria-expanded="true"] {
+  background-color: #006FBF;
+  border-color: #005694;
+  color: #B9C2D0;
+}
+
+.btn-primary:disabled:hover, .btn-primary.disabled:hover, .btn-primary[aria-expanded="true"]:hover {
+  background-color: #006FBF;
+  border-color: #005694;
+  color: #B9C2D0;
+}
+
+/* Button Standard */
+.btn-standard {
+  background-color: #F2F3F5;
+  border-color: #D3D9E3;
+  color: #565A5C;
+}
+
+.btn-standard:hover, .btn-standard.active:hover {
+  background-color: #E6EAF0;
+  outline: none;
+}
+
+.btn-standard:focus, .btn-standard.active:focus, .btn-standard:active, .btn-standard.active:active, .btn-standard.active, .btn-standard:active:focus, .btn-standard:active:hover {
+  background-color: #E6EAF0;
+  border-color: rgba(0, 111, 191, 0.4);
+  box-shadow: 0 0 0 4px rgba(0, 111, 191, 0.3);
+  color: #565A5C;
+  outline: none;
+}
+
+.btn-standard:disabled, .btn-standard.disabled, .btn-standard[aria-expanded="true"] {
+  background-color: #F9FAFB;
+  border-color: #E6EAF0;
+  color: #7C8695;
+}
+
+.btn-standard:disabled:hover, .btn-standard.disabled:hover, .btn-standard[aria-expanded="true"]:hover {
+  background-color: #F9FAFB;
+  border-color: #E6EAF0;
+  color: #7C8695;
+}
+
+/* Helper Classes */
+.hidden {
+  display: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/*** Widget-specific Styles ***/
+html,
+body {
+  color: #565A5C;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+h3 {
+  font-weight: 300;
+  color: #006FBF;
+  text-decoration: none;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px;
+  margin-top: 15px;
+  line-height: 1.1rem;
+  font-size: 1.1rem;
+}
+
+a h3 {
+  color: #006FBF;
+}
+
+a h3:hover {
+  color: #E57231;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E57231;
+  text-decoration: none;
+}
+
+.checkmark {
+  background-image: url(https://s.brightspace.com/lib/bsi/10.7.3-daylight.15/images/tier2/check.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  margin: 0 auto;
+  margin-top: 2px;
+  color: #006FBF;
+}
+
+.tile-progress {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+.progress-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 42px;
+  position: absolute;
+  width: 100%;
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  background-color: #D3D9E3;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.progress-bar {
+  box-shadow: none;
+  background-color: #006FBF;
+}
+
+.progress-bar span {
+  color: #FFFFFF;
+}
+
+.progress_legend {
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.tiledesc {
+  text-overflow: ellipsis;
+  max-height: 233px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #72777A;
+  overflow-y: auto;
+  padding: 20px;
+  display: none;
+}
+
+.quicknav {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #E6EAF0;
+}
+
+.quicknav .continue {
+  float: right;
+  font-size: 16px;
+  padding: 5px;
+  padding-right: 5px;
+  width: 50%;
+  text-align: center;
+  color: #006FBF;
+}
+
+.quicknav .overview {
+  float: left;
+  font-size: 16px;
+  padding: 5px;
+  padding-right: 5px;
+  width: 50%;
+  text-align: center;
+  color: #565a5c;
+  border-right: 1px solid #E6EAF0;
+}
+
+.quicknav .disabled {
+  color: transparent;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.subtopic {
+  padding-left: 0px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: -5px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  color: #565A5C;
+}
+
+.blue {
+  color: #006FBF;
+}
+
+.flip-container {
+  display: inline-block;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin: 0 10px;
+}
+
+/*  UPDATED! flip the pane when hovered */
+.flip-container.flip .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip-container.flip .front {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.alltiles .flip-container:nth-child(4n+4) {
+  margin-right: 0%;
+  margin-left: 1%;
+}
+
+.alltiles .flip-container:nth-child(4n-1) {
+  margin-left: 1%;
+}
+
+.flip-container,
+.front,
+.back {
+  width: 22.4%;
+  height: 290px;
+  margin-right: 3%;
+  margin-bottom: 2%;
+}
+
+.flip-container {
+  margin-right: 2%;
+  margin-left: 1%;
+}
+
+.front:hover,
+.back:hover {
+  box-shadow: 0px 2px 6px 0px #D3D9D3;
+}
+
+.flip-container .header-img {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+/* flip speed goes here */
+.flipper {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #D3D9D3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .alltiles .flip-container:nth-child(3n + 1) {
+    margin-right: 1%;
+    margin-left: 0%;
+  }
+  .alltiles .flip-container:nth-child(3n+3) {
+    margin-right: 0%;
+    margin-left: 1%;
+  }
+  .alltiles .flip-container:nth-child(3n-1) {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .flip-container {
+    width: 32%;
+    height: 280px;
+    margin-right: 3%;
+    margin-bottom: 4%;
+  }
+  .flip-container {
+    margin-right: 3%;
+    margin-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  .alltiles .flip-container:nth-child(3n+3) {
+    margin-right: 0%;
+    float: left;
+  }
+  .alltiles .flip-container:nth-child(3n-1) {
+    margin-left: 0%;
+  }
+  .alltiles .flip-container:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .alltiles .flip-container:nth-child(2n-1) {
+    margin-left: 0%;
+    float: left;
+  }
+  .flip-container,
+  .front,
+  .back {
+    width: 46%;
+    height: 290px;
+    margin-right: 3%;
+    margin-bottom: 4%;
+  }
+  .front,
+  .back {
+    width: 100%;
+  }
+  .flip-container {
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  h3 {
+    line-height: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .alltiles .flip-container:nth-child(3n+3) {
+    margin-right: 0%;
+    float: left;
+  }
+  .alltiles .flip-container:nth-child(3n-1) {
+    margin-left: 0%;
+  }
+  .alltiles .flip-container:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .alltiles .flip-container:nth-child(2n-1) {
+    margin-left: 0%;
+    float: left;
+  }
+  .alltiles .flip-container:nth-child(1n) {
+    margin-left: 0%;
+    float: left;
+  }
+  .flip-container,
+  .front,
+  .back {
+    width: 100%;
+    height: 265px;
+    margin-right: 3%;
+    margin-bottom: 4%;
+  }
+  .front,
+  .back {
+    width: 100%;
+  }
+  .flip-container {
+    margin-right: 3%;
+  }
+  h3 {
+    line-height: 1.1rem;
+  }
+}
