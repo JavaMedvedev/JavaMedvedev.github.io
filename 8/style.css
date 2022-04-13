@@ -60,7 +60,7 @@ h1 {
 @media (min-width: 419px) {
   h1 {
     font-size: 150px;
-    font-size: calc((0.098911968 * 150vw + (158.555885262px)));
+    font-size: calc((0.058911968 * 150vw + (70.555885262px)));
   }
 }
 @media (min-width: 1430px) {
