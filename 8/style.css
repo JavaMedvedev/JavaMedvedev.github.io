@@ -52,20 +52,20 @@ body, body * {
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 150px;
   color: #000;
   margin: 0;
   text-align: center;
 }
 @media (min-width: 419px) {
   h1 {
-    font-size: 200px;
-    font-size: calc((0.098911968 * 200vw + (158.555885262px)));
+    font-size: 150px;
+    font-size: calc((0.098911968 * 150vw + (158.555885262px)));
   }
 }
 @media (min-width: 1430px) {
   h1 {
-    font-size: 220px;
+    font-size: 170px;
   }
 }
 
