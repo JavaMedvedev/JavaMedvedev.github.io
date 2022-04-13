@@ -59,13 +59,13 @@ h1 {
 }
 @media (min-width: 419px) {
   h1 {
-    font-size: 20px;
+    font-size: 100px;
     font-size: calc((0.0098911968 * 100vw + (15.8555885262px)));
   }
 }
 @media (min-width: 1430px) {
   h1 {
-    font-size: 30px;
+    font-size: 120px;
   }
 }
 
