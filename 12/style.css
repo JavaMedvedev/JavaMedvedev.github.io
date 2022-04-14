@@ -1,13 +1,5 @@
 body {
-  background-color: #222222;
-  background: repeating-linear-gradient(
-      45deg,
-      #2b2b2b 0%,
-      #2b2b2b 10%,
-      #222222 0%,
-      #222222 50%
-    )
-    0 / 15px 15px;
+
 }
 
 #container {
@@ -68,23 +60,23 @@ a:nth-child(6) {
 
 @-webkit-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
-      0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #044a1e,
+      0 0 70px #044a1e, 0 0 80px #044a1e, 0 0 100px #044a1e, 0 0 150px #044a1e;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
-      0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #044a1e,
+      0 0 35px #044a1e, 0 0 40px #044a1e, 0 0 50px #044a1e, 0 0 75px #044a1e;
   }
 }
 
 @keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
-      0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #044a1e,
+      0 0 70px #044a1e, 0 0 80px #044a1e, 0 0 100px #044a1e, 0 0 150px #044a1e;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
-      0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #044a1e,
+      0 0 35px #044a1e, 0 0 40px #044a1e, 0 0 50px #044a1e, 0 0 75px #044a1e;
   }
 }
 
