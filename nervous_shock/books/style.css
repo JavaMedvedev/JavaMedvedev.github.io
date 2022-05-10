@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #cccccc;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: white;
+  /* W3C */
+  /* IE6-9 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tile {
+  width: 640px;
+  height: 360px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tile.hotspots {
+  perspective: 1000px;
+}
+.tile.hotspots .wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.tile.hotspots .wrapper.flipped {
+  transform: rotateX(180deg);
+}
+.tile.hotspots .wrapper .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin: 0;
+}
+.tile.hotspots .wrapper .front .livery {
+  width: 100%;
+  height: auto;
+}
+.tile.hotspots .wrapper .front .hotspots-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.tile.hotspots .wrapper .front .hotspots-container .icon {
+  position: absolute;
+  background-image: url(https://JavaMedvedev.github.io/nervous_shock/bookicon.png);
+  background-position: -155px -443px;
+  width: 38px;
+  height: 38px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+.tile.hotspots .wrapper .front .hotspots-container .icon:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: -17%;
+  left: -17%;
+  opacity: 0;
+  transition: all 100ms linear;
+}
+.tile.hotspots .wrapper .front .hotspots-container .icon:hover {
+  transform: scale(1.3);
+}
+.tile.hotspots .wrapper .front .hotspots-container .icon:hover:before {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.tile.hotspots .wrapper .back {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transform: rotateX(180deg);
+}
+.tile.hotspots .wrapper .back .close {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/169666/icons.png);
+  background-position: -347px -284px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 200;
+  background-color: black;
+}
+.tile.hotspots .wrapper .back .hotspot-data {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.tile.hotspots .wrapper .back .hotspot-data .contain {
+  display: none;
+  background: #bdb988;
+  color: black;
+}
+.tile.hotspots .wrapper .back .hotspot-data .contain .copy {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  padding-right: 5px;
+  background: #bdb988;
+  color: black;
+  
+}
+.tile.hotspots .wrapper .back .hotspot-data .contain .image {
+  float: left;
+  width: 50%;
+  padding-left: 5px;
+  height: 100%;
+}
+.tile.hotspots .wrapper .back .hotspot-data .contain .image img {
+  width: 100%;
+  height: 100%;
+}
+.tile.hotspots .wrapper .back .hotspot-data .contain.active {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
