@@ -124,7 +124,7 @@ body {
 }
 .tile.hotspots .wrapper .back .hotspot-data .contain {
   display: none;
-  background: #cfeaff;
+  background: #e03849;
   color: black;
 }
 .tile.hotspots .wrapper .back .hotspot-data .contain .copy {
@@ -132,7 +132,7 @@ body {
   width: 50%;
   padding: 20px;
   padding-right: 5px;
-  background: #cfeaff;
+  background: #e03849;
   color: black;
   
 }
