@@ -115,7 +115,7 @@ body {
   top: 10px;
   cursor: pointer;
   z-index: 200;
-  background-color: black;
+  background-color: #fdc22f;
 }
 .tile.hotspots .wrapper .back .hotspot-data {
   position: absolute;
