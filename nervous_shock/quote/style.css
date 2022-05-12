@@ -26,7 +26,7 @@ article {
   background: #FFD174;
   line-height: 2;
   border-radius: 10px;
-  margin: 5rem;
+  margin: 2rem;
   /* transition for the transform property, updated in the script */
   transition: transform 0.2s ease-out;
 }
