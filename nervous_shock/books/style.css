@@ -24,8 +24,10 @@ body {
   box-sizing: border-box;
 }
 
-.h2 {
-color: #fdc22f;  
+.fz {
+  color: #fdc22f;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .tile {
