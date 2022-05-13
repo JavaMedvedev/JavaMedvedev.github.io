@@ -54,14 +54,14 @@ article figure img {
 article div {
   /* center the text in the div container */
   text-align: center;
-  margin: 2rem; 
+  margin: 1rem; 
 }
 article div p {
   color: #424242;
   font-size: 15px;
   font-weight: 50;
   font-style: normal;
-  margin: 1rem 0 3rem;
+  margin: 0rem 0.2rem 0.5rem;
   font-family: "Lato", normal;
   /* position relative for the pseudo element */
   position: relative;
