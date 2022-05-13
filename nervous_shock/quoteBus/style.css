@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   /* include an off-white background */
-  background: #F3F3F3;
+  background: #fff;
   /* add perspective for the rotation of the article, added through the script */
   perspective: 500px;
 }
