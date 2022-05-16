@@ -66,7 +66,7 @@ form {
 	font-size: 14px;
 }
 .checkbox-text:after {
-	background-color: #ffd174;
+	background-color: var(--primary-t);
 	border-radius: 0.375em;
 	content: "";
 	display: block;
@@ -98,7 +98,7 @@ form {
 /* Focus and hover */
 .checkbox:focus ~ .checkbox-text:after,
 .checkbox:hover ~ .checkbox-text:after {
-	background-color: #ffd174;
+	background-color: var(--primary-t-hover);
 }
 .checkbox:checked + .check-icon .check-icon__box-worm,
 .checkbox:indeterminate + .check-icon .check-icon__box-worm {
@@ -117,11 +117,11 @@ form {
 /* `:focus-visible` support */
 @supports selector(:focus-visible) {
 	.checkbox:focus ~ .checkbox-text:after {
-		background-color: #ffd174;
+		background-color: var(--primary-t);
 	}
 	.checkbox:focus-visible ~ .checkbox-text:after,
 	.checkbox:hover ~ .checkbox-text:after {
-		background-color: #ffd174;
+		background-color: var(--primary-t-hover);
 	}
 }
 
