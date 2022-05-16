@@ -141,7 +141,7 @@ body {
 /* Tabs menu */
 .tabs {
   margin: 0;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #ffd174 100%);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #2c5f60 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +181,7 @@ body {
 }
 
 .tablinks:before {
-  background-image: linear-gradient(135deg, #ffd174 0%, #fec249 100%);
+  background-image: linear-gradient(135deg, #2c5f60 0%, #0d4a4b 100%);
   content: "";
   width: 100%;
   height: 0px;
@@ -232,7 +232,7 @@ body {
 .tablinks.active p,
 .tablinks.active:hover p {
   opacity: 1;
-  background: -webkit-linear-gradient(135deg, #ffd174 0%, #fec249 100%);
+  background: -webkit-linear-gradient(135deg, #2c5f60 0%, #0d4a4b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -246,7 +246,7 @@ body {
   transition: 0.5s ease;
   padding: 0;
   margin: 0;
-  color: #000000;
+  color: #fff;
   backface-visibility: hidden;
   font-weight: 400;
 }
@@ -257,7 +257,7 @@ body {
 }
 @media screen and (max-width: 512px) {
   .tablinks:hover p {
-    color: #000000;
+    color: #fff;
     opacity: 0.6;
   }
 }
@@ -328,7 +328,7 @@ body {
   height: 5px;
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(135deg, #ffd174 0%, #fec249 100%);
+  background-image: linear-gradient(135deg, #2c5f60 0%, #0d4a4b 100%);
   left: 0;
   bottom: 0;
   z-index: -2;
@@ -345,7 +345,7 @@ body {
   opacity: 0.1;
   width: 200px;
   height: 60px;
-  background: -webkit-linear-gradient(135deg, #ffd174 0%, #fec249 100%);
+  background: -webkit-linear-gradient(135deg, #2c5f60 0%, #0d4a4b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
@@ -367,7 +367,7 @@ body {
 }
 /* Text*/
 .tabcontent p {
-  color: #000000;
+  color: #fff;
   margin: 0;
   padding: 0;
   line-height: 28px;
