@@ -10,9 +10,9 @@
 	--fg1: hsl(var(--hue),10%,10%);
 	--fg2: hsl(var(--hue),10%,30%);
 	--fg3: hsl(var(--hue),10%,70%);
-	--primary: hsl(var(--hue),90%,55%);
-	--primary-t: hsla(var(--hue),90%,55%,0);
-	--primary-t-hover: hsla(var(--hue),90%,55%,0.15);
+	--primary: hsl(var(--hue),50%,55%);
+	--primary-t: hsla(var(--hue),50%,90%,0);
+	--primary-t-hover: hsla(var(--hue),50%,90%,0.15);
 	--trans-dur1: 0.3s;
 	--trans-dur2: 0.6s;
 	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
