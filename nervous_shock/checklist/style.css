@@ -133,7 +133,8 @@ form {
 		--fg1: hsl(var(--hue),10%,90%);
 		--fg2: hsl(var(--hue),10%,70%);
 		--fg3: hsl(var(--hue),10%,30%);
-		--primary: hsl(var(--hue),90%,65%);
-		--primary-t-hover: hsla(var(--hue),90%,55%,0.3);
+	--primary: hsl(var(--acb),100%,73%);
+	--primary-t: hsla(var(--acb),100%,73%,0);
+	--primary-t-hover: hsla(var(--acb),100%,73%,0.15);
 	}
 }
