@@ -8,14 +8,13 @@ html, body {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #cccccc;
+  background: #fff;
   /* Old browsers */
   /* FF3.6+ */
   /* Chrome,Safari4+ */
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: white;
   /* W3C */
   /* IE6-9 */
 }
@@ -131,7 +130,7 @@ body {
 }
 .tile.hotspots .wrapper .back .hotspot-data .contain {
   display: none;
-  background: #e03849;
+  background: #2c5f60;
   color: black;
 }
 .tile.hotspots .wrapper .back .hotspot-data .contain .copy {
@@ -139,7 +138,7 @@ body {
   width: 50%;
   padding: 20px;
   padding-right: 5px;
-  background: #e03849;
+  background: #2c5f60;
   color: black;
   
 }
