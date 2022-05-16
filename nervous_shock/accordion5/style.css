@@ -11,7 +11,7 @@ body {
   padding: 0;
   font-family: "Lato";
   background: #ffd174;
-  color: #fff;
+  color: #000000;
   display: flex;
   min-height: 100vh;
 }
@@ -23,10 +23,10 @@ body {
 }
 
 .accordion .accordion-item {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000000;
 }
 .accordion .accordion-item button[aria-expanded=true] {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000000;
 }
 .accordion button {
   position: relative;
@@ -34,7 +34,7 @@ body {
   text-align: left;
   width: 100%;
   padding: 0.5em 0;
-  color: #fff;
+  color: #000000;
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
