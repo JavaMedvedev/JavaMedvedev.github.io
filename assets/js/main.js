@@ -4,6 +4,17 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+$(document).ready(function () {
+  $(".video-gallery").magnificPopup({
+    delegate: "a",
+    type: "iframe",
+    gallery: {
+      enabled: true
+    }
+  });
+});
+
 (function() {
   "use strict";
 
@@ -229,12 +240,4 @@
 
 })()
 
-$(document).ready(function () {
-  $(".video-gallery").magnificPopup({
-    delegate: "a",
-    type: "iframe",
-    gallery: {
-      enabled: true
-    }
-  });
-});
+
