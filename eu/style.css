@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+}
+
+.page{
+  position: relative;
+  color: white;
+}
+.page:nth-child(odd){
+  background-color: #333;
+}
+
+.page:nth-child(even){
+  background-color: #ff3636;
+}
+
+.page_content{
+  position: absolute;
+  width: 300px;
+}
+
+.page_content_text{
+  opacity: 0;
+}
+
+.page:nth-child(even) .page_content{
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page:nth-child(odd) .page_content{
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page_content_text{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.page_content_text h3{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 6px;
+}
+
+.page:nth-child(even) .page_content_text h3{
+  border-bottom: solid 3px #333;
+}
+.page:nth-child(odd) .page_content_text h3{
+  border-bottom: solid 3px #ff3636;
+}
