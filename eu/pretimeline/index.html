@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Listing</title>
+    <style>
+        body {
+            font-family: Lato, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+		
+		body p {
+		  font-family: "Lato";
+		  color: #233b79;
+		  margin-bottom: 0;
+		  font-size: 24px;
+		}
+
+        .anythinglisting4 {
+            padding: 15px 30px;
+        }
+
+        .anythinglisting4 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            counter-reset: number;
+            position: relative;
+        }
+
+        .anythinglisting4 ul::before {
+            border-left: 4px solid #233b79;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 17px;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .anythinglisting4 ul li {
+            position: relative;
+            font-size: 16px;
+            color: #000;
+            padding: 15px 0 15px 50px;
+        }
+
+        .anythinglisting4 ul li::before {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #f3cd14;
+            left: 4px;
+            text-align: center;
+            top: 10px;
+            content: '';
+            border-radius: 50%;
+            counter-increment: number;
+            color: #fff;
+            content: ;
+            font-size: 22px;
+            line-height: 38px;
+        }
+
+ 
+
+
+    </style>
+</head>
+
+<body>
+
+<p><b>From the EEC to the EU: Key Milestones</b></p>
+
+<br><br>
+
+    <div class="anythinglisting4">
+        <ul>
+            <li>Benelux Agreement 1947.</li>
+            <li>Organisation for European Economic Co-operation (OEEC) 1948.</li>
+            <li>Council of Europe 1949.</li>
+            <li>The Schuman Plan – focus on coal and steel – why?</li>
+            <li>Treaty of Paris 1951 (Treaty establishing the European Coal and Steel Community): 'the basis for a broader and deepercommunity among peoples long divided by bloody conflicts’.</li>
+			<li>The beginning of a ‘united Europe’?</li>
+			<li>Schuman Declaration 1951.</li>
+			<li>"Europe will not be made all at once, or according to a single plan. It will be built through concrete achievements which first create a de facto solidarity...".</li>
+			<li>The Messina Conference 1955.</li>
+			<li>The Treaty (Treaties) of Rome 1957 – EEC and EURATOM.</li>
+			<li>EEC:
+			<br>Common institutions.<br>Customs union.<br>Common market objective.<br>Other common policies where competence was ceded.</li>
+        </ul>
+		
+    </div>
+
+</body>
+
+</html>
