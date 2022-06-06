@@ -23,7 +23,6 @@ input {
 	font: 1em/1.5 "Lato";
 }
 body {
-	background-color: white;
 	color: var(--fg2);
 	height: 100vh;
 	display: grid;
