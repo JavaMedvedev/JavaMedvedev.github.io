@@ -11,7 +11,7 @@ class Checklist {
 	init() {
 		const inputs = this.el.querySelectorAll("input");
 		Array.from(inputs).forEach(el => {
-			el.checked = false;
+			el.checked = true;
 		});
 	}
 	checkForSelected(e) {
