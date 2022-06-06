@@ -27,7 +27,7 @@ body {
 	color: var(--fg2);
 	height: 100vh;
 	display: grid;
-	place-items: center;
+	place-items: left;
 	transition:
 		background-color var(--trans-dur1),
 		color var(--trans-dur1);
