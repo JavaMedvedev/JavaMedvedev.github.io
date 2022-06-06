@@ -1,0 +1,196 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--hue: 223;
+	--acb: 40;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg1: hsl(var(--hue),10%,10%);
+	--fg2: hsl(var(--hue),10%,30%);
+	--fg3: hsl(var(--hue),10%,70%);
+	--primary: hsl(var(--acb),100%,73%);
+	--primary-t: hsla(var(--acb),100%,73%,0);
+	--primary-t-hover: hsla(var(--acb),100%,73%,0.15);
+	--trans-dur1: 0.3s;
+	--trans-dur2: 0.6s;
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+body,
+input {
+	font: 1em/1.5 "Lato";
+}
+body {
+	background-color: white;
+	color: var(--fg2);
+	height: 100vh;
+	display: grid;
+	place-items: left;
+	transition:
+		background-color var(--trans-dur1),
+		color var(--trans-dur1);
+}
+
+		body p {
+		  font-family: "Lato";
+		  color: #233b79;
+		  margin-bottom: 0;
+		  font-size: 24px;
+		  text-align: center;
+		}
+		
+		.anythinglisting4 {
+            padding: center;
+        }
+
+        .anythinglisting4 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            counter-reset: number;
+            position: relative;
+        }
+
+        .anythinglisting4 ul::before {
+            border-left: 4px solid #233b79;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 17px;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .anythinglisting4 ul li {
+            position: relative;
+            font-size: 16px;
+            color: #000;
+            padding: 15px 0 15px 50px;
+        }
+
+        .anythinglisting4 ul li::before {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #f3cd14;
+            left: 4px;
+            text-align: center;
+            top: 10px;
+            content: '';
+            border-radius: 50%;
+            counter-increment: number;
+            color: #fff;
+            content: ;
+            font-size: 22px;
+            line-height: 38px;
+        }
+		
+form {
+	min-width: 16em;
+	padding: 1.5em 1.5em 0 1.5em;
+}
+.checkbox-label {
+	display: flex;
+	align-items: center;
+	padding: 0.375em;
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.checkbox-label + .checkbox-label {
+	margin-left: 2em;
+}
+
+/* Default */
+.checkbox-group {
+	margin-bottom: 1.25em;
+}
+.checkbox {
+	position: absolute;
+	clip: rect(1px,1px,1px,1px);
+	width: 1px;
+	height: 1px;
+	
+}
+.checkbox-text {
+	color: #454954;
+	transition: color var(--trans-dur1);
+	font-family: Lato;
+	font-weight: normal;
+	font-size: 14px;
+}
+.checkbox-text:after {
+	background-color: var(--primary-t);
+	border-radius: 0.375em;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition: background-color 0.15s linear;
+}
+.check-icon {
+	margin-right: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+}
+.check-icon__box {
+	stroke: #233b79;
+	transition: stroke var(--trans-dur1);
+}
+.check-icon__box-worm,
+.check-icon__check-worm {
+	stroke: var(--primary);
+	transition:
+		stroke var(--trans-dur1),
+		stroke-dashoffset var(--trans-dur2) cubic-bezier(0.42,-0.2,0.58,1.2);
+}
+
+/* Focus and hover */
+.checkbox:focus ~ .checkbox-text:after,
+.checkbox:hover ~ .checkbox-text:after {
+	background-color: var(--primary-t-hover);
+}
+.checkbox:checked + .check-icon .check-icon__box-worm,
+.checkbox:indeterminate + .check-icon .check-icon__box-worm {
+	stroke-dashoffset: -91;
+}
+.checkbox:checked + .check-icon .check-icon__check-worm {
+	stroke-dashoffset: -6;
+}
+.checkbox:indeterminate + .check-icon .check-icon__box-worm {
+	stroke-dashoffset: -111.38;
+}
+.checkbox:indeterminate + .check-icon .check-icon__check-worm {
+	stroke-dashoffset: -26.38;
+}
+
+/* `:focus-visible` support */
+@supports selector(:focus-visible) {
+	.checkbox:focus ~ .checkbox-text:after {
+		background-color: var(--primary-t);
+	}
+	.checkbox:focus-visible ~ .checkbox-text:after,
+	.checkbox:hover ~ .checkbox-text:after {
+		background-color: var(--primary-t-hover);
+	}
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg1: hsl(var(--hue),10%,90%);
+		--fg2: hsl(var(--hue),10%,70%);
+		--fg3: hsl(var(--hue),10%,30%);
+	--primary: hsl(var(--acb),100%,73%);
+	--primary-t: hsla(var(--acb),100%,73%,0);
+	--primary-t-hover: hsla(var(--acb),100%,73%,0.15);
+	}
+}
