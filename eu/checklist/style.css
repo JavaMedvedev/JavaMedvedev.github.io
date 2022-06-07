@@ -41,6 +41,14 @@ body {
 		  margin-left: 35px;
 
 		}
+
+		body f {
+		  font-family: "Lato";
+		  color: #233b79;
+		  margin-bottom: 0;
+		  font-size: 24px;
+		  text-align: left;
+		}
 		
 		.anythinglisting4 {
             padding: center;
