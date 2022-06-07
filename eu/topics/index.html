@@ -1,61 +1,97 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+ <!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Listing</title>
+    <style>
+        body {
+            font-family: Lato, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+		
+		body p {
+		  font-family: "Lato";
+		  color: #233b79;
+		  margin-bottom: 0;
+		  font-size: 24px;
+		  text-align: center;
+		}
+
+        .anythinglisting4 {
+            padding: 15px 30px;
+        }
+
+        .anythinglisting4 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            counter-reset: number;
+            position: relative;
+        }
+
+        .anythinglisting4 ul::before {
+            border-left: 4px solid #233b79;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 17px;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .anythinglisting4 ul li {
+            position: relative;
+            font-size: 16px;
+            color: #000;
+            padding: 15px 0 15px 50px;
+        }
+
+        .anythinglisting4 ul li::before {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #f3cd14;
+            left: 4px;
+            text-align: center;
+            top: 10px;
+            content: '';
+            border-radius: 50%;
+            counter-increment: number;
+            color: #fff;
+            content: counter(number);
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+
+ 
+
+
+    </style>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="wrapper">
-<ul class="grid cards">
-  <li><h2>Functionalism and Neo-Functionalism</h2>
-    <p>
-	<ul><li>Functionalism represents an incremental approach to integration.</li>
-	<li>Harmonise discrete areas, focus on specific sectors, e.g. coal, steel.</li>
-	<li>Neo-functionalism builds on this – central tenet = ‘spillover’ effect, i.e. integration in one area creates pressure for integration in another.</li>
-	<li>Based on the inter-connectedness of the economy.</li>
-	</ul>
-    </p>
-	</li>
-	
-  <li><h2>Liberal Intergovernmentalism</h2>
-    <p><ul><li>Theory championed by Moravcsik.</li>
-	<li>Posits that states are the driving forces behind integration, that supranational actors are there largely at their behest and therefore these actors have little independent impact on the pace of integration.</li>
-	<li>Demand for integration essentially depends on national preferences.</li>
-	<li>Supply of integration is a function of inter-State bargaining and strategic interaction.</li>
-    </ul>
-	</p></li>
-	
-  <li><h2>Multi-level Governance</h2>
-    <p><ul><li>Liberal intergovernmentalism rests on the assumption that supranational institutions enabled national governments to obtain policy goals that could not be achieved by independent action.</li>
-	<li>State centric view challenged by those who view the EU in terms of multi-level governance.</li>
-	<li>Argument that integration was a process in which authority and policy-making were shared across multiple levels of government: subnational, national, and supranational.</li>
-	<li>Supranational institutions not merely agents of national governments.</li>
-    </ul>
-	</p></li>
-	
-  <li><h2>Rational Choice Institutionalism</h2>
-    <p><ul><li>Derived from rational choice theory.</li>
-	<li>Rational choice institutionalists criticised liberal intergovernmentalism because of the minimal role it accorded to EU institutions.</li>
-	<li>Proponents highlighted the importance of institutions.</li>
-	<li>Institutions constituted the ‘rules of the game’.</li>
-	<li>Ensure MSs live up to their commitments.</li>
-    </ul>
-	</p></li>  
-</ul>
-  <br>
-<ul class="grid1 cards"> 
-   <li><h2>Constructivism</h2>
-    <p><ul><li>Agree with rational choice institutionalism regarding importance of institutions.</li>
-	<li>But dispute foundations of rational choice literature.</li>
-	<li>Contend that the environment in which preferences are formed is social, which impacts your understanding of your own interests.</li>
-	<li>Thus institutions embody social norms.</li>
-    </ul>
-	</p></li>
- </u>
-</div>
-<!-- partial -->
-  
+
+<p><b>Semester 1 Course Outline</b></p>
+
+<br><br>
+
+    <div class="anythinglisting4">
+        <ul>
+            <li>The Dynamics of EU Integration – History and Development of the EU.</li>
+            <li>The Sources of Union Law.</li>
+            <li>The Nature and the Enforcement of Union Law before National Member State Courts.</li>
+            <li>Judicial Cooperation between the National Member State Courts and the CJEU: the Preliminary Reference Procedure.</li>
+            <li>The European Judicial Branch and Infringement Actions before the CJEU.</li>
+			<li>The Political Institutions of the Union and their Functions.</li>
+			<li>Judicial Review of EU Law before the CJEU.</li>
+        </ul>
+		
+    </div>
+
 </body>
+
 </html>
