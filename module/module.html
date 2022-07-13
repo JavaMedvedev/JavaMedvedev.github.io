@@ -1,0 +1,1185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.2.1.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<meta name="Originator" content="Microsoft Word 15"/>
+	<meta name="ProgId" content="Word.Document"/>
+<style type="text/css">
+
+html, body {margin: 0; height: 100%}
+
+.toprint{margin: 0; height: 0px; overflow: clip;visibility: hidden;
+}
+
+@media print {
+  body *{
+    visibility: hidden;
+  }
+  #dvContainer, #dvContainer * {
+    visibility: visible;
+	overflow:visible;
+  }
+  #dvContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+  
+		td p { color: #000000 }
+		p { color: #000000 }
+		a:link { color: #0000ff }
+		a:visited { color: #800080 }
+		
+		/* Textarea styling */
+textarea {
+	width: 100%;
+  top: 5px; left: 0; right: 0; bottom: 0;
+  position: relative;
+	/*resize: none;*/
+	-webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box; 
+}
+
+/* Basic table styling */
+table {
+    border-collapse: ;
+}
+
+table{
+    position: relative;
+    border: 1px solid black;
+}
+
+th, td {
+    position: relative;
+    border: 1px solid black;
+}
+.footertable {
+border: none;
+}
+
+label { display: inline-block; }
+.rowSelected { background-color: #eee; }
+
+#thing {
+  background: #fff;
+  padding: 5px;
+}
+
+.form-body {
+  padding:10px 40px;
+  color:#666;
+  
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+.form-body .label-title {
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+  
+}
+
+.form-body .form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+	padding-bottom: 5px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+	vertical-align:middle;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+
+
+.horizontal-group .left{
+  float:left;
+  width:49%;
+}
+
+.horizontal-group .right{
+  float:right;
+  width:49%;
+}
+
+input[type="file"] {
+  outline: none;
+  cursor:pointer;
+  font-size: 17px;
+}
+
+#range-label {
+  width:15%;
+  padding:5px;
+  background-color: #1BBA93;
+  color:white;
+  border-radius: 5px;
+  font-size: 17px;
+  position: relative;
+  top:-8px;
+}
+
+
+::-webkit-input-placeholder  {
+  color:#d9d9d9;
+}
+
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+.signup-form .form-footer  {
+  background-color: #EFF0F1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:10px 40px;
+  text-align: left;
+  border-top: 1px solid #cccccc;
+  clear:both;
+}
+
+.form-footer span {
+  float:left;
+  margin-top: 10px;
+  color:#999;  
+  font-style: italic;
+  font-weight: thin;
+}
+
+.btn {
+   display:inline-block;
+   padding:10px 20px;
+   background-color: #68065b;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#fff;
+   cursor:pointer;
+   align:left;
+}
+
+.btn:hover {
+  background-color: #68065b;
+  color:#bcf5e7;
+}
+.myhidden{
+display: none;
+}
+
+
+
+
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+// Two Text Fields
+function addtext() {
+	var newtext = document.myform.inputtext.value;
+	if (document.myform) {
+		document.myform2.outputtext.value = "";
+		}
+	document.myform2.outputtext.value += newtext;
+}
+// Prompt
+function addtext2() {
+	var newtext = prompt('Enter New Text Here:', '');
+	if (document.myform) {
+		document.myform2.outputtext.value = "";
+		}
+	document.myform2.outputtext.value += newtext;
+}
+</script>
+<script>
+// Second pair
+function addtext3() {
+	var newtext3 = document.myform.inputtext3.value;
+	if (document.myform) {
+		document.myform3.outputtext3.value = "";
+		}
+	document.myform3.outputtext3.value += newtext3;
+}
+// Prompt second pair
+function addtext4() {
+	var newtext3 = prompt('Enter New Text Here:', '');
+	if (document.myform) {
+		document.myform3.outputtext3.value = "";
+		}
+	document.myform3.outputtext3.value += newtext3;
+}
+</script>
+<script>
+$(function() {
+  $(":checkbox").change(function() {
+    var arr = $(":checkbox:checked").map(function() { return $(this).next().html(); }).get();
+    $("#myDiv").html(arr.join(''));
+  });
+});
+
+</script>
+<script>
+// Name
+function typeName() {
+	var newName = document.myform.inputtextName.value;
+	if (document.myform) {
+		document.formName.outputtextName.value = "";
+		}
+	document.formName.outputtextName.value += newName;
+}
+// Prompt Name
+function promptName() {
+	var newName = prompt('Enter New Text Here:', '');
+	if (document.myform) {
+		document.formName.outputtextName.value = "";
+		}
+	document.formName.outputtextName.value += newName;
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</head>
+
+	
+<body>
+
+	
+	
+<div id="content" class="tohide";>
+
+
+
+<form name="myform" class="signup-form" action="/register" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+	  <br>
+	  <center><img src="https://javamedvedev.github.io/18/Picture1.jpg" style="width:25%;">
+        <h1>Module Outline Form</h1>
+		</center>
+      </div>
+	  <br><br>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+          <div class="form-group left">
+            <label for="firstname" class="label-title">Module Name</label>
+			<textarea name="inputtext" class="form-input" placeholder="Please enter the module name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; vertical-align:middle"></textarea>
+          </div>
+		
+			<div class="form-group left">
+				<label for="lastname" class="label-title">Module Code</label>
+				<textarea name="inputtext3" class="form-input" placeholder="Please enter the module code" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none"></textarea>
+			</div>
+
+          <div class="form-group left">
+            <label class="label-title">Aims & Objectives</label>
+            <div id="ctl00_ContentPlaceHolder1_divServices" style="font-family:Calibri;width:450px; height:150px; overflow-y:scroll;">
+				<style="font-family:Calibri; font-size: 12pt;">
+				<input id="1" type="checkbox" autocomplete="off" name="1"/><label for="Option1"><div id="thing">Option1</div></label><br>
+				<input id="2" type="checkbox" autocomplete="off" name="2"/><label for="Option2"><div id="thing">Option2</div></label><br>
+				<input id="3" type="checkbox" autocomplete="off" name="3"/><label for="Option3"><div id="thing">Option3</div></label><br>
+				<input id="4" type="checkbox" autocomplete="off" name="4"/><label for="Option4"><div id="thing">Option4</div></label><br>
+				<input id="5" type="checkbox" autocomplete="off" name="5"/><label for="Option5"><div id="thing">Option5</div></label><br>
+				<input id="6" type="checkbox" autocomplete="off" name="6"/><label for="Option6"><div id="thing">Option6</div></label><br>
+				<input id="7" type="checkbox" autocomplete="off" name="7"/><label for="Option7"><div id="thing">Option7</div></label><br>
+				<input id="8" type="checkbox" autocomplete="off" name="8"/><label for="Option8"><div id="thing">Option8</div></label>
+				</style>
+            </div>
+          </div>
+		  
+		  <div class="form-group left">
+				<label for="lastname" class="label-title">Name</label>
+				<textarea name="inputtextName" class="form-input" placeholder="Please enter your name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none"></textarea>
+			</div>
+        </div>
+
+      <!-- form-footer -->
+      <div class="form-footer">
+	  
+<table class="footertable" width="100%" cellpadding="0" cellspacing="0" style="border: none;">
+<tr style="border: none;">
+<td style="border: none;">
+		<input type="button" class="btn" value="Print Module Outline" style="cooverflow:auto;" onClick="addtext();addtext3();typeName();window.print()">
+</td>
+<td style="border: none;">
+	  <div style="color:#79898d;text-align:right;font-family:Calibri; font-size: 12pt; overflow:auto;">Sergey Medvedev 2022</div>
+</td>
+
+</tr>
+</table>
+      </div>
+
+    </form>
+
+</div>
+
+   <div id="dvContainer" class="toprint">    
+	
+	
+
+<center><img src="https://javamedvedev.github.io/18/Picture1.jpg" style="width:20%;"></center>
+<br>
+
+
+<p>
+	
+	<center>
+		<form name="myform2">
+			<center>
+				<textarea name="outputtext" style="text-align: center; font-family:Calibri; font-weight: bold; font-size: 16pt; border:0px; resize:none;" cols="25" rows="1"></textarea>
+			</center>
+		</form>
+	</center>
+</p>
+
+<p>
+	<center>
+		<form name="myform3">
+			<center>
+				<textarea name="outputtext3" style="text-align: center; font-family:Calibri; font-size: 12pt; border:0px; resize:none;" cols="25" rows="1"></textarea>
+			</center>
+		</form>
+	</center>
+</p>
+
+<p>
+	<center>
+		
+	</center>
+</p>
+
+<p class="msonormal" align="center" style="orphans: 1"><font face="Calibri, sans-serif"><font size="4" style="font-size: 16pt"><b>Module Outline <font color="#000000">2022-2023</font></b></font></font></p>
+<p style="margin-bottom: 0in"></p>
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td width="18%" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Aims
+				&amp; Objectives</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			
+		<div id="myDiv" style="font-family:Calibri; font-size:16px; margin-left: 10px;"></div>
+			
+				<p class="msonormal" style="orphans: 128; text-decoration: none"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td rowspan="2" width="18%" style="border-top: none; border-bottom: none; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding: 0in 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Lecturer</b></font></font></p>
+			</td>
+			<td width="23%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt; margin-left: 10px;"><b>Name</b></font></font></p>
+			</td>
+			<td width="12%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Office</b></font></font></p>
+			</td>
+			<td width="15%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Ext</b></font></font></p>
+			</td>
+			<td width="29%" valign="top" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>E-mail</b></font></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="23%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
+				<form name="formName">
+					<textarea name="outputtextName" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px; max-height: 30px; resize:none;margin-left: 10px;" ></textarea>
+				</form>
+				</font></p>
+			</td>
+			<td width="12%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Room
+				No.]</font></font></p>
+			</td>
+			<td width="15%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Phone
+				ext]</font></font></p>
+			</td>
+			<td width="29%" valign="top" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Email]</font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				&nbsp;</p>
+				<p class="msonormal" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Overall
+				Module Learning Outcomes</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+
+<p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Upon
+				completion of this module, you will be able to:</font></font></p>
+				<ul type="disc">
+					<li><p style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[List
+					5 module <a href="https://www.nuigalway.ie/centre-excellence-learning-teaching/teachinglearning/learningoutcomes/">Learning
+					Outcomes</a>]</font></font></font> 
+					</p>
+					<li><p style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[See
+					some tips for writing effective learning outcomes using Bloom&rsquo;s
+					Taxonomy</font></font></font><font color="#0000ff"> </font><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><a href="https://tips.uark.edu/using-blooms-taxonomy/">here</a>]</font></font></font>
+										</p>
+					<li><p style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Demonstrate
+					link of coursework / theory to (any of) the UN SDGs &ndash; link
+					to UN SDGs available <a href="https://sdgs.un.org/goals">here</a>]</font></font></font>
+										</p>
+				</ul>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Graduate
+				Attributes</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Successful,
+				fully engaged students have opportunities through the coursework
+				and the broader student experience to develop a wide range of
+				knowledge, skills and dispositions. Upon completion of this
+				module, you will acquire the following key gradate attributes:</font></font></p>
+				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[List
+				key graduate attributes here (options available </font></font></font><a href="https://ceim.su.nuigalway.ie/about/graduate-attributes/"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">here</font></font></a><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">)]</font></font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>UN
+				Sustainable Development Goals (SDGs)</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128; margin-right: 0.06in">
+				<font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Option
+				2</font></font></font></p>
+				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[List
+				17 interlinked global goals (icons?) and select which ones (if
+				any) the modules examines in teaching and/or assessment work.
+				SDGs available </font></font></font><a href="https://sdgs.un.org/goals"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">here</font></font></a><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">]</font></font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Programme(s)</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">02</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				of programmes/instances that your module will be delivered to.</font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Delivery
+				Format</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">This
+				module will be delivered through a <font color="#808080">[insert
+				format, e.g. on-campus, flipped classroom, etc. &ndash; please
+				consult with Head of Department and Programme Director(s)]
+				</font>approach. Students are expected to attend and engage with
+				class activities where appropriate. </font></font>
+				</p>
+				<p class="msonormal">&nbsp;</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Classes
+				are scheduled as follows:</font></font></p>
+				<p class="msonormal">&nbsp;</p>
+				<table cellpadding="0" cellspacing="0">
+					<tr valign="top">
+						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
+						</td>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
+							&ndash; xx:00</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+				</table>
+				<p class="msonormal">&nbsp;</p>
+				<p class="msonormal" style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Or
+				for large classes, please specify groups]</font></font></font></p>
+				<p class="msonormal">&nbsp;</p>
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
+							A </b></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Delete
+							if unapplicable]</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
+							&ndash; xx:00</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+				</table>
+				<p class="msonormal">&nbsp;</p>
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
+							B </b></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Delete
+							if unapplicable]</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
+							&ndash; xx:00</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+				</table>
+				<p class="msonormal">&nbsp;</p>
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
+							C </b></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Delete
+							if unapplicable]</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
+							&ndash; xx:00</font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+							&nbsp;</p>
+						</td>
+					</tr>
+				</table>
+				<p class="msonormal">&nbsp;</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">Map of NUIG Campus and location of buildings is available <a href="https://www.nuigalway.ie/media/buildingsoffice/files/maps/NUI-Galway-Campus-A4-Map_D6.pdf">here</a></span></font></font></p>
+				<p class="msonormal">&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Attendance</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">You
+				are&nbsp; expected&nbsp; to attend in-person on-campus for all
+				aspects of this module. The J.E. Cairnes School of Business &amp;
+				Economics will monitor student attendance at classes to (i)
+				facilitate the identification of students failing to engage with
+				the programme and (ii) allow the estimation of overall student
+				attendance as one measure of student participation in the
+				modules. <a href="https://tips.nuigalway.ie/m/qwicklyattendance/l/1090519-what-is-qwickly-attendance">Qwickly</a></font></font><a href="https://tips.nuigalway.ie/m/qwicklyattendance/l/1090519-what-is-qwickly-attendance">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Attendance</font></font></a>
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">will
+				be used within Blackboard to allow lecturers to take attendance
+				at the module level, and for students to keep track of the same.
+				Monitoring attendance has a positive impact on student
+				engagement, especially when you can review their own attendance
+				on Blackboard and receive emails about absence. </font></font>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Core
+				Text</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128; margin-right: 0.06in">
+				<font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Is
+				the textbook available online through the NUIG library?]</font></font></font></p>
+				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Consider
+				cost of textbook, required edition, and access/audio options,
+				where possible for students with support needs]</font></font></font></p>
+				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Specify
+				if you are not using a textbook and whether alternative sources
+				will be made available, e.g. case studies, articles, etc &ndash;
+				see &ldquo;Schedule of Module Content &amp; Learning Material&rdquo;
+				section]</font></font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Assessment</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">End
+				of Year Examination: xx% </font></font>
+				</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Continuous
+				Assignment: xx% </font></font>
+				</p>
+				<p class="msonormal">&nbsp;</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Details
+				on the continuous assignments will be provided during the term. </font></font>
+				</p>
+				<p class="msonormal">&nbsp;</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">To
+				avail of the associated marks each student must submit the
+				assignment by the date indicated on assessment material (to be
+				announced). </font></font>
+				</p>
+				<p class="msonormal" style="orphans: 128"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Outline
+				specific CA/exam details if necessary, submission expectations,
+				and penalties for late/no submissions, where applicable. Consider
+				whether you can also incorporate aspects of SDGs or &lsquo;public
+				good&rsquo; into your Semester for teaching and assessment, e.g.
+				a guest lecture on SDGs related to your topic?]</font></font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Workload</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Credit
+				weighting: x ECTS </font></font><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Details
+				on NUIG ECTS and workloads available <a href="https://www.nuigalway.ie/media/celt/files/coursedesign/ECTS.pdf">here</a>]</font></font></font></p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Online
+				weekly instructional hours: x </font></font>
+				</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Independent
+				assignment work (hours): x </font></font>
+				</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Independent
+				study (hours): x </font></font>
+				</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Associated
+				hours: x </font></font>
+				</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Total
+				Student Effort: x hours</font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Plagiarism</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" align="right" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Plagiarism
+				is the use of another person&rsquo;s ideas or work without
+				appropriate acknowledgement or credit. Plagiarism may be
+				intentional or unintentional. </font></font>
+				</p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><u><b>Intentional</b></u></font></font>
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">plagiarism
+				is the clear intent to pass off another person&rsquo;s work or
+				ideas as your own for your own gain.&nbsp; </font></font>
+				</p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><u><b>Unintentional</b></u></font></font>
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">plagiarism
+				may occur if you do not understand the appropriate way to
+				acknowledge the source of your ideas and information.&nbsp; </font></font>
+				</p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">If
+				you are unsure of the acceptable methods of acknowledgment you
+				should refer to the NUIG <a href="https://www.nuigalway.ie/plagiarism/">Code
+				of Practice for Dealing with Plagiarism</a>, consult with your
+				lecturer or the library staff.&nbsp; Proven plagiarism is a very
+				serious matter which may result in severe disciplinary action
+				and/or exclusion from the University.</font></font></p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Ensure
+				all assignment submissions include a signed plagiarism
+				statement.&nbsp; </font></font>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Referencing
+				&amp; Citation</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" align="right" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Correct
+				referencing and citation avoids plagiarism.&nbsp; There are
+				varying referencing styles available but the most popular is the
+				Harvard Referencing Style.&nbsp; Details on how to reference
+				journal articles, books, electronic information and various other
+				supports is available from the NUI, Galway Library at the
+				following link:</font></font></p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in"><a href="http://libguides.library.nuigalway.ie/c.php?g=543943&amp;p=4591416"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">http://libguides.library.nuigalway.ie/c.php?g=543943&amp;p=4591416</font></font></a><font color="#0000ff">
+				</font>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Blackboard
+				Ally </b></font></font>
+				</p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Blackboard
+				Ally supports you to access more user-friendly file formats.
+				Please contact the lecturer is you experience any accessibility
+				issues for this module material.</font></font></font> <font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Should
+				you have a visual disability and require the document in another
+				format, please contact the lecturer to explore alternative format
+				options.</font></font> 
+				</p>
+				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" align="right" style="orphans: 128; margin-right: 0.06in">
+				<font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Please
+				not, it is relatively easy to use and can be really helpful.&nbsp;
+				Below is a link to a very short introductory video - you can try
+				out the different formats available and see what works for you.
+				For example, you can get an audio version of a document, or you
+				can download materials in html format which is much easier to
+				read on a phone or mobile device. You can also change a
+				PowerPoint presentation to pdf, or get a version of a document
+				that is suitable for a screen reader, among other things.&nbsp;
+				Here is a quick video on how to use Blackboard Ally:&nbsp;
+				<a href="https://www.youtube.com/watch?v=tOORcSEjtJU#action=share">https://www.youtube.com/watch?v=tOORcSEjtJU#action=share</a>]</font></font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>LENS
+				Report</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Support
+				is available to students with a disability and is granted on the
+				basis of medical evidence. Where applicable, a LENS Report
+				(Learning Educational Needs Summary) should be completed and the
+				relevant disciplines notified. It is your responsibility to send
+				your LENS report to your lecturers/ course coordinator at the
+				beginning of each semester. It might be easiest to send this in
+				one email to all of them once you know their names and email
+				addresses.</font></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Classroom
+				Charter on Equality, Diversity and Inclusion (EDI)</b></font></font></p>
+			</td>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">We
+				are guided by our core values of respect in our actions,
+				excellence in our work, openness in our outlook and
+				sustainability in our approach. We focus on equality by treating
+				people with respect and dignity, and providing everyone with
+				opportunities to fulfil their potential. We focus on diversity to
+				enrich our School environment by sparking innovation and creating
+				a rewarding and vibrant student community. Within the J</font></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">.E.
+				Cairnes School of Business &amp; Economics, at a module-level we
+				aim to create and nurture </font></font><font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">an
+				environment that is respectful and inclusive for all. We will:</font></font></font></p>
+				<p style="margin-left: 0.33in; text-indent: -0.25in"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&middot;</span></font></font></font><span style="font-variant: normal"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></font></font></font></span><font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">Treat
+				each other with dignity and respect.</span></font></font></font></p>
+				<p style="margin-left: 0.33in; text-indent: -0.25in"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&middot;</span></font></font></font><span style="font-variant: normal"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></font></font></font></span><font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">Listen
+				to each other&rsquo;s point of view, recognising that there may
+				be disagreement.</span></font></font></font></p>
+				<p style="margin-left: 0.33in; text-indent: -0.25in"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&middot;</span></font></font></font><span style="font-variant: normal"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></font></font></font></span><font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">Keep
+				discussion, comments, and module feedback on the topic, and off
+				the people.</span></font></font></font></p>
+				<p style="margin-left: 0.33in; text-indent: -0.25in"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&middot;</span></font></font></font><span style="font-variant: normal"><font color="#000000"><font face="Symbol"><font size="2" style="font-size: 11pt"><span lang="en-GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></font></font></font></span><font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">Do
+				not use inflammatory or offensive language, sarcasm or raised
+				voices.</span></font></font></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p lang="en-GB"><font face="Calibri, sans-serif"><font size="4" style="font-size: 16pt">Schedule
+of Module Content &amp; Learning Material</font></font></p>
+<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">A
+short checklist will be released each week on Blackboard specifying
+key actions in preparation for each weeks lesson (e.g. readings,
+chapters, articles or case studies). Below is a summary on the
+schedule of module content and learning material.</font></font></p>
+<p class="msonormal">&nbsp;</p>
+<center>
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="293" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Units</b></font></font></p>
+			</td>
+			<td width="302" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" align="center" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Readings</b></font></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				1: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span>&nbsp;</p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				2: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				3: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				4: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				5: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				6: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				7: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				8: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				9: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				10: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				11: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
+				12: [Unit Name]</b></font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
+				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				general topics included in this unit</font></font></p>
+				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
+				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
+				</font></font></span>&nbsp;</p>
+			</td>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
+				readings/chapters/articles/case studies</font></font></p>
+			</td>
+		</tr>
+	</table>
+</center>
+
+</div>
+</body>
+</html>
