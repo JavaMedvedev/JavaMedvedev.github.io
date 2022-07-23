@@ -1,13 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
+<title>Module Outline Form</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://JavaMedvedev.github.io/17/logo.png">
 
 <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script language="javascript" type="text/javascript"></script>
 <style type="text/css">
 
-html, body {margin: 0; height: 100%}
+html, body {margin: 0; height: 100%;}
 
 .toprint{margin: 0; height: 0px; overflow: clip;visibility: hidden;
 }
@@ -16,6 +21,35 @@ html, body {margin: 0; height: 100%}
   body *{
     visibility: hidden;
   }
+  #divtohide, #divtohide * {
+	visibility: hidden;
+	display: none;
+  }
+  #divtohide2, #divtohide2 * {
+	visibility: hidden;
+	display: none;
+  }
+  #welcomeDiv, #welcomeDiv * {
+	visibility: hidden;
+	display: none;
+  }
+  #welcomeDiv3, #welcomeDiv3 * {
+	visibility: hidden;
+	display: none;
+  }
+  #welcomeDiv5, #welcomeDiv5 * {
+	visibility: hidden;
+	display: none;
+  }
+  #welcomeDiv7, #welcomeDiv7 * {
+	visibility: hidden;
+	display: none;
+  }  
+  #welcomeDiv9, #welcomeDiv9 * {
+	visibility: hidden;
+	display: none;
+  }  
+  
   #dvContainer, #dvContainer * {
     visibility: visible;
 	overflow:visible;
@@ -37,7 +71,6 @@ textarea {
 	width: 100%;
   top: 5px; left: 0; right: 0; bottom: 0;
   position: relative;
-	/*resize: none;*/
 	-webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box; 
@@ -68,6 +101,10 @@ label { display: inline-block; }
   background: #fff;
   padding: 5px;
 }
+#thing2 {
+  background: #fff;
+  padding: 5px;
+}
 
 .form-body {
   padding:10px 40px;
@@ -75,15 +112,141 @@ label { display: inline-block; }
   
 }
 
+.tree-button-show2 {
+margin-top: -10px;
+  margin-left: 40px;
+  margin-bottom:20px;
+  margin-right: 20px;
+  width:135px;
+  background-color: #68065b;
+  color:#fff;
+   border:none;
+   border-radius:3px;
+   cursor:pointer;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.tree-button-left {
+  margin-left: 40px;
+  margin-bottom:20px;
+  margin-right: 20px;
+  width:135px;
+  color:#fff;
+  float:left;
+  display: inline-block;
+   background-color: #68065b;
+   border:none;
+   border-radius:3px;
+   cursor:pointer;
+      padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.tree-button-right {
+  margin-left: 40px;
+  margin-bottom:20px;
+  margin-right: 20px;
+  width:135px;
+  color:#fff;
+  display: inline-block;
+  background-color: #68065b;
+   border:none;
+   border-radius:3px;
+   cursor:pointer;
+      padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.form-header {
+}
+
+.form-header-1{
+  width:200px;
+  margin-left:40px;
+  margin-bottom:10px;
+  float:left;
+}
+
+.form-header-2{
+  width:350px;
+  margin-top:10px;
+  margin-left:40px;
+  margin-bottom:10px;
+  display: inline-block;
+}
+
 .form-group{
   margin-bottom:20px;
+  width:604px;
 }
+
+.form-group-float-left{
+  margin-bottom:20px;
+  width:604px;
+}
+
+.form-group-float-right{
+  margin-bottom:20px;
+  width:604px;
+}
+
+.form-group-float-1of4{
+  margin-bottom:20px;
+  margin-right: 20px;
+  width:290px;
+  float:left;
+  display: inline-block;
+}
+
+.form-group-float-2of4{
+  margin-bottom:20px;
+  margin-right: 20px;
+  margin-left: 4px;
+  width:290px;
+  display: inline-block;
+}
+
+.form-group-float-3of4{
+  margin-bottom:20px;
+  margin-right:20px;
+  width:290px;
+  display: inline-block;
+}
+
+.form-group-float-4of4{
+  margin-bottom:20px;
+  width:290px;
+  display: inline-block;
+}
+
+.form-group-week-name{
+  margin-bottom:20px;
+  margin-right: 20px;
+  width:604px;
+}
+
 
 .form-body .label-title {
   color: #000;
   font-size: 17px;
   font-weight: bold;
   
+}
+
+.label-title {
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+  
+  
+}
+
+.tree-label-title {
+  color: #68065b;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 0.5px;
 }
 
 .form-body .form-input {
@@ -140,6 +303,19 @@ input[type="file"] {
 /*---------------------------------------*/
 /* Form Footer */
 /*---------------------------------------*/
+
+.tree {
+  background-color: #EFF0F1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:10px 40px;
+  text-align: left;
+  border-top: 1px solid #cccccc;
+  clear:both;
+  margin-bottom:20px;
+  width:604px;
+}
+
 .signup-form .form-footer  {
   background-color: #EFF0F1;
   border-bottom-left-radius: 10px;
@@ -178,19 +354,44 @@ input[type="file"] {
 display: none;
 }
 
+textarea {
+    resize: none;
+    overflow: hidden;
+}
 
+.checkboxAttributes[type="checkbox"]{
+}
 
+.form-top  {
+  background-color: #EFF0F1;
+  color: #68065b;
+}
 
+::placeholder {
+  color: #7d7d7d;
+  opacity: 1; /* Firefox */
+}
 </style>
+
 <script>
 $(function() {
-  $(":checkbox").change(function() {
-    var arr = $(":checkbox:checked").map(function() { return $(this).next().html(); }).get();
-    $("#myDiv").html(arr.join(''));
+  $("#idAims").change(function() {
+    var aims = $("#idAims input:checkbox:checked").map(function() { return $(this).next().html(); }).get();
+    $("#myDiv").html(aims.join(''));
   });
 });
-
 </script>
+
+<script>
+$(function() {
+  $("#idAttributes").change(function() {
+    var attributes = $("#idAttributes input:checkbox:checked").map(function() { return $(this).next().html(); }).get();
+    $("#myAttributes").html(attributes.join(''));
+  });
+});
+</script>
+
+
 <script language="javascript" type="text/javascript">
 // Two Text Fields
 function addtext() {
@@ -227,7 +428,14 @@ function addtext4() {
 	document.myform3.outputtext3.value += newtext3;
 }
 </script>
-
+<script>
+// Aims & Objectives
+function typeAims() {
+	var newAims = document.myform.inputtextAims.value;
+	var resultAims = document.getElementById('textAims');
+    resultAims.innerHTML = newAims;
+}
+</script>
 <script>
 // Name
 function typeName() {
@@ -247,84 +455,1543 @@ function promptName() {
 }
 </script>
 
+<script>
+// Office
+function typeOffice() {
+	var newOffice = document.myform.inputtextOffice.value;
+	if (document.myform) {
+		document.formOffice.outputtextOffice.value = "";
+		}
+	document.formOffice.outputtextOffice.value += newOffice;
+}
+// Prompt Office
+function promptOffice() {
+	var newOffice = prompt('Enter New Text Here:', '');
+	if (document.myform) {
+		document.formOffice.outputtextOffice.value = "";
+		}
+	document.formOffice.outputtextOffice.value += newOffice;
+}
+</script>
+
+<script>
+// Ext
+function typeExt() {
+	var newExt = document.myform.inputtextExt.value;
+	if (document.myform) {
+		document.formExt.outputtextExt.value = "";
+		}
+	document.formExt.outputtextExt.value += newExt;
+}
+// Prompt Ext
+function promptExt() {
+	var newExt = prompt('Enter New Text Here:', '');
+	if (document.myform) {
+		document.formExt.outputtextExt.value = "";
+		}
+	document.formExt.outputtextExt.value += newExt;
+}
+</script>
+
+<script>
+// Email
+function typeEmail() {
+	var newEmail = document.myform.inputtextEmail.value;
+	if (document.myform) {
+		document.formEmail.outputtextEmail.value = "";
+		}
+	document.formEmail.outputtextEmail.value += newEmail;
+}
+// Prompt Email
+function promptEmail() {
+	var newEmail = prompt('Enter New Text Here:', '');
+	if (document.myform) {
+		document.formEmail.outputtextEmail.value = "";
+		}
+	document.formEmail.outputtextEmail.value += newEmail;
+}
+</script>
+
+<script>
+// Outcomes
+function typeOutcomes() {
+	var newOutcomes = document.myform.inputtextOutcomes.value;
+	var MyDiv2 = document.getElementById('texttype');
+    MyDiv2.innerHTML = newOutcomes;
+}
+</script>
+
+<script>
+// Programmes
+function typeProgrammes() {
+	var newProgrammes = document.myform.inputtextProgrammes.value;
+	var resultProgrammes = document.getElementById('textProgrammes');
+    resultProgrammes.innerHTML = newProgrammes;
+}
+</script>
+
+<script>
+function copyValue() {
+    var dropboxvalue = document.getElementById('mydropbox').value;
+	document.getElementById('spanID').innerHTML = dropboxvalue;
+}
+</script>
+
+<script>
+// Core Text
+function typeCore() {
+	var newCore = document.myform11.inputtextCore.value;
+	var resultCore = document.getElementById('textCore');
+    resultCore.innerHTML = newCore;
+}
+</script>
+
+<script>
+function copyExam() {
+    var dropboxExam = document.getElementById('exam%').value;
+	document.getElementById('examID').innerHTML = dropboxExam;
+}
+</script>
+
+<script>
+function copyAssignment() {
+    var dropboxAssignment = document.getElementById('assignment%').value;
+	document.getElementById('assignmentID').innerHTML = dropboxAssignment;
+}
+</script>
+
+<script>
+function copyDetails() {
+    var dropboxDetails = document.getElementById('detailsInput').value;
+	document.getElementById('detailsID').innerHTML = dropboxDetails;
+}
+</script>
+
+<script>
+function copyECTS() {
+    var dropboxECTS = document.getElementById('idECTS').value;
+	document.getElementById('ectsID').innerHTML = dropboxECTS;
+}
+</script>
+<script>
+function copyOnlineHours() {
+    var dropboxOnlineHours = document.getElementById('idOnlineHours').value;
+	document.getElementById('onlineHoursID').innerHTML = dropboxOnlineHours;
+}
+</script>
+
+<script>
+function copyAssignmentHours() {
+    var dropboxAssignmentHours = document.getElementById('idAssignmentHours').value;
+	document.getElementById('assignmentHoursID').innerHTML = dropboxAssignmentHours;
+}
+</script>
+
+<script>
+function copyStudyHours() {
+    var dropboxStudyHours = document.getElementById('idStudyHours').value;
+	document.getElementById('studyHoursID').innerHTML = dropboxStudyHours;
+}
+</script>
+
+<script>
+function copyAssociatedHours() {
+    var dropboxAssociatedHours = document.getElementById('idAssociatedHours').value;
+	document.getElementById('associatedHoursID').innerHTML = dropboxAssociatedHours;
+}
+</script>
+
+<script>
+function copyTotalHours() {
+    var dropboxTotalHours = document.getElementById('idTotalHours').value;
+	document.getElementById('totalHoursID').innerHTML = dropboxTotalHours;
+}
+</script>
+
+<script>
+function copytextbox1() {
+    var dropbox = document.getElementById('textbox1').value;
+	document.getElementById('textbox1ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox2() {
+    var dropbox = document.getElementById('textbox2').value;
+	document.getElementById('textbox2ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox3() {
+    var dropbox = document.getElementById('textbox3').value;
+	document.getElementById('textbox3ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox4() {
+    var dropbox = document.getElementById('textbox4').value;
+	document.getElementById('textbox4ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox5() {
+    var dropbox = document.getElementById('textbox5').value;
+	document.getElementById('textbox5ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox6() {
+    var dropbox = document.getElementById('textbox6').value;
+	document.getElementById('textbox6ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox7() {
+    var dropbox = document.getElementById('textbox7').value;
+	document.getElementById('textbox7ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox8() {
+    var dropbox = document.getElementById('textbox8').value;
+	document.getElementById('textbox8ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox9() {
+    var dropbox = document.getElementById('textbox9').value;
+	document.getElementById('textbox9ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox10() {
+    var dropbox = document.getElementById('textbox10').value;
+	document.getElementById('textbox10ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox11() {
+    var dropbox = document.getElementById('textbox11').value;
+	document.getElementById('textbox11ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox12() {
+    var dropbox = document.getElementById('textbox12').value;
+	document.getElementById('textbox12ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox13() {
+    var dropbox = document.getElementById('textbox13').value;
+	document.getElementById('textbox13ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox14() {
+    var dropbox = document.getElementById('textbox14').value;
+	document.getElementById('textbox14ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox15() {
+    var dropbox = document.getElementById('textbox15').value;
+	document.getElementById('textbox15ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox16() {
+    var dropbox = document.getElementById('textbox16').value;
+	document.getElementById('textbox16ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox17() {
+    var dropbox = document.getElementById('textbox17').value;
+	document.getElementById('textbox17ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox18() {
+    var dropbox = document.getElementById('textbox18').value;
+	document.getElementById('textbox18ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox19() {
+    var dropbox = document.getElementById('textbox19').value;
+	document.getElementById('textbox19ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox20() {
+    var dropbox = document.getElementById('textbox20').value;
+	document.getElementById('textbox20ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox21() {
+    var dropbox = document.getElementById('textbox21').value;
+	document.getElementById('textbox21ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox22() {
+    var dropbox = document.getElementById('textbox22').value;
+	document.getElementById('textbox22ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox23() {
+    var dropbox = document.getElementById('textbox23').value;
+	document.getElementById('textbox23ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copytextbox24() {
+    var dropbox = document.getElementById('textbox24').value;
+	document.getElementById('textbox24ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+
+function show2() {
+   document.getElementById('welcomeDiv').style.display = "block";
+   document.getElementById('welcomeDiv2').style.display = "block";
+   
+
+   document.getElementById('hide2').style.display = "block";
+   document.getElementById('show2').style.display = "none";
+   document.getElementById('show4').style.display = "block";
+}
+function hide2() {
+   document.getElementById('welcomeDiv').style.display = "none";
+   document.getElementById('welcomeDiv2').style.display = "none";
+   
+   
+   document.getElementById('hide2').style.display = "none";
+   document.getElementById('show2').style.display = "block";
+   document.getElementById('show4').style.display = "none";
+}
+function show4() {
+   document.getElementById('welcomeDiv3').style.display = "block";
+   document.getElementById('welcomeDiv4').style.display = "block";
+   
+   
+   document.getElementById('hide2').style.display = "none";
+   document.getElementById('hide4').style.display = "block";
+   document.getElementById('show4').style.display = "none";
+   document.getElementById('show6').style.display = "block";
+}
+function hide4() {
+   document.getElementById('welcomeDiv3').style.display = "none";
+   document.getElementById('welcomeDiv4').style.display = "none";
+   
+   
+   document.getElementById('hide2').style.display = "block";
+   document.getElementById('hide4').style.display = "none";
+   document.getElementById('show4').style.display = "block";
+   document.getElementById('show6').style.display = "none";
+}
+
+function show6() {
+   document.getElementById('welcomeDiv5').style.display = "block";
+   document.getElementById('welcomeDiv6').style.display = "block";
+   
+   document.getElementById('hide4').style.display = "none";
+   document.getElementById('hide6').style.display = "block";
+   document.getElementById('show6').style.display = "none";
+   document.getElementById('show8').style.display = "block";
+   
+}
+function hide6() {
+   document.getElementById('welcomeDiv5').style.display = "none";
+   document.getElementById('welcomeDiv6').style.display = "none";
+   
+   document.getElementById('hide4').style.display = "block";
+   document.getElementById('hide6').style.display = "none";
+   document.getElementById('show6').style.display = "block";
+   document.getElementById('show8').style.display = "none";
+}
+function show8() {
+   document.getElementById('welcomeDiv7').style.display = "block";
+   document.getElementById('welcomeDiv8').style.display = "block";
+   
+   document.getElementById('hide6').style.display = "none";
+   document.getElementById('hide8').style.display = "block";
+   document.getElementById('show8').style.display = "none";
+   document.getElementById('show10').style.display = "block";
+   
+}
+function hide8() {
+   document.getElementById('welcomeDiv7').style.display = "none";
+   document.getElementById('welcomeDiv8').style.display = "none";
+   
+   document.getElementById('hide6').style.display = "block";
+   document.getElementById('hide8').style.display = "none";
+   document.getElementById('show8').style.display = "block";
+   document.getElementById('show10').style.display = "none";
+}
+function show10() {
+   document.getElementById('welcomeDiv9').style.display = "block";
+   document.getElementById('welcomeDiv10').style.display = "block";
+   
+   document.getElementById('hide8').style.display = "none";
+   document.getElementById('hide10').style.display = "block";
+   document.getElementById('show10').style.display = "none";   
+}
+function hide10() {
+   document.getElementById('welcomeDiv9').style.display = "none";
+   document.getElementById('welcomeDiv10').style.display = "none";
+   
+   document.getElementById('hide8').style.display = "block";
+   document.getElementById('hide10').style.display = "none";
+   document.getElementById('show10').style.display = "block";
+}
+
+</script>
+
+<script>
+function copyNameWeek1() {
+    var dropbox = document.getElementById('nameWeek1').value;
+	document.getElementById('nameWeek1ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek2() {
+    var dropbox = document.getElementById('nameWeek2').value;
+	document.getElementById('nameWeek2ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek3() {
+    var dropbox = document.getElementById('nameWeek3').value;
+	document.getElementById('nameWeek3ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek4() {
+    var dropbox = document.getElementById('nameWeek4').value;
+	document.getElementById('nameWeek4ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek5() {
+    var dropbox = document.getElementById('nameWeek5').value;
+	document.getElementById('nameWeek5ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek6() {
+    var dropbox = document.getElementById('nameWeek6').value;
+	document.getElementById('nameWeek6ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek7() {
+    var dropbox = document.getElementById('nameWeek7').value;
+	document.getElementById('nameWeek7ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek8() {
+    var dropbox = document.getElementById('nameWeek8').value;
+	document.getElementById('nameWeek8ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek9() {
+    var dropbox = document.getElementById('nameWeek9').value;
+	document.getElementById('nameWeek9ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek10() {
+    var dropbox = document.getElementById('nameWeek10').value;
+	document.getElementById('nameWeek10ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek11() {
+    var dropbox = document.getElementById('nameWeek11').value;
+	document.getElementById('nameWeek11ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyNameWeek12() {
+    var dropbox = document.getElementById('nameWeek12').value;
+	document.getElementById('nameWeek12ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function showWeek2() {
+   document.getElementById('week2').style.display = "block";
+   
+   
+   document.getElementById('week2Row').style.display = "table-row";
+   
+
+   document.getElementById('hideWeek2').style.display = "block";
+   document.getElementById('showWeek2').style.display = "none";
+   document.getElementById('showWeek3').style.display = "block";
+}
+function hideWeek2() {
+   document.getElementById('week2').style.display = "none";
+   document.getElementById('week2Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek2').style.display = "none";
+   document.getElementById('showWeek2').style.display = "block";
+   document.getElementById('showWeek3').style.display = "none";
+}
+function showWeek3() {
+   document.getElementById('week3').style.display = "block";
+   document.getElementById('week3Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek2').style.display = "none";
+   document.getElementById('hideWeek3').style.display = "block";
+   document.getElementById('showWeek3').style.display = "none";
+   document.getElementById('showWeek4').style.display = "block";
+}
+function hideWeek3() {
+   document.getElementById('week3').style.display = "none";
+   document.getElementById('week3Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek2').style.display = "block";
+   document.getElementById('hideWeek3').style.display = "none";
+   document.getElementById('showWeek3').style.display = "block";
+   document.getElementById('showWeek4').style.display = "none";
+}
+function showWeek4() {
+   document.getElementById('week4').style.display = "block";
+   document.getElementById('week4Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek3').style.display = "none";
+   document.getElementById('hideWeek4').style.display = "block";
+   document.getElementById('showWeek4').style.display = "none";
+   document.getElementById('showWeek5').style.display = "block";
+}
+function hideWeek4() {
+   document.getElementById('week4').style.display = "none";
+   document.getElementById('week4Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek3').style.display = "block";
+   document.getElementById('hideWeek4').style.display = "none";
+   document.getElementById('showWeek4').style.display = "block";
+   document.getElementById('showWeek5').style.display = "none";
+}
+function showWeek5() {
+   document.getElementById('week5').style.display = "block";
+   document.getElementById('week5Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek4').style.display = "none";
+   document.getElementById('hideWeek5').style.display = "block";
+   document.getElementById('showWeek5').style.display = "none";
+   document.getElementById('showWeek6').style.display = "block";
+}
+function hideWeek5() {
+   document.getElementById('week5').style.display = "none";
+   document.getElementById('week5Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek4').style.display = "block";
+   document.getElementById('hideWeek5').style.display = "none";
+   document.getElementById('showWeek5').style.display = "block";
+   document.getElementById('showWeek6').style.display = "none";
+}
+function showWeek6() {
+   document.getElementById('week6').style.display = "block";
+   document.getElementById('week6Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek5').style.display = "none";
+   document.getElementById('hideWeek6').style.display = "block";
+   document.getElementById('showWeek6').style.display = "none";
+   document.getElementById('showWeek7').style.display = "block";
+}
+function hideWeek6() {
+   document.getElementById('week6').style.display = "none";
+   document.getElementById('week6Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek5').style.display = "block";
+   document.getElementById('hideWeek6').style.display = "none";
+   document.getElementById('showWeek6').style.display = "block";
+   document.getElementById('showWeek7').style.display = "none";
+}
+function showWeek7() {
+   document.getElementById('week7').style.display = "block";
+   document.getElementById('week7Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek6').style.display = "none";
+   document.getElementById('hideWeek7').style.display = "block";
+   document.getElementById('showWeek7').style.display = "none";
+   document.getElementById('showWeek8').style.display = "block";
+}
+function hideWeek7() {
+   document.getElementById('week7').style.display = "none";
+   document.getElementById('week7Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek6').style.display = "block";
+   document.getElementById('hideWeek7').style.display = "none";
+   document.getElementById('showWeek7').style.display = "block";
+   document.getElementById('showWeek8').style.display = "none";
+}
+function showWeek8() {
+   document.getElementById('week8').style.display = "block";
+   document.getElementById('week8Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek7').style.display = "none";
+   document.getElementById('hideWeek8').style.display = "block";
+   document.getElementById('showWeek8').style.display = "none";
+   document.getElementById('showWeek9').style.display = "block";
+}
+function hideWeek8() {
+   document.getElementById('week8').style.display = "none";
+   document.getElementById('week8Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek7').style.display = "block";
+   document.getElementById('hideWeek8').style.display = "none";
+   document.getElementById('showWeek8').style.display = "block";
+   document.getElementById('showWeek9').style.display = "none";
+}
+function showWeek9() {
+   document.getElementById('week9').style.display = "block";
+   document.getElementById('week9Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek8').style.display = "none";
+   document.getElementById('hideWeek9').style.display = "block";
+   document.getElementById('showWeek9').style.display = "none";
+   document.getElementById('showWeek10').style.display = "block";
+}
+function hideWeek9() {
+   document.getElementById('week9').style.display = "none";
+   document.getElementById('week9Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek8').style.display = "block";
+   document.getElementById('hideWeek9').style.display = "none";
+   document.getElementById('showWeek9').style.display = "block";
+   document.getElementById('showWeek10').style.display = "none";
+}
+function showWeek10() {
+   document.getElementById('week10').style.display = "block";
+   document.getElementById('week10Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek9').style.display = "none";
+   document.getElementById('hideWeek10').style.display = "block";
+   document.getElementById('showWeek10').style.display = "none";
+   document.getElementById('showWeek11').style.display = "block";
+}
+function hideWeek10() {
+   document.getElementById('week10').style.display = "none";
+   document.getElementById('week10Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek9').style.display = "block";
+   document.getElementById('hideWeek10').style.display = "none";
+   document.getElementById('showWeek10').style.display = "block";
+   document.getElementById('showWeek11').style.display = "none";
+}
+function showWeek11() {
+   document.getElementById('week11').style.display = "block";
+   document.getElementById('week11Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek10').style.display = "none";
+   document.getElementById('hideWeek11').style.display = "block";
+   document.getElementById('showWeek11').style.display = "none";
+   document.getElementById('showWeek12').style.display = "block";
+}
+function hideWeek11() {
+   document.getElementById('week11').style.display = "none";
+   document.getElementById('week11Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek10').style.display = "block";
+   document.getElementById('hideWeek11').style.display = "none";
+   document.getElementById('showWeek11').style.display = "block";
+   document.getElementById('showWeek12').style.display = "none";
+}
+function showWeek12() {
+   document.getElementById('week12').style.display = "block";
+   document.getElementById('week12Row').style.display = "table-row";
+   
+   
+   document.getElementById('hideWeek11').style.display = "none";
+   document.getElementById('hideWeek12').style.display = "block";
+   document.getElementById('showWeek12').style.display = "none";
+}
+function hideWeek12() {
+   document.getElementById('week12').style.display = "none";
+   document.getElementById('week12Row').style.display = "none";
+   
+   
+   document.getElementById('hideWeek11').style.display = "block";
+   document.getElementById('hideWeek12').style.display = "none";
+   document.getElementById('showWeek12').style.display = "block";
+}
+</script>
+
+<script>
+function copyTopicsWeek1() {
+    var dropbox = document.getElementById('topicsWeek1').value;
+	document.getElementById('topicsWeek1ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek2() {
+    var dropbox = document.getElementById('topicsWeek2').value;
+	document.getElementById('topicsWeek2ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek3() {
+    var dropbox = document.getElementById('topicsWeek3').value;
+	document.getElementById('topicsWeek3ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek4() {
+    var dropbox = document.getElementById('topicsWeek4').value;
+	document.getElementById('topicsWeek4ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek5() {
+    var dropbox = document.getElementById('topicsWeek5').value;
+	document.getElementById('topicsWeek5ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek6() {
+    var dropbox = document.getElementById('topicsWeek6').value;
+	document.getElementById('topicsWeek6ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek7() {
+    var dropbox = document.getElementById('topicsWeek7').value;
+	document.getElementById('topicsWeek7ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek8() {
+    var dropbox = document.getElementById('topicsWeek8').value;
+	document.getElementById('topicsWeek8ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek9() {
+    var dropbox = document.getElementById('topicsWeek9').value;
+	document.getElementById('topicsWeek9ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek10() {
+    var dropbox = document.getElementById('topicsWeek10').value;
+	document.getElementById('topicsWeek10ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek11() {
+    var dropbox = document.getElementById('topicsWeek11').value;
+	document.getElementById('topicsWeek11ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyTopicsWeek12() {
+    var dropbox = document.getElementById('topicsWeek12').value;
+	document.getElementById('topicsWeek12ID').innerHTML = dropbox;
+}
+</script>
+
+<script>
+function copyReadingsWeek1() {
+    var dropbox = document.getElementById('readingsWeek1').value;
+	document.getElementById('readingsWeek1ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek2() {
+    var dropbox = document.getElementById('readingsWeek2').value;
+	document.getElementById('readingsWeek2ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek3() {
+    var dropbox = document.getElementById('readingsWeek3').value;
+	document.getElementById('readingsWeek3ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek4() {
+    var dropbox = document.getElementById('readingsWeek4').value;
+	document.getElementById('readingsWeek4ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek5() {
+    var dropbox = document.getElementById('readingsWeek5').value;
+	document.getElementById('readingsWeek5ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek6() {
+    var dropbox = document.getElementById('readingsWeek6').value;
+	document.getElementById('readingsWeek6ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek7() {
+    var dropbox = document.getElementById('readingsWeek7').value;
+	document.getElementById('readingsWeek7ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek8() {
+    var dropbox = document.getElementById('readingsWeek8').value;
+	document.getElementById('readingsWeek8ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek9() {
+    var dropbox = document.getElementById('readingsWeek9').value;
+	document.getElementById('readingsWeek9ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek10() {
+    var dropbox = document.getElementById('readingsWeek10').value;
+	document.getElementById('readingsWeek10ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek11() {
+    var dropbox = document.getElementById('readingsWeek11').value;
+	document.getElementById('readingsWeek11ID').innerHTML = dropbox;
+}
+</script>
+<script>
+function copyReadingsWeek12() {
+    var dropbox = document.getElementById('readingsWeek12').value;
+	document.getElementById('readingsWeek12ID').innerHTML = dropbox;
+}
+</script>
+
+
 </head>
 
 	
 <body>
-
 	
-	
-<div id="content" class="tohide";>
 
 
 
 <form name="myform" class="signup-form" action="/register" method="post">
 
       <!-- form header -->
-      <div class="form-header">
-	  <br>
-	  <center><img src="https://javamedvedev.github.io/18/Picture1.jpg" style="width:25%;">
-        <h1>Module Outline Form</h1>
-		</center>
+	  <div class="form-top">
+      <div class="form-header-1">
+	  <br><img src="https://javamedvedev.github.io/18/Picture1.jpg" style="width:100%;">
       </div>
+	  <div class="form-header-2">
+	  <h1>Module Outline Form</h1>
+	  </div>
+	  </div>
 	  <br><br>
 
       <!-- form body -->
-      <div class="form-body">
+      <div id="divtohide2" class="form-body">
 
         <!-- Firstname and Lastname -->
-          <div class="form-group left">
-            <label for="firstname" class="label-title">Module Name</label>
-			<textarea name="inputtext" class="form-input" placeholder="Please enter the module name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; vertical-align:middle"></textarea>
+          <div class="form-group-float-left">
+            <label for="firstname" class="tree-label-title" style="padding-left: 0.5px;">Module Name</label>
+			<textarea name="inputtext" class="form-input" placeholder="Please enter the module name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; vertical-align:middle; padding-top: 6.5px;"></textarea>
           </div>
 		
-			<div class="form-group left">
-				<label for="lastname" class="label-title">Module Code</label>
-				<textarea name="inputtext3" class="form-input" placeholder="Please enter the module code" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none"></textarea>
+			<div class="form-group-float-right">
+				<label for="lastname" class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Module Code</label>
+				<textarea name="inputtext3" class="form-input" placeholder="Please enter the module code" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
 			</div>
-
-          <div class="form-group left">
-            <label class="label-title">Aims & Objectives</label>
-            <div id="ctl00_ContentPlaceHolder1_divServices" style="font-family:Calibri;width:450px; height:150px; overflow-y:scroll;">
+			
+		  <div class="form-group">
+				<label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Aims & Objectives</label>
+				<textarea name="inputtextAims" class="form-input" placeholder="Please list the aims and objectives of the module" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  
+		  <label class="tree-label-title" style="padding-left: 0.5px; margin-bottom: 10px; margin-top:20px;">Your Details</label>
+		  <div>
+		  </div>
+		  <div class="form-group-float-1of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Name</label>
+				<textarea name="inputtextName" class="form-input" placeholder="Please enter your name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div class="form-group-float-2of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Office</label>
+				<textarea name="inputtextOffice" class="form-input" placeholder="Please enter your office number" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Ext</label>
+				<textarea name="inputtextExt" class="form-input" placeholder="Please enter external phone number" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Email</label>
+				<textarea name="inputtextEmail" class="form-input" placeholder="Please enter your email" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div class="form-group">
+				<label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Overall Module Learning Outcomes</label>
+				<textarea name="inputtextOutcomes" class="form-input" placeholder="Please list 5 module learning outcomes" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  
+		  <div class="form-group left">
+            <label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Graduate Attributes</label>
+            <div id="idAttributes" style="font-family:Calibri; width:850px; height:270px;">
 				<style="font-family:Calibri; font-size: 12pt;">
-				<input id="1" type="checkbox" autocomplete="off" name="1"/><label for="Option1"><div id="thing">Option1</div></label><br>
-				<input id="2" type="checkbox" autocomplete="off" name="2"/><label for="Option2"><div id="thing">Option2</div></label><br>
-				<input id="3" type="checkbox" autocomplete="off" name="3"/><label for="Option3"><div id="thing">Option3</div></label><br>
-				<input id="4" type="checkbox" autocomplete="off" name="4"/><label for="Option4"><div id="thing">Option4</div></label><br>
-				<input id="5" type="checkbox" autocomplete="off" name="5"/><label for="Option5"><div id="thing">Option5</div></label><br>
-				<input id="6" type="checkbox" autocomplete="off" name="6"/><label for="Option6"><div id="thing">Option6</div></label><br>
-				<input id="7" type="checkbox" autocomplete="off" name="7"/><label for="Option7"><div id="thing">Option7</div></label><br>
-				<input id="8" type="checkbox" autocomplete="off" name="8"/><label for="Option8"><div id="thing">Option8</div></label>
+				<input id="11" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option1"><div id="thing2">Academic achievement and expertise</div></label><br>
+				<input id="12" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option2"><div id="thing2">Problem solving - Ability to solve new challenges and problems</div></label><br>
+				<input id="13" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option3"><div id="thing2">Critical thinking - Able to make sense of complex information from a variety of sources</div></label><br>
+				<input id="14" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option4"><div id="thing2">Communication skills in a variety of contexts, styles and media</div></label><br>
+				<input id="15" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option5"><div id="thing2">Teamwork, collaboration and effective leadership</div></label><br>
+				<input id="16" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option6"><div id="thing2">Creative, enterprising and resourceful</div></label><br>
+				<input id="17" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option7"><div id="thing2">Personal responsibility and commitment to lifelong learning</div></label><br>
+				<input id="18" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option8"><div id="thing2">Good citizenship - Valuing of ethical and professional standards, integrity, responsibility and good citizenship</div></label><br>
+				<input id="19" type="checkbox" class="checkboxAttributes" autocomplete="off" name=""/><label for="Option9"><div id="thing2">Global awareness - Appreciation of the importance of place, identity and culture in a global context</div></label>
 				</style>
             </div>
           </div>
 		  
 		  <div class="form-group left">
-				<label for="lastname" class="label-title">Name</label>
-				<textarea name="inputtextName" class="form-input" placeholder="Please enter your name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none"></textarea>
-			</div>
-        </div>
+            <label class="tree-label-title" style="padding-left: 0.5px;margin-top:10px;">UN Sustainable Development Goals (SDGs)</label>
+            <div id="idAims" style="font-family:Calibri;width:850px; height:500px;">
+				<style="font-family:Calibri; font-size: 12pt;">
+				<input id="1" type="checkbox" autocomplete="off" name="1"/><label for="Option1"><div id="thing">No Poverty</div></label><br>
+				<input id="2" type="checkbox" autocomplete="off" name="2"/><label for="Option2"><div id="thing">Zero Hunger</div></label><br>
+				<input id="3" type="checkbox" autocomplete="off" name="3"/><label for="Option3"><div id="thing">Good Health and Well-being</div></label><br>
+				<input id="4" type="checkbox" autocomplete="off" name="4"/><label for="Option4"><div id="thing">Quality Education</div></label><br>
+				<input id="5" type="checkbox" autocomplete="off" name="5"/><label for="Option5"><div id="thing">Gender Equality</div></label><br>
+				<input id="6" type="checkbox" autocomplete="off" name="6"/><label for="Option6"><div id="thing">Clean Water and Sanitation</div></label><br>
+				<input id="7" type="checkbox" autocomplete="off" name="7"/><label for="Option7"><div id="thing">Affordable and Clean Energy</div></label><br>
+				<input id="8" type="checkbox" autocomplete="off" name="8"/><label for="Option8"><div id="thing">Decent Work and Economic Growth</div></label><br>
+				<input id="9" type="checkbox" autocomplete="off" name="9"/><label for="Option1"><div id="thing">Industry, Innovation and Infrastructure</div></label><br>
+				<input id="10" type="checkbox" autocomplete="off" name="10"/><label for="Option2"><div id="thing">Reduced Inequality</div></label><br>
+				<input id="11" type="checkbox" autocomplete="off" name="11"/><label for="Option3"><div id="thing">Sustainable Cities and Communities</div></label><br>
+				<input id="12" type="checkbox" autocomplete="off" name="12"/><label for="Option4"><div id="thing">Responsible Consumption and Production</div></label><br>
+				<input id="13" type="checkbox" autocomplete="off" name="13"/><label for="Option5"><div id="thing">Climate Action</div></label><br>
+				<input id="14" type="checkbox" autocomplete="off" name="14"/><label for="Option6"><div id="thing">Life Below Water</div></label><br>
+				<input id="15" type="checkbox" autocomplete="off" name="15"/><label for="Option7"><div id="thing">Life on Land</div></label><br>
+				<input id="16" type="checkbox" autocomplete="off" name="16"/><label for="Option8"><div id="thing">Peace and Justice Strong Institutions</div></label><br>
+				<input id="17" type="checkbox" autocomplete="off" name="17"/><label for="Option8"><div id="thing">Partnerships to achieve the Goal</div></label>
+				</style>
+            </div>
+          </div>
+		  
+		  <div class="form-group left">
+				<label class="tree-label-title" style="padding-left: 0.5px;margin-top:10px;">Programme(s)</label>
+				<textarea name="inputtextProgrammes" class="form-input" placeholder="Please list the programmes/instances that your module will be delivered to" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div class="form-group left" style="margin-bottom: 40px;">
+				<label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Delivery Format</label> (please consult with Head of Department and Programme Director(s))<br><br>
+					<select id="mydropbox" onchange="copyValue()" class="tree-button-show2" style="margin-left:0px; margin-top:5px;margin-bottom:-5px;">
+						<option>Please select</option>
+						<option value="an on-campus">On-campus</option>
+						<option value="a flipped classroom">Flipped classroom</option>
+						<option value="an online">Online</option>
+					</select>
+		  </div>
+		 <label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 20px;">Classes Schedule</label>
+		  <div>
+		  </div>
+		 <div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Day</label>
+				<input type='textbox' id='textbox1' class="form-input" placeholder="Please enter the day as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Time</label>
+				<input type='textbox' id='textbox2' class="form-input" placeholder="Please enter time as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Buiding</label>
+				<input type='textbox' id='textbox3' class="form-input" placeholder="Please enter the building as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Room</label>
+				<input type='textbox' id='textbox4' class="form-input" placeholder="Please enter the room as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+	</div>
+</form>	
+	
+	<div id="welcomeDiv"  style="display:none;" class="form-body">
+	
+			<label for="lastname" class="tree-label-title">Group A</label>
+		  <div>
+		  </div>
+			<div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Day</label>
+				<input type='textbox' id='textbox5' class="form-input" placeholder="Please enter the day as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Time</label>
+				<input type='textbox' id='textbox6' class="form-input" placeholder="Please enter time as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Buiding</label>
+				<input type='textbox' id='textbox7' class="form-input" placeholder="Please enter the building as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Room</label>
+				<input type='textbox' id='textbox8' class="form-input" placeholder="Please enter the room as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		</div>
+		
+<div id="welcomeDiv3"  style="display:none;" class="form-body" >
+<label for="lastname" class="tree-label-title">Group B</label>
+		  <div>
+		  </div>
+			<div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Day</label>
+				<input type='textbox' id='textbox9' class="form-input" placeholder="Please enter the day as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Time</label>
+				<input type='textbox' id='textbox10' class="form-input" placeholder="Please enter time as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Buiding</label>
+				<input type='textbox' id='textbox11' class="form-input" placeholder="Please enter the building as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Room</label>
+				<input type='textbox' id='textbox12' class="form-input" placeholder="Please enter the room as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+</div>
+<div id="welcomeDiv5"  style="display:none;" class="form-body" >
+<label for="lastname" class="tree-label-title">Group C</label>
+		  <div>
+		  </div>
+			<div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Day</label>
+				<input type='textbox' id='textbox13' class="form-input" placeholder="Please enter the day as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Time</label>
+				<input type='textbox' id='textbox14' class="form-input" placeholder="Please enter time as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Buiding</label>
+				<input type='textbox' id='textbox15' class="form-input" placeholder="Please enter the building as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Room</label>
+				<input type='textbox' id='textbox16' class="form-input" placeholder="Please enter the room as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+</div>
+<div id="welcomeDiv7"  style="display:none;" class="form-body" >
+<label for="lastname" class="tree-label-title">Group D</label>
+		  <div>
+		  </div>
+			<div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Day</label>
+				<input type='textbox' id='textbox17' class="form-input" placeholder="Please enter the day as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Time</label>
+				<input type='textbox' id='textbox18' class="form-input" placeholder="Please enter time as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Buiding</label>
+				<input type='textbox' id='textbox19' class="form-input" placeholder="Please enter the building as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Room</label>
+				<input type='textbox' id='textbox20' class="form-input" placeholder="Please enter the room as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+</div>
+<div id="welcomeDiv9"  style="display:none;" class="form-body" >
+<label for="lastname" class="tree-label-title">Group E</label>
+		  <div>
+		  </div>
+			<div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Day</label>
+				<input type='textbox' id='textbox21' class="form-input" placeholder="Please enter the day as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Time</label>
+				<input type='textbox' id='textbox22' class="form-input" placeholder="Please enter time as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Buiding</label>
+				<input type='textbox' id='textbox23' class="form-input" placeholder="Please enter the building as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Room</label>
+				<input type='textbox' id='textbox24' class="form-input" placeholder="Please enter the room as scheduled" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+</div>
 
-      <!-- form-footer -->
-      <div class="form-footer">
+<input type="button" name="answer" value="Add Group" onclick="show2()" id="show2" class="tree-button-show2" style="margin-top:-10px;"/>
+<input type="button" name="answer2" value="Delete Group" onclick="hide2()" id="hide2" style="display:none;" class="tree-button-left" />
+
+<input type="button" name="answer" value="Add Group" onclick="show4()" id="show4" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Group" onclick="hide4()" id="hide4" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Group" onclick="show6()" id="show6" style="display:none;" class="tree-button-right"/>
+<input type="button" name="answer" value="Delete Group" onclick="hide6()" id="hide6" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Group" onclick="show8()" id="show8" style="display:none;" class="tree-button-right"/>
+<input type="button" name="answer" value="Delete Group" onclick="hide8()" id="hide8" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Group" onclick="show10()" id="show10" style="display:none;" class="tree-button-right"/>
+<input type="button" name="answer" value="Delete Group" onclick="hide10()" id="hide10" style="display:none; margin-top: 0px;" class="tree-button-show2"/>
+	
+<form name="myform11" class="signup-form" action="/register" method="post">	
+	<div class="form-body">
+		  
+		  <div class="form-group left">
+				<label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Core Text</label>
+				<textarea name="inputtextCore" class="form-input" placeholder="Please list the key readings for this module. " rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>		  
+
+<label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px;">Assessment</label>	  
+<div>
+</div>
+		  <div class="form-group-float-1of4" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">End of Year Examination %</label>
+				<input type='textbox' id='exam%' class="form-input" placeholder="Please provide the end of the year examination per cent" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div class="form-group-float-2of4" style="margin-top:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Continuous Assignment %</label>
+				<input type='textbox' id='assignment%' class="form-input" placeholder="Please provide continuous assignment per cent" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>		
+		  
+		  <div class="form-group left">
+				<label style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Outline specific CA/exam details if necessary</label>
+				<textarea name="inputtextDetails" id = "detailsInput" class="form-input" placeholder="Please provide CA/exam details, submission expectations, penalties for late/no submissions, etc." rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>		  
+<label class="tree-label-title" style="padding-left: 0.5px;margin-top:20px; margin-bottom: 10px;">Workload</label>	  
+<div>
+</div>		  
+		  <div class="form-group-float-1of4" style="margin-bottom: 3px">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Credit weighting</label> (ECTS)
+				<textarea name="inputtextECTS" id='idECTS' class="form-input" placeholder="Please enter your name" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>	
+		  <div class="form-group-float-2of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Online weekly instructional hours</label>
+				<textarea name="inputtextOnlineHours" id="idOnlineHours" class="form-input" placeholder="Please enter your office number" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Independent assignment work</label> (hours)
+				<textarea name="inputtextAssignmentHours" id="idAssignmentHours" class="form-input" placeholder="Please enter external phone number" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Independent study</label> (hours)
+				<textarea name="inputtextStudyHours" id="idStudyHours" class="form-input" placeholder="Please enter your email" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  
+		  <div>
+		  </div>
+		  
+		  <div class="form-group-float-3of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Associated hours</label>
+				<textarea name="inputtextAssociatedHours" id="idAssociatedHours" class="form-input" placeholder="Please enter external phone number" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>		  
+		  <div class="form-group-float-4of4">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Total Student Effort</label> (hours)
+				<textarea name="inputtextTotalHours" id= "idTotalHours" class="form-input" placeholder="Please enter your email" cols="25" rows="4" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  
+		  <label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 20px; margin-bottom: 10px; margin-top:25px;">Schedule of Module Content & Learning Material</label>
+		  <div>
+		  </div>
+		  <label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 1</label>
+		  <div>
+		  </div>
+		 <div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek1' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek1" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left" style="margin-bottom:10px;">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek1" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>			  
+		  
+	</div>
+</form>
+
+<div id="divtohide">	
+<div id="week2"  style="display:none; margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 2</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek2' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek2" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek2" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week3"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 3</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek3' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek3" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek3" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week4"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 4</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek4' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek4" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek4" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week5"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 5</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek5' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek5" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek5" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week6"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 6</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek6' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek6" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek6" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week7"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 7</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek7' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek7" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek7" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week8"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 8</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek8' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek8" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek8" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week9"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 9</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek9' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek9" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek9" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week10"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 10</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek10' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek10" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek10" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week11"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 11</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek11' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek11" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek11" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+
+<div id="week12"  style="display:none;margin-top:-20px" class="form-body" >
+<label for="lastname" class="tree-label-title" style="color: #68065b; font-size: 17px;">Week 12</label>
+		  <div>
+		  </div>
+			<div class="form-group-week-name" style="margin-top:10px;";>
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Unit Name</label>
+				<input type='textbox' id='nameWeek12' class="form-input" placeholder="Please enter the unit name" style="text-align: left; font-family:Calibri; font-size: 12pt; overflow:auto; resize:none; padding-top: 3px;margin-top:10px;">
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">General Topics</label>
+				<textarea name="inputtextDetails" id = "topicsWeek12" class="form-input" placeholder="Please list general topics included in this unit" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+		  <div>
+		  </div>
+		  <div class="form-group left">
+				<label for="lastname" style="padding-left: 0.5px; text-size: 12px; font-weight:bold;color:#383838;">Readings</label>
+				<textarea name="inputtextDetails" id = "readingsWeek12" class="form-input" placeholder="Please list readings/chapters/articles/case studies" rows="4" cols="50" style="text-align: left; font-family:Calibri; font-size: 12pt;height:auto;overflow:auto;resize:none; padding-top: 6.5px;"></textarea>
+		  </div>
+</div>
+</div>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek2()" id="showWeek2" class="tree-button-show2" style="margin-top:-10px;"/>
+<input type="button" name="answer2" value="Delete Week" onclick="hideWeek2()" id="hideWeek2" style="display:none;" class="tree-button-left" />
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek3()" id="showWeek3" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek3()" id="hideWeek3" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek4()" id="showWeek4" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek4()" id="hideWeek4" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek5()" id="showWeek5" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek5()" id="hideWeek5" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek6()" id="showWeek6" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek6()" id="hideWeek6" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek7()" id="showWeek7" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek7()" id="hideWeek7" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek8()" id="showWeek8" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek8()" id="hideWeek8" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek9()" id="showWeek9" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek9()" id="hideWeek9" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek10()" id="showWeek10" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek10()" id="hideWeek10" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek11()" id="showWeek11" style="display:none;" class="tree-button-right" />
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek11()" id="hideWeek11" style="display:none;" class="tree-button-left"/>
+
+<input type="button" name="answer" value="Add Week" onclick="showWeek12()" id="showWeek12" style="display:none;" class="tree-button-right"/>
+<input type="button" name="answer" value="Delete Week" onclick="hideWeek12()" id="hideWeek12" style="display:none; margin-top: 0px;" class="tree-button-show2"/>
+	
+	
+<form name="myform22" class="signup-form" action="/register" method="post">	
+<!-- form-footer -->
+
+
+<div class="form-footer">
 	  
 <table class="footertable" width="100%" cellpadding="0" cellspacing="0" style="border: none;">
 <tr style="border: none;">
 <td style="border: none;">
-		<input type="button" class="btn" value="Print Module Outline" style="cooverflow:auto;" onClick="addtext();addtext3();typeName();window.print()">
+		<input type="button" class="btn" value="Print Module Outline" style="cooverflow:auto;" onClick="addtext(); addtext3(); typeAims(); typeName(); typeOffice(); typeExt(); typeEmail(); typeOutcomes(); typeProgrammes(); typeCore(); copyExam(); copyAssignment(); copyDetails(); copyECTS(); copyOnlineHours(); copyAssignmentHours(); copyStudyHours(); copyAssociatedHours(); copyTotalHours();copytextbox1();copytextbox2();copytextbox3();copytextbox4(); copytextbox5(); copytextbox6(); copytextbox7(); copytextbox8(); copytextbox9(); copytextbox10(); copytextbox11(); copytextbox12(); copytextbox13(); copytextbox14(); copytextbox15(); copytextbox16(); copytextbox17(); copytextbox18(); copytextbox19(); copytextbox20(); copytextbox21(); copytextbox22(); copytextbox23(); copytextbox24(); copyNameWeek1(); copyNameWeek2();copyNameWeek3();copyNameWeek4();copyNameWeek5();copyNameWeek6();copyNameWeek7(); copyNameWeek8(); copyNameWeek9(); copyNameWeek10(); copyNameWeek11(); copyNameWeek12(); copyTopicsWeek1(); copyTopicsWeek2(); copyTopicsWeek3(); copyTopicsWeek4(); copyTopicsWeek5(); copyTopicsWeek6(); copyTopicsWeek7(); copyTopicsWeek8(); copyTopicsWeek9(); copyTopicsWeek10(); copyTopicsWeek11(); copyTopicsWeek12(); copyReadingsWeek1(); copyReadingsWeek2(); copyReadingsWeek3(); copyReadingsWeek4(); copyReadingsWeek5(); copyReadingsWeek6(); copyReadingsWeek7(); copyReadingsWeek8(); copyReadingsWeek9(); copyReadingsWeek10(); copyReadingsWeek11(); copyReadingsWeek12(); window.print()">
 </td>
 <td style="border: none;">
-	  <div style="color:#79898d;text-align:right;font-family:Calibri; font-size: 12pt; overflow:auto;">Sergey Medvedev 2022</div>
+	  <div style="color:#79898d;text-align:right;font-family:Calibri; font-size: 12pt; overflow:auto;">Sergei Medvedev 2022</div>
 </td>
 
 </tr>
 </table>
       </div>
-
-    </form>
-
-</div>
-
+</form>
+	  
    <div id="dvContainer" class="toprint">    
 	
 	
@@ -365,15 +2032,19 @@ function promptName() {
 <table width="100%" cellpadding="0" cellspacing="0">
 	<tbody>
 		<tr>
-			<td width="18%" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
+			<td width="18%" style="border: 1.00pt solid #000000; padding: 0.02in">
+			<p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Aims
-				&amp; Objectives</b></font></font></p>
+				& Objectives</b></font></font>
+			</p>
 			</td>
 			<td colspan="4" width="81%" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
 			
-		<div id="myDiv" style="font-family:Calibri; font-size:16px; margin-left: 10px;"></div>
+				<form name="formAims">
+					<div contenteditable type="textarea" id="textAims" name="outputtextAims" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
+				</form>		
 			
-				<p class="msonormal" style="orphans: 128; text-decoration: none"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">
 			</td>
 		</tr>
 	</tbody>
@@ -399,48 +2070,37 @@ function promptName() {
 			<td width="23%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
 				<form name="formName">
 					<textarea name="outputtextName" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px; max-height: 30px; resize:none;margin-left: 10px;" ></textarea>
-				</form>
-				</font></p>
+				</form></p>
 			</td>
 			<td width="12%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Room
-				No.]</font></font></p>
+				<form name="formOffice">
+					<textarea name="outputtextOffice" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px; max-height: 30px; resize:none;margin-left: 0px;" ></textarea>
+				</form></p>
 			</td>
 			<td width="15%" valign="top" style="border: none; padding: 0in"><p class="msonormal" style="margin-right: 0.06in">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Phone
-				ext]</font></font></p>
+				<form name="formExt">
+					<textarea name="outputtextExt" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px; max-height: 30px; resize:none;margin-left: 0px;" ></textarea>
+				</form></p>
 			</td>
-			<td width="29%" valign="top" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Email]</font></font></p>
+			<td width="29%" valign="top" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in"></p>
+				<form name="formEmail">
+					<textarea name="outputtextEmail" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px; max-height: 30px; resize:none;margin-left: 0px;" ></textarea>
+				</form>
 			</td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
-			<td width="18%" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
-				&nbsp;</p>
-				<p class="msonormal" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Overall
-				Module Learning Outcomes</b></font></font></p>
+			<td width="18%" style="border: 1.00pt solid #000000; padding: 0.02in;">
+				<p style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Overall Module Learning Outcomes</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" valign="top" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
-
-<p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Upon
-				completion of this module, you will be able to:</font></font></p>
-				<ul type="disc">
-					<li><p style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[List
-					5 module <a href="https://www.nuigalway.ie/centre-excellence-learning-teaching/teachinglearning/learningoutcomes/">Learning
-					Outcomes</a>]</font></font></font> 
-					</p>
-					<li><p style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[See
-					some tips for writing effective learning outcomes using Bloom&rsquo;s
-					Taxonomy</font></font></font><font color="#0000ff"> </font><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><a href="https://tips.uark.edu/using-blooms-taxonomy/">here</a>]</font></font></font>
-										</p>
-					<li><p style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Demonstrate
-					link of coursework / theory to (any of) the UN SDGs &ndash; link
-					to UN SDGs available <a href="https://sdgs.un.org/goals">here</a>]</font></font></font>
-										</p>
-				</ul>
+			<td colspan="4" width="81%" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.15in;">
+				<form name="formOutcomes">
+					<div contenteditable type="textarea" id="texttype" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
+				</form>
+			
+			</td>
 		</tr>
 	</tbody>
 	<tbody>
@@ -449,14 +2109,8 @@ function promptName() {
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Graduate
 				Attributes</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Successful,
-				fully engaged students have opportunities through the coursework
-				and the broader student experience to develop a wide range of
-				knowledge, skills and dispositions. Upon completion of this
-				module, you will acquire the following key gradate attributes:</font></font></p>
-				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[List
-				key graduate attributes here (options available </font></font></font><a href="https://ceim.su.nuigalway.ie/about/graduate-attributes/"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">here</font></font></a><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">)]</font></font></font></p>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+				<div id="myAttributes" style="font-family:Calibri; font-size:16px; margin-left: 6px;"></div>
 			</td>
 		</tr>
 	</tbody>
@@ -466,13 +2120,8 @@ function promptName() {
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>UN
 				Sustainable Development Goals (SDGs)</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128; margin-right: 0.06in">
-				<font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Option
-				2</font></font></font></p>
-				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[List
-				17 interlinked global goals (icons?) and select which ones (if
-				any) the modules examines in teaching and/or assessment work.
-				SDGs available </font></font></font><a href="https://sdgs.un.org/goals"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">here</font></font></a><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">]</font></font></font></p>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+				<div id="myDiv" style="font-family:Calibri; font-size:16px; margin-left: 6px;"></div>
 			</td>
 		</tr>
 	</tbody>
@@ -481,10 +2130,11 @@ function promptName() {
 			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Programme(s)</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">02</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				of programmes/instances that your module will be delivered to.</font></font></p>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+				<form name="formProgrammes">
+					<div contenteditable type="textarea" id="textProgrammes" name="outputtextProgrammes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
+				</form>	
 			</td>
 		</tr>
 	</tbody>
@@ -495,187 +2145,266 @@ function promptName() {
 				Format</b></font></font></p>
 			</td>
 			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">This
-				module will be delivered through a <font color="#808080">[insert
-				format, e.g. on-campus, flipped classroom, etc. &ndash; please
-				consult with Head of Department and Programme Director(s)]
-				</font>approach. Students are expected to attend and engage with
-				class activities where appropriate. </font></font>
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">This module will be delivered through <span id="spanID"> </span> approach. Students are expected to attend and engage with class activities where appropriate.</font></font>
 				</p>
-				<p class="msonormal">&nbsp;</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Classes
-				are scheduled as follows:</font></font></p>
-				<p class="msonormal">&nbsp;</p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Classes are scheduled as follows:</font></font></p>
+				
 				<table cellpadding="0" cellspacing="0">
 					<tr valign="top">
 						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
 						</td>
-						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox1ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
-							&ndash; xx:00</font></font></p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox2ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox3ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox4ID"></span>
 						</td>
 					</tr>
 				</table>
-				<p class="msonormal">&nbsp;</p>
-				<p class="msonormal" style="orphans: 128"><font color="#7f7f7f"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Or
-				for large classes, please specify groups]</font></font></font></p>
-				<p class="msonormal">&nbsp;</p>
-				<table cellpadding="0" cellspacing="0">
+				<br>
+			
+<div id="welcomeDiv2"  style="display:none;" class="answer_list" >
+
+<table cellpadding="0" cellspacing="0">
 					<tr>
 						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
-							A </b></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Delete
-							if unapplicable]</font></font></p>
+							A </b></font></font></p>
 						</td>
 					</tr>
 					<tr valign="top">
-						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox5ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
-							&ndash; xx:00</font></font></p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox6ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox7ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox8ID"></span>
 						</td>
 					</tr>
 				</table>
-				<p class="msonormal">&nbsp;</p>
-				<table cellpadding="0" cellspacing="0">
+				<br>
+</div>
+<div id="welcomeDiv4"  style="display:none;" class="answer_list" >
+<table cellpadding="0" cellspacing="0">
 					<tr>
 						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
-							B </b></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Delete
-							if unapplicable]</font></font></p>
+							B </b></font></font></p>
 						</td>
 					</tr>
 					<tr valign="top">
-						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox9ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
-							&ndash; xx:00</font></font></p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox10ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox11ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox12ID"></span>
 						</td>
 					</tr>
 				</table>
-				<p class="msonormal">&nbsp;</p>
-				<table cellpadding="0" cellspacing="0">
+				<br>
+</div>
+
+<div id="welcomeDiv6"  style="display:none;" class="answer_list" >
+<table cellpadding="0" cellspacing="0">
 					<tr>
 						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
-							C </b></font></font><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Delete
-							if unapplicable]</font></font></p>
+							C </b></font></font></p>
 						</td>
 					</tr>
 					<tr valign="top">
-						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox13ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Xx:00
-							&ndash; xx:00</font></font></p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox14ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox15ID"></span>
 						</td>
 					</tr>
 					<tr valign="top">
 						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
 							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
 						</td>
-						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-							&nbsp;</p>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox16ID"></span>
 						</td>
 					</tr>
 				</table>
-				<p class="msonormal">&nbsp;</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">Map of NUIG Campus and location of buildings is available <a href="https://www.nuigalway.ie/media/buildingsoffice/files/maps/NUI-Galway-Campus-A4-Map_D6.pdf">here</a></span></font></font></p>
-				<p class="msonormal">&nbsp;</p>
+				<br>
+</div>
+
+<div id="welcomeDiv8"  style="display:none;" class="answer_list" >
+<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
+							D </b></font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
+						</td>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox17ID"></span>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox18ID"></span>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox19ID"></span>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox20ID"></span>
+						</td>
+					</tr>
+				</table>
+				<br>
+</div>
+<div id="welcomeDiv10"  style="display:none;" class="answer_list" >
+<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="2" width="220" valign="top" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal" align="center">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Group
+							E </b></font></font></p>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border: 1.00pt solid #000000; padding: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Day</font></font></p>
+						</td>
+						<td width="142" style="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox21ID"></span>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Time</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox22ID"></span>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Building</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox23ID"></span>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td width="78" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal">
+							<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Room</font></font></p>
+						</td>
+						<td width="142" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+						<span id="textbox24ID"></span>
+						</td>
+					</tr>
+				</table>
+				<br>
+</div>
+
+
 			</td>
 		</tr>
 	</tbody>
@@ -710,17 +2439,11 @@ function promptName() {
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Core
 				Text</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128; margin-right: 0.06in">
-				<font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Is
-				the textbook available online through the NUIG library?]</font></font></font></p>
-				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Consider
-				cost of textbook, required edition, and access/audio options,
-				where possible for students with support needs]</font></font></font></p>
-				<p class="msonormal" style="orphans: 128; margin-right: 0.06in"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Specify
-				if you are not using a textbook and whether alternative sources
-				will be made available, e.g. case studies, articles, etc &ndash;
-				see &ldquo;Schedule of Module Content &amp; Learning Material&rdquo;
-				section]</font></font></font></p>
+			<td colspan="4" width="81%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+				<form name="formCore">
+					<div contenteditable type="textarea" id="textCore" name="outputtextCore" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
+				</form>	
 			</td>
 		</tr>
 	</tbody>
@@ -731,27 +2454,17 @@ function promptName() {
 			</td>
 			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">End
-				of Year Examination: xx% </font></font>
+				of Year Examination (%): <span id="examID"></span></font></font>
 				</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Continuous
-				Assignment: xx% </font></font>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Continuous Assignment (%): <span id="assignmentID"></span></font></font>
 				</p>
-				<p class="msonormal">&nbsp;</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Details
-				on the continuous assignments will be provided during the term. </font></font>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Details on the continuous assignments will be provided during the term. </font></font>
 				</p>
-				<p class="msonormal">&nbsp;</p>
 				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">To
-				avail of the associated marks each student must submit the
-				assignment by the date indicated on assessment material (to be
-				announced). </font></font>
+				avail of the associated marks each student must submit the assignment by the date indicated on assessment material (to be announced). </font></font>
 				</p>
-				<p class="msonormal" style="orphans: 128"><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Outline
-				specific CA/exam details if necessary, submission expectations,
-				and penalties for late/no submissions, where applicable. Consider
-				whether you can also incorporate aspects of SDGs or &lsquo;public
-				good&rsquo; into your Semester for teaching and assessment, e.g.
-				a guest lecture on SDGs related to your topic?]</font></font></font></p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><span id="detailsID"></span></font></font>
+				</p>
 			</td>
 		</tr>
 	</tbody>
@@ -760,24 +2473,19 @@ function promptName() {
 			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Workload</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="orphans: 128">
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+				<p class="msonormal">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Credit
-				weighting: x ECTS </font></font><font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Details
-				on NUIG ECTS and workloads available <a href="https://www.nuigalway.ie/media/celt/files/coursedesign/ECTS.pdf">here</a>]</font></font></font></p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Online
-				weekly instructional hours: x </font></font>
+				weighting (ECTS): <span id="ectsID"></span> </font></font></p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Online weekly instructional hours: <span id="onlineHoursID"></span> </font></font>
 				</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Independent
-				assignment work (hours): x </font></font>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Independent assignment work (hours): <span id="assignmentHoursID"></span> </font></font>
 				</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Independent
-				study (hours): x </font></font>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Independent study (hours): <span id="studyHoursID"></span> </font></font>
 				</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Associated
-				hours: x </font></font>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Associated hours (hours): <span id="associatedHoursID"></span> </font></font>
 				</p>
-				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Total
-				Student Effort: x hours</font></font></p>
+				<p class="msonormal"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Total Student Effort (hours): <span id="totalHoursID"></span></font></font></p>
 			</td>
 		</tr>
 	</tbody>
@@ -786,32 +2494,26 @@ function promptName() {
 			<td width="18%" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Plagiarism</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" align="right" style="margin-right: 0.06in">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Plagiarism
-				is the use of another person&rsquo;s ideas or work without
-				appropriate acknowledgement or credit. Plagiarism may be
-				intentional or unintentional. </font></font>
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in;"><p class="msonormal" align="left" style="margin-right: 0.06in">
+				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Plagiarism is the use of another person&rsquo;s ideas or work without appropriate acknowledgement or credit. Plagiarism may be intentional or unintentional. </font></font>
 				</p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><u><b>Intentional</b></u></font></font>
+				<p class="msonormal" align="left" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><u><b>Intentional</b></u></font></font>
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">plagiarism
-				is the clear intent to pass off another person&rsquo;s work or
+				is the clear intent to pass off another person's work or
 				ideas as your own for your own gain.&nbsp; </font></font>
 				</p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><u><b>Unintentional</b></u></font></font>
+				<p class="msonormal" align="left" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><u><b>Unintentional</b></u></font></font>
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">plagiarism
 				may occur if you do not understand the appropriate way to
 				acknowledge the source of your ideas and information.&nbsp; </font></font>
 				</p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">If
+				<p class="msonormal" align="left" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">If
 				you are unsure of the acceptable methods of acknowledgment you
 				should refer to the NUIG <a href="https://www.nuigalway.ie/plagiarism/">Code
 				of Practice for Dealing with Plagiarism</a>, consult with your
 				lecturer or the library staff.&nbsp; Proven plagiarism is a very
 				serious matter which may result in severe disciplinary action
 				and/or exclusion from the University.</font></font></p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
 				<p class="msonormal" style="margin-right: 0.06in"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Ensure
 				all assignment submissions include a signed plagiarism
 				statement.&nbsp; </font></font>
@@ -825,7 +2527,7 @@ function promptName() {
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Referencing
 				&amp; Citation</b></font></font></p>
 			</td>
-			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" align="right" style="margin-right: 0.06in">
+			<td colspan="4" width="81%" valign="top" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">Correct
 				referencing and citation avoids plagiarism.&nbsp; There are
 				varying referencing styles available but the most popular is the
@@ -833,7 +2535,7 @@ function promptName() {
 				journal articles, books, electronic information and various other
 				supports is available from the NUI, Galway Library at the
 				following link:</font></font></p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in"><a href="http://libguides.library.nuigalway.ie/c.php?g=543943&amp;p=4591416"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">http://libguides.library.nuigalway.ie/c.php?g=543943&amp;p=4591416</font></font></a><font color="#0000ff">
+				<p class="msonormal" style="margin-right: 0.06in"><a href="http://libguides.library.nuigalway.ie/c.php?g=543943&amp;p=4591416"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">http://libguides.library.nuigalway.ie/c.php?g=543943&amp;p=4591416</font></font></a><font color="#0000ff">
 				</font>
 				</p>
 			</td>
@@ -855,8 +2557,7 @@ function promptName() {
 				format, please contact the lecturer to explore alternative format
 				options.</font></font> 
 				</p>
-				<p class="msonormal" align="right" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" align="right" style="orphans: 128; margin-right: 0.06in">
+				<p class="msonormal" style="orphans: 128; margin-right: 0.06in">
 				<font color="#808080"><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">[Please
 				not, it is relatively easy to use and can be really helpful.&nbsp;
 				Below is a link to a very short introductory video - you can try
@@ -949,226 +2650,149 @@ schedule of module content and learning material.</font></font></p>
 		<tr>
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				1: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span>&nbsp;</p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span>&nbsp;</p>
+				1: <span id="nameWeek1ID"></span> 
+				</b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek1ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek1ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
+				
 			</td>
 		</tr>
-		<tr>
+		<tr id="week2Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				2: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				2: <span id="nameWeek2ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek2ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek2ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week3Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				3: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				3: <span id="nameWeek3ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek3ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
+				
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek3ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week4Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				4: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				4: <span id="nameWeek4ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek4ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek4ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week5Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				5: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				5: <span id="nameWeek5ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek5ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek5ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week6Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				6: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				6: <span id="nameWeek6ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek6ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek6ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week7Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				7: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				7: <span id="nameWeek7ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek7ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
+				
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek7ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week8Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				8: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				8: <span id="nameWeek8ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek8ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek8ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week9Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				9: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				9: <span id="nameWeek9ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek9ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek9ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week10Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				10: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				10: <span id="nameWeek10ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek10ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek10ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week11Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				11: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				11: <span id="nameWeek11ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek11ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
-				<p class="msonormal" style="margin-right: 0.06in">&nbsp;</p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek11ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
-		<tr>
+		<tr id="week12Row" style="display:none;">
 			<td width="293" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0.02in; padding-right: 0.02in"><p class="msonormal" style="margin-right: 0.06in">
 				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt"><b>Week
-				12: [Unit Name]</b></font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol">&middot;</font><span style="font-variant: normal"><font face="Symbol">&nbsp;&nbsp;
-				</font></span><font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				general topics included in this unit</font></font></p>
-				<p class="msonormal" style="margin-left: 0.15in; text-indent: -0.15in">
-				<font face="Symbol"><font size="2" style="font-size: 11pt">&middot;</font></font><span style="font-variant: normal"><font face="Symbol"><font size="2" style="font-size: 11pt">&nbsp;&nbsp;
-				</font></font></span>&nbsp;</p>
+				12: <span id="nameWeek12ID"></span></b></font></font></p>
+				<div contenteditable type="textarea" id="topicsWeek12ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+					</div>
 			</td>
-			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in"><p class="msonormal">
-				<font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">List
-				readings/chapters/articles/case studies</font></font></p>
+			<td width="302" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0.02in">
+			<div contenteditable type="textarea" id="readingsWeek12ID" name="outputtextOutcomes" style="text-align: left; font-family:Calibri; font-size: 12pt; border:0px;margin-left: 10px; white-space:pre">
+				</div>
 			</td>
 		</tr>
 	</table>
