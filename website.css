@@ -1,0 +1,111 @@
+body,
+div,
+ul,
+li,
+blockquote {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+body {
+   background: #313145;
+}
+
+a {
+   transition: all 0.3s ease 0s;
+}
+
+#menu {
+   width: 950px;
+   height: 120px;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   position: absolute;
+}
+
+nav ul {
+   list-style: none;
+   overflow: hidden;
+   position: relative;
+}
+
+nav ul li {
+   float: left;
+   margin: 0 20px 0 0;
+}
+
+nav ul li a {
+   display: block;
+   width: 120px;
+   height: 120px;
+
+   border-radius: 4px;
+}
+
+nav ul li:nth-child(1) a {
+   background-color: #5BB2FC;
+   background-position: 28px 28px;
+}
+
+nav ul li:nth-child(2) a {
+   background-color: #58EBD3;
+   background-position: 28px -96px;
+   background-image: url("https://www.shareicon.net/data/256x256/2016/11/22/854956_search_512x512.png");
+   background-repeat: no-repeat;
+}
+
+nav ul li:nth-child(3) a {
+   background-color: #FFA659;
+   background-position: 28px -222px;
+}
+
+nav ul li:nth-child(4) a {
+   background-color: #FF7A85;
+   background-position: 28px -342px;
+}
+
+nav ul li:nth-child(5) a {
+   background-color: #58EBD3;
+   background-position: 28px -462px;
+}
+
+nav ul li:nth-child(1) a:hover, nav ul li:nth-child(2) a:hover, nav ul li:nth-child(3) a:hover, nav ul li:nth-child(4) a:hover, nav ul li:nth-child(5) a:hover {
+   opacity: 0.8;
+}
+
+nav ul li a span {
+   font: 50px "Dosis", sans-serif;
+   text-transform: uppercase;
+   position: absolute;
+   left: 700px;
+   top: 29px;
+   visibility: hidden;
+}
+
+nav ul li a:hover span {
+   visibility: visible;
+}
+
+nav ul li:nth-child(1) a span {
+   color: #5BB2FC;
+}
+
+nav ul li:nth-child(2) a span {
+   color: #58EBD3;
+}
+
+nav ul li:nth-child(3) a span {
+   color: #FFA659;
+}
+
+nav ul li:nth-child(4) a span {
+   color: #FF7A85;
+}
+
+nav ul li:nth-child(5) a span {
+   color: #58EBD3;
+}
