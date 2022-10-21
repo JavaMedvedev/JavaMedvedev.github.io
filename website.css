@@ -17,7 +17,7 @@ a {
 }
 
 #menu {
-   width: 950px;
+   width: 1050px;
    height: 120px;
    margin: auto;
    top: 0;
@@ -104,6 +104,7 @@ nav ul li:nth-child(3) a span {
 
 nav ul li:nth-child(4) a span {
    color: #FF7A85;
+   top: 0px;
 }
 
 nav ul li:nth-child(5) a span {
