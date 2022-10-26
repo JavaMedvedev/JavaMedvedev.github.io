@@ -26,6 +26,7 @@ a {
    right: 0;
    margin-top: 5%;
    margin-left: 5%;
+   
 }
 
 nav ul {
@@ -49,29 +50,41 @@ nav ul li a {
 
 nav ul li:nth-child(1) a {
    background-color: #5BB2FC;
-   background-position: 28px 28px;
+   background-position: 29px 28px;
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/icons.png");
+   background-repeat: no-repeat;
 }
 
 nav ul li:nth-child(2) a {
    background-color: #58EBD3;
-   background-position: 28px -96px;
-   background-image: url("https://www.shareicon.net/data/256x256/2016/11/22/854956_search_512x512.png");
+   background-position: 10px 10px;
+   background-image: url("https://javamedvedev.github.io/website/img/72021930.png");
+   background-size: 100px 100px;
    background-repeat: no-repeat;
 }
 
 nav ul li:nth-child(3) a {
    background-color: #FFA659;
-   background-position: 28px -222px;
+   background-position: 15px 15px;
+   background-image: url("https://javamedvedev.github.io/website/img/36179961.png");
+   background-size: 90px 90px;
+   background-repeat: no-repeat;
 }
 
 nav ul li:nth-child(4) a {
    background-color: #FF7A85;
-   background-position: 28px -342px;
+   background-position: 12px 12px; 
+      background-image: url("https://javamedvedev.github.io/website/img/5810621.png"); 
+      background-size: 100px 100px;
+   background-repeat: no-repeat;
 }
 
 nav ul li:nth-child(5) a {
    background-color: #58EBD3;
-   background-position: 28px -462px;
+   background-position: 16px 12px; 
+      background-image: url("https://JavaMedvedev.github.io/website/img/9758401.png"); 
+      background-size: 90px 90px;
+   background-repeat: no-repeat;
 }
 
 nav ul li:nth-child(1) a:hover, nav ul li:nth-child(2) a:hover, nav ul li:nth-child(3) a:hover, nav ul li:nth-child(4) a:hover, nav ul li:nth-child(5) a:hover {
