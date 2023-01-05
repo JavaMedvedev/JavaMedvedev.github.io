@@ -35,6 +35,9 @@
 .Aligner-item {
   width: 60%;
 }
+.Aligner-item2 {
+  width: 75%;
+}
 .col-image {
   background-size: cover;
   background-position:center center;
