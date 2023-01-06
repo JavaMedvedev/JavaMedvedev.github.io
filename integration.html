@@ -2,6 +2,48 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+<style>
+.dropbtn {
+  color: balck;
+  padding: 1px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 20px;
+  min-width: 200px;
+  background-color:#fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #a70050;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold; 
+  font-size:15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #;}
+</style>
   <title>Web Data Integration</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -33,6 +75,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="software.html">Programming for Higher Education</a>
                     </li>
+		<div class="dropdown">
+		  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px;">Web Technologies</ul>
+		  <div class="dropdown-content">
+		    <a href="https://javamedvedev.github.io/web.html">Web Design</a>
+		    <a href="https://javamedvedev.github.io/integration.html">Web Data Integration</a>
+		    <a href="https://javamedvedev.github.io/design.html">Graphic Design</a>
+		  </div>
+		</div>
                 </ul>
             </div>
         </div>
