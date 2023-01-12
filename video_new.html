@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
   <style>
 .dropdown {
   position: relative;
@@ -13,13 +12,13 @@
   font-weight: 400;
   font-weight: bold; 
   font-size:15px;
-  margin-left:-30px;
+  margin-left:-15px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  margin-left: 40px;
+  margin-left: 20px;
   min-width: 200px;
   background-color:#fff;
   border: 1px solid #d8d8d8;
@@ -44,9 +43,19 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #;}
+    
+@font-face {
+  font-family: "designer";
+  src: url("https://dl.dropbox.com/s/aan7kfvwhjhcf1c/designer-webfont.woff2?dl=0")
+      format("woff2"),
+    url("https://dl.dropbox.com/s/gudepkec3bcs51x/designer-webfont.woff?dl=0")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 </style>
-    <title>Learning Technologies</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
+  <title>Learning Technologies</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     
@@ -56,24 +65,25 @@
 
     <!-- Bootstrap + Ollie main styles -->
 	<link rel="stylesheet" href="assets/css/ollie.css">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css'><link rel="stylesheet" href="./style.css">
-  
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css'>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js'></script>
 <script src='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'></script><script  src="./script.js"></script>
-
-    
-
-<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+	
+	<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-             <a class="navbar-brand" href="https://javamedvedev.github.io"><img src="https://stories.nuigalway.ie/latest-press-releases/assets/logo.png" alt="" class="brand-img"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <a class="navbar-brand" href="https://javamedvedev.github.io"><img src="https://stories.nuigalway.ie/latest-press-releases/assets/logo.png" alt="" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"style="font-family: Raleway, sans-serif; font-style: normal; font-weight: 400;
-  font-weight: bold; font-size:15px; color:#4a4a4b">
-				<ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -81,24 +91,23 @@
                         <a class="nav-link" href="research.html">Research</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="video.html" style="color:#a70050">Learning Technologies</a>
+                        <a class="nav-link" href="video.html">Learning Technologies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="software.html">Programming for Higher Education</a>
                     </li>
 			<div class="dropdown">
-			  <ul class="dropdown-header"style="color:#4a4a4b; font-weight: bold; font-size:15px;">Web Technologies</ul>
-			  <div class="dropdown-content" style="color:#a70050">
+			  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px; margin-left:0px; margin-top:-0.5px;">Web Technologies</ul>
+			  <div class="dropdown-content" style="margin-left: 20px;">
 			    <a href="https://javamedvedev.github.io/web.html">Web Design</a>
 			    <a href="https://javamedvedev.github.io/integration.html">Web Data Integration</a>
 			    <a href="https://javamedvedev.github.io/design.html">Graphic Design</a>
 			  </div>
-			</div>					
+			</div>
                 </ul>
             </div>
         </div>
     </nav>
-	
 </head>
 <body>
 <!-- partial:index.partial.html -->
