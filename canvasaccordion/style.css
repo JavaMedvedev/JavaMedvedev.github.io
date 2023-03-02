@@ -6,6 +6,7 @@ body {
 }
 
 .accordion {
+  padding-top: 100px;
   font-size: 1rem;
   width: 60vw;
   margin: 0 auto;
