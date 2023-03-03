@@ -1,0 +1,27 @@
+body {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+  color: #a70050;
+  font-size: 4.5em;
+  font-family: sans-serif;
+}
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 5s;
+}
