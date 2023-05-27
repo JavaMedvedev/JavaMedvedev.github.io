@@ -44,6 +44,45 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #;}
+ /* CSS for the popup overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      display: none;
+    }
+
+    /* CSS for the video player */
+    .video-wrapper {
+      position: relative;
+      width: 800px;
+      height: 450px;
+    }
+
+    .video-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* CSS for the close button */
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
 </style>
     <title>Learning Technologies</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
@@ -103,6 +142,14 @@
   <!-- Thumbnails -->
   <div id="thumbnails" class="list row small-up-1 medium-up-2 large-up-3">
     <div class="column">
+      <a href="JavaMedvedev.github.io/0/plant.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/0/plant.mp4'); return false;">
+        <img src="https://img.youtube.com/vi/1Ye3ATWwvME/0.jpg" width="800">
+        <span class="name"><strong>Should Popup</strong></span><br />
+        <span class="category">Vevox</span>
+      </a>
+    </div>
+
+	  <div class="column">
       <a href="https://youtu.be/1Ye3ATWwvME" target="blank">
         <img src="https://img.youtube.com/vi/1Ye3ATWwvME/0.jpg" width="800">
         <span class="name"><strong>Workshop: Tests in Blackboard</strong></span><br />
@@ -369,6 +416,32 @@
 
  
 </div><!-- End search-results -->
+  <script>
+    function openVideoPopup(videoUrl) {
+      var videoOverlay = document.getElementById('videoOverlay');
+      var videoPlayer = document.getElementById('videoPlayer');
+
+      // Set the video source
+      videoPlayer.src = videoUrl;
+
+      // Play the video
+      videoPlayer.play();
+
+      // Show the overlay
+      videoOverlay.style.display = 'flex';
+    }
+
+    function closeVideoPopup() {
+      var videoOverlay = document.getElementById('videoOverlay');
+
+      // Pause the video
+      var videoPlayer = document.getElementById('videoPlayer');
+      videoPlayer.pause();
+
+      // Hide the overlay
+      videoOverlay.style.display = 'none';
+    }
+  </script>
 <!-- partial -->
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js'></script>
