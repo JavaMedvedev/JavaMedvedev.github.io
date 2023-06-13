@@ -85,3 +85,12 @@ body {
   background: #f1f1f1;
   color: #353535;
 }
+@media screen and (max-width: 3000px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
