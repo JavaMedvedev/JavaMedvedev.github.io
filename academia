@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+    color: #a70050;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold; 
+  font-size:15px;
+  margin-left:-15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 20px;
+  min-width: 200px;
+  background-color:#fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #a70050;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold; 
+  font-size:15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: #4a4a4b;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #;}
+    
+@font-face {
+  font-family: "designer";
+  src: url("https://dl.dropbox.com/s/aan7kfvwhjhcf1c/designer-webfont.woff2?dl=0")
+      format("woff2"),
+    url("https://dl.dropbox.com/s/gudepkec3bcs51x/designer-webfont.woff?dl=0")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+</style>
+  <title>Web Data Integration</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+	<link rel="stylesheet" href="assets/css/ollie.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css'>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js'></script>
+<script src='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'></script><script  src="./script.js"></script>
+	
+	<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+           <a class="navbar-brand" href="https://javamedvedev.github.io"><img src="https://stories.nuigalway.ie/latest-press-releases/assets/logo.png" alt="" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video">Learning Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="software">Programming for Higher Education</a>
+                    </li>
+			<div class="dropdown">
+			  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px; margin-left:0px; margin-top:-0.5px;">Web Technologies</ul>
+			  <div class="dropdown-content" style="margin-left: 20px;">
+			    <a href="https://javamedvedev.github.io/websites">Web Design</a>
+			    <a href="https://javamedvedev.github.io/integration">Web Data Integration</a>
+			    <a href="https://javamedvedev.github.io/design">Graphic Design</a>
+			  </div>
+			</div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--Griglia alternata testo e immagine, resposive con flexbox.-->
+
+  <section style="padding-top:75px;">
+  
+  <section style="padding-top:100px; padding-bottom:100px; background-color: white;">
+  <div class="webadmin" style="wifth: 70%">
+	<img src="assets/imgs/polcom.png">
+  </div>
+  
+  <div class="webadminText">
+  <br>
+          <p>This data pipeline updates the details of customers or employees in SharePoint when it is used as a database.  It uses the WordPress and Squarespace built-in forms or the third-party Formidable Forms to feed responses smartly via Zapier's conditional logic into a Google Sheet. The latter then automatically synchronises with Google Data Studio (Looker) where the customer's data gets updated which then transfers the udated information into SharePoint.
+          <cite style="color:black;font-size:18px">Apps: WordPress, Squarespace, Formidable Forms, Zapier, Google Sheets, Google Data Studio (Looker), SharePoint</cite>
+        </p>
+  </div>
+</section>
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(assets/imgs/integration22.png); padding-top:100px; padding-bottom:100px; background-color: #98caeb;">
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item" style="font-size:14px;">
+        <p><h3 class="section-title"><br><br>PEER-REVIEWED ARTICLES AND BOOK CHAPTERS</h3>
+				<ul style="font-size:11px;">
+					<li>Gambarato, R. and <b>Medvedev, S.</b> (2020) 'ICT and transmedia storytelling for democratic development in the Russian political landscape'. In Examining the Roles of IT and Social Media in Democratic Development and Social Change, IGI Global, Hershey, PA.</li>
+					<li><b>Medvedev, S.</b> and Pronkina, E. (2019) 'The expanded Harry Potter universe and the 2016 United States presidential election'. In Bell C (Ed) Harry Potter Studies Collected Volume, McFarland & Company, Jeﬀerson, NC.</li>
+					<li><b>Medvedev, S.</b> (2017) 'Narratives of change and citizen participation in modern political campaigning: The origins of the Trump movement'. International Journal of Digital Television, 5(3), 321-334.</li>
+					<li>Gambarato, R. and <b>Medvedev, S.</b> (2017) ‘Transmedia storytelling impact on government policy change’. In Ibrahim Y (Ed) Politics, Protest, and Empowerment in Digital Spaces, IGI Global, Hershey, PA.</li>
+					<li>Gambarato, R. and <b>Medvedev, S.</b> (2015a). ‘Fish Fight: Transmedia storytelling strategies for food policy change’. International Journal of E-Politics, 6(3), 43-59.</li>
+					<li>Gambarato, R. and <b>Medvedev, S.</b> (2015b). ‘Grassroots political campaign in Russia: Alexey Navalny and transmedia strategies for democratic development’. In Svensson J and Kumar V (Eds) Promoting Social Change and Democracy through Information Technology, IGI Global, Hershey, PA.</li>
+					<li><b>Medvedev, S.</b> (2015). ‘Il branding transmediale nella moda: il caso Burberry. ZoneModa Journal, 5, 74-81.</li>
+				</ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(assets/imgs/integration3.png);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item" style="font-size:14px">
+        <p><h3 class="section-title">CONFERENCES</h3>
+				<ul style="font-size:11px;">
+
+					<li>‘Alexei Navalny in the context of Russian conservatism’, March 28 – 31, 2021, The UK Political Studies Association Annual International Conference 2021, Queen's University Belfast, UK.</li>
+					<li>'Conservatism-in-waiting? Mapping the opposition in Russia on a political spectrum', April 6 – 8, 2020, The UK Political Studies Association Annual International Conference 2020, University of Edinburgh, UK.</li>
+					<li>'Russians in the early Soviet Union: Why the Empire has survived', April 23 – 25, 2019, The 29th Annual Conference of the Association for the Study of Ethnicity and Nationalism (ASEN), University of Edinburgh, UK.</li>
+					<li>‘From conservative paternalism to conservative populism. From the Russian Empire to a nation state’, April 15 – 17, 2019, The UK Political Studies Association Annual International Conference 2019, Nottingham Trent University, UK.</li>
+					<li>‘Is it technology or message? Looking into the powers behind populist movements’, December 12, 2018, The UK Political Studies Association: Political Marketing Group and Conservatism Studies Group, Edge Hill University, UK.</li>
+					<li>‘Digital technologies as a means of social control: China's Social Credit System’, November 20, 2018, Taking Back the Web Conference, Technological University Dublin, Ireland.</li>
+					<li>‘Participatory politics in Russia: Alexey Navalny’s grassroots campaign’, January 17, 2017, Annual Research Showcase, Technological University Dublin, Ireland.</li>
+					<li>‘The Harry Potter fandom and the US Presidential elections of 2016’, May 25, 2017, International Communication Association (ICA) 67th Annual Conference, San Diego, US.</li> 
+					<li>‘Promoting science: NASA's #JourneyToMars transmedia storyworld’, June, 2016, Transmedia Use(r)s – 20th International Summer School in Cultural Studies, Jyväskylä University, Finland.</li>
+				</ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- partial -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    
+    <!-- Owl carousel  -->
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
+
+
+    <!-- Ollie js -->
+    <script src="assets/js/Ollie.js"></script>
+</body>
+</html>
