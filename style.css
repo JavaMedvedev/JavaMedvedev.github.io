@@ -1,6 +1,9 @@
 .col-text {
   height:20em;
 }
+.col-text-30 {
+  height:30em;
+}
 .grid-flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -78,7 +81,7 @@
   background-position:center center;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
   .grid-flex {
     height: 40em;
     display: -webkit-flex;
