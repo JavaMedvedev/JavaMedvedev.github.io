@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8"> 
+  <style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+    color: #a70050;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold; 
+  font-size:15px;
+  margin-left:-15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 20px;
+  min-width: 200px;
+  background-color:#fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #a70050;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold; 
+  font-size:15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: #4a4a4b;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #;}
+    
+@font-face {
+  font-family: "designer";
+  src: url("https://dl.dropbox.com/s/aan7kfvwhjhcf1c/designer-webfont.woff2?dl=0")
+      format("woff2"),
+    url("https://dl.dropbox.com/s/gudepkec3bcs51x/designer-webfont.woff?dl=0")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+</style>
+  <title>Web Data Integration</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+	<link rel="stylesheet" href="assets/css/ollie.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css'>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js'></script>
+<script src='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'></script><script  src="./script.js"></script>
+	
+	<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+           <a class="navbar-brand" href="https://javamedvedev.github.io"><img src="https://stories.nuigalway.ie/latest-press-releases/assets/logo.png" alt="" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research">Research</a>
+                    </li>
+			<div class="dropdown">
+			  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px;">Learning Technologies</ul>
+			  <div class="dropdown-content">
+			    <a href="https://javamedvedev.github.io/canvas">Canvas VLE</a>
+			    <a href="https://javamedvedev.github.io/video">Blackboard, Moodle, Instructional Design, etc.</a>
+			  </div>
+			</div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="software">Programming for Higher Education</a>
+                    </li>
+			<div class="dropdown">
+			  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px;">Web Technologies</ul>
+			  <div class="dropdown-content">
+			    <a href="https://javamedvedev.github.io/websites">Web Design</a>
+			    <a href="https://javamedvedev.github.io/integration">Web Data Integration</a>
+			    <a href="https://javamedvedev.github.io/design">Graphic Design</a>
+			  </div>
+			</div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+<div id="videoGallery" class="video-gallery">
+  <div>
+   <a href="https://play.google.com/store/apps/details?id=com.sergeimedvedev.galwaycanvas" target="_blank"> 
+     <img src="https://JavaMedvedev.github.io/canvastemplates/canvasFeature1.png" width="100%">
+   </a>
+  </div>
+ 
+<!-- Search / Filter -->
+  <div class="row" style="padding-left:30px; padding-right:30px;">    
+    <div class="columns medium-3">
+      <select name="category" id="filter">
+        <option selected="selected" value="">View All</option>
+        <option value="Canvas Basics">Canvas Basics</option>
+	<option value="Communication with Students">Communication with Students</option>
+	<option value="Copying from Blackboard to Canvas">Copying from Blackboard to Canvas</option>
+	<option value="Module Organisation">Module Organisation</option>
+	<option value="Quizzes">Quizzes</option>
+        <option value="Assignments">Assignments</option>
+      </select> 
+    </div>
+    <div class="columns medium-9">
+      <input id="search" class="search" type="text" placeholder="search">
+    </div>
+  </div>
+  
+  <div id="thumbnails" class="list row small-up-1 medium-up-2 large-up-3">
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Navigation.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Navigation.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Navigation8.png" width="800">
+        <span class="name"><strong>Navigation in Canvas</strong></span><br />
+        <span class="category">Canvas Basics</span>
+      </a>
+    </div>
+	  <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Export.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Export.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Export.png" width="800">
+        <span class="name"><strong>Exporting from Blackboard</strong></span><br />
+        <span class="category">Copying from Blackboard to Canvas</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Import.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Import.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Import.png" width="800">
+        <span class="name"><strong>Importing into Canvas</strong></span><br />
+        <span class="category">Copying from Blackboard to Canvas</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/CQSettings.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/CQSettings.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/CQSettings.png" width="800">
+        <span class="name"><strong>Settings in Classic Quizzes</strong></span><br />
+        <span class="category">Quizzes</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/SmallNQCreate.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/SmallNQCreate.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/NQCreate.png" width="800">
+        <span class="name"><strong>Creating New Quizzes</strong></span><br />
+        <span class="category">Quizzes</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/CreatingGroupAssignments.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/CreatingGroupAssignments.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/CreatingGroupAssignments.png" width="800">
+        <span class="name"><strong>Creating Group Assignments</strong></span><br />
+        <span class="category">Assignments</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Rubrics.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Rubrics.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Rubrics.png" width="800">
+        <span class="name"><strong>Rubrics in Assignments</strong></span><br />
+        <span class="category">Assignments</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/GradingGroupAssignments.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/GradingGroupAssignments.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/GradingGroupAssignments.png" width="800">
+        <span class="name"><strong>Grading Group Assignments</strong></span><br />
+        <span class="category">Assignments</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Support.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Support.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Support.png" width="800">
+        <span class="name"><strong>24/7 Support in Canvas</strong></span><br />
+        <span class="category">Canvas Basics</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Courses.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Courses.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Courses.png" width="800">
+        <span class="name"><strong>Courses in Canvas</strong></span><br />
+        <span class="category">Canvas Basics</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Modules.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Modules.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Modules.png" width="800">
+        <span class="name"><strong>Modules in Canvas Courses</strong></span><br />
+        <span class="category">Canvas Basics</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Pages.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Pages.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Pages.png" width="800">
+        <span class="name"><strong>Pages in Canvas Courses</strong></span><br />
+        <span class="category">Canvas Basics</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Announcements.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Announcements.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Announcements.png" width="800">
+        <span class="name"><strong>Announcements</strong></span><br />
+        <span class="category">Communication with Students</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Inbox.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Inbox.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Inbox.png" width="800">
+        <span class="name"><strong>Inbox in Canvas</strong></span><br />
+        <span class="category">Communication with Students</span>
+      </a>
+    </div>
+	  
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Large.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Large.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Large.png" width="800">
+        <span class="name"><strong>Importing Large Modules</strong></span><br />
+        <span class="category">Copying from Blackboard to Canvas</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Clean.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Clean.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Clean.png" width="800">
+        <span class="name"><strong>Cleaning Up Modules</strong></span><br />
+        <span class="category">Module Organisation</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Prerequisites.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Prerequisites.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Prerequisites.png" width="800">
+        <span class="name"><strong>Prerequisites & Requirements</strong></span><br />
+        <span class="category">Module Organisation</span>
+      </a>
+    </div>
+	    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Sharing.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Sharing.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Sharing.png" width="800">
+        <span class="name"><strong>Sharing Pages and Items</strong></span><br />
+        <span class="category">Module Organisation</span>
+      </a>
+    </div>
+<div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/Template.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/Template.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/Template.png" width="800">
+        <span class="name"><strong>Template Pages</strong></span><br />
+        <span class="category">Module Organisation</span>
+      </a>
+ </div>
+
+    <div class="column">
+      <a href="https://JavaMedvedev.github.io/canvasvideos/CQQuestions.mp4" onclick="openVideoPopup('https://JavaMedvedev.github.io/canvasvideos/CQQuestions.mp4'); return false;">
+        <img src="https://JavaMedvedev.github.io/canvasvideos/CQQuestions.png" width="800">
+        <span class="name"><strong>Questions in Classic Quizzes</strong></span><br />
+        <span class="category">Quizzes</span>
+      </a>
+    </div>	 	
+</div>
+  <div class="overlay" id="videoOverlay">
+    <div class="video-wrapper">
+      <video class="video-player" id="videoPlayer" autoplay controls></video>
+      <span class="close-button" onclick="closeVideoPopup()">&times;</span>
+    </div>
+  </div>
+  
+
+
+  <script>
+    function openVideoPopup(videoUrl) {
+      var videoOverlay = document.getElementById('videoOverlay');
+      var videoPlayer = document.getElementById('videoPlayer');
+
+      // Set the video source
+      videoPlayer.src = videoUrl;
+
+      // Play the video
+      videoPlayer.play();
+
+      // Show the overlay
+      videoOverlay.style.display = 'flex';
+    }
+
+    function closeVideoPopup() {
+      var videoOverlay = document.getElementById('videoOverlay');
+
+      // Pause the video
+      var videoPlayer = document.getElementById('videoPlayer');
+      videoPlayer.pause();
+
+      // Hide the overlay
+      videoOverlay.style.display = 'none';
+    }
+  </script>
+ <!-- partial -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    
+    <!-- Owl carousel  -->
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
+
+
+    <!-- Ollie js -->
+    <script src="assets/js/Ollie.js"></script>
+</body>
+</html>
