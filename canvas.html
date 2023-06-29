@@ -43,6 +43,47 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #;}
+
+	   /* CSS for the popup overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      display: none;
+    }
+
+    /* CSS for the video player */
+    .video-wrapper {
+      position: relative;
+      width: 800px;
+      height: 420px;
+    }
+
+    .video-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* CSS for the close button */
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      color: #a70050;
+      font-size: 30px;
+      cursor: pointer;
+      padding: 20px 10px;
+    }
     
 @font-face {
   font-family: "designer";
@@ -114,12 +155,13 @@
     </nav>
 </head>
 <body>
-<div id="videoGallery" class="video-gallery">
-  <div>
+<div>
    <a href="https://play.google.com/store/apps/details?id=com.sergeimedvedev.galwaycanvas" target="_blank"> 
-     <img src="https://JavaMedvedev.github.io/canvastemplates/canvasFeature1.png" width="100%">
+     <img src="https://JavaMedvedev.github.io/canvastemplates/canvasFeature1.png" style="width:100%; padding-bottom: 50px;">
    </a>
   </div>
+<div id="videoGallery" class="video-gallery">
+  
  
 <!-- Search / Filter -->
   <div class="row" style="padding-left:30px; padding-right:30px;">    
