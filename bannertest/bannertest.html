@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+	
+
+	<style>
+        /* Existing styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .column {
+            width: 50%;
+            height: 100vh;
+            overflow-y: auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+			scrollbar-width: none;
+        }
+
+        #left-column {
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        #right-column {
+    background-color: #ffffff;
+    align-items: left;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.shape {
+    margin-left: 10px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.circle {
+    width: 100%; /* Responsive width */
+    min-height: 150px;
+    font-size: 18pt;
+    font-family: 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #a80050;
+    margin-left: 10px;
+}
+
+.placeholderRedCircle {
+    width: 95%; /* Responsive width, adjusted from 100% to account for margin */
+    font-size: 18pt;
+    font-family: 'Times New Roman', serif;
+    color: #ffffff;
+    margin-left: 5%;
+    word-wrap: break-word; /* Ensure text wraps inside the div */
+}
+
+		.square-blue {
+			width: 100%; /* Responsive width */
+			min-height: 50px;
+			font-size: 16pt;
+			font-family: 'Times New Roman', serif;
+			color: #ffffff;
+			background-color: #a70050;
+			margin-left: 10px;
+		}
+
+        .square-green {
+            width: 100px;
+            height: 100px;
+            min-height: 100px;
+            font-size: 16pt;
+            font-family: 'Verdana', sans-serif;
+            color: #ffffff; /* White text for better readability on the green background */
+            background-color: #008000;
+            margin-left: 10px;
+        }
+		
+		.rich-editor-placeholder {
+    
+}
+
+
+        .textarea-container-three {
+            display: none;
+            position: relative;
+        }
+		
+		.textarea-container {
+            position: relative;
+			display: block; 
+			margin-top: 20px;
+        }
+
+        .delete-button {
+            background-color: #ff0000;
+			position: absolute;
+            top: 5px;
+            right: 0;
+            cursor: pointer;
+            padding: 5px;
+            color: #ffffff;
+            border: none;
+			width: 50px;
+        }
+
+        .down-button {
+            background-color: #4caf50;
+			position: absolute;
+            top: 5px;
+            right: 55px;
+            cursor: pointer;
+            padding: 5px;
+            color: #ffffff;
+            border: none;
+			width: 50px;
+        }
+
+        .up-button {
+            background-color: #2196f3;
+			position: absolute;
+            top: 5px;
+            right: 110px;
+            cursor: pointer;
+            padding: 5px;
+            color: #ffffff;
+            border: none;
+			width: 50px;
+        }
+
+        textarea, #secondtextarea, #thirdtextarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+			resize: vertical;
+        }
+		
+		input {
+			width: 50%;
+		}
+
+        button {
+            margin-top: 10px;
+        }
+
+        /* Styles for Slick Slider */
+        .slick-slider {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .slick-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+		
+		.slick-prev:before,
+		.slick-next:before {
+			color:blue; 
+		}
+        .banner-placeholder {
+            width: 100%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-top: 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const rightColumn = document.getElementById("right-column");
+            let uniqueIdCounter = 1;
+
+            function createShape(shapeClass, text, color, isBanner) {
+                const shapeContainer = document.createElement("div");
+                shapeContainer.id = `shape${uniqueIdCounter}`;
+                shapeContainer.className = "shape " + shapeClass;
+
+				if (shapeClass === "circle") {
+                    const firstPlaceholder = document.createElement("div");
+                    firstPlaceholder.id = `firstplaceholder${uniqueIdCounter}`;
+                    firstPlaceholder.className = "placeholderRedCircle";
+                    firstPlaceholder.innerText = "Course Title";
+
+                    const secondPlaceholder = document.createElement("div");
+                    secondPlaceholder.id = `secondplaceholder${uniqueIdCounter}`;
+                    secondPlaceholder.className = "placeholderRedCircle";
+                    secondPlaceholder.innerText = "Course Details";
+
+                    // Apply different styles to first and second placeholders
+                    firstPlaceholder.style.fontSize = "24pt"; // Updated the font size
+                    secondPlaceholder.style.fontSize = "16pt"; // Adjust the size as needed
+
+                    shapeContainer.appendChild(firstPlaceholder);
+                    shapeContainer.appendChild(secondPlaceholder);
+
+                    firstPlaceholder.style.backgroundColor = color;
+					firstPlaceholder.style.marginTop = "35px";
+                    secondPlaceholder.style.backgroundColor = color;
+					secondPlaceholder.style.marginBottom = "10px";
+					
+					} else if (shapeClass === "rich-editor") {
+    const richEditorPlaceholder = document.createElement("div");
+    richEditorPlaceholder.id = `richEditorPlaceholder${uniqueIdCounter}`;
+    richEditorPlaceholder.className = "rich-editor-placeholder";
+    shapeContainer.appendChild(richEditorPlaceholder);
+
+					
+                } else if (isBanner) {
+                    const bannerPlaceholder = document.createElement("div");
+                    bannerPlaceholder.className = "banner-placeholder";
+                    bannerPlaceholder.id = `banner-placeholder${uniqueIdCounter}`;
+                    shapeContainer.appendChild(bannerPlaceholder);
+                
+				} else {
+                    const placeholder = document.createElement("div");
+                    placeholder.id = `placeholder${uniqueIdCounter}`;
+                    placeholder.className = "placeholderRedCircle";
+                    placeholder.innerText = text;
+
+                    shapeContainer.appendChild(placeholder);
+
+                    placeholder.style.backgroundColor = "#a70050";
+					placeholder.style.textAlign = "center";
+					placeholder.style.marginTop = "7px";
+					placeholder.style.marginLeft = "0px";
+                }
+
+                return shapeContainer;
+            }
+function initializeTinyMCE(id) {
+    tinymce.init({
+        selector: `#richTextarea${id}`,
+		paste_data_images: false,
+        setup: function (editor) {
+            editor.on('keyup change', function () {
+                // Get content from TinyMCE editor and set it to the placeholder
+                const content = editor.getContent();
+                document.getElementById(`richEditorPlaceholder${id}`).innerHTML = content;
+            });
+			editor.on('paste', function (e) {
+            e.preventDefault();
+            var text = (e.clipboardData || window.clipboardData).getData('text/plain');
+            editor.insertContent(text);
+        });
+        }
+    });
+}
+            function createTextarea(container, shape, firstPlaceholder, secondPlaceholder, isBanner) {
+                const textareaContainer = document.createElement("div");
+                textareaContainer.id = `textarea-container${uniqueIdCounter}`;
+                textareaContainer.className = "textarea-container-three";
+                textareaContainer.style.display = "none";
+				textareaContainer.style.marginTop = "20px";
+
+                // Add a delete button
+                const deleteButton = document.createElement("button");
+                deleteButton.className = "delete-button";
+                deleteButton.innerText = "Delete";
+                deleteButton.addEventListener("click", function() {
+                    // Remove both textarea-container and the associated shape
+                    textareaContainer.remove();
+                    shape.remove();
+                });
+				deleteButton.style.marginTop = "-10px";
+
+function saveAndRemoveTinyMCE(textareaId) {
+    // Check if the TinyMCE instance exists
+    if (tinymce.get(textareaId)) {
+        const content = tinymce.get(textareaId).getContent();
+        tinymce.execCommand('mceRemoveEditor', true, textareaId);
+        return content;
+    }
+    return null;
+}
+
+function reinitializeTinyMCE(textareaId, content) {
+    setTimeout(function() {
+        initializeTinyMCE(textareaId.replace('richTextarea', ''));
+        if (content !== null) {
+            tinymce.get(textareaId).setContent(content);
+        }
+    }, 100);
+}
+
+function refreshAllTinyMCEInstances() {
+    const editors = tinymce.editors;
+    for (let i = editors.length - 1; i >= 0; i--) {
+        const editorId = editors[i].id;
+        const content = saveAndRemoveTinyMCE(editorId);
+        reinitializeTinyMCE(editorId, content);
+    }
+}
+
+                // Add a down button
+                const downButton = document.createElement("button");
+                downButton.className = "down-button";
+                downButton.innerText = "Down";
+                downButton.addEventListener("click", function() {
+                    const nextTextareaContainer = textareaContainer.nextElementSibling;
+                    const nextShape = shape.nextElementSibling;
+                    if (nextTextareaContainer && nextShape) {
+                        container.insertBefore(nextTextareaContainer, textareaContainer);
+                        rightColumn.insertBefore(nextShape, shape);
+                    }
+					refreshAllTinyMCEInstances();
+                });
+				downButton.style.marginTop = "-10px";
+
+                // Add an up button
+                const upButton = document.createElement("button");
+                upButton.className = "up-button";
+                upButton.innerText = "Up";
+                upButton.addEventListener("click", function() {
+                    const prevTextareaContainer = textareaContainer.previousElementSibling;
+                    const prevShape = shape.previousElementSibling;
+                    if (prevTextareaContainer && prevShape) {
+                        container.insertBefore(textareaContainer, prevTextareaContainer);
+                        rightColumn.insertBefore(shape, prevShape);
+                    }
+					refreshAllTinyMCEInstances();
+                });
+				upButton.style.marginTop = "-10px";
+				
+				textareaContainer.appendChild(deleteButton);
+                textareaContainer.appendChild(downButton);
+                textareaContainer.appendChild(upButton);
+				
+				if (shape.classList.contains("circle")) {
+                    const firstPElement = document.createElement("p");
+                    firstPElement.innerText = "Course Title";
+
+                    const firstTextarea = document.createElement("input");
+					firstTextarea.style.width = "100%";
+					firstTextarea.style.marginBottom = "5px";
+					firstTextarea.type = 'text';
+                    firstTextarea.id = `firsttextarea${uniqueIdCounter}`;
+                    firstTextarea.placeholder = "e.g. DM999 Digital Marketing";
+                    firstTextarea.addEventListener("input", function() {
+                        firstPlaceholder.innerText = firstTextarea.value || "Course Title";
+                    });
+
+                    const secondTextarea = document.createElement("textarea");
+                    secondTextarea.id = `secondtextarea${uniqueIdCounter}`;
+                    secondTextarea.placeholder = "e.g. Undergraduate, 2024-25";
+                    secondTextarea.addEventListener("input", function() {
+                        secondPlaceholder.innerText = secondTextarea.value || "Course Details";
+                    });
+
+                    textareaContainer.appendChild(firstPElement);
+                    textareaContainer.appendChild(firstTextarea);
+                    textareaContainer.appendChild(secondTextarea);
+				
+				} else if (shape.classList.contains("rich-editor")) {
+    const pElement = document.createElement("p");
+    pElement.innerText = "Rich Text Editor";
+
+    const textarea = document.createElement("textarea");
+    textarea.id = `richTextarea${uniqueIdCounter}`;
+    textareaContainer.appendChild(pElement);
+    textareaContainer.appendChild(textarea);
+
+    // Append the textareaContainer to the DOM before initializing TinyMCE
+    container.appendChild(textareaContainer);
+    textareaContainer.style.display = "block";
+
+				} else if (isBanner) {
+				
+					const pElement = document.createElement("p");
+                    pElement.innerText = "Banner Image";
+					textareaContainer.appendChild(pElement);
+					
+					const slider = document.createElement("div");
+					slider.className = "slick-slider";
+
+					// Your image paths
+					const imagePaths = [
+					'https://javamedvedev.github.io/0/sbe.jpg',  // Replace with your first image path
+					'https://javamedvedev.github.io/0/sl.jpg', // Replace with your second image path
+					'https://javamedvedev.github.io/0/schm.jpg'   // Replace with your third image path
+					];
+
+					imagePaths.forEach(path => {
+						const slide = document.createElement("div");
+						const img = document.createElement("img");
+						img.src = path;
+						slide.appendChild(img);
+						slider.appendChild(slide);
+					});
+
+					textareaContainer.appendChild(slider);
+
+					// Append the textareaContainer to the DOM before initializing Slick
+					container.appendChild(textareaContainer);
+
+					// Initialize the Slick slider
+					$(slider).slick({
+						dots: true,
+						infinite: true,
+						speed: 500,
+						slidesToShow: 1,
+						adaptiveHeight: true
+					});
+
+					// Set the banner-placeholder to the first image in the slider
+					const placeholderId = `banner-placeholder${uniqueIdCounter}`;
+					const placeholderDiv = document.getElementById(placeholderId);
+					if (placeholderDiv) {
+						// Clear any previous content
+						placeholderDiv.innerHTML = '';
+
+						// Create an img element for the first image
+						const imgElement = document.createElement('img');
+						imgElement.src = imagePaths[0]; // Assuming imagePaths contains your images and the first one is what you want
+						imgElement.style.width = '100%'; // Set the width to 100%
+
+						// Append the img element to the placeholderDiv
+						placeholderDiv.appendChild(imgElement);
+					}
+					// After appending the slider to the DOM and making it visible
+					setTimeout(function() {
+						$(slider).slick('setPosition');
+					}, 200); // Adjust the timeout as needed
+
+					(function(currentId) {
+						$(slider).on('afterChange', function(event, slick, currentSlide) {
+							const activeImgSrc = slick.$slides[currentSlide].querySelector("img").src;
+							const placeholderId = `banner-placeholder${currentId}`;
+							const placeholderDiv = document.getElementById(placeholderId);
+							if (placeholderDiv) {
+								// Clear the existing contents of the placeholderDiv
+								placeholderDiv.innerHTML = '';
+
+								// Create a new img element and set its src to the active image source
+								const imgElement = document.createElement('img');
+								imgElement.src = activeImgSrc;
+								imgElement.style.width = '100%'; // Set the width to 100%
+
+								// Append the new img element to the placeholderDiv
+								placeholderDiv.appendChild(imgElement);
+							}
+						});
+					})(uniqueIdCounter);
+
+				} else {
+							const pElement = document.createElement("p");
+							pElement.innerText = "Section Header";
+							
+							const textarea = document.createElement("input");
+							textarea.style.width = "100%";
+							textarea.style.marginBottom = "5px";
+							textarea.type = 'text';
+							textarea.id = `textarea${uniqueIdCounter}`;
+							textarea.placeholder = "e.g. Introduction";
+							textarea.addEventListener("input", function() {
+								firstPlaceholder.innerText = textarea.value || "Section Title";
+							});
+
+							textareaContainer.appendChild(pElement);
+							textareaContainer.appendChild(textarea);
+						}
+
+			container.appendChild(textareaContainer);
+			return textareaContainer;
+		}
+
+				function addButtonClickListener(button, container, shapeClass, placeholder, color, isBanner = false) {
+    button.addEventListener("click", function() {
+        const shape = createShape(shapeClass, placeholder, color, isBanner);
+        rightColumn.appendChild(shape);
+
+        if (shapeClass === "circle") {
+            const firstPlaceholder = shape.querySelector(`#firstplaceholder${uniqueIdCounter}`);
+            const secondPlaceholder = shape.querySelector(`#secondplaceholder${uniqueIdCounter}`);
+            const textareaContainer = createTextarea(container, shape, firstPlaceholder, secondPlaceholder);
+            textareaContainer.style.display = "block";
+        } else if (isBanner) {
+            const bannerPlaceholder = shape.querySelector('.banner-placeholder');
+            const textareaContainer = createTextarea(container, shape, bannerPlaceholder, bannerPlaceholder, isBanner);
+            textareaContainer.style.display = "block";
+        } else if (shapeClass === "rich-editor") {
+            const richEditorPlaceholder = shape.querySelector(`#richEditorPlaceholder${uniqueIdCounter}`);
+            const textareaContainer = createTextarea(container, shape, richEditorPlaceholder, richEditorPlaceholder);
+            textareaContainer.style.display = "block";
+            initializeTinyMCE(uniqueIdCounter); // Initialize TinyMCE for the new editor
+        
+        } else {
+            const placeholderElement = shape.querySelector('.placeholderRedCircle');
+            const textareaContainer = createTextarea(container, shape, placeholderElement, placeholderElement);
+            textareaContainer.style.display = "block";
+        }
+
+        uniqueIdCounter++;
+    });
+}
+
+
+			const addRedButton = document.getElementById("addRedButton");
+            const addBlueButton = document.getElementById("addBlueButton");
+            const addGreenButton = document.getElementById("addGreenButton");
+			const addBannerButton = document.getElementById("addBannerButton");
+			const addRichEditorButton = document.getElementById("addRichEditorButton");
+			
+			addRedButton.style.marginTop = "10px";
+			addBlueButton.style.marginTop = "10px";
+			addGreenButton.style.marginTop = "10px";
+			addBannerButton.style.marginTop = "10px";
+			
+addButtonClickListener(addRichEditorButton, document.getElementById("left-column"), "rich-editor", "", "#ffffff");
+
+			addButtonClickListener(addRedButton, document.getElementById("left-column"), "circle", "Desc", "#a80050");
+            addButtonClickListener(addBlueButton, document.getElementById("left-column"), "square-blue", "Section Title", "#0066cc");
+            addButtonClickListener(addGreenButton, document.getElementById("left-column"), "square-green", "Future green text", "#008000");
+			addButtonClickListener(addBannerButton, document.getElementById("left-column"), "banner", "", "#ffffff", true);
+        });
+		
+		let codeCounter = 10000;
+    let containerCounter = 5000;
+
+    function insertCode() {
+        var code = `
+            <!-- Your provided code here -->
+            <div class="grid-row" style="margin-top: 10px; margin-right: 0px;" role="navigation">
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <div style="display: flex; text-align: center; margin-bottom: 10px; margin-right: -10px;">
+                        <div style="background-color: #a80050; padding: 3.5% 1%; width: 15%;"><img id="menuImageOne${codeCounter}" src="https://sergeimedvedev.com/announcementIcon.png" width="28" height="28" /></div>
+                        <div style="font-size: 12pt; padding: 4.5% 2% 4% 4%; width: 85%; text-align: left; border: medium solid #a70050;"><span style="color: #000000;"><a id="menuItemOne${codeCounter}" href="https://universityofgalway.instructure.com">Announcements</a></span></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <div style="display: flex; text-align: center; margin-bottom: 10px; margin-right: -10px;">
+                        <div style="background-color: #a80050; padding: 3.5% 1%; width: 15%;"><img id="menuImageTwo${codeCounter}" src="https://sergeimedvedev.com/modulesIcon.png" width="25" height="25" /></div>
+                        <div style="font-size: 12pt; padding: 4.5% 2% 4% 4%; margin: 0px; width: 85%; text-align: left; border: medium solid #a70050;"><span style="color: #000000;"><a id="menuItemTwo${codeCounter}" href="https://universityofgalway.instructure.com">Modules</a></span></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <div style="display: flex; text-align: center; margin-bottom: 10px; margin-right: -10px;">
+                        <div style="background-color: #a80050; padding: 3.5% 1%; width: 15%;"><img id="menuImageThree${codeCounter}" src="https://sergeimedvedev.com/assignmentIcon.png" width="25" height="25" /></div>
+                        <div style="font-size: 12pt; padding: 4.5% 2% 4% 4%; margin: 0px; width: 85%; text-align: left; border: medium solid #a70050;"><span style="color: #000000;"><a id="menuItemThree${codeCounter}" href="https://universityofgalway.instructure.com">Assignments</a></span></div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Increment the counters for unique IDs
+        codeCounter++;
+        containerCounter++;
+
+        // Create a new code container
+        var codeContainer = document.createElement('div');
+        codeContainer.className = 'code-container';
+        codeContainer.innerHTML = code;
+
+        // Append the new code to the right column
+        document.getElementById('right-column').appendChild(codeContainer);
+
+        // Create a new textarea container
+        var textareaContainer = document.createElement('div');
+        textareaContainer.className = 'textarea-container';
+
+        textareaContainer.id = `textareaContainer${containerCounter}`;
+
+        const menuPElement = document.createElement("p");
+        menuPElement.innerText = "Menu (3 links)";
+
+        // Add a delete button
+        const deleteButton = document.createElement("button");
+        deleteButton.className = "delete-button";
+        deleteButton.innerText = "Delete";
+        deleteButton.addEventListener("click", function () {
+            // Remove both textarea-container and the associated shape
+            textareaContainer.remove();
+            codeContainer.remove();
+        });
+
+        deleteButton.style.marginTop = "-10px";
+		
+		// Add an up button
+		const upButton = document.createElement("button");
+		upButton.className = "up-button";
+		upButton.innerText = "Up";
+		upButton.addEventListener("click", function () {
+			const leftColumn = document.getElementById('left-column');
+			const rightColumn = document.getElementById('right-column');
+
+			const textareaIndex = Array.from(leftColumn.children).indexOf(textareaContainer);
+			const codeIndex = Array.from(rightColumn.children).indexOf(codeContainer);
+
+			if (textareaIndex > 0 && codeIndex > 0) {
+				const prevTextarea = leftColumn.children[textareaIndex - 1];
+				const prevCode = rightColumn.children[codeIndex - 1];
+
+				leftColumn.insertBefore(textareaContainer, prevTextarea);
+				rightColumn.insertBefore(codeContainer, prevCode);
+			}
+		});
+		
+		upButton.style.marginTop = "-10px";
+
+		// Add a down button
+		const downButton = document.createElement("button");
+		downButton.className = "down-button";
+		downButton.innerText = "Down";
+		downButton.addEventListener("click", function () {
+			const leftColumn = document.getElementById('left-column');
+			const rightColumn = document.getElementById('right-column');
+
+			const textareaIndex = Array.from(leftColumn.children).indexOf(textareaContainer);
+			const codeIndex = Array.from(rightColumn.children).indexOf(codeContainer);
+
+			const lastTextareaIndex = leftColumn.children.length - 1;
+			const lastCodeIndex = rightColumn.children.length - 1;
+
+			if (textareaIndex < lastTextareaIndex && codeIndex < lastCodeIndex) {
+				const nextTextarea = leftColumn.children[textareaIndex + 1];
+				const nextCode = rightColumn.children[codeIndex + 1];
+
+				leftColumn.insertBefore(nextTextarea, textareaContainer);
+				rightColumn.insertBefore(nextCode, codeContainer);
+			}
+		});
+		
+		downButton.style.marginTop = "-10px";
+
+        textareaContainer.appendChild(menuPElement);
+        textareaContainer.appendChild(deleteButton);
+        textareaContainer.appendChild(upButton);
+        textareaContainer.appendChild(downButton);
+
+        // Append the new container to the left column
+        document.getElementById('left-column').appendChild(textareaContainer);
+
+        // Create textareas
+        var textAreaOne = createTextArea(`textAreaOne${codeCounter}`, 'e.g. Announcements', 'menuItemOne', containerCounter, codeCounter - 1);
+		var textAreaHrefsOne = createTextAreaHrefs(`textAreaHrefsOne${codeCounter}`, 'URL', 'menuItemOne', containerCounter, codeCounter - 1);
+        var textAreaTwo = createTextArea(`textAreaTwo${codeCounter}`, 'e.g. Modules', 'menuItemTwo', containerCounter, codeCounter - 1);
+		var textAreaHrefsTwo = createTextAreaHrefs(`textAreaHrefsTwo${codeCounter}`, 'URL', 'menuItemTwo', containerCounter, codeCounter - 1);
+        var textAreaThree = createTextArea(`textAreaThree${codeCounter}`, 'e.g. Assignments', 'menuItemThree', containerCounter, codeCounter - 1);
+		var textAreaHrefsThree = createTextAreaHrefs(`textAreaHrefsThree${codeCounter}`, 'URL', 'menuItemThree', containerCounter, codeCounter - 1);
+
+        // Append the new textareas to the container
+        document.getElementById(`textareaContainer${containerCounter}`).appendChild(textAreaOne);
+		document.getElementById(`textareaContainer${containerCounter}`).appendChild(textAreaHrefsOne);
+        document.getElementById(`textareaContainer${containerCounter}`).appendChild(textAreaTwo);
+		document.getElementById(`textareaContainer${containerCounter}`).appendChild(textAreaHrefsTwo);
+        document.getElementById(`textareaContainer${containerCounter}`).appendChild(textAreaThree);
+		document.getElementById(`textareaContainer${containerCounter}`).appendChild(textAreaHrefsThree);
+
+        // Show textareas
+        textAreaOne.classList.remove('hidden');
+		textAreaHrefsOne.classList.remove('hidden');
+        textAreaTwo.classList.remove('hidden');
+		textAreaHrefsTwo.classList.remove('hidden');
+        textAreaThree.classList.remove('hidden');
+		textAreaHrefsThree.classList.remove('hidden');     
+    }
+
+    function createTextArea(id, placeholder, menuItemId, containerCounter, codeCounter) {
+        var textArea = document.createElement('input');
+		textArea.type = 'text';
+        textArea.id = id;
+        textArea.className = 'hidden';
+        textArea.placeholder = placeholder;
+
+        textArea.addEventListener('input', function () {
+            updateText(menuItemId, this.value, containerCounter, codeCounter);
+        });
+
+        return textArea;
+    }
+
+    function updateText(menuItemId, newText, containerCounter, codeCounter) {
+        document.getElementById(`${menuItemId}${codeCounter}`).innerText = newText;
+    }
+
+    function createTextAreaHrefs(id, placeholder, menuItemId, containerCounter, codeCounter) {
+        var textArea = document.createElement('input');
+        textArea.type = 'text';
+		textArea.id = id;
+        textArea.className = 'hidden';
+        textArea.placeholder = placeholder;
+
+        textArea.addEventListener('input', function () {
+            updateHref(menuItemId, this.value, codeCounter);
+        });
+
+        return textArea;
+    }
+
+    function updateHref(menuItemId, newHref, codeCounter) {
+        document.getElementById(`${menuItemId}${codeCounter}`).setAttribute('href', newHref);
+    }
+    </script>
+</head>
+<body>
+    <div id="left-column" class="column">
+		<button id="addBannerButton">Banner Image</button>
+		<button id="addRedButton">Course Title</button>
+		<button onclick="insertCode()" style="margin-top: 10px;">Menu (3 links)</button>
+        <button id="addBlueButton">Section Header</button>
+        <button id="addGreenButton">Add green square with text</button>
+		<button id="addRichEditorButton">Rich Editor</button>
+        
+    </div>
+    <div id="right-column" class="column"></div>
+
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.tiny.cloud/1/vlfgr36urq1dhw7kw619bq3rzz8zc7u76i8nx8kockml1xgv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+</body>
+</html>
