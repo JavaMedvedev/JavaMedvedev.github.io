@@ -3,6 +3,48 @@
 <head>
   <meta charset="UTF-8"> 
   <style>
+.page{
+background-color: rgba(0, 0, 0, 0);
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-attachment: scroll;
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png");
+background-size: auto;
+background-origin: padding-box;
+background-clip: border-box;
+}
+
+.column {
+    position: relative;
+    width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+}
+
+/* Media query for smaller screens (max-width: 768px is an example size, adjust as needed) */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+    .page{
+      flex-direction: column;
+    }
+}
+
+        .title {
+          padding: 6vw 0 0 0;
+	font: 50px/1 "Playfair Display SC";
+	text-align: center;
+	@media (min-width: 700px) {
+		font: 70px/1 "Playfair Display SC";
+	}
+}
+	  
 .dropdown {
   position: relative;
   display: inline-block;
@@ -116,69 +158,69 @@
 <body>
 <!-- partial:index.partial.html -->
 <!--Griglia alternata testo e immagine, resposive con flexbox.-->
+<div class="page">
+<div class="title" style="font-size: 5.5vw;">
+  Multimedia Communication
+</div>
 
- <section style="padding-top:200px; padding-bottom:50px;">
-  <div class="webadmin" style="width: 50%">
-	<img src="https://javamedvedev.github.io/assets/imgs/polcomNew.png">
-  </div>
-	 <br>
-</section>
-	<div>
-  <div class="grid-flex">
-    <div class="col col-image">
-	<img src="https://javamedvedev.github.io/assets/imgs/polcom3.png" style="width:100%;">
-    </div>
-    <div class="col col-text-30" style="background-color: #ffffff;">
-      <div class="" style="font-size:14px; width: 95%">
-        <p><h3 class="section-title">PEER-REVIEWED ARTICLES AND BOOK CHAPTERS</h3></p>
-				<ul style="font-size:11px;">
-					<li><b>Medvedev, S.</b> (2021) 'Transmedia Strategies for Participatory Politics: Alexey Navalny's Grassroots Campaign'. PhD Thesis, Technological University Dublin.</li>
-					<li>Gambarato, R. and <b>Medvedev, S.</b> (2020) 'ICT and transmedia storytelling for democratic development in the Russian political landscape'. In Examining the Roles of IT and Social Media in Democratic Development and Social Change, IGI Global, Hershey, PA.</li>
-					<li><b>Medvedev, S.</b> and Pronkina, E. (2019) 'The expanded Harry Potter universe and the 2016 United States presidential election'. In Bell C (Ed) Harry Potter Studies Collected Volume, McFarland & Company, Jeﬀerson, NC.</li>
-					<li><b>Medvedev, S.</b> (2017) 'Narratives of change and citizen participation in modern political campaigning: The origins of the Trump movement'. International Journal of Digital Television, 5(3), 321-334.</li>
-					<li>Gambarato, R. and <b>Medvedev, S.</b> (2017) ‘Transmedia storytelling impact on government policy change’. In Ibrahim Y (Ed) Politics, Protest, and Empowerment in Digital Spaces, IGI Global, Hershey, PA.</li>
-					<li>Gambarato, R. and <b>Medvedev, S.</b> (2015a). ‘Fish Fight: Transmedia storytelling strategies for food policy change’. International Journal of E-Politics, 6(3), 43-59.</li>
-					<li>Gambarato, R. and <b>Medvedev, S.</b> (2015b). ‘Grassroots political campaign in Russia: Alexey Navalny and transmedia strategies for democratic development’. In Svensson J and Kumar V (Eds) Promoting Social Change and Democracy through Information Technology, IGI Global, Hershey, PA.</li>
-				</ul>
-        
-      </div>
-    </div>
-  </div>
-
-<div class="webadminText">
+<div style="font-family: Playfair Display SC; width: 100%; padding: 2vw 22% 0vw 22%; text-align: center; font-size: 1.5vw;">
   <br>
-        <p>My research focuses on
-the dynamic intersection of digital technologies and politics within the realm of political
-communication: the application of multimedia technologies and big data to political campaigns,
-multimedia forms of political storytelling, the role of new media and digital technologies as
-political tools in authoritarian regimes.</p>
+        <p>My research focuses on multimedia storytelling and digital production including 
+          the technological and narrative aspects of digital storytelling, the application of multimedia technologies and big data to political campaigns,
+ multimedia advertising and entertainment projects. I have a PhD degree in Media and Communication Studies (DIT), a master's degree in Media Production and Creative Industries and a bachelor’s degree in Journalism.</p>
 	<br><br>
   </div>
-  
-  <div class="grid-flex">
-    <div class="col col-image">
-	<img src="https://javamedvedev.github.io/assets/imgs/polcom6.png" style="width:100%;">
-    </div>
-    <div class="col col-text-30 col-left" style="background-color: #ffffff;">
-      <div class="Aligner-item" style="font-size:14px; width: 95%; padding-left: 20px; ">
-        <p><br><h3 class="section-title">CONFERENCES</h3></p>
-				<ul style="font-size:11px;">
 
-					<li>‘Alexei Navalny in the context of Russian conservatism’, March 28 – 31, 2021, The UK Political Studies Association Annual International Conference 2021, Queen's University Belfast, UK.</li>
-					<li>'Conservatism-in-waiting? Mapping the opposition in Russia on a political spectrum', April 6 – 8, 2020, The UK Political Studies Association Annual International Conference 2020, University of Edinburgh, UK.</li>
-					<li>'Russians in the early Soviet Union: Why the Empire has survived', April 23 – 25, 2019, The 29th Annual Conference of the Association for the Study of Ethnicity and Nationalism (ASEN), University of Edinburgh, UK.</li>
-					<li>‘From conservative paternalism to conservative populism. From the Russian Empire to a nation state’, April 15 – 17, 2019, The UK Political Studies Association Annual International Conference 2019, Nottingham Trent University, UK.</li>
-					<li>‘Is it technology or message? Looking into the powers behind populist movements’, December 12, 2018, The UK Political Studies Association: Political Marketing Group and Conservatism Studies Group, Edge Hill University, UK.</li>
-					<li>‘Digital technologies as a means of social control: China's Social Credit System’, November 20, 2018, Taking Back the Web Conference, Technological University Dublin, Ireland.</li>
-					<li>‘Participatory politics in Russia: Alexey Navalny’s grassroots campaign’, January 17, 2017, Annual Research Showcase, Technological University Dublin, Ireland.</li>
-					<li>‘The Harry Potter fandom and the US Presidential elections of 2016’, May 25, 2017, International Communication Association (ICA) 67th Annual Conference, San Diego, US.</li> 
-					<li>‘Promoting science: NASA's #JourneyToMars transmedia storyworld’, June, 2016, Transmedia Use(r)s – 20th International Summer School in Cultural Studies, Jyväskylä University, Finland.</li>
-				</ul>
-        
-      </div>
-    </div>
-  </div>
+<div style="padding-top: 0px;">
+  <img src="https://grahamandsergei.github.io/images/back-view-content-creator-working-home-office-night-time-video-editor-home-office.png">
 </div>
+
+<div class="page" style="padding: 6vw 2%; display: flex; font-family: Inter;">
+
+<div class="column" style="padding: 0 3% 1vw 3%">
+  <div>
+    <h3 class="section-title" style="font-family: Playfair Display SC; text-align: center; padding: 0 0 3vw 0; font-size: 2vw;">PEER-REVIEWED ARTICLES AND BOOK CHAPTERS</h3>
+  </div>
+    <ul style="font-size:1vw;">
+      <li><b>Medvedev, S.</b> (2021) 'Transmedia Strategies for Participatory Politics: Alexey Navalny's Grassroots Campaign'. PhD Thesis, Technological University Dublin.</li>
+      <li>Gambarato, R. and <b>Medvedev, S.</b> (2020) 'ICT and transmedia storytelling for democratic development in the Russian political landscape'. In Examining the Roles of IT and Social Media in Democratic Development and Social Change, IGI Global, Hershey, PA.</li>
+      <li><b>Medvedev, S.</b> and Pronkina, E. (2019) 'The expanded Harry Potter universe and the 2016 United States presidential election'. In Bell C (Ed) Harry Potter Studies Collected Volume, McFarland & Company, Jeﬀerson, NC.</li>
+      <li><b>Medvedev, S.</b> (2017) 'Narratives of change and citizen participation in modern political campaigning: The origins of the Trump movement'. International Journal of Digital Television, 5(3), 321-334.</li>
+      <li>Gambarato, R. and <b>Medvedev, S.</b> (2017) ‘Transmedia storytelling impact on government policy change’. In Ibrahim Y (Ed) Politics, Protest, and Empowerment in Digital Spaces, IGI Global, Hershey, PA.</li>
+      <li><b>Medvedev, S.</b> (2015). ‘Il branding transmediale nella moda: il caso Burberry’ [Transmedia Branding in Fashion: The Case of Burberry]. ZoneModa Journal, 5, 74-81.</li>
+      <li>Gambarato, R. and <b>Medvedev, S.</b> (2015a). ‘Fish Fight: Transmedia storytelling strategies for food policy change’. International Journal of E-Politics, 6(3), 43-59.</li>
+      <li>Gambarato, R. and <b>Medvedev, S.</b> (2015b). ‘Grassroots political campaign in Russia: Alexey Navalny and transmedia strategies for democratic development’. In Svensson J and Kumar V (Eds) Promoting Social Change and Democracy through Information Technology, IGI Global, Hershey, PA.</li>
+    </ul>
+</div>
+
+<div class="column" style="padding: 0 3% 5vw 3%">
+
+  <div>
+    <h3 class="section-title" style="font-family: Playfair Display SC; text-align: center; padding: 0 0 1vw 0; font-size: 2vw;">TEACHING</h3>
+  </div>
+    <ul style="font-size:1vw; padding: 0 0 1vw 0;">
+      <li><b>2324-GS506</b> Teaching & Learning Technologies for PhD Students (University of Galway).</li>
+      <li><b>MED2019</b> Introduction to Media Theory (Dublin Institute of Technology).</li>
+    </ul>
+
+  <div style="padding-left: 20px; ">
+    <h3 class="section-title" style="font-family: Playfair Display SC; text-align: center; padding: 0 0 1vw 0; font-size: 2vw;">CONFERENCES</h3>
+  </div>
+    <ul style="font-size:1vw">
+      <li>‘Alexei Navalny's digital storytelling in the context of Russian politics, March 28 – 31, 2021, <b>The UK Political Studies Association</b> Annual International Conference 2021, Queen's University Belfast, UK.</li>
+      <li>‘Is it technology or message? Looking into the powers behind populist movements’, December 12, 2018, <b>The UK Political Studies Association</b>: Political Marketing Group and Conservatism Studies Group, Edge Hill University, UK.</li>
+      <li>‘Digital technologies as a means of social control: China's Social Credit System’, November 20, 2018, <b>'Taking Back the Web' Conference</b>, Technological University Dublin, Ireland.</li>
+      <li>‘Participatory politics in Russia: Alexey Navalny’s grassroots campaign’, January 17, 2017, <b>Annual Research Showcase</b>, Technological University Dublin, Ireland.</li>
+      <li>‘The Harry Potter fandom and the US Presidential elections of 2016’, May 25, 2017, <b>International Communication Association (ICA)</b> 67th Annual Conference, San Diego, US.</li> 
+      <li>‘Promoting science: NASA's #JourneyToMars transmedia storyworld’, June, 2016, Transmedia Users – <b>20th International Conference in Cultural Studies</b>, Jyväskylä University, Finland.</li>
+    </ul>
+  
+</div>
+
+</div>
+</div>
+
+
 
 <!-- partial -->
 	
