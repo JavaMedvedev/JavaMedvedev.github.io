@@ -104,10 +104,11 @@
     .dropdown-content {
       width: fit-content !important;
       padding: 2vw 1vw !important;
+      /*min-width: 140px !important; */
     }
 
     div.dropdown-content * {
-      font-size: 2.5vw !important;
+      font-size: 2vw !important;
     }
 
     .column {
@@ -214,6 +215,44 @@
       font-size: 4.5vw !important;
       padding-top: 1vw !important;
     padding-right: 1vw !important;
+    }
+
+    .modal-content {
+      margin: 50% auto !important;
+      padding: 6vw !important;
+      width: 60% !important;
+      font-size: 3vw !important;
+    }
+
+    #newTemplateName {
+      font-size: 2vw !important;
+      width: 50% !important;
+    }
+
+    #confirmRename, #cancelRename {
+      height: auto !important;
+      width: 22% !important;
+      font-size: 2vw !important;
+    }
+
+    #confirmDelete, #cancelDelete {
+      font-size: 2vw !important;
+    width: 25% !important;
+    height: auto !important;
+    }
+
+    .close {
+      font-size: 4vw !important;
+  margin: -3vw -3vw 0 0;
+    }
+
+    .storageAll {
+      padding-top: 4vw !important;
+      padding-bottom: 2vw !important;
+    }
+
+    #addPage {
+      padding: 3vw 0 3vw 1vw !important;
     }
 
 }
@@ -1651,8 +1690,10 @@ input[type="radio"].quizOptionCheckbox:focus {
 
 .close {
   float: right;
-  font-size: 28px;
+  font-size: 3vw;
   font-weight: bold;
+  color:#171b70;
+  margin: -1.5vw -1vw 0 0;
 }
 
 .close:hover,
@@ -3851,6 +3892,7 @@ function handleColorSelectionCardback(event) {
 
 // Add the document click listener to close popups if clicking outside
 document.addEventListener('click', function(event) {
+
     const allColorPopups = document.querySelectorAll('.color-popup');
     allColorPopups.forEach(popup => {
       if (!popup.contains(event.target)) {
@@ -4031,6 +4073,7 @@ document.getElementById("file-close-storage").addEventListener("click", function
                 strImages.innerHTML = '';
         });
 
+
 document.addEventListener("DOMContentLoaded", function() {
 
   var saveButton = document.getElementById("button-save");
@@ -4179,7 +4222,7 @@ updateSaveStatusToYes();
 
 
 
-    alert("Content with embedded iframes copied to clipboard!");
+    alert("Success! Open a Canvas page and paste the result into the </> editor.");
 });
 
 
@@ -4371,6 +4414,11 @@ window.listAndSelectVideos = async function(videoPlaceholder, uploadButtonContai
     const storage = getStorage();
     const storageReference = storageRef(storage, `users/${auth.currentUser.uid}/videos/`);
     const storageDiv = document.getElementById('video-storage-content');
+
+    const otherStorageDivs = document.querySelectorAll('.image-storage-content, .audio-storage-content, .file-storage-content');
+            otherStorageDivs.forEach(div => {
+              div.style.display = 'none';
+            });
 
     try {
         // List all items (files) in the user's video folder
@@ -4581,6 +4629,11 @@ window.listAndSelectAudios = async function(audioPlaceholder, uploadButtonContai
     const storage = getStorage();
     const storageReference = storageRef(storage, `users/${auth.currentUser.uid}/audios/`);
     const storageDiv = document.getElementById('audio-storage-content');
+
+    const otherStorageDivs = document.querySelectorAll('.video-storage-content, .image-storage-content, .file-storage-content');
+            otherStorageDivs.forEach(div => {
+              div.style.display = 'none';
+            });
 
     try {
         // List all items (files) in the user's audio folder
@@ -4843,6 +4896,11 @@ window.listAndSelectImages = async function(imagePlaceholder, uploadButtonContai
     const storage = getStorage();
     const storageReference = storageRef(storage, `users/${auth.currentUser.uid}/images/`);
     const storageDiv = document.getElementById('image-storage-content');
+
+    const otherStorageDivs = document.querySelectorAll('.video-storage-content, .audio-storage-content, .file-storage-content');
+            otherStorageDivs.forEach(div => {
+              div.style.display = 'none';
+            });
 
     try {
         // List all items (files) in the user's image folder
@@ -8261,7 +8319,7 @@ var colors = [
 
 
 
-  <div style="padding: 1.2vw 0 1.3vw 1vw; font-size: 1.4vw; font-family: Arial;">
+  <div id="addPage" style="padding: 1.2vw 0 1.3vw 1vw; font-size: 1.4vw; font-family: Arial;">
     <button id="newTemplateButton" style="background-color: transparent;">
       <span id = "addTemplateIcon" class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 0px; line-height: 1; vertical-align: middle;margin-top:-3px;">add_box</span>
       Add Page
