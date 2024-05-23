@@ -37,6 +37,7 @@
             font-family: Arial, sans-serif;
             display: flex;
 			flex-wrap: wrap;
+      font-size: 1.4vw;
       /*background-color: #171b70 !important; */
         }
 		
@@ -76,13 +77,15 @@
     .two-columns {
         flex-direction: column; /* Change to column for mobile screens */
         width:100% !important;
+        height: auto !important;
     }
 
     #buttonsAndStorage {
       width: 100% !important; /* Ensure each column takes full width on mobile */
       height: auto !important;
       display: flex;
-      padding-left: 5% !important;
+      padding-left: 2% !important;
+      background: linear-gradient(90deg, #171b70, #a70050); /* Your gradient background */
     }
 
     #tools, #toolsIcon, #newTemplateButton, #addTemplateIcon, #library, #libraryIcon, #storage, #storageIcon {
@@ -95,26 +98,124 @@
 
     .selected-template-button, .template-button {
       font-size: 3vw !important;
+      padding: 1.5vw 1vw !important;
     }
 
     .dropdown-content {
       width: fit-content !important;
+      padding: 2vw 1vw !important;
+    }
+
+    div.dropdown-content * {
+      font-size: 2.5vw !important;
+    }
+
+    .column {
+      height: auto;
     }
     
     .columnOne {
         width: 100% !important; /* Ensure each column takes full width on mobile */
+        min-height: 200px;
     }
 
     .template-container {
       display: flex;
-      max-width: 60%;    
+      max-width: 50%;    
     }
 
-    .file-storage-content {
+    .file-storage-content, .image-storage-content, .video-storage-content, .audio-storage-content {
       width: 100% !important;
       min-height: 0 !important;
       border-width: 0.2vw 0 0 0 !important;
     }
+
+    #storageFiles, #storageVideos {
+      font-size: 3vw !important;
+    }
+
+    #storageIconSmall {
+      font-size: 3vw !important;
+    }
+
+    #videosInFiles, #audiosInFiles, #imagesInFiles {
+      font-size: 3vw !important;
+    }
+
+    .storage-file-item-container {
+      font-size: 2vw !important;
+    }
+
+    #mobileIcon {
+      font-size: 3vw !important;
+    }
+
+    .image-file-item, .video-file-item, .audio-file-item {
+      font-size: 2vw !important;
+    }
+
+    .fa-edit {
+      padding: 0 1vw !important;
+      background-color: transparent !important;
+    }
+
+    .fa-trash {
+      background-color: transparent !important;
+    }
+
+    .fa-arrow-down, .fa-arrow-up {
+      margin-top: -0.6vw !important;
+    }
+
+    .placeholderImage, .placeholderAudio, .placeholderVideo {
+      padding: 0 0 4vw 0 !important;
+    }
+
+    .placeholderImage span, .placeholderAudio span, .placeholderVideo span {
+      font-size: 5vw !important;
+    }
+
+    .ql-toolbar.ql-snow {
+      padding: 0.7vw;
+    }
+
+    #optionCheckbox1, #optionCheckbox2, #optionCheckbox3, #optionCheckbox4 {
+      width: 10% !important;
+      max-width: 3% !important;
+    }
+
+    #option1, #option2, #option3, #option4 {
+      min-width: 40% !important;
+    }
+
+    .add-textarea-pair-btn {
+      font-size: 3vw !important;
+      padding-left: 1vw !important;
+      padding-right: 1vw !important;
+    }
+
+    .colorSelectButtonClassCardfront, .colorSelectButtonClassCardback {
+      font-size: 3vw !important;
+      width: 27% !important;
+    }
+
+    .colorSelectButtonClassCardfront img, .colorSelectButtonClassCardback img{
+      max-width: 3.5vw !important;
+    max-height: 3.5vw !important;
+    }
+
+    #button-save, #copyTemplate {
+      width: auto !important;
+      padding: 0.5vw 1vw 0 1vw !important;
+      font-size: 3vw !important;
+    }
+
+    #cloudDone, #cloudSync {
+      font-size: 4.5vw !important;
+      padding-top: 1vw !important;
+    padding-right: 1vw !important;
+    }
+
 }
 
     #left-column {
@@ -1156,7 +1257,7 @@ input::placeholder, textarea::placeholder {
     color: white;
     font-family: 'Arial', sans-serif;
     padding: 0.2vw 0.5vw 0.2vw 0.5vw;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1vw;
@@ -1964,7 +2065,7 @@ const loadTemplate = async (templateId) => {
      // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
 
@@ -2009,7 +2110,7 @@ const debouncedLoadTemplate = debounce(async (templateId) => {
      // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
       
@@ -2207,7 +2308,7 @@ function reinitializeInteractiveElements() {
          // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
     
@@ -2218,14 +2319,14 @@ updateSaveStatusToYes();
      // Function to update the status div TO SAVED
      function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-        statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+        statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 
 
 // Function to update the status div TO NOT SAVED
 function updateSaveStatusToNo() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_sync</span>';    
+    statusDiv.innerHTML = '<span id="cloudSync" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_sync</span>';    
 }
 
 
@@ -3891,7 +3992,7 @@ let hasChanges = false;
          // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
   }
@@ -3900,7 +4001,7 @@ updateSaveStatusToYes();
 // Function to update the status div TO NOT SAVED
 function updateSaveStatusToNo() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_sync</span>';    
+    statusDiv.innerHTML = '<span id="cloudSync" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_sync</span>';    
 }
 
 
@@ -3942,7 +4043,7 @@ document.addEventListener("DOMContentLoaded", function() {
      // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
 
@@ -4097,7 +4198,7 @@ const clearTemplate = async () => {
      // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
 
@@ -4240,7 +4341,7 @@ window.handleVideoUpload = async function(event, videoPlaceholder, uploadButtonC
              // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
 
@@ -4276,7 +4377,7 @@ window.listAndSelectVideos = async function(videoPlaceholder, uploadButtonContai
         const listResult = await listAll(storageReference);
 
         // Clear the storageDiv before appending the new list
-        storageDiv.innerHTML = '<span class="video-close-storage" id="video-close-storage">&times;</span><div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Videos</div>';
+        storageDiv.innerHTML = '<span class="video-close-storage" id="video-close-storage">&times;</span><div id="storageFiles" style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Videos</div>';
 
         // Display the list of video files
         listResult.items.forEach((itemRef) => {
@@ -4290,7 +4391,7 @@ window.listAndSelectVideos = async function(videoPlaceholder, uploadButtonContai
 
             // Create and add the video icon
             const videoIcon = document.createElement('div');
-            videoIcon.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1vw;">videocam</span>';
+            videoIcon.innerHTML = '<span id="storageFiles" class="material-symbols-sharp" style="font-size: 1vw;">videocam</span>';
             videoIcon.style.marginRight = '8px';
             videoIcon.style.display = 'flex';
             videoIcon.style.alignItems = 'center';
@@ -4334,7 +4435,7 @@ window.listAndSelectVideos = async function(videoPlaceholder, uploadButtonContai
                     // Function to update the status div TO SAVED
                     function updateSaveStatusToYes() {
                         const statusDiv = document.getElementById("saveReport");
-                        statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
+                        statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
                     }
                     updateSaveStatusToYes();
 
@@ -4450,7 +4551,7 @@ window.handleAudioUpload = async function(event, audioPlaceholder, uploadButtonC
              // Function to update the status div TO SAVED
 function updateSaveStatusToYes() {
     const statusDiv = document.getElementById("saveReport");
-    statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
+    statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';    
 }
 updateSaveStatusToYes();
 
@@ -4486,7 +4587,7 @@ window.listAndSelectAudios = async function(audioPlaceholder, uploadButtonContai
         const listResult = await listAll(storageReference);
 
         // Clear the storageDiv before appending the new list
-        storageDiv.innerHTML = '<span class="audio-close-storage" id="audio-close-storage">&times;</span><div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Audios</div>';
+        storageDiv.innerHTML = '<span class="audio-close-storage" id="audio-close-storage">&times;</span><div id="storageFiles" style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Audios</div>';
 
         // Display the list of audio files
         listResult.items.forEach((itemRef) => {
@@ -4500,7 +4601,7 @@ window.listAndSelectAudios = async function(audioPlaceholder, uploadButtonContai
 
             // Create and add the audio icon
             const audioIcon = document.createElement('div');
-            audioIcon.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1vw;"> music_note </span>';
+            audioIcon.innerHTML = '<span id="storageFiles" class="material-symbols-sharp" style="font-size: 1vw;"> music_note </span>';
             audioIcon.style.marginRight = '8px';
             audioIcon.style.display = 'flex';
             audioIcon.style.alignItems = 'center';
@@ -4544,7 +4645,7 @@ window.listAndSelectAudios = async function(audioPlaceholder, uploadButtonContai
                     // Function to update the status div TO SAVED
                     function updateSaveStatusToYes() {
                         const statusDiv = document.getElementById("saveReport");
-                        statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
+                        statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
                     }
                     updateSaveStatusToYes();
 
@@ -4712,7 +4813,7 @@ window.handleImageUpload = async function(event, imagePlaceholder, uploadButtonC
         // Function to update the status div TO SAVED
         function updateSaveStatusToYes() {
             const statusDiv = document.getElementById("saveReport");
-            statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
+            statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
         }
         updateSaveStatusToYes();
 
@@ -4748,7 +4849,7 @@ window.listAndSelectImages = async function(imagePlaceholder, uploadButtonContai
         const listResult = await listAll(storageReference);
 
         // Clear the storageDiv before appending the new list
-        storageDiv.innerHTML = '<span class="image-close-storage" id="image-close-storage">&times;</span><div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Images</div>';
+        storageDiv.innerHTML = '<span class="image-close-storage" id="image-close-storage">&times;</span><div id="storageFiles" style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Images</div>';
 
         // Display the list of image files
         listResult.items.forEach((itemRef) => {
@@ -4762,7 +4863,7 @@ window.listAndSelectImages = async function(imagePlaceholder, uploadButtonContai
 
             // Create and add the image icon
             const imageIcon = document.createElement('div');
-            imageIcon.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1vw;"> imagesmode </span>';
+            imageIcon.innerHTML = '<span id="storageFiles" class="material-symbols-sharp" style="font-size: 1vw;"> imagesmode </span>';
             imageIcon.style.marginRight = '8px';
             imageIcon.style.display = 'flex';
             imageIcon.style.alignItems = 'center';
@@ -4858,7 +4959,7 @@ document.getElementById('decreaseWidth' + imagePlaceholderId).addEventListener('
                     // Function to update the status div TO SAVED
                     function updateSaveStatusToYes() {
                         const statusDiv = document.getElementById("saveReport");
-                        statusDiv.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
+                        statusDiv.innerHTML = '<span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span>';
                     }
                     updateSaveStatusToYes();
 
@@ -4945,7 +5046,7 @@ window.listAndSelectFiles = async function() {
 
             // Create and add the delete icon
             const deleteIcon = document.createElement('div');
-            deleteIcon.innerHTML = '<span class="material-symbols-sharp delete-icon" style="font-size: 1vw; cursor: pointer;">delete</span>';
+            deleteIcon.innerHTML = '<span id="mobileIcon" class="material-symbols-sharp delete-icon" style="font-size: 1vw; cursor: pointer;">delete</span>';
             deleteIcon.style.marginRight = '8px';
             deleteIcon.style.display = 'flex';
             deleteIcon.style.alignItems = 'center';
@@ -4965,7 +5066,7 @@ window.listAndSelectFiles = async function() {
 
             // Create and add the video icon
             const videoIcon = document.createElement('div');
-            videoIcon.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1vw;">videocam</span>';
+            videoIcon.innerHTML = '<span id="mobileIcon" class="material-symbols-sharp" style="font-size: 1vw;">videocam</span>';
             videoIcon.style.marginRight = '8px';
             videoIcon.style.display = 'flex';
             videoIcon.style.alignItems = 'center';
@@ -5014,7 +5115,7 @@ window.listAndSelectFiles = async function() {
 
             // Create and add the delete icon
             const deleteIcon = document.createElement('div');
-            deleteIcon.innerHTML = '<span class="material-symbols-sharp delete-icon" style="font-size: 1vw; cursor: pointer;">delete</span>';
+            deleteIcon.innerHTML = '<span id="mobileIcon" class="material-symbols-sharp delete-icon" style="font-size: 1vw; cursor: pointer;">delete</span>';
             deleteIcon.style.marginRight = '8px';
             deleteIcon.style.display = 'flex';
             deleteIcon.style.alignItems = 'center';
@@ -5034,7 +5135,7 @@ window.listAndSelectFiles = async function() {
 
             // Create and add the audio icon
             const audioIcon = document.createElement('div');
-            audioIcon.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1vw;">audiotrack</span>';
+            audioIcon.innerHTML = '<span id="mobileIcon" class="material-symbols-sharp" style="font-size: 1vw;">audiotrack</span>';
             audioIcon.style.marginRight = '8px';
             audioIcon.style.display = 'flex';
             audioIcon.style.alignItems = 'center';
@@ -5074,7 +5175,7 @@ window.listAndSelectFiles = async function() {
 
             // Create and add the delete icon
             const deleteIcon = document.createElement('div');
-            deleteIcon.innerHTML = '<span class="material-symbols-sharp delete-icon" style="font-size: 1vw; cursor: pointer;">delete</span>';
+            deleteIcon.innerHTML = '<span id="mobileIcon" class="material-symbols-sharp delete-icon" style="font-size: 1vw; cursor: pointer;">delete</span>';
             deleteIcon.style.marginRight = '8px';
             deleteIcon.style.display = 'flex';
             deleteIcon.style.alignItems = 'center';
@@ -5094,7 +5195,7 @@ window.listAndSelectFiles = async function() {
 
             // Create and add the image icon
             const imageIcon = document.createElement('div');
-            imageIcon.innerHTML = '<span class="material-symbols-sharp" style="font-size: 1vw;">image</span>';
+            imageIcon.innerHTML = '<span id="mobileIcon" class="material-symbols-sharp" style="font-size: 1vw;">image</span>';
             imageIcon.style.marginRight = '8px';
             imageIcon.style.display = 'flex';
             imageIcon.style.alignItems = 'center';
@@ -8136,7 +8237,7 @@ var colors = [
 
   
   <div class="toolsDropdown">
-    <div id="toolsButton" style="background-color: #171b70;">
+    <div id="toolsButton">
       <div id = "tools" style="padding: 1vw 0 0.8vw 1vw; font-size: 1.4vw; font-family: Arial; cursor: default;">
         <span id = "toolsIcon" class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;margin-top:-3px;">construction</span>Tools
       </div>
@@ -8195,7 +8296,7 @@ var colors = [
     
 
   <div class="column" style="height: auto; width: 100%; background-color: transparent; display: flex; flex-wrap: wrap; align-content: flex-end; flex-direction: row; justify-content: flex-end;">
-    <div id="saveReport" style="padding: 0vw 0.5vw; color: #171b70; font-size: 0; display: flex; align-items: center;"><span class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span></div>
+    <div id="saveReport" style="padding: 0vw 0.5vw; color: #171b70; font-size: 0; display: flex; align-items: center;"><span id="cloudDone" class="material-symbols-sharp" style="font-size: 1.2vw; padding-top: 0.1vw;">cloud_done</span></div>
     <button class='button' id="button-save">SAVE CHANGES</button>
   </div>
 
@@ -8204,35 +8305,35 @@ var colors = [
 
   <div class="video-storage-content" id="video-storage-content">
     <span class="video-close-storage" id="video-close-storage">&times;</span>
-    <div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Videos</div>
+    <div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;" id="storageFiles">Storage Videos</div>
   </div>
 
   <div class="audio-storage-content" id="audio-storage-content">
     <span class="audio-close-storage" id="audio-close-storage">&times;</span>
-    <div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Audios</div>
+    <div id="storageFiles" style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Audios</div>
   </div>
 
   <div class="image-storage-content" id="image-storage-content">
     <span class="image-close-storage" id="image-close-storage">&times;</span>
-    <div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Images</div>
+    <div id="storageFiles" style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw;">Storage Images</div>
   </div>
 
   <div class="file-storage-content" id="file-storage-content">
     <span class="file-close-storage" id="file-close-storage">&times;</span>
     <div style="font-size: 2vw; font-family: Arial; color: white; margin-bottom: 3vw; display: flex; align-items: center; align-self: center;">
-      <span class="material-symbols-sharp" style="padding-right: 1vw; line-height: 1; vertical-align: middle;">settings_system_daydream</span>
-      <div>Storage Files</div>
+      <span id="storageIconSmall" class="material-symbols-sharp" style="padding-right: 1vw; line-height: 1; vertical-align: middle;">settings_system_daydream</span>
+      <div id="storageFiles">Storage Files</div>
     </div>
     
-    <div style="font-size: 1.5vw; font-family: Arial; color: white; margin-bottom: 3vw;">
+    <div id="videosInFiles" style="font-size: 1.5vw; font-family: Arial; color: white; margin-bottom: 3vw;">
       Videos
       <div id="strVideos" style="margin-top: 2vw;"></div>
     </div>
-    <div style="font-size: 1.5vw; font-family: Arial; color: white; margin-bottom: 3vw;">
+    <div id="audiosInFiles" style="font-size: 1.5vw; font-family: Arial; color: white; margin-bottom: 3vw;">
       Audios
       <div id="strAudios" style="margin-top: 2vw;"></div>
     </div>
-    <div style="font-size: 1.5vw; font-family: Arial; color: white; margin-bottom: 3vw;">
+    <div id="imagesInFiles" style="font-size: 1.5vw; font-family: Arial; color: white; margin-bottom: 3vw;">
       Images
       <div id="strImages" style="margin-top: 2vw;"></div>
     </div>
