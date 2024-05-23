@@ -31,6 +31,7 @@
 	<style>
  
         body {
+          visibility: hidden;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -43,6 +44,7 @@
 			height: 10vh;
 			margin-bottom: 0px;
       border-radius: 0px;
+      min-height: 0;
 		}
 
     .column {
@@ -68,6 +70,52 @@
             flex-direction: row;
 			scrollbar-width: none;
     }
+
+    /* Media query for mobile screens */
+@media (max-width: 520px) {
+    .two-columns {
+        flex-direction: column; /* Change to column for mobile screens */
+        width:100% !important;
+    }
+
+    #buttonsAndStorage {
+      width: 100% !important; /* Ensure each column takes full width on mobile */
+      height: auto !important;
+      display: flex;
+      padding-left: 5% !important;
+    }
+
+    #tools, #toolsIcon, #newTemplateButton, #addTemplateIcon, #library, #libraryIcon, #storage, #storageIcon {
+      font-size: 5vw !important;
+    }
+
+    #storageIndicator {
+      font-size: 2vw !important;
+    }
+
+    .selected-template-button, .template-button {
+      font-size: 3vw !important;
+    }
+
+    .dropdown-content {
+      width: fit-content !important;
+    }
+    
+    .columnOne {
+        width: 100% !important; /* Ensure each column takes full width on mobile */
+    }
+
+    .template-container {
+      display: flex;
+      max-width: 60%;    
+    }
+
+    .file-storage-content {
+      width: 100% !important;
+      min-height: 0 !important;
+      border-width: 0.2vw 0 0 0 !important;
+    }
+}
 
     #left-column {
       background-color: #eee;
@@ -95,6 +143,7 @@
     #buttonsAndStorage > .storageAll{
             margin-top: auto;
             padding-left: 1vw;
+            padding-top: 2vw;
         }
 
 .shape {
@@ -476,9 +525,9 @@
 .template-container {
   display: flex;
   justify-content: space-between; /* Space between the template button and the trash icon */
-  margin-bottom: 5px; /* Margin between template items */
+  margin-bottom: 0.3vw; /* Margin between template items */
   align-items: center;
-  padding: 0 7px 0 7px;
+  padding: 0 0.7vw 0 0.7vw;
 }
 
 .template-button {
@@ -495,7 +544,7 @@
     border-radius: 0px;
     color: white;
     font-family: 'Arial', sans-serif;
-    padding: 5px 10px;
+    padding: 0.5vw 1vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -517,7 +566,7 @@
     border-radius: 0px;
     color: white;
     font-family: 'Arial', sans-serif;
-    padding: 5px 10px;
+    padding: 0.5vw 1vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -530,13 +579,13 @@
 }
 
 .fas.fa-edit {
-  padding: 6px 2px 6px 2px; /* Padding around the trash icon */
-  margin-left: 2px; /* Space between button and trash icon */
+  padding: 0.5vw 0.2vw; /* Padding around the trash icon */
+  margin-left: 0.2vw; /* Space between button and trash icon */
 }
 
 .fas.fa-trash {
-  padding: 6px 3px 6px 3px; /* Padding around the trash icon */
-  margin-left: 3px; /* Space between button and trash icon */
+  padding: 0.5vw 0.2vw; /* Padding around the trash icon */
+  margin-left: 0.3vw; /* Space between button and trash icon */
 }
 
        /* Existing styles */
@@ -594,7 +643,7 @@ body {
 /* Custom styles for Arial and Times New Roman */
 
 .ql-editor {
-  font-family: 'Spectral', serif;
+  font-family: 'Times New Roman', Times, serif;
     }
 
 .ql-snow .ql-picker.ql-font .ql-picker-label[data-value="arial"]::before,
@@ -769,7 +818,7 @@ body {
   word-wrap: break-word; /* Deprecated version of overflow-wrap for older browsers */
   overflow: hidden; /* Hides overflowed content, alternatively use 'auto' to provide scrollbars */
   height: auto; /* Adjusts height based on content, you might want to set a fixed height or max-height */
-  font-family: 'Spectral', serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .rich-editor-placeholder p {
@@ -934,6 +983,7 @@ overflow-wrap: break-word; /* Ensures long words do not overflow the div */
     align-content: flex-start;
     flex-direction: column;
     align-items: center;
+    color: #2f2f2f;
 }
 
 .flashcard-quiz > :first-child {
@@ -1118,10 +1168,9 @@ input::placeholder, textarea::placeholder {
   display: flex;
   align-items: center; /* Vertically center */
   justify-content: center; /* Horizontally center */
-  margin-top: 10%;
   height: 100%; /* Take full height of the container */
   text-align: center;
-  font-size: 1.5em; /* Example font size, adjust as needed */
+  font-size: 1.5vw; /* Example font size, adjust as needed */
   color: rgb(23, 27, 112);
   font-weight: bold; 
 }
@@ -1132,7 +1181,7 @@ input::placeholder, textarea::placeholder {
   justify-content: center; /* Horizontally center */
   height: 100%; /* Take full height of the container */
   text-align: center;
-  font-size: 1.5em; /* Example font size, adjust as needed */
+  font-size: 1.5vw; /* Example font size, adjust as needed */
   color: rgb(23, 27, 112);
   font-weight: bold; 
 }
@@ -1523,13 +1572,13 @@ button:hover {
     margin-top: 1vw;
 }
 
-a {
+a.video-file-item, a.audio-file-item, a.image-file-item {
   color: white !important;
 }
 
-a:hover {
+a.video-file-item:hover, a.audio-file-item:hover, a.image-file-item:hover {
   color: rgba(255, 255, 0, 0.799) !important;
-}
+} 
 
 /*p {
   margin: 0 !important;
@@ -1607,7 +1656,7 @@ const loadMostRecentTemplate = async () => {
       // Update the style of the selected template button
       updateSelectedTemplateButtonStyle(mostRecentTemplate.id);
     } else {
-      // Create a new template
+      // Create a new page
       currentTemplateId = generateTemplateId();
       document.getElementById("left-column").innerHTML = ''; // Set default content if necessary
       document.getElementById("right-column").innerHTML = ''; // Set default content if necessary
@@ -1623,11 +1672,11 @@ const loadMostRecentTemplate = async () => {
     return doc(collection(db, 'users', auth.currentUser.uid, 'templates')).id;
 	};
 
-const saveTemplate = async (templateName = "New Template") => {
+const saveTemplate = async (templateName = "New Page") => {
   if (auth.currentUser && currentTemplateId && !isDeleting) {
     // Fetch current template name from the corresponding button in the UI
     const templateButton = document.querySelector(`[data-template-id="${currentTemplateId}"]`);
-    const currentTemplateName = templateButton ? templateButton.textContent : 'New Template';
+    const currentTemplateName = templateButton ? templateButton.textContent : 'New Page';
 
     // Update value attributes before saving innerHTML for inputs and textareas
     const inputs = document.getElementById("left-column").querySelectorAll("input[type='text']");
@@ -1738,11 +1787,11 @@ const deleteTemplate = async (templateId, templateContainer) => {
         reinitializeInteractiveElements();
         updateSelectedTemplateButtonStyle(mostRecentTemplate.id);
       } else {
-        // If no templates are left, clear the UI and possibly create a new template
+        // If no templates are left, clear the UI and possibly create a new page
         document.getElementById("right-column").innerHTML = '';
         document.getElementById("left-column").innerHTML = '';
         currentTemplateId = null;
-        // Optionally, create a new template here
+        // Optionally, create a new page here
       }
     } else {
       // Fetch and display the remaining templates
@@ -1857,7 +1906,7 @@ deleteButton.addEventListener("click", () => {
     button.parentElement.appendChild(overlay);
   }
   
-// Function to append a new template item to the buttons column
+// Function to append a new page item to the buttons column
 function appendNewTemplateItem(templateId, templateName) {
   const buttonsColumn = document.getElementById("buttons-column");
   const templateItem = createTemplateItem(templateId, templateName);
@@ -1894,7 +1943,7 @@ const fetchAndDisplayTemplates = async () => {
     
     // Append each sorted template item
     templates.forEach(template => {
-      appendNewTemplateItem(template.id, template.name || 'New Template');
+      appendNewTemplateItem(template.id, template.name || 'New Page');
     });
   }
 };
@@ -2046,15 +2095,15 @@ function handleDownButtonClick(event) {
 
 function initializeQuill(id) {
 var Font = Quill.import('formats/font');
-    Font.whitelist = ['spectral', 'inter', 'arial', 'times-new-roman', 'georgia', 'calibri', 'helvetica', 'verdana', 'tahoma']; // Add fonts to the whitelist
+    Font.whitelist = ['times-new-roman', 'inter', 'arial', 'georgia', 'calibri', 'helvetica', 'verdana', 'tahoma']; // Add fonts to the whitelist
     Quill.register(Font, true);
 
     var FontAttributor = Quill.import('attributors/class/font');
-    FontAttributor.whitelist = ['spectral', 'inter', 'arial', 'times-new-roman', 'georgia', 'calibri', 'helvetica', 'verdana', 'tahoma']; // Add your fonts here
+    FontAttributor.whitelist = ['times-new-roman', 'inter', 'arial', 'georgia', 'calibri', 'helvetica', 'verdana', 'tahoma']; // Add your fonts here
     Quill.register(FontAttributor, true);
 
     var FontStyle = Quill.import('attributors/style/font');
-    FontStyle.whitelist = ['spectral', 'inter', 'arial', 'times-new-roman', 'georgia', 'calibri', 'helvetica', 'verdana', 'tahoma'];
+    FontStyle.whitelist = ['times-new-roman', 'inter', 'arial', 'georgia', 'calibri', 'helvetica', 'verdana', 'tahoma'];
     Quill.register(FontStyle, true);
 
 
@@ -2093,15 +2142,54 @@ var Font = Quill.import('formats/font');
             'list', 'script', 'clean', 'link'] // Add 'link' to formats
     });
 
-    quill.on('text-change', function() {
-        const content = quill.root.innerHTML;
-        document.getElementById(`richEditorPlaceholder${id}`).innerHTML = content;
-		 if (!hasChanges) {
-  hasChanges = true;
-  updateSaveStatusToNo();
-  console.log('hasChanges is set to TRUE');
+
+
+    function pxToVw(px) {
+    const vw = (px / window.innerWidth) * 100;
+    return vw.toFixed(2) + 'vw';
 }
+
+function ensureFontSizeForAnchorTags(content) {
+    // Create a temporary div to manipulate the HTML content
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = content;
+
+    // Find all <a> elements
+    const anchorTags = tempDiv.querySelectorAll('a');
+    anchorTags.forEach(anchor => {
+        if (!anchor.style.fontSize) {
+            // Default pixel size to be converted to vw if not specified
+            const defaultPxSize = 12; // Assuming 16px as default size
+            anchor.style.fontSize = pxToVw(defaultPxSize);
+        }
     });
+
+    return tempDiv.innerHTML;
+}
+
+function convertPxToVw(content) {
+    // First replace all px values with vw values
+    let convertedContent = content.replace(/(\d+)px/g, function(match, p1) {
+        return pxToVw(parseInt(p1));
+    });
+
+    // Ensure all <a> elements have font size in vw
+    convertedContent = ensureFontSizeForAnchorTags(convertedContent);
+
+    return convertedContent;
+}
+
+quill.on('text-change', function() {
+    const content = quill.root.innerHTML;
+    const convertedContent = convertPxToVw(content);
+    document.getElementById(`richEditorPlaceholder${id}`).innerHTML = convertedContent;
+    if (!hasChanges) {
+        hasChanges = true;
+        updateSaveStatusToNo();
+        console.log('hasChanges is set to TRUE');
+    }
+});
+
 }
 
 function reinitializeInteractiveElements() {
@@ -2498,7 +2586,7 @@ quizSliders.forEach(slider => {
         targetFlashcardContainer.find('.popup').remove();
 
         // Create a new popup element with the score information
-        var popup = $('<div class="popup" style="position: absolute; width: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f5f5f5; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px #777777; text-align: center; z-index: 100000;">' +
+        var popup = $('<div class="popup" style="font-weight: 500; position: absolute; width: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f5f5f5; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px #777777; text-align: center; z-index: 100000;">' +
                   '<p>Correct answers: ' + correctAnswers + '</p>' +
                   '<p style="margin-bottom: 0">Your score: ' + percentCorrectAnswers + '%</p>' +
                   '</div>');
@@ -2910,7 +2998,7 @@ removeAllToolbars('ql-toolbar');
             const correspondingId = input.id.match(/\d+/)[0]; // Extract the numeric part
             const anchorElement = rightColumn.querySelector(`#menuItemOne${correspondingId}, #menuItemTwo${correspondingId}`);
             if (anchorElement) {
-                anchorElement.href = this.value || "https://defaulturl.com";
+                anchorElement.href = this.value || "https://instructure.com/";
                 updateTemplateContent(`shape${correspondingId}.menuItemHref`, this.value);
             }
              if (!hasChanges) {
@@ -2946,7 +3034,7 @@ removeAllToolbars('ql-toolbar');
             const correspondingId = input.id.match(/\d+/)[0]; // Extract the numeric part
             const anchorElement = rightColumn.querySelector(`#menuItemOneE${correspondingId}, #menuItemTwoE${correspondingId}, #menuItemThreeE${correspondingId}`);
             if (anchorElement) {
-                anchorElement.href = this.value || "https://defaulturl.com";
+                anchorElement.href = this.value || "https://instructure.com/";
                 updateTemplateContent(`shape${correspondingId}.menuItemHrefE`, this.value);
             }
              if (!hasChanges) {
@@ -4001,7 +4089,7 @@ updateSaveStatusToYes();
 			// Define clearTemplate function outside of setupTemplateButtons since it's no longer needed
 const clearTemplate = async () => {
   saveTemplate();
-  console.log('Previous template saved before adding a new template');
+  console.log('Previous template saved before adding a new page');
   hasChanges = false;
     console.log('hasChanges is set to FALSE by clearTemplate function');
 
@@ -4015,8 +4103,8 @@ updateSaveStatusToYes();
 
   
 // Add welcome messages
-  const welcomeMessageLeft = '<div id="welcomeMessageLeft"><div class="welcome-message1">SEE YOUR TEMPLATE RESULT HERE</div><br><div class="welcome-container"><img src="https://grahamandsergei.github.io/app/icons/logoapp3.png" alt="Ghost" class="ghost"><p class="shadowFrame"><svg version="1.1" class="shadow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="61px" y="20px" width="122.436px" height="39.744px" viewBox="0 0 122.436 39.744" enable-background="new 0 0 122.436 39.744" xml:space="preserve"><ellipse fill="#171b70" cx="61.128" cy="19.872" rx="49.25" ry="8.916"/></svg></p></div></div>';
-  const welcomeMessageRight = '<div id="welcomeMessageRight" class="welcome-message2">SEE YOUR TEMPLATE RESULT HERE</div>';
+  const welcomeMessageLeft = '<div id="welcomeMessageLeft" class="welcome-message1">ADD TOOLS FROM THE BLUE COLUMN</div>';
+  const welcomeMessageRight = '<div id="welcomeMessageRight" class="welcome-message2">SEE RESULT HERE</div>';
 
   document.getElementById("left-column").innerHTML = welcomeMessageLeft;
   document.getElementById("right-column").innerHTML = welcomeMessageRight;
@@ -4027,26 +4115,26 @@ updateSaveStatusToYes();
       button.classList.remove('selected-template-button');
   });
 
-  // Create new template
+  // Create new page
   const newTemplateId = generateTemplateId();
   currentTemplateId = newTemplateId;
 
   // Default template name
-  const defaultTemplateName = "New Template";
+  const defaultTemplateName = "New Page";
 
-  // Save the new template with the default name
+  // Save the new page with the default name
   await saveTemplate(defaultTemplateName);
 
-  // Append the new template item with the default name
+  // Append the new page item with the default name
   appendNewTemplateItem(newTemplateId, defaultTemplateName);
 
-  // Apply selected style to the new template button
+  // Apply selected style to the new page button
   const newTemplateButton = document.querySelector(`[data-template-id="${newTemplateId}"]`);
   if (newTemplateButton) {
       newTemplateButton.classList.add('selected-template-button');
   }
 
-  // Load the new template
+  // Load the new page
   loadTemplate(newTemplateId); 
 };
 	
@@ -4886,6 +4974,7 @@ window.listAndSelectFiles = async function() {
             // Create and add the file link
             const fileLink = document.createElement('a');
             fileLink.textContent = fileName;
+
             fileLink.className = 'video-file-item';
             fileLink.target = '_blank';
             // Get the download URL and set it as the href attribute
@@ -5132,6 +5221,7 @@ onAuthStateChanged(auth, (user) => {
 						richEditorPlaceholder.id = `richEditorPlaceholder${uniqueIdCounter}`;
 						richEditorPlaceholder.className = "rich-editor-placeholder";
             richEditorPlaceholder.style.whiteSpace = 'pre-wrap';
+            richEditorPlaceholder.style.lineHeight = '2.2vw';
             const richPlaceholderText = `<div id="richPlaceholderText" style="display: grid; place-items: center; height: 7.5vw; color: #171b70; font-size: 1.5vw; text-align: center;"><span class="material-symbols-sharp"> history_edu </span>YOUR TEXT WILL APPEAR HERE</div>`;
             richEditorPlaceholder.innerHTML = richPlaceholderText;
 
@@ -5142,7 +5232,7 @@ onAuthStateChanged(auth, (user) => {
 						placeholder.id = `firstplaceholder${uniqueIdCounter}`;
 						placeholder.className = "placeholderRedCircle";
 						placeholder.innerText = text;
-            placeholder.style.padding = '1.2vw 0';
+            placeholder.style.padding = '1.2vw 4vw 1.2vw 3vw';
 						placeholder.style.textAlign = "center";
 						placeholder.style.marginLeft = '0';
             placeholder.style.fontSize = "1.5vw";
@@ -5815,7 +5905,7 @@ images.forEach(function(image) {
 						console.log("Targeting element with ID:", menuElementId);
 						var anchorElement = document.getElementById(menuElementId);
 						if (anchorElement) {
-							anchorElement.href = this.value || "https://defaulturl.com";
+							anchorElement.href = this.value || "https://instructure.com/";
 						}
 						// Call your update and save functions
 						updateTemplateContent(auth.currentUser.uid, `shape${uniqueIdCounter}.menuItemOneHref`, this.value);
@@ -5994,7 +6084,7 @@ setupPopupToggle(colorSelectButtonSection, 'colorPopupSection');
 						console.log("Targeting element with ID:", menuElementId);
 						var anchorElement = document.getElementById(menuElementId);
 						if (anchorElement) {
-							anchorElement.href = this.value || "https://defaulturl.com";
+							anchorElement.href = this.value || "https://instructure.com/";
 						}
 						// Call your update and save functions
 						updateTemplateContent(auth.currentUser.uid, `shape${uniqueIdCounter}.menuItemTwoHref`, this.value);
@@ -6138,7 +6228,7 @@ images.forEach(function(image) {
 						console.log("Targeting element with ID:", menuElementId);
 						var anchorElement = document.getElementById(menuElementId);
 						if (anchorElement) {
-							anchorElement.href = this.value || "https://defaulturl.com";
+							anchorElement.href = this.value || "https://instructure.com/";
 						}
 						// Call your update and save functions
 						updateTemplateContent(auth.currentUser.uid, `shape${uniqueIdCounter}.menuItemOneHrefE`, this.value);
@@ -6288,7 +6378,7 @@ images.forEach(function(image2) {
 						console.log("Targeting element with ID:", menuElementId);
 						var anchorElement = document.getElementById(menuElementId);
 						if (anchorElement) {
-							anchorElement.href = this.value || "https://defaulturl.com";
+							anchorElement.href = this.value || "https://instructure.com/";
 						}
 						// Call your update and save functions
 						updateTemplateContent(auth.currentUser.uid, `shape${uniqueIdCounter}.menuItemTwoHrefE`, this.value);
@@ -6475,7 +6565,7 @@ setupPopupToggle(colorSelectButtonSection, 'colorPopupSection');
 						console.log("Targeting element with ID:", menuElementId);
 						var anchorElement = document.getElementById(menuElementId);
 						if (anchorElement) {
-							anchorElement.href = this.value || "https://defaulturl.com";
+							anchorElement.href = this.value || "https://instructure.com/";
 						}
 						// Call your update and save functions
 						updateTemplateContent(auth.currentUser.uid, `shape${uniqueIdCounter}.menuItemThreeHrefE`, this.value);
@@ -7850,6 +7940,8 @@ setupPopupToggle(colorSelectButtonCardback, 'colorPopupCardback');
            addButtonClickListener(addBreakButton, document.getElementById("left-column"), "emptyLine", "Desc", "#a80050");
 				   addButtonClickListener(addQuizButton, document.getElementById("left-column"), "quizClass", "Desc", "#a80050");
 
+           document.body.style.visibility = "visible";
+
 				});
 				
         function getMenu2Html(codeCounter1, codeCounter2) {
@@ -7858,14 +7950,14 @@ setupPopupToggle(colorSelectButtonCardback, 'colorPopupCardback');
                     <div style="display: flex; text-align: center; align-items: center; margin-bottom: 10px; align-items: stretch; ">
                         <div class="menu2_1_border" style="text-align: center; align-items: center; display: flex; font-size: calc(0.5vw + 5pt); width: 100%; text-align: left; border: medium solid #171b70; border-left-width: 0; word-wrap: break-word;">                        
                           <div class="menu2_1_background" style="text-align: center; align-items: center; background-color: #171b70; width: 15%; flex-shrink: 0;"><img class="menu2_1_image" src="https://grahamandsergei.github.io/app/school_FILL0_wght400_GRAD200_opsz48.png" style="width:50%; height:auto; padding:5px 0;"></div>
-<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a id="menuItemOne${codeCounter1}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70;">Topic / Week</a></span></div>
+<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a class="not_external" id="menuItemOne${codeCounter1}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70 !important;">Topic / Week</a></span></div>
                     </div>
                 </div>
                 <div class="customBootstrap1" style="width: 49%; margin-left: 2%;">
                     <div style="display: flex; text-align: center; align-items: center; margin-bottom: 10px; align-items: stretch;">
                         <div class="menu2_2_border" style="text-align: center; align-items: center; display: flex; font-size: calc(0.5vw + 5pt); width: 100%; text-align: left; border: medium solid #171b70; border-left-width: 0; word-wrap: break-word;">                        
                           <div class="menu2_2_background" style="text-align: center; align-items: center; background-color: #171b70; width: 15%; flex-shrink: 0;"><img class="menu2_2_image" src="https://grahamandsergei.github.io/app/school_FILL0_wght400_GRAD200_opsz48.png" style="width:50%; height:auto; padding:5px 0;"></div>
-<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a id="menuItemTwo${codeCounter2}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70;">Topic / Week</a></span></div>
+<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a class="not_external" id="menuItemTwo${codeCounter2}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70 !important;">Topic / Week</a></span></div>
                     </div>
                 </div>
             </div>
@@ -7878,21 +7970,21 @@ function getMenu3Html(codeCounter1, codeCounter2, codeCounter3) {
                     <div style="display: flex; text-align: center; align-items: center; margin-bottom: 10px; align-items: stretch;">
                         <div class="menu2_1_border" style="text-align: center; align-items: center; display: flex; font-size: calc(0.5vw + 5pt); width: 100%; text-align: left; border: medium solid #171b70; border-left-width: 0; word-wrap: break-word;">                        
                           <div class="menu2_1_background" style="text-align: center; align-items: center; background-color: #171b70; width: 15%; flex-shrink: 0;"><img class="menu2_1_image" src="https://grahamandsergei.github.io/app/school_FILL0_wght400_GRAD200_opsz48.png" style="width:50%; height:auto; padding:5px 0;" /></div>
-<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a id="menuItemOneE${codeCounter1}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70;">Topic / Week</a></span></div>
+<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a class="not_external" id="menuItemOneE${codeCounter1}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70 !important;">Topic / Week</a></span></div>
                     </div>
                 </div>
                 <div class="customBootstrap1" style="width: 32.33%; margin-left: 1.5%;">
                     <div style="display: flex; text-align: center; align-items: center; margin-bottom: 10px; align-items: stretch;">
                         <div class="menu2_2_border" style="text-align: center; align-items: center; display: flex; font-size: calc(0.5vw + 5pt); width: 100%; text-align: left; border: medium solid #171b70; border-left-width: 0; word-wrap: break-word;">                        
                           <div class="menu2_2_background" style="text-align: center; align-items: center; background-color: #171b70; width: 15%; flex-shrink: 0;"><img class="menu2_2_image" src="https://grahamandsergei.github.io/app/school_FILL0_wght400_GRAD200_opsz48.png" style="width:50%; height:auto; padding:5px 0;" /></div>
-<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a id="menuItemTwoE${codeCounter2}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70;">Topic / Week</a></span></div>
+<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a class="not_external" id="menuItemTwoE${codeCounter2}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70 !important;">Topic / Week</a></span></div>
                     </div>
                 </div>
                 <div class="customBootstrap1" style="width: 32.33%; margin-left: 1.5%;">
                     <div style="display: flex; text-align: center; align-items: center; margin-bottom: 10px; align-items: stretch;">
                         <div class="menu2_3_border" style="text-align: center; align-items: center; display: flex; font-size: calc(0.5vw + 5pt); width: 100%; text-align: left; border: medium solid #171b70; border-left-width: 0; word-wrap: break-word;">                        
                           <div class="menu2_3_background" style="text-align: center; align-items: center; background-color: #171b70; width: 15%; flex-shrink: 0;"><img class="menu2_3_image" src="https://grahamandsergei.github.io/app/school_FILL0_wght400_GRAD200_opsz48.png" style="width:50%; height:auto; padding:5px 0;" /></div>
-<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a id="menuItemThreeE${codeCounter3}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70;">Topic / Week</a></span></div>
+<span style="color: #000000; padding-left: 0.8vw; flex-grow: 1; display: flex; align-items: center; max-width: 85%; overflow: hidden; text-overflow: ellipsis;"><a class="not_external" id="menuItemThreeE${codeCounter3}" href="https://universityofgalway.instructure.com" style="font-family: 'Arial', sans-serif; font-weight: semi-bold; color: #171b70 !important;">Topic / Week</a></span></div>
                     </div>
                 </div>
             </div>
@@ -8023,16 +8115,13 @@ var colors = [
 <body>
 
 <div class="navbar navbar-default" style="width:100%; margin-bottom: 0px;border-radius: 0px; border-bottom-width: 1px; border-bottom-color: #cbcbcb;"> 
-<div class="navbar-header">
-  <a class="navbar-brand" style="color:#171b70 !important;" href="https://www.sergeimedvedev.com"><img src="https://grahamandsergei.github.io/app/icons/logoapp3.png" style="line-height: 1; max-height: 30px;  float: left; padding-right: 5px; margin: -5px 0 -5px 0">Page Designer</a>
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-  </button>
+<div class="navbar-header" style="position: absolute; top: 50%; transform: translateY(-50%); left: 0;">
+  <a class="navbar-brand" style="color:#171b70d8 !important; font-family: Calibri; font-weight: bold;"
+  href="https://www.sergeimedvedev.com"><img src="https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FlogoSmall.png?alt=media&token=6075f9a0-c511-4534-938a-a97515bf01dc" 
+  style="line-height: 1; max-height: 30px;  float: left; padding-right: 5px;
+  margin: -5px 0 -5px 0">Page Designer</a>
 </div>
-<div class="navbar-collapse collapse"  >
+<div style="position: absolute; top: 50%; transform: translateY(-50%); right: 2vw;">
     <ul class="nav navbar-nav navbar-right">
          <li><a href="#" id="logout" style="display: none; color:#171b70 !important;">Log Out</a></li>
     </ul>
@@ -8048,8 +8137,8 @@ var colors = [
   
   <div class="toolsDropdown">
     <div id="toolsButton" style="background-color: #171b70;">
-      <div style="padding: 1vw 0 0.8vw 1vw; font-size: 1.4vw; font-family: Arial; cursor: default;">
-        <span class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;margin-top:-3px;">construction</span>Tools
+      <div id = "tools" style="padding: 1vw 0 0.8vw 1vw; font-size: 1.4vw; font-family: Arial; cursor: default;">
+        <span id = "toolsIcon" class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;margin-top:-3px;">construction</span>Tools
       </div>
     </div>
     <div class="dropdown-content">
@@ -8073,16 +8162,16 @@ var colors = [
 
   <div style="padding: 1.2vw 0 1.3vw 1vw; font-size: 1.4vw; font-family: Arial;">
     <button id="newTemplateButton" style="background-color: transparent;">
-      <span class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 0px; line-height: 1; vertical-align: middle;margin-top:-3px;">add_box</span>
-      Add Template
+      <span id = "addTemplateIcon" class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 0px; line-height: 1; vertical-align: middle;margin-top:-3px;">add_box</span>
+      Add Page
     </button>
   </div>
 
 
 
 
-  <div style="padding: 1vw 0 1vw 1vw; font-size: 1.4vw; font-family: Arial;">
-    <span class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;margin-top:-3px;">two_pager</span>Library
+  <div id = "library" style="padding: 1vw 0 1vw 1vw; font-size: 1.4vw; font-family: Arial;">
+    <span id="libraryIcon" class="material-symbols-sharp"style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;margin-top:-3px;">two_pager</span>Library
   </div>
 
   
@@ -8090,8 +8179,8 @@ var colors = [
 </div>
     <div class="storageAll">
       <div id="storageGeneral" class="storageGeneral" style="display: flex; align-items: center; cursor: pointer; padding: 0 1vw 1vw 0; align-self: center; font-size: 1.4vw; font-family: Arial;">
-        <span class="material-symbols-sharp" style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;">settings_system_daydream</span>
-        <div>Storage</div>
+        <span id= "storageIcon" class="material-symbols-sharp" style="font-size: 1.6vw; padding-right: 4px; line-height: 1; vertical-align: middle;">settings_system_daydream</span>
+        <div id="storage">Storage</div>
       </div>
       <div id="storageIndicator" class="storageIndicator" style="font-size: 0.8vw; padding: 0 1vw 1vw 0; align-self: center;"></div>
     </div>
@@ -8172,7 +8261,7 @@ var colors = [
 <div id="renameModal" class="modal">
   <div class="modal-content" style="font-family: Spectral; font-size: 1.2vw;">
     <span class="close" style="color:#171b70; font-size: 2vw;">&times;</span>
-    <p>Enter new template name:</p>
+    <p>Enter new page name:</p>
     <div style="display: flex; flex-wrap: wrap;">
     <input type="text" id="newTemplateName" placeholder="New name" style="height: 3vw;">
     <button id="confirmRename" style="background-color: #171b70; color: white; border-width: 0; padding: 0.5vw; height: 3vw; font-size: 1vw; padding: 0 1vw; margin-left: 0.5vw;">Save</button>
