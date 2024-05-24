@@ -4,16 +4,20 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 <style>
+.navbar-nav .nav-item {
+  margin-top: 10px; /* Adjust as needed */
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
-    color: #a70050;
+  color: #a70050;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-weight: bold; 
-  font-size:15px;
-  margin-left:-15px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: -15px;
+  margin-top: 10px; /* Added for consistency */
 }
 
 .dropdown-content {
@@ -21,9 +25,9 @@
   position: absolute;
   margin-left: 20px;
   min-width: 200px;
-  background-color:#fff;
+  background-color: #fff;
   border: 1px solid #d8d8d8;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
   z-index: 1;
 }
 
@@ -31,19 +35,33 @@
   color: #a70050;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-weight: bold; 
-  font-size:15px;
+  font-weight: bold;
+  font-size: 15px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {color: #4a4a4b;}
+.dropdown-content a:hover {
+  color: #4a4a4b;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #;}
+.dropdown:hover .dropbtn {
+  background-color: #;
+}
+
+.dropdown-header {
+  color: #a70050;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 0px;
+  margin-right: -15px;
+  margin-top: 10px; /* Adjusted to ensure consistency */
+}
 </style>	
     <title>Sergei Medvedev</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
@@ -72,24 +90,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="research">Research</a>
                     </li>
-			<div class="dropdown">
-			  <ul class="dropdown-header" style="color:#a70050; font-weight: bold; font-size:15px; margin-left:0px; margin-right:-15px; margin-top:-0.5px;">Learning Technologies</ul>
-			  <div class="dropdown-content" style="margin-left: 20px;">
-			    <a href="https://javamedvedev.github.io/canvas">Canvas VLE</a>
-			    <a href="https://javamedvedev.github.io/video">Blackboard, Moodle, Instructional Design, etc.</a>
-			  </div>
-			</div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Learning Technologies
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/canvas">Canvas VLE</a>
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/video">Blackboard, Moodle, Instructional Design, etc.</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="software">Programming for Higher Education</a>
                     </li>
-			<div class="dropdown">
-			  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px;">Web Technologies</ul>
-			  <div class="dropdown-content">
-			    <a href="https://javamedvedev.github.io/websites">Web Design</a>
-			    <a href="https://javamedvedev.github.io/integration">Web Data Integration</a>
-			    <a href="https://javamedvedev.github.io/design">Graphic Design</a>
-			  </div>
-			</div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Web Technologies
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/websites">Web Design</a>
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/integration">Web Data Integration</a>
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/design">Graphic Design</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
