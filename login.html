@@ -6,7 +6,7 @@
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Login/Sign Up</title>
+    <title>Login</title>
     <style>
 		html, body {
     height: 100%; /* Make sure html and body are at least viewport height */
@@ -57,13 +57,10 @@
 
 <div class="navbar navbar-default">
 <div class="navbar-header">
-  <a class="navbar-brand" href="https://www.sergeimedvedev.com">Easy Page</a>
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-  </button>
+    <a class="navbar-brand" style="color:#171b70d8 !important; font-family: Calibri; font-weight: bold;"
+  href="https://www.sergeimedvedev.com"><img src="https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FlogoSmall.png?alt=media&token=6075f9a0-c511-4534-938a-a97515bf01dc" 
+  style="line-height: 1; max-height: 30px;  float: left; padding-right: 5px;
+  margin: -5px 0 -5px 0">Page Designer</a>
 </div>
 <div class="navbar-collapse collapse"  >
     <ul class="nav navbar-nav navbar-right">
@@ -116,7 +113,7 @@
                 <!-- Your existing registration form inputs and button -->
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" class="form-control" placeholder="Enter your @gmail.com email">
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Enter your @universityofgalway.ie email">
                 </div>
                 
 <div class="form-group">
@@ -163,7 +160,7 @@
   
   const auth = getAuth();
 
-  const allowedDomain = "gmail.com";
+  const allowedDomain = "@universityofgalway.ie";
 
 	  //----- New Registration code start
     document.getElementById("register").addEventListener("click", function() {
@@ -215,7 +212,7 @@ document.getElementById("login").addEventListener("click", function() {
         if (user.emailVerified) {
             console.log(user);
             // Redirect to home page
-            window.location.href = 'http://www.sergeimedvedev.com/pagedesigner.html'; // Replace with your home page URL
+            window.location.href = 'https://sergeimedvedev.com/pagedesigner'; // Replace with your home page URL
         } else {
             // Email not verified
             alert("Please verify your email address before logging in.");
@@ -253,7 +250,7 @@ document.getElementById("forgot-password").addEventListener("click", function() 
             alert(errorMessage);
         });
     } else {
-        alert("Please enter your email address.");
+        alert("Please enter your @universityofgalway.ie email address.");
     }
 });
 
