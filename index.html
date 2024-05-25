@@ -16,14 +16,13 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100vh;
             overflow-x: hidden;
         }
 
         .header {
             background: url('https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FfrontBackground.jpg?alt=media&token=40851316-37e9-48ee-bb5d-8d95bc2b7fc5') no-repeat center center/cover;
-            height: 100vh;
-            min-height: auto;
+            height: auto;
+            min-height: 100%;
             color: white;
             display: flex;
             align-items: center;
@@ -145,8 +144,11 @@
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    text-align: left;
+    text-align: left !important;
         }
+    .title {
+            text-align: left !important;
+    }
 
             .nav-link {
     color: #fff !important;
@@ -224,6 +226,7 @@
             <div class="title">
                 <h6 class="subtitle font-weight-normal">Senior Technical Officer</h6>
                 <h5>University of Galway</h5>
+                <br>
                 <a class="d-block subtitle"><i class="ti-bookmark pr-2"></i> (083) 880-5461</a>
                 <a class="d-block subtitle"><i class="ti-email pr-2"></i> sergeymedvedev@yahoo.com</a>
             </div>
