@@ -30,6 +30,13 @@
             text-align: center;
             position: relative;
             z-index: 1;
+            flex-direction: row !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-content: stretch !important;
+    align-items: flex-start !important;
         }
 
         .header::before {
@@ -103,6 +110,45 @@
         .carousel-caption {
             position: static;
         }
+
+        .navbar.affix-top {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background: #000002 !important;
+    height: 10vh !important;
+            .fixed-top {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+    .infos {
+    height: 100px;
+    /* padding-bottom: 20px; */
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    opacity: .8;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    flex-direction: row;
+
+        .infos .title, .infos .socials {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: left;
+
+            .navbar.affix-top .nav-link {
+    color: #fff !important;
+                .navbar-light .navbar-nav .nav-link {
+    color: #0dd954 !important;
+            
     </style>
 </head>
 
