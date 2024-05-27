@@ -2,137 +2,152 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FlogoSmall.png?alt=media&token=6075f9a0-c511-4534-938a-a97515bf01dc" type="image/png">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Login</title>
-    <style>
-		html, body {
-    height: 100%; /* Make sure html and body are at least viewport height */
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #a70050, blue); /* Your gradient background */
-}
-		
-        .auth-container {
-			max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background-color: #fff;
 
-    top: 50%;
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <title>Pager</title>
+    <style>
+        html, body {
+            height: 100%; /* Make sure html and body are at least viewport height */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #a70050, blue); /* Your gradient background */
+        }
+
+        .auth-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #fff;
         }
         .auth-tab {
             margin-bottom: 20px;
         }
-		
-		/* Style for the Register and Login buttons */
-    #register, #login {
-        background: linear-gradient(45deg, #a70050, blue);
-        color: white; /* White text */
-        border: 1px solid transparent; /* No border */
-        border-radius: 4px; /* Rounded corners */
-    }
 
-    #register:hover, #login:hover {
-        background: linear-gradient(90deg, #a70050, blue);
-    }
-	
-	.login-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Style for the Register and Login buttons */
+        #register, #login {
+            background: linear-gradient(45deg, #a70050, blue);
+            color: white; /* White text */
+            border: 1px solid transparent; /* No border */
+            border-radius: 4px; /* Rounded corners */
+        }
 
-.forgot-password-link {
-    margin-left: 10px; /* Adjust as needed */
-}
+        #register:hover, #login:hover {
+            background: linear-gradient(90deg, #a70050, blue);
+        }
+
+        .login-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .forgot-password-link {
+            margin-left: 10px; /* Adjust as needed */
+        }
+
+        #reset_password, #cancel_reset {
+            background: linear-gradient(45deg, #a70050, blue);
+            color: #ffffff;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="navbar navbar-default">
-<div class="navbar-header">
-    <a class="navbar-brand" style="color:#171b70d8 !important; font-family: Calibri; font-weight: bold;"
-  href="https://www.sergeimedvedev.com"><img src="https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FlogoSmall.png?alt=media&token=6075f9a0-c511-4534-938a-a97515bf01dc" 
-  style="line-height: 1; max-height: 30px;  float: left; padding-right: 5px;
-  margin: -5px 0 -5px 0">Page Designer</a>
-</div>
-<div class="navbar-collapse collapse"  >
-    <ul class="nav navbar-nav navbar-right">
-         <li><a href="#" id="logout" style="display: none;">Log Out</a></li>
-    </ul>
-</div>
-</div>
+
+    <div class="navbar navbar-default" style="width:100%; margin-bottom: 0px;border-radius: 0px; border-bottom-width: 1px; border-bottom-color: #cbcbcb;"> 
+        <div class="navbar-header" style="position: absolute; top: 50%; transform: translateY(-50%); left: 0;">
+          <a class="navbar-brand" style="color:#171b70d8 !important; font-family: Calibri; font-weight: bold;"
+          href="https://www.sergeimedvedev.com"><img src="https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FlogoSmall.png?alt=media&token=6075f9a0-c511-4534-938a-a97515bf01dc" 
+          style="line-height: 1; max-height: 30px;  float: left; padding-right: 5px;
+          margin: -5px 0 -5px 0">Pager</a>
+        </div>
+    </div>
 <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="auth-container">
-                    <!-- Tab Navigation -->
-                    <ul class="nav nav-tabs auth-tab">
-                        <li class="active"><a href="#loginTab" data-toggle="tab">Login</a></li>
-                        <li><a href="#registerTab" data-toggle="tab">Register</a></li>
-                    </ul>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="auth-container">
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs auth-tab">
+                    <li class="active"><a href="#loginTab" data-toggle="tab">Login</a></li>
+                    <li><a href="#registerTab" data-toggle="tab">Register</a></li>
+                    <li style="display: none;" id="resetPasswordTabLink"><a href="#resetPasswordTab" data-toggle="tab">Reset Password</a></li>
+                </ul>
 
-    <!-- Tab Panes -->
-    <div class="tab-content">
-        
-        <!-- Login Form -->
-        <div class="tab-pane active" id="loginTab">
-            <form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data">
-                <!-- Your existing login form inputs and button -->
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Enter your email">
+                <!-- Tab Panes -->
+                <div class="tab-content">
+                    <!-- Login Form -->
+                    <div class="tab-pane active" id="loginTab">
+                        <form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="login_email">Email</label>
+                                <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="login_password">Password</label>
+                                <div class="input-group">
+                                    <input type="password" name="login_password" id="login_password" class="form-control" placeholder="Enter your password">
+                                    <span class="input-group-addon" id="toggleLoginPassword"><span class="glyphicon glyphicon-eye-open"></span></span>
+                                </div>
+                            </div>
+                            <div class="login-actions">
+                                <button type="button" id="login" name="login" class="btn btn-success">Login</button>
+                                <div class="forgot-password-link">
+                                    <a href="#" id="forgot-password">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <div class="tab-pane" id="registerTab">
+                        <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your @universityofgalway.ie email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-group">
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+                                    <span class="input-group-addon" id="toggleRegisterPassword"><span class="glyphicon glyphicon-eye-open"></span></span>
+                                </div>
+                            </div>
+                            <button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
+                        </form>
+                    </div>
+
+                    <!-- Reset Password Form -->
+                    <div class="tab-pane" id="resetPasswordTab">
+                        <form name="reset_password_form" id="reset_password_form" method="post" action="#" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="reset_email">Email</label>
+                                <input type="email" name="reset_email" id="reset_email" class="form-control" placeholder="Enter your email to reset password">
+                            </div>
+                            <div class="login-actions">
+                                <button type="button" id="reset_password" name="reset_password" class="btn btn-primary">Reset Password</button>
+                                <button type="button" id="cancel_reset" name="cancel_reset" class="btn btn-default">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                
-<div class="form-group">
-    <label for="password">Password</label>
-    <div class="input-group">
-        <input type="password" name="login_password" id="login_password" class="form-control" placeholder="Enter your password">
-        <span class="input-group-addon" id="toggleLoginPassword"><span class="glyphicon glyphicon-eye-open"></span></span>
-    </div>
-</div>
-				<div class="login-actions">
-					<button type="button" id="login" name="login" class="btn btn-success">Login</button>
-					<div class="forgot-password-link">
-						<a href="#" id="forgot-password">Forgot Password?</a>
-					</div>
-				</div>
-            </form>
+            </div>
         </div>
-		
-		<!-- Registration Form -->
-        <div class="tab-pane" id="registerTab">
-            <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data">
-                <!-- Your existing registration form inputs and button -->
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" class="form-control" placeholder="Enter your @universityofgalway.ie email">
-                </div>
-                
-<div class="form-group">
-    <label for="password">Password</label>
-    <div class="input-group">
-        <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
-        <span class="input-group-addon" id="toggleRegisterPassword"><span class="glyphicon glyphicon-eye-open"></span></span>
     </div>
 </div>
-                <button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
-            </form>
-        </div>
-
-    </div>
-</div>
-</div>
-    </div>
-</div>
-
 
 </body>
 <script type="module">
@@ -160,135 +175,132 @@
   
   const auth = getAuth();
 
-  const allowedDomain = "@universityofgalway.ie";
+  const allowedDomain = "universityofgalway.ie";
 
-	  //----- New Registration code start
-    document.getElementById("register").addEventListener("click", function() {
+// Registration event listener
+document.getElementById("register").addEventListener("click", function() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    if (email.endsWith("@" + allowedDomain)) {
+    if (email.endsWith(allowedDomain)) {
         createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            // New user created
             const user = userCredential.user;
-            console.log(user);
-            // Send a verification email
             sendEmailVerification(user)
             .then(() => {
-                // Email verification sent
-                alert("Registration successful! Please check your email for verification.");
+                alertify.success("Registration successful! Please check your email for verification. If you haven't received the email, please check your Spam folder..");
             })
             .catch((error) => {
-                // Error occurred while sending verification email
                 console.error(error);
-                alert("Error sending verification email: " + error.message);
+                alertify.error("Error sending verification email: " + error.message);
             });
         })
         .catch((error) => {
-            // Handle errors from registration process
             const errorCode = error.code;
             const errorMessage = error.message;
-            console.log(errorMessage);
-            alert(errorMessage);
+
+            switch (errorCode) {
+                case 'auth/weak-password':
+                    alertify.error('Password should be at least 6 characters.');
+                    break;
+                case 'auth/email-already-in-use':
+                    alertify.error('This email is already in use. If you forgot your password, please use the "Forgot Password" option.');
+                    break;
+                default:
+                    alertify.error(errorMessage);
+            }
         });
     } else {
-        alert("Only email addresses from " + allowedDomain + " are allowed.");
+        alertify.error("Only email addresses from " + allowedDomain + " are allowed.");
     }
 });
-    //----- End
-	
-	// Inside your login event listener
+
+
+// Login event listener
 document.getElementById("login").addEventListener("click", function() {
     var email = document.getElementById("login_email").value;
     var password = document.getElementById("login_password").value;
 
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-        // Signed in 
         const user = userCredential.user;
 
-        // Check if the user's email is verified
         if (user.emailVerified) {
-            console.log(user);
-            // Redirect to home page
-            window.location.href = 'https://sergeimedvedev.com/pagedesigner'; // Replace with your home page URL
+            window.location.href = 'noEditButYesColorChangeOnActiveButtonBeforeTable.html';
         } else {
-            // Email not verified
-            alert("Please verify your email address before logging in.");
+            alertify.error("Please verify your email address before logging in.");
         }
     })
     .catch((error) => {
-        // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
 
-        if (errorCode === 'auth/wrong-password') {
-            alert('Wrong password.');
-        } else if (errorCode === 'auth/user-not-found') {
-            alert('No user found with this email.');
-        } else if (errorCode === 'auth/user-disabled') {
-            alert('User account has been disabled.');
-        } else if (errorCode === 'auth/email-not-verified') {
-            alert('Email not verified.');
-        } else {
-            alert(errorMessage);
+        switch (errorCode) {
+            case 'auth/wrong-password':
+                alertify.error('Incorrect password. Please try again.');
+                break;
+            case 'auth/user-not-found':
+                alertify.error('No account found with this email.');
+                break;
+            case 'auth/user-disabled':
+                alertify.error('This account has been disabled.');
+                break;
+            case 'auth/invalid-email':
+                alertify.error('Invalid email format. Please check and try again.');
+                break;
+            case 'auth/invalid-credential':
+                alertify.error('Incorrect email or password. Please try again.');
+                break;
+            case 'auth/too-many-requests':
+                alertify.error('Access to this account has been temporarily disabled due to many failed login attempts. You can immediately restore it by resetting your password or you can try again later.');
+                break;
+            default:
+                alertify.error(errorMessage);
         }
         console.log(error);
     });
 });
 
+
+// Forgot password event listener
 document.getElementById("forgot-password").addEventListener("click", function() {
-    var email = document.getElementById("login_email").value;
+    document.getElementById("resetPasswordTabLink").style.display = "block";
+    $('[href="#resetPasswordTab"]').tab('show');
+});
+
+// Reset password event listener
+document.getElementById("reset_password").addEventListener("click", function() {
+    var email = document.getElementById("reset_email").value;
     if (email) {
         sendPasswordResetEmail(auth, email).then(function() {
-            alert("Password reset email sent.");
+            alertify.success("Password reset email sent.");
+            $('[href="#loginTab"]').tab('show');
+            document.getElementById("resetPasswordTabLink").style.display = "none";
         }).catch(function(error) {
-            // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            alert(errorMessage);
+
+            switch (errorCode) {
+                case 'auth/invalid-email':
+                    alertify.error('Invalid email format. Please check and try again.');
+                    break;
+                case 'auth/user-not-found':
+                    alertify.error('No account found with this email.');
+                    break;
+                default:
+                    alertify.error(errorMessage);
+            }
         });
     } else {
-        alert("Please enter your @universityofgalway.ie email address.");
+        alertify.error("Please enter your email address.");
     }
 });
 
-document.getElementById('toggleLoginPassword').addEventListener('click', function (e) {
-    var loginPassword = document.getElementById('login_password');
-    if (loginPassword.type === "password") {
-        loginPassword.type = "text";
-        this.innerHTML = '<span class="glyphicon glyphicon-eye-close"></span>';
-    } else {
-        loginPassword.type = "password";
-        this.innerHTML = '<span class="glyphicon glyphicon-eye-open"></span>';
-    }
+// Cancel reset password event listener
+document.getElementById("cancel_reset").addEventListener("click", function() {
+    $('[href="#loginTab"]').tab('show');
+    document.getElementById("resetPasswordTabLink").style.display = "none";
 });
 
-document.getElementById('toggleRegisterPassword').addEventListener('click', function (e) {
-    var registerPassword = document.getElementById('password');
-    if (registerPassword.type === "password") {
-        registerPassword.type = "text";
-        this.innerHTML = '<span class="glyphicon glyphicon-eye-close"></span>';
-    } else {
-        registerPassword.type = "password";
-        this.innerHTML = '<span class="glyphicon glyphicon-eye-open"></span>';
-    }
-});
-
-	  //----- Logout code start	  
-	  document.getElementById("logout").addEventListener("click", function() {
-		  signOut(auth).then(() => {
-			  // Sign-out successful.
-			  console.log('Sign-out successful.');
-			  alert('Sign-out successful.');
-			  document.getElementById('logout').style.display = 'none';
-			}).catch((error) => {
-			  // An error happened.
-			  console.log('An error happened.');
-			});		  		  
-	  });
-	  //----- End
-
-	</script>
+</script>
 </html>
