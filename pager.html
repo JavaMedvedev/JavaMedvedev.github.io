@@ -341,7 +341,6 @@
 
 		.square-blue {
 			color: #ffffff;
-      margin-bottom: 1vw;
 		}
 
         .square-green {
@@ -773,6 +772,7 @@ body {
 			max-height: 80px; /* Ensures the editor has a default height */
 			margin-bottom: 40px;
 			background-color: #fff;
+      font-size: 1.2vw;
 		}
 		
 .ql-toolbar .ql-size.ql-picker {
@@ -1498,7 +1498,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .quizRadioButton { 
-  width: 1.5vw;
+  width: 1vw;
   z-index: 50000;
   padding-top: 0 !important;
 }
@@ -1949,7 +1949,7 @@ async function reauthenticateUser(user) {
 
 // Set default options for AlertifyJS
 alertify.defaults.glossary.title = 'Confirmation'; // Default title
-alertify.defaults.glossary.ok = 'Confirm'; // OK button label
+// alertify.defaults.glossary.ok = 'Confirm'; // OK button label
 alertify.defaults.glossary.cancel = 'Cancel'; // Cancel button label
 
 
@@ -4592,11 +4592,11 @@ window.handleVideoUpload = async function(event, videoPlaceholder, uploadButtonC
        // Get total size of all files uploaded by the user
     const userId = auth.currentUser.uid;
     const totalSizeLimit = await getTotalSizeOfUserFiles(userId);
-    const maxTotalSize = 10000 * 1024 * 1024; // 10 GB
+    const maxTotalSize = 300 * 1024 * 1024; // 10 GB
 
     // Check if the new file exceeds the total size limit
     if (totalSizeLimit + file.size > maxTotalSize) {
-        alert('You have exceeded your total upload limit of 10GB.');
+        alert('You have exceeded your total upload limit of 300MB available in the trial.');
         resetFileInput(fileInput); // Reset the file input
         return; // Exit the function if the total size exceeds the limit
     }
@@ -5651,7 +5651,7 @@ onAuthStateChanged(auth, (user) => {
 						richEditorPlaceholder.className = "rich-editor-placeholder";
             richEditorPlaceholder.style.whiteSpace = 'pre-wrap';
             richEditorPlaceholder.style.lineHeight = '1.42';
-            richEditorPlaceholder.style.fontSize = '1.5vw';
+            richEditorPlaceholder.style.fontSize = '1.2vw';
             richEditorPlaceholder.style.fontFamily = 'Times New Roman';
             const richPlaceholderText = `<div id="richPlaceholderText" style="display: grid; place-items: center; height: 7.5vw; color: #171b70; font-size: 1.5vw; text-align: center;"><span class="material-symbols-sharp"> history_edu </span>YOUR TEXT WILL APPEAR HERE</div>`;
             richEditorPlaceholder.innerHTML = richPlaceholderText;
@@ -5667,6 +5667,7 @@ onAuthStateChanged(auth, (user) => {
 						placeholder.style.textAlign = "center";
 						placeholder.style.marginLeft = '0';
             placeholder.style.fontSize = "1.5vw";
+            placeholder.style.marginBottom = '1vw';
             placeholder.style.color = '#ffffff';
             shapeContainer.style.backgroundColor = "#171b70";
 
