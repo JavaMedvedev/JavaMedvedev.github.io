@@ -4807,11 +4807,11 @@ window.handleAudioUpload = async function(event, audioPlaceholder, uploadButtonC
        // Get total size of all files uploaded by the user
        const userId = auth.currentUser.uid;
     const totalSizeLimit = await getTotalSizeOfUserFiles(userId);
-    const maxTotalSize = 10000 * 1024 * 1024; // 10 GB
+    const maxTotalSize = 300 * 1024 * 1024; // 10 GB
 
     // Check if the new file exceeds the total size limit
     if (totalSizeLimit + file.size > maxTotalSize) {
-        alert('You have exceeded your total upload limit of 10GB.');
+        alert('You have exceeded your total upload limit of 300MB available in the trial.');
         resetFileInput(fileInput); // Reset the file input
         return; // Exit the function if the total size exceeds the limit
     }
@@ -5020,11 +5020,11 @@ window.handleImageUpload = async function(event, imagePlaceholder, uploadButtonC
     // Get total size of all files uploaded by the user
     const userId = auth.currentUser.uid;
     const totalSizeLimit = await getTotalSizeOfUserFiles(userId);
-    const maxTotalSize = 10000 * 1024 * 1024; // 10 GB
+    const maxTotalSize = 300 * 1024 * 1024; // 10 GB
 
     // Check if the new file exceeds the total size limit
     if (totalSizeLimit + file.size > maxTotalSize) {
-        alert('You have exceeded your total upload limit of 10GB.');
+        alert('You have exceeded your total upload limit of 300MB available in the trial.');
         resetFileInput(fileInput); // Reset the file input
         return; // Exit the function if the total size exceeds the limit
     }
@@ -5583,7 +5583,7 @@ async function updateStorageUsage(userId) {
         displaySize = `${totalSizeMB.toFixed(2)} MB`;
     }
 
-    document.getElementById("storageIndicator").textContent = `${displaySize} out of 10GB`;
+    document.getElementById("storageIndicator").textContent = `${displaySize} out of 5GB`;
 } catch (error) {
     console.error('Error calculating total size:', error);
 }
