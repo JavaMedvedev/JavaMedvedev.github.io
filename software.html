@@ -3,56 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <style>
-.dropdown {
-  position: relative;
-  display: inline-block;
-    color: #a70050;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-weight: bold; 
-  font-size:15px;
-  margin-left:-15px;
-}
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  margin-left: 20px;
-  min-width: 200px;
-  background-color:#fff;
-  border: 1px solid #d8d8d8;
-  border-radius: 5px 5px 5px 5px;
-  z-index: 1;
-}
+        .header {
+            background: url('https://firebasestorage.googleapis.com/v0/b/authentication-app-21e51.appspot.com/o/assets%2FfrontBackground.jpg?alt=media&token=40851316-37e9-48ee-bb5d-8d95bc2b7fc5') no-repeat center center/cover;
+            height: auto;
+            min-height: 100%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            flex-direction: row !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-content: stretch !important;
+    align-items: flex-start !important;
+            align-content: space-between !important;
+        }
 
-.dropdown-content a {
-  color: #a70050;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-weight: bold; 
-  font-size:15px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
 
-.dropdown-content a:hover {color: #4a4a4b;}
+        .navbar-light .navbar-nav .show > .nav-link {
+            color: #bbff00 !important;
+        }
 
-.dropdown:hover .dropdown-content {display: block;}
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+        }
 
-.dropdown:hover .dropbtn {background-color: #;}
-    
-@font-face {
-  font-family: "designer";
-  src: url("https://dl.dropbox.com/s/aan7kfvwhjhcf1c/designer-webfont.woff2?dl=0")
-      format("woff2"),
-    url("https://dl.dropbox.com/s/gudepkec3bcs51x/designer-webfont.woff?dl=0")
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin-left: 20px;
+            min-width: 200px;
+            background-color: #fff;
+            border: 1px solid #d8d8d8;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            color: #bbff00;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #bbff00;
+        }
+
+        .dropdown-header {
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 0px;
+            margin-right: -15px;
+            margin-top: 10px; /* Adjusted to ensure consistency */
+        }
+
+        .carousel-caption {
+            position: static;
+        }
+
+        .navbar.affix-top {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background: #000002 !important;
+    height: 10vh !important;
+            .fixed-top {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+            }
+
+    .infos {
+    height: 100px;
+    /* padding-bottom: 20px; */
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    opacity: .8;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    flex-direction: row;
+    }
+
+        .infos .title, .infos .socials {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: left !important;
+        }
+    .title {
+            text-align: left !important;
+    }
+
+            .nav-link {
+    color: #171b70d8 !important;
+    padding-bottom: 0.2vw;
+            }
+            .title {
+                    text-align: left !important;
+            }
+
+            .navbar-toggler {
+    background-color: white !important;
+            }
+            .infos {
+            text-align: left !important;
+            }
 </style>
   <title>Programming for Higher Education</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.png">
@@ -75,9 +177,9 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js'></script>
 <script src='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'></script><script  src="./script.js"></script>
 	
-	<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
-        <div class="container">
-           <a class="navbar-brand" href="https://javamedvedev.github.io"><img src="https://stories.nuigalway.ie/latest-press-releases/assets/logo.png" alt="" class="brand-img"></a>
+    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container" style="margin-right: 0 !important;">
+            <a class="navbar-brand" href="https://javamedvedev.github.io"><img src="https://stories.nuigalway.ie/latest-press-releases/assets/logo.png" alt="" class="brand-img"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,27 +189,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="research">Research</a>
+                   <li class="nav-item">
+                        <a class="nav-link" href="login">Pager</a>
                     </li>
-                    <div class="dropdown">
-			<ul class="dropdown-header" style="color:#a70050; font-weight: bold; font-size:15px; margin-left:0px; margin-right:-15px; margin-top:-0.5px;">Learning Technologies</ul>
-			<div class="dropdown-content" style="margin-left: 20px;">
-			  <a href="https://javamedvedev.github.io/canvas">Canvas VLE</a>
-			  <a href="https://javamedvedev.github.io/video">Blackboard, Moodle, Instructional Design, etc.</a>
-			</div>
-		    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Learning Technologies
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/canvas">Canvas VLE</a>
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/video">Blackboard, Moodle, Instructional Design, etc.</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="software">Programming for Higher Education</a>
                     </li>
-			<div class="dropdown">
-			  <ul class="dropdown-header"style="color:#a70050; font-weight: bold; font-size:15px; margin-left:0px; margin-top:-0.5px;">Web Technologies</ul>
-			  <div class="dropdown-content" style="margin-left: 20px;">
-			    <a href="https://javamedvedev.github.io/websites">Web Design</a>
-			    <a href="https://javamedvedev.github.io/integration">Web Data Integration</a>
-			    <a href="https://javamedvedev.github.io/design">Graphic Design</a>
-			  </div>
-			</div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Web Technologies
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/websites">Web Design</a>
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/integration">Web Data Integration</a>
+                            <a class="dropdown-item" href="https://javamedvedev.github.io/design">Graphic Design</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
