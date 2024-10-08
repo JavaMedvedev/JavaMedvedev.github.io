@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Spreadsheet Merger</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+			color: #393939;
+			font-family: Spectral;
+        }
+
+        .input-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .input-container input {
+            flex: 1;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-group {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+	<img style="max-width: 30%" src="https://javamedvedev.github.io/merger/mergergalwaylogo.jpg" alt="Logo">
+        
+        <h2>Add IDs and emails (optional) to<br>Classic Quiz answers<br><br></h2>
+        <div style="background-image: url(''); width: 100%;  background-repeat: no-repeat;
+  background-size: 100%;">
+        <div class="input-container">
+
+            <div class="input-group">
+                <h4>Upload a Student analysis file from Quiz summary<br>(<a target=blank href="https://universityofgalway.instructure.com/courses/27559/pages/download-a-student-analysis-report-from-a-classic-quiz">see here where to get it</a>)</h4>
+                <input type="file" id="file2" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            </div>
+            <div class="input-group">
+                <h4>Upload a gradebook file to get student IDs<br>(<a target=blank href="https://universityofgalway.instructure.com/courses/27559/pages/download-a-gradebook-with-student-ids">see here where to get it</a>)</h4>
+                <input type="file" id="file3" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            </div>
+            <div class="input-group">
+                <h4>Upload a student roster to get emails (optional)<br>(<a target=blank href="https://universityofgalway.instructure.com/courses/27559/pages/download-a-student-roster-with-emails">see here where to get it</a>)</h4>
+                    <input type="file" id="file1" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                    <br><br><br>
+                    <div style="text-align: left; margin-left:10%"></div>
+                </div>
+        </div>
+
+        <div class="button-container">
+            <button style="padding: 10px 30px 10px 30px; background-color: #a70050; border:0px; color: #ffffff;" onclick="mergeAndDownload()">Download</button>
+        </div>
+
+        <a id="downloadLink" style="display:none">Download Merged Spreadsheet</a>
+		</div>
+		
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
