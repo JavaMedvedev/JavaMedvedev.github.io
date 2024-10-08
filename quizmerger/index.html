@@ -65,6 +65,18 @@
         </div>
 
         <a id="downloadLink" style="display:none">Download Merged Spreadsheet</a>
+
+        <script>
+            // This function resets the file input fields when the page loads or is refreshed
+            window.onload = function() {
+                document.getElementById('file1').value = '';
+                document.getElementById('file2').value = '';
+                document.getElementById('file3').value = '';
+            };
+        
+            // Your existing JavaScript code (mergeAndDownload and other helper functions) goes here.
+        </script>
+        
 		</div>
 		
     </div>
