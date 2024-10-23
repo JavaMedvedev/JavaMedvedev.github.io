@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Users</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #393939;
+            font-family: Spectral;
+        }
+
+        .input-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding-left: 70px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-group {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+    align-items: center;
+        }
+    </style>
+</head>
+
+<body onload="clearFileInputs()">
+    <div class="container">
+        <img style="max-width: 30%" src="https://javamedvedev.github.io/merger/mergergalwaylogo.jpg" alt="Logo">
+        
+        <h2>Create a Spreadsheet with<br>Unique Students<br><br></h2>
+        <div style="width: 100%;">
+        <div class="input-container">
+            <div class="input-group">
+            <h4>Upload File One</h4>
+                <input type="file" id="file1" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            </div>
+            <div class="input-group">
+            <h4>Upload File Two</h4>
+                <input type="file" id="file2" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            </div>
+        </div>
+        <br><br><br>
+        
+        <div class="button-container">
+            <button style="padding: 10px 30px 10px 30px; background-color: #a70050; border:0px; color: #ffffff;" onclick="compareAndDownload()">Download</button>
+        </div>
+
+        <a id="downloadLink" style="display:none">Download Spreadsheet with Unique Students</a>
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
