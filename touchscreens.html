@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Touch Screens</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Optional: for clean background around the app */
+    }
+
+    .flutter-wrapper {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-width: 100vw;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .flutter-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      transform-origin: top left;
+      display: block;
+    }
+
+    @media (orientation: portrait) {
+      .flutter-wrapper {
+        aspect-ratio: auto;
+        height: calc(100vw * (9 / 16));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flutter-wrapper">
+    <iframe src="http://www.sergeimedvedev.com/museum_301.html" class="flutter-frame"></iframe>
+  </div>
+
+</body>
+</html>
