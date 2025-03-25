@@ -6,6 +6,13 @@
     <title>Unity Web Player | 3D Explorer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      html, body, canvas {
+  touch-action: none;
+  -ms-touch-action: none;
+  -webkit-touch-action: none;
+}
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -123,5 +130,16 @@
       document.body.appendChild(script);
 
     </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var canvas = document.getElementById("unity-canvas");
+    if (canvas) {
+      canvas.addEventListener("touchmove", function(e) {
+        e.preventDefault();
+      }, { passive: false });
+    }
+  });
+</script>
+
   </body>
 </html>
