@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Phone Screen</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    /* Let the phone image define the height automatically. */
+    .phone-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 400px; /* or whatever max size you want on desktop */
+      margin: 0 auto;   /* center it on wider screens */
+      overflow: hidden;
+    }
+
+    /* The phone image should scale proportionally */
+    .phone-frame-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      pointer-events: none;
+    }
+
+    /* Absolutely position the iframe to match phone screen “hole” */
+    .phone-frame {
+      position: absolute;
+      top: 25%;    /* adjust to match phone screen */
+      left: 25%;
+      width: 50%;
+      height: 50%;
+      border: none;
+      z-index: 2;
+    }
+
+    /* Optional: you can add a small mobile-specific tweak */
+    @media (max-width: 480px) {
+      .phone-wrapper {
+        /* On very narrow screens, let it fill most of the viewport width */
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-wrapper">
+    <img src="phone_frame.png" class="phone-frame-image" alt="Phone Frame">
+    <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
+  </div>
+</body>
+</html>
