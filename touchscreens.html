@@ -18,15 +18,14 @@
       max-width: 100vw;
       position: relative;
       overflow: hidden;
-      
     }
 
     .phone-wrapper {
-      width: 50%;
+      width: 100%;
+      aspect-ratio: 9 / 16;
       max-width: 100vw;
       position: relative;
       overflow: hidden;
-      
     }
 
     .flutter-frame {
@@ -35,6 +34,16 @@
       left: 10%;
       width: 80%;
       height: 80%;
+      border: none;
+      z-index: 2;
+    }
+
+    .phone-frame {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%;
       border: none;
       z-index: 2;
     }
@@ -55,6 +64,11 @@
         aspect-ratio: auto;
         height: calc(100vw * (9 / 16));
       }
+      .phone-wrapper {
+        aspect-ratio: auto;
+        height: calc(100vw * (16 / 9));
+      }
+      
     }
   </style>
 </head>
@@ -71,8 +85,9 @@
     <iframe src="https://sergeimedvedev.com/museum_301/" class="flutter-frame"></iframe>
   </div>
 
-    <div class="phone-wrapper">
-    <iframe src="https://sergeimedvedev.com/museum_401/"></iframe>
+  <div class="phone-wrapper">
+    <img src="phone_frame.png" class="tablet-frame-image" alt="Phone Frame">
+    <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
   </div>
 
 </body>
