@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Phone Screen</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    .phone-wrapper {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-width: 100vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .phone-frame {
+      position: absolute;
+      top: 5%;
+      left: 35%;
+      width: 30%;
+      height: 90%;
+      border: none;
+      z-index: 2;
+      aspect-ratio: 9 / 16;
+    }
+
+    .phone-frame-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 1;
+      pointer-events: none;
+      aspect-ratio: 9 / 16;
+    }
+
+    @media (orientation: portrait) {
+      .phone-wrapper {
+        aspect-ratio: auto;
+        height: calc(100vw * (9 / 16));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="phone-wrapper">
+    <img src="phone_frame.png" class="phone-frame-image" alt="Phone Frame">
+    <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
+  </div>
+
+</body>
+</html>
