@@ -20,30 +20,12 @@
       overflow: hidden;
     }
 
-    .phone-wrapper {
-      width: 100%;
-      aspect-ratio: 9 / 16;
-      max-width: 100vw;
-      position: relative;
-      overflow: hidden;
-    }
-
     .flutter-frame {
       position: absolute;
       top: 10%;
       left: 10%;
       width: 80%;
       height: 80%;
-      border: none;
-      z-index: 2;
-    }
-
-    .phone-frame {
-      position: absolute;
-      top: 25%;
-      left: 25%;
-      width: 50%;
-      height: 50%;
       border: none;
       z-index: 2;
     }
@@ -59,6 +41,37 @@
       pointer-events: none;
     }
 
+    .phone-wrapper {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-width: 100vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .phone-frame {
+      position: absolute;
+      top: 5%;
+      left: 35%;
+      width: 30%;
+      height: 90%;
+      border: none;
+      z-index: 2;
+      aspect-ratio: 9 / 16;
+    }
+
+    .phone-frame-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 1;
+      pointer-events: none;
+      aspect-ratio: 9 / 16;
+    }
+
     @media (orientation: portrait) {
       .flutter-wrapper {
         aspect-ratio: auto;
@@ -66,9 +79,8 @@
       }
       .phone-wrapper {
         aspect-ratio: auto;
-        height: calc(100vw * (16 / 9));
+        height: calc(100vw * (9 / 16));
       }
-      
     }
   </style>
 </head>
@@ -84,9 +96,10 @@
     <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_301/" class="flutter-frame"></iframe>
   </div>
+  <br>
 
   <div class="phone-wrapper">
-    <img src="phone_frame.png" class="tablet-frame-image" alt="Phone Frame">
+    <img src="phone_frame.png" class="phone-frame-image" alt="Phone Frame">
     <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
   </div>
 
