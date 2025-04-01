@@ -81,9 +81,58 @@
       }
     }
   </style>
+  <style>
+    .split-container {
+      display: flex;
+      width: 100%;
+    }
+
+    .left-text {
+      width: 50%;
+      background-color: #4a90e2;
+      color: #fdffdb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.45vw;
+font-family: 'Inter', sans-serif;
+	  font-weight: bold;
+    }
+
+    .right-image {
+      width: 50%;
+    }
+
+    .right-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Responsive: Stack columns on small screens */
+    @media (max-width: 768px) {
+      .split-container {
+        flex-direction: column;
+      }
+      .left-text, .right-image {
+        width: 100%;
+		font-size: 4.8vw;
+      }
+    }
+  </style>
 </head>
 <body>
-
+  <div class="split-container">
+    <div class="left-text">
+      <p style="padding: 10vw 5vw; text-align: center;">
+	  Museum’s collection, <span style="color: #f6ff52">reimagined</span> in a touchscreen experience.
+	  </p>
+    </div>
+    <div class="right-image">
+      <img src="darwin_tablet2.png" alt="Placeholder Image">
+    </div>
+  </div>
+  <br>
   <div class="flutter-wrapper">
     <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_301/" class="flutter-frame"></iframe>
