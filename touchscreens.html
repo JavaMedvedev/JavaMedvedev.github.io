@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Touch Screens</title>
+  <title>Phone Screens</title>
 
   <style>
     html, body {
@@ -69,6 +69,19 @@
       pointer-events: none;
       aspect-ratio: 9 / 16;
     }
+	
+	.below-phone {
+	  clear: both;
+	  display: block;
+	  margin-top: 5vw;
+	}
+	
+	.below-phone::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
     
     @media (orientation: portrait) {
       .flutter-wrapper {
@@ -123,6 +136,17 @@ font-family: 'Inter', sans-serif;
     #curiosity {
       padding: 10vw 10vw;
     }
+	
+	#explore {
+	 font-size: 9vw;
+	 color: #fff;
+	  width: 50%;
+      background-color: #4a90e2;
+      display: flex;
+      align-items: center;
+	  font-family: 'Inter', sans-serif;
+	  font-weight: bold;
+	}
 
     /* Responsive: Stack columns on small screens */
     @media (max-width: 768px) {
@@ -136,6 +160,11 @@ font-family: 'Inter', sans-serif;
 	  #curiosity {
 	   padding: 10vw 15vw;
 	  }
+	  #explore {
+      justify-content: center;
+	  width: 100%;
+	  padding-bottom: 10vw;
+	  }	  
     }
   </style>
 </head>
@@ -151,14 +180,14 @@ font-family: 'Inter', sans-serif;
     </div>
   </div>
   <div class="text-divider-big">
-  TRY THIS:
+  TRY IT
   </div>
   <div class="flutter-wrapper">
     <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_301/" class="flutter-frame"></iframe>
   </div>
   <br>
-    <div class="split-container">
+    <div class="split-container" style="padding-top: 15vw;">
     <div class="left-text">
       <p style="padding: 10vw 12vw; text-align: center;">
 	  Get this app on <span style="color: #f6ff52">Google Play Market</span>:
@@ -170,7 +199,7 @@ font-family: 'Inter', sans-serif;
       </a>
     </div>
   </div>
-  <div class="text-divider-big" style="font-size: 7vw">
+  <div class="text-divider-big" style="font-size: 7vw; padding: 20vw 0;">
   KEEP SCROLLING ;)
   </div>
 <div class="split-container">
@@ -179,24 +208,38 @@ font-family: 'Inter', sans-serif;
     </div>
 	<div class="left-text">
       <p  id="curiosity" style="text-align: center;">
-	  Where <span style="color: #f6ff52">curiosity</span> meets hands-on discovery.
+	  Where <span style="color: #f6ff52">curiosity</span> meets hands-on discovery...
 	  </p>
     </div>
   </div>
   </div>
   <div class="text-divider-big">
-  TRY IT:
+TRY IT
   </div>
   <div class="flutter-wrapper">
     <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_201/" class="flutter-frame"></iframe>
   </div>
   <br>
-
+  
+  <div class="split-container" style="background-color: #4a90e2; margin: 10vw 0;">
+    <div class="right-image">
+      <img src="360_transparent.png" alt="Sphere">
+    </div>
+	<div id="explore">
+	  EXPLORE
+    </div>
+  </div>
+  </div>
+  
   <div class="phone-wrapper">
     <img src="phone_frame.png" class="phone-frame-image" alt="Phone Frame">
     <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
   </div>
+  <div class="below-phone">
+  </div>
+  
+  <img src="bottom_blue.png" style="width: 95vw; height: auto; display: block; margin-left: auto; margin-right: auto;">
 
 </body>
 </html>
