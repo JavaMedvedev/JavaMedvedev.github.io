@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Touchscreens</title>
+  <title>Phone Screens</title>
 
   <style>
     html, body {
@@ -41,12 +41,24 @@
       pointer-events: none;
     }
 
+    .phone-wrapper-upper {
+
+  
+  /*background-image: url("sand8.jpg");*/
+  background-color: #fff;
+  background-size: cover; /* or contain, depending on what you want */
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+}
+
+
     .phone-wrapper {
       width: 100%;
       aspect-ratio: 16 / 9;
       max-width: 100vw;
       position: relative;
-      background-color: #4a90e2;
+      margin-top: 15vw;
     }
 
     .phone-frame {
@@ -74,7 +86,6 @@
 	.below-phone {
 	  clear: both;
 	  display: block;
-    background-color: #4a90e2;
 	}
 	
 	.below-phone::before {
@@ -83,6 +94,16 @@
   width: 100%;
   padding-top: 56.25%; /* 16:9 aspect ratio */
 }
+
+.diagonal-wrapper {
+      width: 100%;
+      max-width: 100vw;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0vw;
+      margin-bottom: 15vw;
+      /*background-image: url("touchscreen_horisontal.jpg");*/
+    }
     
     @media (orientation: portrait) {
       .flutter-wrapper {
@@ -149,6 +170,17 @@ font-family: 'Inter', sans-serif;
 	  font-weight: bold;
 	}
 
+  #zmbm {
+    font-size: 1.3vw; 
+  }
+
+  .first {
+     padding: 0 5vw; 
+     padding-right: 25vw; 
+     text-align: left;
+     color: #fff;
+  }
+
     /* Responsive: Stack columns on small screens */
     @media (max-width: 768px) {
       .split-container {
@@ -166,20 +198,33 @@ font-family: 'Inter', sans-serif;
 	  width: 100%;
 	  padding-bottom: 10vw;
 	  }	  
+    #zmbm {
+      font-size: 2.4vw;
     }
+    .first {
+      padding-right: 5vw;
+    }
+    }
+
+    /*  <div class="split-container" style="background-color: #4a90e2;">
+    <div class="right-image">
+      <img src="360_transparent.png" alt="Sphere">
+    </div>
+	  <div id="explore">
+	  EXPLORE
+    </div>
+  </div>*/
+
   </style>
 </head>
 <body>
-  <div class="split-container">
-    <div class="left-text">
-      <p style="padding: 10vw 5vw; text-align: center;">
-	  Museum’s collection, <span style="color: #f6ff52">reimagined</span> in a touchscreen experience.
-	  </p>
-    </div>
-    <div class="right-image">
-      <img src="touchscreen_horisontal.jpg" alt="Tablet with the app">
-    </div>
+
+  <div class="text-divider-big" style="font-size: 4vw; background-color: #4a90e2;">
+    <p class='first'>
+      Reimagining museum collections into<span style="color: #f6ff52"> touchscreen experiences</span>.
+    </p>
   </div>
+  
   <div class="text-divider-big">
   TRY IT
   </div>
@@ -187,8 +232,24 @@ font-family: 'Inter', sans-serif;
     <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_301/" class="flutter-frame"></iframe>
   </div>
+<br>
+<div class="split-container" style="margin: 15vw 0;">
+  <div class="left-text">
+    <p style="padding: 10vw 5vw; text-align: center; font-size: 3.5vw;">
+      Designed for <span style="color: #f6ff52">Touch</span>
+  </p>
+  </div>
+  <div class="right-image">
+    <img src="touchscreen_horisontal.jpg" alt="Tablet with the app">
+  </div>
+</div>
+
+<br>
+  <div class="diagonal-wrapper" style="aspect-ratio: 1 / 1;">
+    <img src="four_diagonal7.png" class="tablet-frame-image" alt="">
+  </div>
   <br>
-  <div class="split-container" style="padding-top: 15vw;">
+  <div class="split-container" style="padding-top: 0vw;">
     <div class="left-text">
       <p style="padding: 10vw 12vw; text-align: center;">
 	  Get this app on <span style="color: #f6ff52">Google Play Market</span>:
@@ -200,30 +261,45 @@ font-family: 'Inter', sans-serif;
       </a>
     </div>
   </div>
+  <br>
   <div class="text-divider-big" style="font-size: 7vw; padding: 20vw 0;">
   KEEP SCROLLING ;)
   </div>
 <div class="split-container">
-    <div class="right-image">
-      <img src="touchscreen_horisontal2.jpg" alt="App with Three Columns">
-    </div>
+  <div class="right-image">
+    <img src="listings_square.png" alt="App with Three Columns">
+  </div>
 	<div class="left-text">
-      <p  id="curiosity" style="text-align: center;">
-	  Where <span style="color: #f6ff52">curiosity</span> meets hands-on discovery...
-	  </p>
-    </div>
+    <p id="curiosity" style="text-align: center;"><span id="zmbm">Zoology & Marine Biology Museum</span><br><span style="color: #f6ff52">All-in-One</span> App</p>
   </div>
-  </div>
-  <div class="text-divider-big">
+</div>
+<div class="text-divider-big">
 TRY IT
-  </div>
+</div>
   <div class="flutter-wrapper">
     <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_201/" class="flutter-frame"></iframe>
   </div>
+
   <br>
 
-  <div class="split-container" style="padding-top: 15vw;">
+
+<div class="split-container" style="margin: 15vw 0;">
+  <div class="right-image">
+      <img src="touchscreen_horisontal2.jpg" alt="App with Three Columns">
+  </div>
+	<div class="left-text">
+    <p id="curiosity" style="padding: 10vw 5vw; text-align: center; font-size: 3.5vw;">
+	  Designed for <span style="color: #f6ff52">Touch</span>
+	  </p>
+  </div>
+</div>
+
+  <div class="diagonal-wrapper" style="aspect-ratio: 1 / 1.1; margin-top: 10vw;">
+    <img src="six_diagonal.png" class="tablet-frame-image" alt="">
+  </div>
+
+  <div class="split-container" style="padding-top: 0vw;">
     <div class="left-text">
       <p style="padding: 10vw 15vw; text-align: center;">
 	  Install this app <span style="color: #f6ff52">from APK file</span>:
@@ -240,26 +316,35 @@ TRY IT
     KEEP GOING...
   </div>
   
-  <div class="split-container" style="background-color: #4a90e2; padding-bottom: 10vw;">
-    <div class="right-image">
-      <img src="360_transparent.png" alt="Sphere">
-    </div>
-	<div id="explore">
-	  EXPLORE
-    </div>
+<div class="split-container">
+  <div class="right-image">
+      <img src="explore6.jpg" alt="App with Three Columns">
   </div>
+	<div class="left-text">
+      <p id="curiosity" style="text-align: center; padding: 10vw 5vw;">
+        Photogrammetry transforms<br> delicate artifacts into <br><span style="color: #f6ff52">immersive 3D experiences</span>.
+	  </p>
   </div>
+</div>
   
+<div class="phone-wrapper-upper">
   <div class="phone-wrapper">
     <img src="phone_frame.png" class="phone-frame-image" alt="Phone Frame">
     <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
   </div>
   <div class="below-phone">
   </div>
-  
-  <div style="margin: 3vw 0; text-align: center; font-family: 'Inter', sans-serif; font-size: 1vw; font-weight: bold; color: #4a90e2;">
-    sergei.medvedev@universityofgalway.ie
-  </div>
+</div>
+
+<div class="text-divider-big" style="font-size: 4vw; background-color: #4a90e2;">
+  <p class="first" style="padding-right: 40vw;">
+    Where <span style="color: #f6ff52">curiosity</span> meets hands-on discovery....
+  </p>
+
+</div>
+<div style="padding: 3vw 0; padding-left: 5vw; text-align: left; font-family: 'Inter', sans-serif; font-size: 1.1vw; font-weight: bold; color: #fff; background-color: #4a90e2;">
+  sergei.medvedev@universityofgalway.ie
+</div>
 
 </body>
 </html>
