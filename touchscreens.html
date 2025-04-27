@@ -294,7 +294,7 @@
 
   <div id="section1" class="split-container">
     <div class="right-image">
-      <img src="six_savannah.png" alt="App with Three Columns">
+      <img src="six_savannah.jpg" alt="App with Three Columns">
     </div>
     <div class="left-text">
       <p id="curiosity" style="text-align: center;"><span style="color: #f6ff52">Charles Darwin's</span><br>Collection</p>
@@ -322,7 +322,7 @@
 
 <br>
   <div class="diagonal-wrapper" style="aspect-ratio: 1 / 1;">
-    <img src="four_diagonal7.png" class="tablet-frame-image" alt="">
+    <img src="four_diagonal7.jpg" class="tablet-frame-image" alt="">
   </div>
   <br>
   <div class="split-container" style="padding-top: 0vw;">
@@ -343,7 +343,7 @@
   </div>
 <div id="section2" class="split-container">
   <div class="right-image">
-    <img src="listings_square2.png" alt="App with Three Columns">
+    <img src="listings_square2.jpg" alt="App with Three Columns">
   </div>
 	<div class="left-text">
     <p id="curiosity" style="text-align: center;"><span id="zmbm">Zoology & Marine Biology Museum</span><br><span style="color: #f6ff52">All-in-One</span> App</p>
@@ -372,7 +372,7 @@ TRY IT
 </div>
 
   <div class="diagonal-wrapper" style="aspect-ratio: 1 / 1.1; margin-top: 10vw;">
-    <img src="six_diagonal2.png" class="tablet-frame-image" alt="">
+    <img src="six_diagonal2.jpg" class="tablet-frame-image" alt="">
   </div>
 
   <div class="split-container" style="padding-top: 0vw;">
@@ -419,6 +419,18 @@ TRY IT
 <div style="padding: 3vw 0; padding-left: 5vw; text-align: left; font-family: 'Inter', sans-serif; font-size: 1.1vw; font-weight: bold; color: #fff; background-color: #4a90e2;">
   sergei.medvedev@universityofgalway.ie
 </div>
+
+<script>
+  document.querySelectorAll('.three-one').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
