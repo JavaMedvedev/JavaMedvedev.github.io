@@ -61,39 +61,18 @@ function findKeyColumnIndex(headerRow, keyColumnName) {
 }
 
 function findUniqueRows(data1, data2, keyIndex1, keyIndex2) {
-    var header1 = data1[0]; // Header row of file 1
-    var header2 = data2[0]; // Header row of file 2
-
+    // Use the header from the second file
+    var header2 = data2[0];
     var data1Keys = new Set();
-    var data2Keys = new Set();
+    var uniqueRows = [header2];
 
-    var uniqueRows = [header1]; // Include the header in the result
-
-    // Collect all Application Numbers in the first dataset
+    // Collect all keys from the first sheet
     for (var i = 1; i < data1.length; i++) {
         var key1 = data1[i][keyIndex1];
-        if (key1) {
-            data1Keys.add(key1);
-        }
+        if (key1) data1Keys.add(key1);
     }
 
-    // Collect all Application Numbers in the second dataset
-    for (var j = 1; j < data2.length; j++) {
-        var key2 = data2[j][keyIndex2];
-        if (key2) {
-            data2Keys.add(key2);
-        }
-    }
-
-    // Find rows in data1 that are NOT in data2
-    for (var i = 1; i < data1.length; i++) {
-        var key1 = data1[i][keyIndex1];
-        if (key1 && !data2Keys.has(key1)) {
-            uniqueRows.push(data1[i]);
-        }
-    }
-
-    // Find rows in data2 that are NOT in data1
+    // Add only those rows from sheet2 whose key is NOT in sheet1
     for (var j = 1; j < data2.length; j++) {
         var key2 = data2[j][keyIndex2];
         if (key2 && !data1Keys.has(key2)) {
