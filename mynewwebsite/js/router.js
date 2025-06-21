@@ -14,6 +14,7 @@ const routes = {
 async function loadRoute() {
   const hash = location.hash.slice(1) || '/';
   const path = routes[hash] || 'pages/home.html';
+
   try {
     const res = await fetch(path);
     if (!res.ok) throw new Error('Fetch error');
@@ -28,5 +29,21 @@ async function loadRoute() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', loadRoute);
+// setup the click–to–toggle on any nav item with .has-dropdown
+function initDropdowns() {
+  document.querySelectorAll('.has-dropdown > a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      link.parentNode.classList.toggle('open');
+    });
+  });
+}
+
+// when the shell first loads…
+window.addEventListener('DOMContentLoaded', () => {
+  loadRoute();       // inject the correct page fragment
+  initDropdowns();   // wire up your “Apps & CMS” toggle
+});
+
+// on every hash change, swap the main content
 window.addEventListener('hashchange', loadRoute);
