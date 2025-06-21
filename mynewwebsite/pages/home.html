@@ -1,4 +1,145 @@
-<section class="hero">
+  <style>
+    /* —— Global —— */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #111;
+      background: #f7f7f7;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    @font-face {
+  font-family: 'Orgon';
+  src: url('Orgon/TTF/Orgon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+    /* —— Header —— */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 10;
+    }
+    /* Logo + slogan */
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+    .divider {
+      width: 1px;
+      height: 45px;
+      background: #515151;
+      margin: 0 1rem;
+    }
+    .slogan {
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+    .slogan b {
+      font-weight: 500;
+    }
+
+    /* Nav links */
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 0.2rem;
+    }
+    nav a {
+      font-family: 'Orgon', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      color: #222;
+  padding: 1rem 0.8rem;              /* same vertical rhythm as your button */
+  border-radius: 0px;                /* match your button corners */
+  transition: background 0s, color 0s;
+    }
+
+    nav a:hover {
+  background-color: #0057FF;
+  color: #fff;
+}
+
+    /* —— Hero —— */
+    .hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+    .hero-text p {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: #444;
+    }
+    .hero-text h1 {
+      margin: 0.5rem 0 1.5rem -0.2rem;
+      font-size: 2.8rem;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+    .hero-text button {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      background: #0057FF;
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    button:hover {
+  background-color: #0247cf;
+  color: #fff;
+}
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-video {
+  width: 90%;           /* fill the container */
+  height: auto;          /* maintain aspect ratio */
+  object-fit: cover;     /* cover entire area if you’d rather */
+  display: block;
+  pointer-events: none;
+}
+
+#suji_logo:hover {
+  content: url("suji_logo_small_white.jpg");
+}
+
+
+    /* —— Responsive —— */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+  </style>
+  <section class="hero">
   <div class="hero-text">
     <p>Sergei Medvedev</p>
     <h1>EDUCATION AS<br />DIGITAL EXPERIENCE</h1>
