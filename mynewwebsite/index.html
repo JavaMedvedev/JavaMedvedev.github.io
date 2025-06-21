@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="suji_logo_transparent.png" type="image/png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="suji_logo_transparent_white.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <title>SUJI</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preload" href="suji_logo_small_white.jpg" as="image">
+
+  <!-- move all your styles here -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* —— Global —— */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #111;
+      background: #f7f7f7;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    @font-face {
+  font-family: 'Orgon';
+  src: url('Orgon/TTF/Orgon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+    /* —— Header —— */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 10;
+    }
+    /* Logo + slogan */
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+    .divider {
+      width: 1px;
+      height: 45px;
+      background: #515151;
+      margin: 0 1rem;
+    }
+    .slogan {
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+    .slogan b {
+      font-weight: 500;
+    }
+
+    /* Nav links */
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 0.2rem;
+    }
+    nav a {
+      font-family: 'Orgon', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      color: #222;
+  padding: 1rem 0.8rem;              /* same vertical rhythm as your button */
+  border-radius: 0px;                /* match your button corners */
+  transition: background 0s, color 0s;
+    }
+
+    nav a:hover {
+  background-color: #0057FF;
+  color: #fff;
+}
+
+    /* —— Hero —— */
+    .hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+    .hero-text p {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: #444;
+    }
+    .hero-text h1 {
+      margin: 0.5rem 0 1.5rem -0.2rem;
+      font-size: 2.8rem;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+    .hero-text button {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      background: #0057FF;
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    button:hover {
+  background-color: #0247cf;
+  color: #fff;
+}
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-video {
+  width: 90%;           /* fill the container */
+  height: auto;          /* maintain aspect ratio */
+  object-fit: cover;     /* cover entire area if you’d rather */
+  display: block;
+  pointer-events: none;
+}
+
+#suji_logo:hover {
+  content: url("suji_logo_small_white.jpg");
+}
+
+
+    /* —— Responsive —— */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header style="margin: 0 2vw; margin-top: 2vw; padding-top: 1.5vw; padding-bottom: 1.5vw;">
+    <div class="brand">
+      <a href="/home">
+        <img src="suji_logo_small_black.jpg" alt="Suji logo" id="suji_logo">
+      </a>
+      <div class="divider"></div>
+      <div class="slogan">Education <b>Technologies</b></div>
+    </div>    
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">E-Learning</a></li>
+        <li><a href="#">Digital Museum</a></li>
+        <li><a href="#">Web & Mobile Apps</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="search"></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>Sergei Medvedev</p>
+      <h1>EDUCATION AS<br>DIGITAL EXPERIENCE</h1>
+      <button>Read more</button>
+    </div>
+    <div class="hero-image">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+      >
+        <!-- adjust the path here if your file sits elsewhere -->
+        <source src="grid.mp4" type="video/mp4" />
+        Your browser doesn’t support embedded videos.
+      </video>
+    </div>
+  </section>
+
+</body>
+</html>
