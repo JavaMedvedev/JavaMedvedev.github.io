@@ -158,50 +158,29 @@
 </head>
 
 <body>
-
-  <header style="margin: 0 2vw; margin-top: 2vw; padding-top: 1.5vw; padding-bottom: 1.5vw;">
+  <header style="margin:0 2vw;margin-top:2vw;padding-top:1.5vw;padding-bottom:1.5vw;box-shadow:0 2px 6px rgba(0,0,0,0.08);position:sticky;top:0;background:#fff;z-index:10;">
     <div class="brand">
-      <a href="/home">
-        <img src="suji_logo_small_black.jpg" alt="Suji logo" id="suji_logo">
-      </a>
+      <a href="#/home"><img src="suji_logo_small_black.jpg" alt="Suji logo" id="suji_logo"></a>
       <div class="divider"></div>
       <div class="slogan">Education <b>Technologies</b></div>
-    </div>    
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">E-Learning</a></li>
-        <li><a href="#">Digital Museum</a></li>
-        <li><a href="#">Web & Mobile Apps</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/e-learning">E-Learning</a></li>
+        <li><a href="#/digital-museum">Digital Museum</a></li>
+        <li><a href="#/web-mobile-apps">Web & Mobile Apps</a></li>
+        <li><a href="#/design">Design</a></li>
+        <li><a href="#/contacts">Contacts</a></li>
       </ul>
     </nav>
-    <div class="search"></div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <p>Sergei Medvedev</p>
-      <h1>EDUCATION AS<br>DIGITAL EXPERIENCE</h1>
-      <button>Read more</button>
-    </div>
-    <div class="hero-image">
-      <video
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="metadata"
-      >
-        <!-- adjust the path here if your file sits elsewhere -->
-        <source src="grid.mp4" type="video/mp4" />
-        Your browser doesn’t support embedded videos.
-      </video>
-    </div>
-  </section>
+  <!-- this is where home/about/e-learning will be injected -->
+  <main id="app"></main>
 
+  <!-- router must load after #app exists -->
+  <script src="js/router.js"></script>
 </body>
 </html>
