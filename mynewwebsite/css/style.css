@@ -185,7 +185,6 @@
 }
 
 /* —— Portfolio Section —— */
-	/* —— Portfolio Section —— */
 .portfolio {
   padding: 4rem 2rem;
   text-align: center;
@@ -214,40 +213,42 @@
   }
 }
 
-/* card & image */
+/* card & image (16∶9, cover, hover-shift + darken) */
 .portfolio-item {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
   cursor: pointer;
+  aspect-ratio: 16 / 9;
 }
 .portfolio-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  /* add filter to the transition */
-  transition: transform 0.5s ease, filter 0.5s ease;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.portfolio-item:hover img {
+  transform: translateX(8px);
+  filter: brightness(0.6);
 }
 
-/* overlay background */
+/* always-visible top-left text block */
 .portfolio-item .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0);
-  transition: background 0.3s ease;
+  background: rgba(0,0,0,0.5);  /* subtle darkening behind text */
   display: flex;
-  align-items: flex-end;       /* content at bottom */
-  justify-content: center;
-  padding: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
 }
-
-/* overlay content */
 .overlay-content {
-  text-align: center;
+  background: rgba(0,0,0,0.6);
   color: #fff;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
 }
 .overlay-content h3 {
   font-size: 1.5rem;
@@ -258,26 +259,10 @@
   width: 40px;
   height: 2px;
   background: #fff;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
 }
 .overlay-content p {
   margin: 0;
   font-size: 0.9rem;
   letter-spacing: 1px;
-}
-
-/* hover states */
-/* 1) scale *and* darken the entire image */
-.portfolio-item:hover img {
-  transform: scale(1.1);
-  filter: brightness(0.6);
-}
-/* 2) add a semi‐dark overlay */
-.portfolio-item:hover .overlay {
-  background: rgba(0,0,0,0.5);
-}
-/* 3) show the text block */
-.portfolio-item:hover .overlay-content {
-  opacity: 1;
-  transform: translateY(0);
 }
