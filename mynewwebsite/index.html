@@ -224,7 +224,7 @@
   <!-- this is where home/about/e-learning will be injected -->
   <main id="app"></main>
 
-  <!-- Toggle script, must load after the DOM -->
+  <!-- Toggle + auto-close script, must load after the DOM -->
   <script>
     function initMenuToggle() {
       const btn = document.querySelector('.menu-toggle');
@@ -234,6 +234,16 @@
       btn.addEventListener('click', () => {
         nav.classList.toggle('mobile-nav');
         btn.classList.toggle('is-active');
+      });
+
+      // Auto-close menu when a link is clicked (small-screen mode)
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (nav.classList.contains('mobile-nav')) {
+            nav.classList.remove('mobile-nav');
+            btn.classList.remove('is-active');
+          }
+        });
       });
     }
     document.addEventListener('DOMContentLoaded', initMenuToggle);
