@@ -138,4 +138,99 @@
       nav { display: none; }
     }
 	
-	
+	/* —— Portfolio Section —— */
+.portfolio {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.portfolio h2 {
+  font-family: 'Orgon', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.portfolio h2 span {
+  color: #0057FF;
+  font-weight: 500;
+}
+
+/* two columns on desktop, one on mobile */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* card & image */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* add filter to the transition */
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* overlay background */
+.portfolio-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: flex-end;       /* content at bottom */
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* overlay content */
+.overlay-content {
+  text-align: center;
+  color: #fff;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.overlay-content h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+}
+.overlay-content .breaker {
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  margin: 0.5rem auto;
+}
+.overlay-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* hover states */
+/* 1) scale *and* darken the entire image */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.6);
+}
+/* 2) add a semi‐dark overlay */
+.portfolio-item:hover .overlay {
+  background: rgba(0,0,0,0.5);
+}
+/* 3) show the text block */
+.portfolio-item:hover .overlay-content {
+  opacity: 1;
+  transform: translateY(0);
+}
