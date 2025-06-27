@@ -25,11 +25,12 @@
     a { text-decoration: none; color: inherit; }
 
     @font-face {
-  font-family: 'Orgon';
-  src: url('Orgon/TTF/Orgon-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+      font-family: 'Orgon';
+      src: url('Orgon/TTF/Orgon-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     /* —— Header —— */
     header {
       display: flex;
@@ -42,7 +43,6 @@
       background: #fff;
       z-index: 10;
     }
-    /* Logo + slogan */
     .brand {
       display: flex;
       align-items: center;
@@ -67,42 +67,57 @@
     }
 
     /* Nav links */
-    nav ul {
+    nav.nav ul {
       display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
     }
-    nav li {
+    nav.nav li {
       margin: 0 0.2rem;
     }
-    nav a {
+    nav.nav a {
       font-family: 'Orgon', sans-serif;
       font-weight: 500;
       font-size: 1rem;
       letter-spacing: 0.5px;
       color: #222;
-  padding: 1rem 0.8rem;              /* same vertical rhythm as your button */
-  border-radius: 0px;                /* match your button corners */
-  transition: background 0s, color 0s;
+      padding: 1rem 0.8rem;
+      border-radius: 0px;
+      transition: background 0s, color 0s;
+    }
+    nav.nav a:hover {
+      background-color: #0057FF;
+      color: #fff;
     }
 
-    nav a:hover {
-  background-color: #0057FF;
-  color: #fff;
-}
+    /* —— Menu Toggle Button —— */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    .menu-toggle:before {
+      content: '☰';
+    }
+    .menu-toggle.is-active:before {
+      content: '×';
+    }
 
     /* —— Hero —— */
     .hero {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  align-items: center;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-}
-
+      display: grid;
+      grid-template-columns: 40% 60%;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
     .hero-text p {
       font-size: 0.95rem;
       font-weight: 400;
@@ -124,46 +139,78 @@
       border-radius: 2px;
       cursor: pointer;
     }
-
     button:hover {
-  background-color: #0247cf;
-  color: #fff;
-}
+      background-color: #0247cf;
+      color: #fff;
+    }
     .hero-image img {
       width: 100%;
       height: auto;
       display: block;
     }
-
     .hero-video {
-  width: 90%;           /* fill the container */
-  height: auto;          /* maintain aspect ratio */
-  object-fit: cover;     /* cover entire area if you’d rather */
-  display: block;
-  pointer-events: none;
-}
+      width: 90%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
 
-#suji_logo:hover {
-  content: url("suji_logo_small_white.jpg");
-}
-
+    #suji_logo:hover {
+      content: url("suji_logo_small_white.jpg");
+    }
 
     /* —— Responsive —— */
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
-      nav { display: none; }
+
+      /* hide nav, show toggle */
+      nav.nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+
+      /* when toggled, show nav vertically */
+      nav.nav.mobile-nav {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+      nav.nav.mobile-nav ul {
+        flex-direction: column;
+      }
+      nav.nav.mobile-nav li {
+        margin: 0;
+      }
+      nav.nav.mobile-nav a {
+        display: block;
+        padding: 1rem 1.5rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header style="margin:0 2vw;margin-top:2vw;padding-top:1.5vw;padding-bottom:1.5vw;box-shadow:0 2px 6px rgba(0,0,0,0.08);position:sticky;top:0;background:#fff;z-index:10;">
+  <header>
     <div class="brand">
-      <a href="#/home"><img src="suji_logo_small_black.jpg" alt="Suji logo" id="suji_logo"></a>
+      <a href="#/home">
+        <img src="suji_logo_small_black.jpg" alt="Suji logo" id="suji_logo">
+      </a>
       <div class="divider"></div>
       <div class="slogan">Digital <b>Technologies</b></div>
     </div>
-    <nav>
+
+    <!-- menu toggle button -->
+    <button class="menu-toggle" aria-label="Toggle navigation"></button>
+
+    <!-- nav needs class="nav" -->
+    <nav class="nav">
       <ul>
         <li><a href="#/home">Home</a></li>
         <li><a href="#/about">About</a></li>
@@ -176,6 +223,21 @@
 
   <!-- this is where home/about/e-learning will be injected -->
   <main id="app"></main>
+
+  <!-- Toggle script, must load after the DOM -->
+  <script>
+    function initMenuToggle() {
+      const btn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav.nav');
+      if (!btn || !nav) return;
+
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('mobile-nav');
+        btn.classList.toggle('is-active');
+      });
+    }
+    document.addEventListener('DOMContentLoaded', initMenuToggle);
+  </script>
 
   <!-- router must load after #app exists -->
   <script src="js/router.js"></script>
