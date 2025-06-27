@@ -138,6 +138,53 @@
       nav { display: none; }
     }
 	
+	/* —— Services Section —— */
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+.services h2 {
+  font-family: 'Orgon', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.services h2 span {
+  color: #0057FF; /* site accent */
+  font-weight: 500;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.service-item {
+  background: #f7f7f7;
+  border: 2px solid #0057FF;
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.read-more-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0057FF;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.read-more-btn:hover {
+  background: #0247cf;
+}
+
+/* —— Portfolio Section —— */
 	/* —— Portfolio Section —— */
 .portfolio {
   padding: 4rem 2rem;
