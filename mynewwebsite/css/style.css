@@ -351,3 +351,29 @@ figure img:hover {
 }
 }
 
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15vw 0;
+        margin-bottom: 2vw;
+        gap: 0.5vw;
+      }
+
+      .footer-logo {
+        width: 2vw;
+      }
+
+      .footer-text {
+        font-size: 0.8vw;
+      }
+
+      @media (max-width: 768px) {
+        .footer-logo {
+          width: 4vw;
+        }
+
+        .footer-text {
+          font-size: 1.5vw;
+        }        
+      }
