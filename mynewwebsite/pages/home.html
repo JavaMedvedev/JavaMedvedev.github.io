@@ -1,8 +1,8 @@
-   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="../css/style.css" />
    <section class="hero">
   <div class="hero-text">
     <p>Sergei Medvedev</p>
-    <h1>Software Engineer & <br/>Instructional Designer</h1>
+    <h1>Software Engineer & <br/>EdTech Specialist</h1>
     <a href="#/about">
       <button>About me</button>
     </a>
@@ -17,14 +17,50 @@
 <!-- ─── Services Section ─────────────────────────────────────── -->
 <section id="services" class="services">
   <h2><span>My</span> Services</h2>
-  <div class="service-cards">
-    <div class="service-item">Mobile and Web Apps</div>
-    <div class="service-item">Interactive Physical Spaces</div>
-    <div class="service-item">Website Building</div>
-    <div class="service-item">Creative Design</div>
-  </div>
-  <a href="#/services" class="read-more-btn">Read More</a>
 </section>
+
+<!-- ─── Services Section ─────────────────────────────────────── -->
+  <section class="service-section">
+    <br>
+    <div class="column card-style">
+      <figure>
+        <img src="images/service1.jpg" alt="Service 1">
+      </figure>
+      <div class="card-text">
+        <h1>Mobile and Web Apps</h1>
+        <p class="ellipsis">Cacti are native through most of the length of North and South America, from British Columbia and Alberta southward; the southernmost limit
+        </p>
+      </div>
+    </div>
+    <div class="column card-style">
+      <figure>
+        <img src="images/service2.jpg" alt="Service 2">
+      </figure>
+      <div class="card-text">
+        <h1>Interactive Physical Spaces</h1>
+        <p class="ellipsis">Cacti are succulent perennial plants. Although</p>
+      </div>
+    </div>
+    <div class="column card-style">
+      <figure>
+        <img src="images/service3.jpg" alt="Service 3">
+      </figure>
+      <div class="card-text">
+        <h1>Website Building</h1>
+        <p class="ellipsis">Cacti vary greatly .</p>
+      </div>
+
+    </div>
+    <div class="column card-style">
+      <figure>
+        <img src="images/service4.jpg" alt="Service 4">
+      </figure>
+      <div class="card-text">
+        <h1>Creative Design</h1>
+        <p class="ellipsis">Cacti are widely cultivated </p>
+      </div>
+    </div>
+  </section>
 
 <!-- ─── Portfolio Section ────────────────────────────────────── -->
 <section id="portfolio" class="portfolio">
@@ -32,7 +68,7 @@
   <div class="portfolio-grid">
     <!-- Project 1 -->
     <div class="portfolio-item" onclick="location.href='#/portfolio#project1'">
-      <img src="pages/images/portfolio1.jpg" alt="Project 1">
+      <img src="images/portfolio1.jpg" alt="Project 1">
       <div class="overlay">
         <div class="overlay-content">
           <h3>IN-ROOM TABLET AND CMS</h3>
@@ -44,7 +80,7 @@
 
     <!-- Project 2 -->
     <div class="portfolio-item" onclick="location.href='#/portfolio#project2'">
-      <img src="pages/images/portfolio2.jpg" alt="Project 2">
+      <img src="images/portfolio2.jpg" alt="Project 2">
       <div class="overlay">
         <div class="overlay-content">
           <h3>MUSEUM TOUCHSCREEN APPS</h3>
@@ -56,7 +92,7 @@
 
     <!-- Project 3 -->
     <div class="portfolio-item" onclick="location.href='#/portfolio#project3'">
-      <img src="pages/images/portfolio3.jpg" alt="Project 3">
+      <img src="images/portfolio3.jpg" alt="Project 3">
       <div class="overlay">
         <div class="overlay-content">
           <h3>E-LEARNING HUB</h3>
@@ -68,7 +104,7 @@
 
     <!-- Project 4 -->
     <div class="portfolio-item" onclick="location.href='#/portfolio#project4'">
-      <img src="pages/images/portfolio4.jpg" alt="Project 4">
+      <img src="images/portfolio4.jpg" alt="Project 4">
       <div class="overlay">
         <div class="overlay-content">
           <h3>CREATIVE DESIGN SOLUTIONS</h3>
@@ -80,3 +116,22 @@
   </div>
 </section>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // select all elements to truncate
+      var paras = document.querySelectorAll(".ellipsis");
+
+      paras.forEach(function(el) {
+        var txt = el.innerHTML.trim();
+        if (txt.length > 200) {
+          // create new <p> with truncated text
+          var truncated = document.createElement("p");
+          truncated.className = "ellipsis-trunc";
+          truncated.textContent = txt.substring(0, 200) + "...";
+          el.replaceWith(truncated);
+        } else {
+          console.log("No truncation needed for element:", el);
+        }
+      });
+    });
+  </script>

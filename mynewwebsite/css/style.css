@@ -140,14 +140,13 @@
 	
 	/* —— Services Section —— */
 .services {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   text-align: center;
   background: #fff;
 }
 .services h2 {
   font-family: 'Orgon', sans-serif;
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 .services h2 span {
   color: #0057FF; /* site accent */
@@ -184,6 +183,84 @@
   background: #0247cf;
 }
 
+
+
+
+
+
+
+.service-section {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+figure {
+  margin: 0px;
+}
+
+figure img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+figure img:hover {
+  opacity: 0.6;
+  transition: all .3s linear;
+}
+.column {
+  box-sizing: border-box;
+  flex: 1 100%;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+.card-style {
+  border-radius: 12px;
+  border-image-slice: 1;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s linear;
+}
+.card-style:hover {
+  box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+  padding: 20px;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .column {
+      flex: 0 0 calc(100%/2 - 40px);
+  }
+    .card-style {
+    margin-top: 2rem;
+  }
+
+}
+
+@media (min-width: 900px) {
+    .column {
+      flex: 0 0 calc(100%/4 - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    margin: 0 2rem 2rem 2rem;
+  }
+  .services {
+    padding-bottom: 4rem;
+  }
+}
+
+
+
+
+
 /* —— Portfolio Section —— */
 .portfolio {
   padding: 4rem 2rem;
@@ -192,7 +269,7 @@
 .portfolio h2 {
   font-family: 'Orgon', sans-serif;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .portfolio h2 span {
   color: #0057FF;
@@ -239,7 +316,7 @@
 .portfolio-item .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);  /* subtle darkening behind text */
+  background: rgba(0,0,0,0.1);  /* subtle darkening behind text */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -252,7 +329,7 @@
   border-radius: 4px;
 }
 .overlay-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.8vw;
   margin: 0;
   font-weight: 400;
 }
@@ -267,3 +344,10 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+
+@media (max-width: 600px) {
+.portfolio-item .overlay {
+  background: rgba(0,0,0,0.5);  /* subtle darkening behind text */
+}
+}
+
