@@ -232,6 +232,19 @@ figure img:hover {
   text-align: left;
 }
 
+    .ellipsis {
+      font-size: 1.1vw;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .card-text h1 {
+      margin: 0.5vw 0 1.5vw 0;
+      font-size: 1.8vw;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+
 @media (min-width: 600px) {
   .column {
       flex: 0 0 calc(100%/2 - 40px);
@@ -250,11 +263,24 @@ figure img:hover {
 
 @media (max-width: 600px) {
   .column {
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 4vw 4vw 4vw;
   }
   .services {
     padding-bottom: 4rem;
   }
+
+     .ellipsis {
+      font-size: 3vw;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .card-text h1 {
+      margin: 0.5vw 0 1.5vw 0;
+      font-size: 4.5vw;
+      line-height: 1.1;
+      font-weight: 300;
+    }
 }
 
 
