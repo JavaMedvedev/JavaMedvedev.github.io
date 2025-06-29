@@ -16,7 +16,7 @@ const routes = {
 let lastPath = null;
 
 async function loadRoute() {
-  // Get the full hash (e.g. "/home#services" or "project2")
+  // Get the full hash (e.g. "/home#services" or "/project1")
   const fullHash        = location.hash.slice(1) || '/';
   const [route, section] = fullHash.split('#');
   const path            = routes[route] || routes['/'];
@@ -89,5 +89,38 @@ document.addEventListener('click', e => {
       // Same hash → re-run loadRoute to trigger the scroll logic
       loadRoute();
     }
+  }
+});
+
+
+// 🔹 NEW: Delegated form-submit handler for your contact form 🔹
+document.addEventListener('submit', async e => {
+  const form = e.target;
+  if (form.id !== 'myForm') return;   // only intercept your contact form
+
+  e.preventDefault();                  // stop the default page-reload submission
+
+  const formData = new FormData(form);
+  const successMessage = document.getElementById('successMessage');
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (response.ok) {
+      successMessage.style.display = 'block';
+      form.reset();
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 3000);
+    } else {
+      console.error('Error:', response.status, response.statusText);
+      alert('Failed to submit the form.');
+    }
+  } catch (err) {
+    console.error('Error:', err);
+    alert('An error occurred while submitting the form.');
   }
 });
