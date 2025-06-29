@@ -435,6 +435,7 @@ padding: 0rem 2rem;
   flex: 1;                 /* take remaining space */
   text-align: left;
   padding: 0 3vw;
+  line-height: 1.7;
 }
 
 /* Responsive: stack on small screens */
