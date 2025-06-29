@@ -469,7 +469,7 @@ padding: 0rem 2rem;
 }
 
 #contacts {
-  padding: 3rem 2rem 4rem 3rem;
+  padding: 3rem 2rem 3rem 3rem;
 }
 
 .contacts‐inner {
@@ -577,8 +577,8 @@ padding: 0rem 2rem;
 /* Responsive: full-width on narrow screens */
 @media (max-width: 768px) {
   .form-container {
-    width: 90vw;
-    min-width: auto;
+    width: 80vw;
+    padding-bottom: 3vw;
   }
   .contact-label {
     font-size: 2.5vw;
