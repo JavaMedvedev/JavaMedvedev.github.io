@@ -436,6 +436,9 @@ padding: 0rem 2rem;
   text-align: left;
   padding: 0 3vw;
   line-height: 1.7;
+  font-size: 1.1vw;
+    font-weight: 400;
+    color: #444;
 }
 
 /* Responsive: stack on small screens */
@@ -447,6 +450,11 @@ padding: 0rem 2rem;
   .about‐image {
     width: 60%;            /* make the image a bit narrower on mobile */
     margin: 0 auto 2rem;
+  }
+  .about-text {
+    font-size: 3vw;
+    font-weight: 400;
+    color: #444;
   }
 }
 

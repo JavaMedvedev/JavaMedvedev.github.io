@@ -62,31 +62,31 @@ function scrollAccordingly(route, section) {
 window.addEventListener('DOMContentLoaded', loadRoute);
 window.addEventListener('hashchange', loadRoute);
 
-// Delegated click handler for all in‐app links
+// Delegated click handler for all in-app links (including your hero "About me" button)
 document.addEventListener('click', e => {
-  // 1) If we clicked anywhere inside a form, do nothing here
-  if (e.target.closest('form')) return;
-
-  // 2) Otherwise, look for an <a href^="#/"> ancestor
   const link = e.target.closest('a[href^="#/"]');
   if (!link) return;
   e.preventDefault();
 
-  const target = link.getAttribute('href'); // e.g. "#/home#about"
+  const target = link.getAttribute('href'); // e.g. "#/", "#/home#about", "#/project3"
 
-  // Home link?
+  // Home link (either "#/" or "#")
   if (target === '#/' || target === '#') {
     if (location.hash !== '#/' && location.hash !== '') {
+      // Navigate back to home, firing hashchange → loadRoute()
       location.hash = '#/';
     } else {
+      // Already at home → just scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
-  // Any other in‐app link
+  // Any other in-app link
   else {
     if (location.hash !== target) {
+      // Changing the hash will fire hashchange → loadRoute()
       location.hash = target;
     } else {
+      // Same hash → re-run loadRoute to trigger the scroll logic
       loadRoute();
     }
   }
