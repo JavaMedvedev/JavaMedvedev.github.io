@@ -43,3 +43,12 @@ async function loadRoute() {
 
 window.addEventListener('DOMContentLoaded', loadRoute);
 window.addEventListener('hashchange', loadRoute);
+
+
+// force the router (and scroll) to run on *any* nav-link click
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    // give the browser a tick to update location.hash
+    setTimeout(loadRoute, 0);
+  });
+});
