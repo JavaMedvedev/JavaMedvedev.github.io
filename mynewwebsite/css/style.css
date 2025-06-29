@@ -451,7 +451,7 @@ padding: 0rem 2rem;
     width: 60%;            /* make the image a bit narrower on mobile */
     margin: 0 auto 2rem;
   }
-  .about-text {
+  .about‐text {
     font-size: 3vw;
     font-weight: 400;
     color: #444; 
@@ -469,7 +469,7 @@ padding: 0rem 2rem;
 }
 
 #contacts {
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 3rem 2rem 4rem 3rem;
 }
 
 .contacts‐inner {
