@@ -453,11 +453,15 @@ padding: 0rem 2rem;
 /* —— Contacts Section —— */
 .contacts-section {
   background: #fff;
-  padding: 4vw 2vw;
+  padding: 0 2vw;
         font-family: 'Orgon', sans-serif;
       font-weight: 500;
       font-size: 1.2vw;
       letter-spacing: 0.5px;
+}
+
+#contacts {
+  padding: 4rem 2rem 4rem 2rem;
 }
 
 .contacts‐inner {
