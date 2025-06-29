@@ -28,8 +28,8 @@ async function loadRoute() {
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 50);
     } else {
-      // for project pages or plain home, scroll to top
-      window.scrollTo({ top: 0 });
+      // for project pages or plain home, scroll to top smoothly
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
   } catch {
@@ -44,10 +44,9 @@ async function loadRoute() {
 window.addEventListener('DOMContentLoaded', loadRoute);
 window.addEventListener('hashchange', loadRoute);
 
-
 // force the router (and scroll) to run on *any* nav-link click
 document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', (e) => {
+  link.addEventListener('click', () => {
     // give the browser a tick to update location.hash
     setTimeout(loadRoute, 0);
   });
