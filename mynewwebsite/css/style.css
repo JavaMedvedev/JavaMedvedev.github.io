@@ -144,6 +144,7 @@
   text-align: center;
   background: #fff;
 }
+
 .services h2 {
   font-family: 'Orgon', sans-serif;
   font-size: 2rem;
@@ -381,8 +382,7 @@ figure img:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 15vw 0;
-        margin-bottom: 2vw;
+        margin: 5vw 0 4vw 0;
         gap: 0.5vw;
       }
 
@@ -403,3 +403,49 @@ figure img:hover {
           font-size: 1.5vw;
         }        
       }
+
+      /* —— About Me Section —— */
+
+      .about {
+padding: 0rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.about‐inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;            
+  margin: 0 auto;
+}
+
+.about‐image {
+  flex: 0 0 25vw;         /* fixed 300px square on desktop */
+  margin-left: 3vw;
+}
+.about‐image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* force square */
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.about‐text {
+  flex: 1;                 /* take remaining space */
+  text-align: left;
+  padding: 0 3vw;
+  line-height: 1.7;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+  .about‐inner {
+    flex-direction: column;
+    text-align: center;    /* center headline/text if you like */
+  }
+  .about‐image {
+    width: 60%;            /* make the image a bit narrower on mobile */
+    margin: 0 auto 2rem;
+  }
+}
