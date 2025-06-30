@@ -1,271 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" href="suji_logo_transparent.png" type="image/png" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="suji_logo_transparent_white.png" type="image/png" media="(prefers-color-scheme: dark)">
-
-  <title>Touchscreens</title>
-
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      /*scroll-behavior: smooth;*/
-    }
-
-    .flutter-wrapper {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      max-width: 100vw;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .flutter-frame {
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      width: 80%;
-      height: 80%;
-      border: none;
-      z-index: 2;
-    }
-
-    .tablet-frame-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    .phone-wrapper-upper {
-
-  
-  /*background-image: url("sand8.jpg");*/
-  background-color: #fff;
-  background-size: cover; /* or contain, depending on what you want */
-  background-repeat: no-repeat;
-  background-position: top;
-  width: 100%;
-}
-
-
-    .phone-wrapper {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      max-width: 100vw;
-      position: relative;
-      margin-top: 15vw;
-    }
-
-    .phone-frame {
-      position: absolute;
-      top: 5%;
-      left: 25%;
-      width: 50%;
-      height: 150%;
-      border: none;
-      z-index: 2;
-      aspect-ratio: 9 / 16;
-    }
-
-    .phone-frame-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 160%;
-      z-index: 1;
-      pointer-events: none;
-      aspect-ratio: 9 / 16;
-    }
-	
-	.below-phone {
-	  clear: both;
-	  display: block;
-	}
-	
-	.below-phone::before {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
-}
-
-.diagonal-wrapper {
-      width: 100%;
-      max-width: 100vw;
-      position: relative;
-      overflow: hidden;
-      margin-top: 0vw;
-      margin-bottom: 15vw;
-      /*background-image: url("touchscreen_horisontal.jpg");*/
-    }
-    
-    @media (orientation: portrait) {
-      .flutter-wrapper {
-        aspect-ratio: auto;
-        height: calc(100vw * (9 / 16));
-      }
-      .phone-wrapper {
-        aspect-ratio: auto;
-        height: calc(100vw * (9 / 16));
-      }
-    }
-  </style>
-  <style>
-
-.three-container {
-  display: flex;
-  justify-content: center;
-  gap: 2vw;
-  width: 100%;
-  padding: 0vw 0 15vw 0;
-  background-color: #ffffff; /*e0e2e7*/
-}
-
-.three-one {
-  width: 30%;
-  color: #202020;
-  background-color: #4a90e2;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  font-size: 1.5vw;
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
-  padding: 0 0 3vw 0;
-  border-radius: 1vw;
-  text-decoration: none;
-}
-
-    .three-one p {
-  margin: 3vw 1vw 0vw 2vw;
-  color:#fff;
-}
-
-    .three-one img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-top-left-radius: 1vw;
-      border-top-right-radius: 1vw;
-    }
-
-    .split-container {
-      display: flex;
-      width: 100%;
-    }
-
-    .left-text {
-      width: 50%;
-      background-color: #4a90e2;
-      color: #fdffdb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.45vw;
-      font-family: 'Inter', sans-serif;
-	    font-weight: bold;
-    }
-
-    .right-image {
-      width: 50%;
-    }
-
-    .right-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .text-divider-big {
-      padding: 15vw 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10vw;
-      font-family: 'Inter', sans-serif;
-      font-weight: 900;
-      color: #4a90e2;
-    }
-
-    #curiosity {
-      padding: 10vw 10vw;
-    }
-	
-	#explore {
-	 font-size: 9vw;
-	 color: #fff;
-	  width: 50%;
-      background-color: #4a90e2;
-      display: flex;
-      align-items: center;
-	  font-family: 'Inter', sans-serif;
-	  font-weight: bold;
-	}
-
-  #zmbm {
-    font-size: 1.3vw; 
-  }
-
-  .first {
-     padding: 0 5vw; 
-     padding-right: 25vw; 
-     text-align: left;
-     color: #fff;
-  }
-
-    /* Responsive: Stack columns on small screens */
-    @media (max-width: 768px) {
-      .three-container {
-        flex-direction: column;
-        
-  align-items: center;
-      }
-      .three-one {
-        width: 90%;
-		    font-size: 3vw;
-        margin: 2vw;
-      }
-
-      .three-one p {
-        padding: 0 2vw;
-      }
-      .split-container {
-        flex-direction: column;
-      }
-      .left-text, .right-image {
-        width: 100%;
-		font-size: 4.8vw;
-      }
-	  #curiosity {
-	   padding: 10vw 15vw;
-	  }
-	  #explore {
-      justify-content: center;
-	  width: 100%;
-	  padding-bottom: 10vw;
-	  }	  
-    #zmbm {
-      font-size: 2.4vw;
-    }
-    .first {
-      padding-right: 5vw;
-    }
-    }
-
-  </style>
-</head>
-<body>
+  <link rel="stylesheet" href="../css/style.css" />
 
   <div class="text-divider-big" style="font-size: 4vw; background-color: #4a90e2;">
     <p class='first'>
@@ -273,28 +6,9 @@
     </p>
   </div>
 
-  <div class="text-divider-big">
-    JUMP TO
-  </div>
-
-  <div class="three-container">
-    <a href="#section1" class="three-one">
-      <img src="three-first.jpg" alt="Darwin's Collection">
-      <p>Darwin's Collection</p>
-    </a>
-    <a href="#section2" class="three-one">
-      <img src="three-second.jpg" alt="Museum's History & Collections">
-      <p>Museum's History & Collections</p>
-    </a>
-    <a href="#section3" class="three-one">
-      <img src="three-third.jpg" alt="3D Museum">
-      <p>3D Museum</p>
-    </a>
-  </div>
-
   <div id="section1" class="split-container">
     <div class="right-image">
-      <img src="six_savannah.jpg" alt="App with Three Columns">
+      <img src="pages/images/project2/six_savannah.jpg" alt="App with Three Columns">
     </div>
     <div class="left-text">
       <p id="curiosity" style="text-align: center;"><span style="color: #f6ff52">Charles Darwin's</span><br>Collection</p>
@@ -305,7 +19,7 @@
   TRY IT
   </div>
   <div class="flutter-wrapper">
-    <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
+    <img src="pages/images/project2/tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_301/" class="flutter-frame"></iframe>
   </div>
 <br>
@@ -316,13 +30,13 @@
   </p>
   </div>
   <div class="right-image">
-    <img src="touchscreen_horisontal.jpg" alt="Tablet with the app">
+    <img src="pages/images/project2/touchscreen_horisontal.jpg" alt="Tablet with the app">
   </div>
 </div>
 
 <br>
   <div class="diagonal-wrapper" style="aspect-ratio: 1 / 1;">
-    <img src="four_diagonal7.jpg" class="tablet-frame-image" alt="">
+    <img src="pages/images/project2/four_diagonal7.jpg" class="tablet-frame-image" alt="">
   </div>
   <br>
   <div class="split-container" style="padding-top: 0vw;">
@@ -333,17 +47,17 @@
     </div>
     <div class="right-image">
       <a href="https://play.google.com/store/apps/details?id=com.sergeimedvedev.museum_301" target="_blank" rel="noopener noreferrer">
-	      <img src="google.png" alt="Google Play Button">
+	      <img src="pages/images/project2/google.png" alt="Google Play Button">
       </a>
     </div>
   </div>
   <br>
   <div class="text-divider-big" style="font-size: 7vw; padding: 20vw 0;">
-  KEEP SCROLLING ;)
+  KEEP SCROLLING
   </div>
 <div id="section2" class="split-container">
   <div class="right-image">
-    <img src="listings_square2.jpg" alt="App with Three Columns">
+    <img src="pages/images/project2/listings_square2.jpg" alt="App with Three Columns">
   </div>
 	<div class="left-text">
     <p id="curiosity" style="text-align: center;"><span id="zmbm">Zoology & Marine Biology Museum</span><br><span style="color: #f6ff52">All-in-One</span> App</p>
@@ -353,7 +67,7 @@
 TRY IT
 </div>
   <div class="flutter-wrapper">
-    <img src="tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
+    <img src="pages/images/project2/tablet_frame.png" class="tablet-frame-image" alt="Tablet Frame">
     <iframe src="https://sergeimedvedev.com/museum_201/" class="flutter-frame"></iframe>
   </div>
 
@@ -362,7 +76,7 @@ TRY IT
 
 <div class="split-container" style="margin: 15vw 0;">
   <div class="right-image">
-      <img src="touchscreen_horisontal2.jpg" alt="App with Three Columns">
+      <img src="pages/images/project2/touchscreen_horisontal2.jpg" alt="App with Three Columns">
   </div>
 	<div class="left-text">
     <p id="curiosity" style="padding: 10vw 5vw; text-align: center; font-size: 3.5vw;">
@@ -372,7 +86,7 @@ TRY IT
 </div>
 
   <div class="diagonal-wrapper" style="aspect-ratio: 1 / 1.1; margin-top: 10vw;">
-    <img src="six_diagonal2.jpg" class="tablet-frame-image" alt="">
+    <img src="pages/images/project2/six_diagonal2.jpg" class="tablet-frame-image" alt="">
   </div>
 
   <div class="split-container" style="padding-top: 0vw;">
@@ -382,55 +96,16 @@ TRY IT
       </p>
     </div>
     <div class="right-image">
-      <a href="app-release.apk" target="_blank" rel="noopener noreferrer">
-	      <img src="apk.png" alt="Google Play Button">
+      <a href="pages/images/project2/app-release.apk" target="_blank" rel="noopener noreferrer">
+	      <img src="pages/images/project2/apk.png" alt="Google Play Button">
       </a>
     </div>
   </div>
 
-  <div class="text-divider-big" style="font-size: 7vw; padding: 20vw 0;">
-    KEEP GOING...
-  </div>
   
-<div id="section3" class="split-container">
-  <div class="right-image">
-      <img src="explore7.jpg" alt="App with Three Columns">
-  </div>
-	<div class="left-text" style="background-color: #fff;">
-      <p id="curiosity" style="text-align: center; padding: 10vw 5vw; color:#4a90e2;">Transforming artifacts into immersive <span style="color: #4a90e2">3D</span> experiences.</p>
-  </div>
-</div>
   
-<div class="phone-wrapper-upper">
-  <div class="phone-wrapper">
-    <img src="phone_frame.png" class="phone-frame-image" alt="Phone Frame">
-    <iframe src="https://sergeimedvedev.com/museum_401/" class="phone-frame"></iframe>
-  </div>
-  <div class="below-phone">
-  </div>
-</div>
-
 <div class="text-divider-big" style="font-size: 4vw; background-color: #4a90e2;">
   <p class="first" style="padding-right: 40vw;">
     Where <span style="color: #f6ff52">curiosity</span> meets hands-on discovery....
   </p>
-
 </div>
-<div style="padding: 3vw 0; padding-left: 5vw; text-align: left; font-family: 'Inter', sans-serif; font-size: 1.1vw; font-weight: bold; color: #fff; background-color: #4a90e2;">
-  sergei.medvedev@universityofgalway.ie
-</div>
-
-<script>
-  document.querySelectorAll('.three-one').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      document.querySelector(targetId).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-</script>
-
-</body>
-</html>

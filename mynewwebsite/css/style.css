@@ -910,3 +910,49 @@ ul.bullets li::before {
         max-width: 90vw;
       }
       }
+
+      .diagonal-wrapper {
+      width: 100%;
+      max-width: 100vw;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0vw;
+      margin-bottom: 15vw;
+      /*background-image: url("touchscreen_horisontal.jpg");*/
+    }
+
+        .right-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
+    #curiosity {
+      padding: 10vw 10vw;
+    }
+
+  #zmbm {
+    font-size: 1.3vw; 
+  }
+
+  .first {
+     padding: 0 5vw; 
+     padding-right: 25vw; 
+     text-align: left;
+     color: #fff;
+  }
+
+        /* Responsive: Stack columns on small screens */
+    @media (max-width: 768px) {
+ 
+	  #curiosity {
+	   padding: 10vw 15vw;
+	  }  
+    #zmbm {
+      font-size: 2.4vw;
+    }
+    .first {
+      padding-right: 5vw;
+    }
+    }
