@@ -724,7 +724,6 @@ padding: 0rem 2rem;
         }
 
         .bullets {
-          padding: 0vw 30vw;
           text-align: left;
           font-size: 3vw;
           line-height: 1.1;
@@ -748,6 +747,7 @@ padding: 0rem 2rem;
 /* 2) Wrap the bullets in a centered container */
 .bullets-wrapper {
   text-align: center;  /* center the block-level UL inside */
+  align-items: center;
 }
 
 /* 3) Style only your UL.bullets */
