@@ -2,7 +2,7 @@
 
 const app = document.getElementById('app');
 
-// —— Disable automatic browser scroll restoration (optional, but recommended)
+// ▫️ Optional: prevent the browser from auto-restoring scroll when you swap content
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
@@ -20,9 +20,9 @@ let lastPath = null;
 
 async function loadRoute() {
   // Get the full hash (e.g. "/home#services" or "/project1")
-  const fullHash         = location.hash.slice(1) || '/';
+  const fullHash        = location.hash.slice(1) || '/';
   const [route, section] = fullHash.split('#');
-  const path             = routes[route] || routes['/'];
+  const path            = routes[route] || routes['/'];
 
   // If we've already loaded this HTML file, skip re-fetch and just scroll
   if (path === lastPath) {
@@ -36,6 +36,11 @@ async function loadRoute() {
     const res = await fetch(path);
     if (!res.ok) throw new Error('Fetch error');
     app.innerHTML = await res.text();
+
+    // 🔹 NEW: immediately clear any leftover scroll from the previous page
+    app.scrollTop = 0;
+    // (Optional) also nudge the window scroll in case you ever fall back to body‐scroll
+    window.scrollTo(0, 0);
 
     // 🔹 NEW: initialize project1-specific scripts if needed
     if (route === '/project1') {
@@ -65,14 +70,14 @@ function scrollAccordingly(route, section) {
   // Otherwise (no fragment or project pages), scroll the #app container to top
   else {
     app.scrollTo({ top: 0, behavior: 'smooth' });
-    // (Optional) also nudge the window scroll in case you have any body scroll
+    // (Optional) also scroll the window
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
 
 // Run on initial load and whenever the hash changes
 window.addEventListener('DOMContentLoaded', loadRoute);
-window.addEventListener('hashchange', loadRoute);
+window.addEventListener('hashchange',      loadRoute);
 
 // Delegated click handler for all in-app links (including your hero "About me" button)
 document.addEventListener('click', e => {
@@ -88,9 +93,9 @@ document.addEventListener('click', e => {
       // Navigate back to home, firing hashchange → loadRoute()
       location.hash = '#/';
     } else {
-      // Already at home → just scroll to top
-      app.scrollTo({ top: 0, behavior: 'smooth' });
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Already at home → just reset scroll to top
+      app.scrollTop = 0;
+      window.scrollTo(0, 0);
     }
   }
   // Any other in-app link

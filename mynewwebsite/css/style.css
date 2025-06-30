@@ -717,16 +717,16 @@ padding: 0rem 2rem;
           align-items: center;
           justify-content: center;
           text-align: left;
-          font-size: 3vw;
+          font-size: 4vw;
           line-height: 1.1;
           font-weight: 300;
           color: #111;
         }
 
         .bullets {
-          padding: 0vw 20vw;
+          padding: 0vw 30vw;
           text-align: left;
-          font-size: 1.5vw;
+          font-size: 3vw;
           line-height: 1.1;
           font-weight: 300;
           color: #111;
