@@ -854,8 +854,8 @@ ul.bullets li::before {
 
 
       .flutter-wrapper {
-        width: 90%;
-        max-width: 90vw;
+        width: 80%;
+        max-width: 80vw;
         aspect-ratio: 16/9;
         position: relative;
         overflow: hidden;
