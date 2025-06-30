@@ -5,8 +5,6 @@ const app = document.getElementById('app');
 const routes = {
   '/':         'pages/home.html',
   '/home':     'pages/home.html',
-
-  // project pages:
   '/project1': 'pages/project1.html',
   '/project2': 'pages/project2.html',
   '/project3': 'pages/project3.html',
@@ -33,6 +31,13 @@ async function loadRoute() {
     const res = await fetch(path);
     if (!res.ok) throw new Error('Fetch error');
     app.innerHTML = await res.text();
+
+    // 🔹 NEW: initialize project1-specific scripts if needed
+    if (route === '/project1') {
+      initProject1Video();
+      initProject1Iframe();
+    }
+
     scrollAccordingly(route, section);
   } catch {
     app.innerHTML = `
@@ -92,8 +97,7 @@ document.addEventListener('click', e => {
   }
 });
 
-
-// 🔹 NEW: Delegated form-submit handler for your contact form 🔹
+// 🔹 Delegated form-submit handler for your contact form 🔹
 document.addEventListener('submit', async e => {
   const form = e.target;
   if (form.id !== 'myForm') return;   // only intercept your contact form
@@ -124,3 +128,30 @@ document.addEventListener('submit', async e => {
     alert('An error occurred while submitting the form.');
   }
 });
+
+
+// 🔹 NEW: helper to autoplay/pause video in project1 via IntersectionObserver
+function initProject1Video() {
+  const video = document.getElementById("heroVideo");
+  if (!video) return;
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        entry.isIntersecting ? video.play() : video.pause();
+      });
+    },
+    { threshold: 0.6 }
+  );
+  observer.observe(video);
+}
+
+// 🔹 NEW: helper to fix iframe background in project1 after load
+function initProject1Iframe() {
+  const iframe = document.getElementById("hotelFrame");
+  if (!iframe) return;
+  iframe.addEventListener("load", () => {
+    setTimeout(() => {
+      iframe.style.backgroundColor = "#fff";
+    }, 3000);
+  });
+}

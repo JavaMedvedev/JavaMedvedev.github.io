@@ -607,3 +607,291 @@ padding: 0rem 2rem;
     text-align: center;
   }
 }
+ img,
+      iframe {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .split-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .left-text,
+      .right-image {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f7f7;
+      }
+
+      .left-text {
+        padding: 10vw 0;
+      }
+
+      @media (max-width: 768px) {
+        .split-container {
+          flex-direction: column;
+        }
+        .left-text,
+        .right-image {
+          width: 100%;
+        }
+      }
+
+      .hero-heading {
+        margin: 0.5vw 0 1.5vw 0vw;
+        font-size: 2vw;
+        line-height: 1.1;
+        font-weight: 300;
+        color: #111;
+        text-align: left;
+        padding: 0 4vw;
+      }
+
+      .hero-subheading {
+        font-size: 1.2vw;
+        line-height: 1.2;
+        display: inline-block;
+        margin: 3vw 0;
+        padding: 0;
+      }
+
+      .hero-heading button {
+        padding: 0.9vw 2.5vw;
+        font-size: 1.3vw;
+        font-weight: 500;
+        background: #0057FF;
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .hero-heading button:hover {
+        background-color: #0247cf;
+        color: #fff;
+      }
+
+      .hero-heading a {
+        display: inline-block;
+      }
+
+      @media (max-width: 768px) {
+        .hero-heading {
+          margin: 0.5vw 0 1.5vw 0;
+          font-size: 4vw;
+          line-height: 1.4;
+          font-weight: 300;
+          color: #111;
+          text-align: left;
+          padding: 4vw;
+        }
+        .hero-subheading {
+          font-size: 2.5vw;
+          line-height: 1.5;
+          display: inline-block;
+          margin: 3vw 0;
+          padding: 0;
+        }
+        .hero-heading button {
+          padding: 1.4vw 3.5vw;
+          font-size: 2.5vw;
+          font-weight: 500;
+          background: #0057FF;
+          color: #fff;
+          border: none;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .text-divider-big {
+          padding: 15vw 20vw 2vw 20vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: left;
+          font-size: 3vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;
+        }
+
+        .bullets {
+          padding: 0vw 20vw;
+          text-align: left;
+          font-size: 1.5vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;
+        }
+      }
+ /* 1) Your big heading/divider stays as-is: */
+.text-divider-big {
+  padding: 15vw 30vw 2vw 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 2vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
+
+/* 2) Wrap the bullets in a centered container */
+.bullets-wrapper {
+  text-align: center;  /* center the block-level UL inside */
+}
+
+/* 3) Style only your UL.bullets */
+ul.bullets {
+  list-style: none;
+  display: block;              /* let it be a normal block */
+  width: fit-content;          /* shrink‐wrap to its contents */
+  margin: 0 auto;              /* center this block */
+  padding-left: 0;             /* remove default indent */
+}
+
+/* 4) Keep the LI content left-aligned and add custom bullets */
+ul.bullets li {
+  position: relative;          /* for custom bullet positioning */
+  padding-left: 1em;           /* space for the bullet */
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-size: 1vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
+
+ul.bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;                     /* stick the bullet at the start */
+  top: 0;
+  color: #0057FF;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        margin: 15vw 0 15vw 3vw;
+      }
+
+      .video-frame {
+        width: 70%;
+        background: #000;
+        padding: 2.5%;
+        border-radius: 2vw;
+        display: block;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero-video-order {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 1.25vw;
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      .video-text {
+        width: 30%;
+        display: block;
+        text-align: left;
+        font-size: 1.8vw;
+        line-height: 1.1;
+        font-weight: 300;
+        color: #111;
+        margin-right: 3vw;
+      }
+
+@media (max-width: 768px) {
+  .video-container {
+    display: flex;
+    flex-direction: column;    /* stack video + text */
+    align-items: center;       /* center children horizontally */
+    gap: 0;                    
+    margin: 15vw 0;            /* vertical only */
+    padding: 0 7vw;            /* equal 3vw gutters left/right */
+  }
+
+  .video-frame,
+  .video-text {
+    width: 100%;               /* fill the padded container */
+  }
+
+  .video-text {
+    font-size: 3vw;
+    margin: 3vw 0 0;         /* small top margin if you like */
+  }
+}
+
+
+      .flutter-wrapper {
+        width: 90%;
+        max-width: 90vw;
+        aspect-ratio: 16/9;
+        position: relative;
+        overflow: hidden;
+        margin: 10vw auto;
+      }
+
+      .flutter-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        pointer-events: none;
+      }
+
+      .flutter-wrapper iframe {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        border: none;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5vw 0 4vw 0;
+        gap: 0.5vw;
+      }
+
+      .footer-logo {
+        width: 2vw;
+      }
+
+      .footer-text {
+        font-size: 0.8vw;
+      }
+
+      @media (max-width: 768px) {
+        .footer-logo {
+          width: 4vw;
+        }
+
+        .footer-text {
+          font-size: 1.5vw;
+        }        
+      }
