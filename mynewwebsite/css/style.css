@@ -712,7 +712,7 @@ padding: 0rem 2rem;
       
       @media (max-width: 768px) {
         .text-divider-big {
-          padding: 15vw 20vw 2vw 20vw;
+          padding: 15vw 10vw 2vw 10vw;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -730,6 +730,17 @@ padding: 0rem 2rem;
           font-weight: 300;
           color: #111;
         }
+
+        ul.bullets li {
+  position: relative;          /* for custom bullet positioning */
+  padding-left: 1em;           /* space for the bullet */
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-size: 3vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
       }
  /* 1) Your big heading/divider stays as-is: */
 .text-divider-big {
