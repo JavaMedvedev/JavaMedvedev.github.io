@@ -2,6 +2,11 @@
 
 const app = document.getElementById('app');
 
+// —— Disable automatic browser scroll restoration (optional, but recommended)
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 const routes = {
   '/':         'pages/home.html',
   '/home':     'pages/home.html',
@@ -15,9 +20,9 @@ let lastPath = null;
 
 async function loadRoute() {
   // Get the full hash (e.g. "/home#services" or "/project1")
-  const fullHash        = location.hash.slice(1) || '/';
+  const fullHash         = location.hash.slice(1) || '/';
   const [route, section] = fullHash.split('#');
-  const path            = routes[route] || routes['/'];
+  const path             = routes[route] || routes['/'];
 
   // If we've already loaded this HTML file, skip re-fetch and just scroll
   if (path === lastPath) {
@@ -54,11 +59,13 @@ function scrollAccordingly(route, section) {
     setTimeout(() => {
       document
         .getElementById(section)
-        ?.scrollIntoView({ behavior: 'smooth' });
+        ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 50);
   }
-  // Otherwise (no fragment or project pages), scroll to top
+  // Otherwise (no fragment or project pages), scroll the #app container to top
   else {
+    app.scrollTo({ top: 0, behavior: 'smooth' });
+    // (Optional) also nudge the window scroll in case you have any body scroll
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
@@ -82,6 +89,7 @@ document.addEventListener('click', e => {
       location.hash = '#/';
     } else {
       // Already at home → just scroll to top
+      app.scrollTo({ top: 0, behavior: 'smooth' });
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
@@ -128,7 +136,6 @@ document.addEventListener('submit', async e => {
     alert('An error occurred while submitting the form.');
   }
 });
-
 
 // 🔹 NEW: helper to autoplay/pause video in project1 via IntersectionObserver
 function initProject1Video() {
