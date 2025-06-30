@@ -916,8 +916,8 @@ ul.bullets li::before {
       max-width: 100vw;
       position: relative;
       overflow: hidden;
-      margin-top: 0vw;
-      margin-bottom: 15vw;
+      margin-top: 15vw;
+      margin-bottom: 10vw;
       /*background-image: url("touchscreen_horisontal.jpg");*/
     }
 
