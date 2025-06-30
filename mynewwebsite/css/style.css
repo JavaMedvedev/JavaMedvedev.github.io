@@ -905,4 +905,8 @@ ul.bullets li::before {
         .footer-text {
           font-size: 1.5vw;
         }        
+      .flutter-wrapper {
+        width: 90%;
+        max-width: 90vw;
+      }
       }
