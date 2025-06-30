@@ -710,38 +710,6 @@ padding: 0rem 2rem;
         }
       }
       
-      @media (max-width: 768px) {
-        .text-divider-big {
-          padding: 15vw 10vw 2vw 10vw;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: left;
-          font-size: 4vw;
-          line-height: 1.1;
-          font-weight: 300;
-          color: #111;
-        }
-
-        .bullets {
-          text-align: left;
-          font-size: 3vw;
-          line-height: 1.1;
-          font-weight: 300;
-          color: #111;
-        }
-
-        ul.bullets li {
-  position: relative;          /* for custom bullet positioning */
-  padding-left: 1em;           /* space for the bullet */
-  margin-bottom: 0.5em;
-  text-align: left;
-  font-size: 3vw;
-  line-height: 1.1;
-  font-weight: 300;
-  color: #111;
-}
-      }
  /* 1) Your big heading/divider stays as-is: */
 .text-divider-big {
   padding: 15vw 30vw 2vw 30vw;
@@ -793,6 +761,38 @@ ul.bullets li::before {
 }
 
 
+      @media (max-width: 768px) {
+        .text-divider-big {
+          padding: 15vw 10vw 3vw 10vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: left;
+          font-size: 3.5vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;
+        }
+
+        .bullets {
+          text-align: left;
+          font-size: 3vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;
+        }
+
+        ul.bullets li {
+  position: relative;          /* for custom bullet positioning */
+  padding-left: 1em;           /* space for the bullet */
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-size: 2vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
+      }
 
       .video-container {
         display: flex;
