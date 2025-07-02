@@ -8,38 +8,42 @@ function compareAndDownload() {
         reader1.onload = function(e) {
             var data1 = new Uint8Array(e.target.result);
             var workbook1 = XLSX.read(data1, { type: 'array' });
-            var sheet1 = XLSX.utils.sheet_to_json(workbook1.Sheets[workbook1.SheetNames[0]], { header: 1 });
+            // Fill empty cells as empty strings
+            var sheet1 = XLSX.utils.sheet_to_json(
+                workbook1.Sheets[workbook1.SheetNames[0]],
+                { header: 1, defval: "" }
+            );
 
             // Read second file
             var reader2 = new FileReader();
             reader2.onload = function(e) {
                 var data2 = new Uint8Array(e.target.result);
                 var workbook2 = XLSX.read(data2, { type: 'array' });
-                var sheet2 = XLSX.utils.sheet_to_json(workbook2.Sheets[workbook2.SheetNames[0]], { header: 1 });
+                var sheet2 = XLSX.utils.sheet_to_json(
+                    workbook2.Sheets[workbook2.SheetNames[0]],
+                    { header: 1, defval: "" }
+                );
 
-                // Now that we have both sheets, we can compare them
-                var keyColumnName1 = 'Application Number';
-                var keyColumnName2 = 'Application Number';
-
-                var keyIndex1 = findKeyColumnIndex(sheet1[0], keyColumnName1);
-                var keyIndex2 = findKeyColumnIndex(sheet2[0], keyColumnName2);
+                // Compare sheets based on Application Number column
+                var keyColumnName = 'Application Number';
+                var keyIndex1 = findKeyColumnIndex(sheet1[0], keyColumnName);
+                var keyIndex2 = findKeyColumnIndex(sheet2[0], keyColumnName);
 
                 if (keyIndex1 !== -1 && keyIndex2 !== -1) {
                     var uniqueRows = findUniqueRows(sheet1, sheet2, keyIndex1, keyIndex2);
-
                     var csvData = XLSX.utils.sheet_to_csv(XLSX.utils.aoa_to_sheet(uniqueRows));
 
                     var blob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
-
-                    var a = document.createElement("a");
+                    var a = document.createElement('a');
                     a.href = URL.createObjectURL(blob);
-                    a.download = "unique_students.csv";
-                    a.style.display = "none";
+                    a.download = 'unique_students.csv';
+                    a.style.display = 'none';
                     document.body.appendChild(a);
                     a.click();
                     document.body.removeChild(a);
+                    URL.revokeObjectURL(a.href);
                 } else {
-                    alert('Could not find the key column in one or both sheets.');
+                    alert('Could not find the Application Number column in one or both sheets.');
                 }
             };
             reader2.readAsArrayBuffer(file2);
@@ -51,40 +55,36 @@ function compareAndDownload() {
 }
 
 function findKeyColumnIndex(headerRow, keyColumnName) {
-    keyColumnName = keyColumnName.toLowerCase().trim();
+    var target = keyColumnName.toLowerCase().trim();
     for (var i = 0; i < headerRow.length; i++) {
-        if (headerRow[i].toLowerCase().trim() === keyColumnName) {
+        // Safely convert any empty or non-string cell to string
+        var cell = headerRow[i] == null ? '' : String(headerRow[i]);
+        if (cell.toLowerCase().trim() === target) {
             return i;
         }
     }
-    return -1; // Return -1 if the column is not found
+    return -1;
 }
 
 function findUniqueRows(data1, data2, keyIndex1, keyIndex2) {
-    // Use the header from the second file
-    var header2 = data2[0];
+    var header = data2[0];
     var data1Keys = new Set();
-    var uniqueRows = [header2];
+    var uniqueRows = [header];
 
-    // Collect all keys from the first sheet
     for (var i = 1; i < data1.length; i++) {
-        var key1 = data1[i][keyIndex1];
-        if (key1) data1Keys.add(key1);
+        var key = data1[i][keyIndex1];
+        if (key) data1Keys.add(key);
     }
-
-    // Add only those rows from sheet2 whose key is NOT in sheet1
     for (var j = 1; j < data2.length; j++) {
         var key2 = data2[j][keyIndex2];
         if (key2 && !data1Keys.has(key2)) {
             uniqueRows.push(data2[j]);
         }
     }
-
     return uniqueRows;
 }
 
 function clearFileInputs() {
-    // Set the file input values to null to clear them on page load
     document.getElementById('file1').value = null;
     document.getElementById('file2').value = null;
 }
@@ -99,4 +99,8 @@ function animateButton(button) {
 
 document.querySelector('button').addEventListener('click', function(event) {
     animateButton(event.target);
+    // ensure the compareAndDownload is triggered as well
+    if (typeof compareAndDownload === 'function') {
+        compareAndDownload();
+    }
 });
