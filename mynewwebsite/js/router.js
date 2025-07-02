@@ -167,3 +167,40 @@ function initProject1Iframe() {
     }, 3000);
   });
 }
+
+// js/router.js
+// … all your existing code above …
+
+// Lightbox modal for feature images
+function initLightbox() {
+  // If we've already built the overlay, skip rebuilding
+  if (document.querySelector('.modal-overlay')) return;
+
+  // 1) Build the overlay + image
+  const modalOverlay = document.createElement('div');
+  modalOverlay.className = 'modal-overlay';
+  modalOverlay.innerHTML = '<img class="modal-img" src="" alt="">';
+  document.body.appendChild(modalOverlay);
+  const modalImg = modalOverlay.querySelector('.modal-img');
+
+  // 2) Global click delegation
+  document.addEventListener('click', e => {
+    // a) Click on any feature img?
+    const thumb = e.target.closest('.feature img');
+    if (thumb) {
+      e.preventDefault();
+      modalImg.src = thumb.src;
+      modalOverlay.classList.add('open');
+      return;
+    }
+    // b) Otherwise if the modal is open, close it
+    if (modalOverlay.classList.contains('open')) {
+      modalOverlay.classList.remove('open');
+    }
+  });
+}
+
+// Inside loadRoute(), **right after** `app.innerHTML = await res.text();` add:
+    initLightbox();
+
+// That ensures every time you swap in new .feature images, the lightbox is wired up.
