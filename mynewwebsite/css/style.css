@@ -718,7 +718,7 @@ padding: 0rem 2rem;
       
  /* 1) Your big heading/divider stays as-is: */
 .text-divider-big {
-  padding: 15vw 30vw 2vw 30vw;
+  padding: 15vw 30vw 2vw 29vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -737,6 +737,14 @@ padding: 0rem 2rem;
 
 /* 3) Style only your UL.bullets */
 ul.bullets {
+  list-style: none;
+  display: block;              /* let it be a normal block */
+  width: fit-content;          /* shrink‐wrap to its contents */
+  margin: 0 auto;              /* center this block */
+  padding-left: 3vw;             /* remove default indent */
+}
+
+h1.bullets {
   list-style: none;
   display: block;              /* let it be a normal block */
   width: fit-content;          /* shrink‐wrap to its contents */
