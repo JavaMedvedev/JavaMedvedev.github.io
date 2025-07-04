@@ -741,7 +741,7 @@ ul.bullets {
   display: block;              /* let it be a normal block */
   width: fit-content;          /* shrink‐wrap to its contents */
   margin: 0 auto;              /* center this block */
-  padding-left: 0;             /* remove default indent */
+  padding-left: 3vw;             /* remove default indent */
 }
 
 /* 4) Keep the LI content left-aligned and add custom bullets */
