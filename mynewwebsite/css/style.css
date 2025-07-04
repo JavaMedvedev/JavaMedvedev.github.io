@@ -344,7 +344,6 @@ figure img:hover {
 .portfolio-item .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.1);  /* subtle darkening behind text */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -375,7 +374,8 @@ figure img:hover {
 
 @media (max-width: 600px) {
 .portfolio-item .overlay {
-  background: rgba(0,0,0,0.5);  /* subtle darkening behind text */
+  background: rgba(0,0,0,0.2);  /* subtle darkening behind text */
+  padding: 1rem 0 0 0;
 }
 }
 
@@ -453,6 +453,12 @@ padding: 0rem 2rem;
     margin: 0 auto 2rem;
   }
   .about‐text {
+    font-size: 3vw;
+    font-weight: 400;
+    color: #444; 
+  }
+
+    .about‐text p {
     font-size: 3vw;
     font-weight: 400;
     color: #444; 
