@@ -988,7 +988,7 @@ ul.bullets li::before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   padding: 0.5em;
   box-sizing: border-box;
   opacity: 0;
@@ -1005,26 +1005,78 @@ ul.bullets li::before {
   height: 100%;
   object-fit: cover;
   display: block;
-    cursor: pointer;        /* ← show it’s clickable */
+  cursor: pointer;        /* ← show it’s clickable */
 }
 
 .feature .overlay h3 {
   margin: 0;
-  font-size: 1.1em;
-  color: #333;
+  font-size: 1.1vw;
+  font-family: 'Orgon', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: rgb(222, 152, 0);
 }
 
 .feature .overlay p {
   margin: 0.2em 0 0;
-  font-size: 0.9em;
+  font-size: 1vw;
   color: #555;
+  font-family: 'Orgon', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
+/* — Mobile: stack & caption below each square — */
 @media (max-width: 600px) {
   .feature {
-    width: 99.5%;
+    width: 99.5%;        /* full-width */
+    aspect-ratio: auto;  /* let height grow to fit image + overlay */
+    overflow: visible;   /* allow .overlay to show below */
+    padding-bottom: 0;   /* remove extra bottom padding */
   }
+
+  /* Force the IMG itself to stay square */
+  .feature img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  /* Turn .overlay into a normal block below the image */
+  .feature .overlay {
+    position: relative;     /* flow under the img */
+    bottom: auto;           /* cancel absolute positioning */
+    width: 100%;
+    height: auto;           /* grow to fit your text */
+    opacity: 1 !important;  /* always visible */
+    transition: none;       /* no slide or fade */
+    background: rgb(255,255,255);
+    padding: 0.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 8vw;
+  }
+
+  /* disable any hover‐based hiding */
+  .feature:hover .overlay {
+    bottom: auto;
+    opacity: 1;
+  }
+
+  .feature .overlay h3 {
+  font-size: 3.2vw;
 }
+
+.feature .overlay p {
+  font-size: 3vw;
+}
+}
+
 /* —————————————————————————
    Modal “lightbox” styles
    ————————————————————————— */
@@ -1060,13 +1112,4 @@ ul.bullets li::before {
 
 .modal-overlay.open .modal-img {
   transform: scale(1);
-}
-/* in style.css, after your existing rules */
-
-/* target devices that can’t hover (mobile/tablet) */
-@media (hover: none) and (pointer: coarse) {
-  .feature .overlay {
-    bottom: 0 !important;
-    opacity: 1 !important;
-  }
 }
