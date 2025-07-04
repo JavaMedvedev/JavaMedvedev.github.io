@@ -750,7 +750,7 @@ ul.bullets li {
   padding-left: 1em;           /* space for the bullet */
   margin-bottom: 0.5em;
   text-align: left;
-  font-size: 1vw;
+  font-size: 1.2vw;
   line-height: 1.1;
   font-weight: 300;
   color: #111;
@@ -793,7 +793,7 @@ ul.bullets li::before {
   padding-left: 1em;           /* space for the bullet */
   margin-bottom: 0.5em;
   text-align: left;
-  font-size: 2vw;
+  font-size: 2.2vw;
   line-height: 1.1;
   font-weight: 300;
   color: #111;
