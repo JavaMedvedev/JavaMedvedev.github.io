@@ -128,7 +128,7 @@
 }
 
 #suji_logo:hover {
-  content: url("pages/images/suji_logo_small_white.jpg");
+  content: url('suji_logo_small_white.jpg');
 }
 
 
