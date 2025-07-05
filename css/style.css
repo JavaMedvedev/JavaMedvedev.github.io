@@ -127,9 +127,6 @@
   pointer-events: none;
 }
 
-#suji_logo:hover {
-  content: url('suji_logo_small_white.jpg');
-}
 
 
     /* —— Responsive —— */
