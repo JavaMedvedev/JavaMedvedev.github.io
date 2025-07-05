@@ -1,0 +1,1129 @@
+    /* —— Global —— */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #111;
+      background: #f7f7f7;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    @font-face {
+  font-family: 'Orgon';
+  src: url('Orgon/TTF/Orgon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+    /* —— Header —— */
+    header {
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 10;
+    }
+    /* Logo + slogan */
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+    .divider {
+      width: 1px;
+      height: 45px;
+      background: #515151;
+      margin: 0 1rem;
+    }
+    .slogan {
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+    .slogan b {
+      font-weight: 500;
+    }
+
+    /* Nav links */
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 0.2rem;
+    }
+    nav a {
+      font-family: 'Orgon', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      color: #222;
+  padding: 1rem 0.8rem;              /* same vertical rhythm as your button */
+  border-radius: 0px;                /* match your button corners */
+  transition: background 0s, color 0s;
+    }
+
+    nav a:hover {
+  background-color: #0057FF;
+  color: #fff;
+}
+
+    /* —— Hero —— */
+    .hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem 4rem 2rem;
+}
+
+    .hero-text p {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: #444;
+    }
+    .hero-text h1 {
+      margin: 0.5rem 0 1.5rem -0.2rem;
+      font-size: 2.8rem;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+    .hero-text button {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      background: #0057FF;
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    button:hover {
+  background-color: #0247cf;
+  color: #fff;
+}
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-video {
+  width: 90%;           /* fill the container */
+  height: auto;          /* maintain aspect ratio */
+  object-fit: cover;     /* cover entire area if you’d rather */
+  display: block;
+  pointer-events: none;
+}
+
+#suji_logo:hover {
+  content: url("pages/images/suji_logo_small_white.jpg");
+}
+
+
+    /* —— Responsive —— */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+	
+	/* —— Services Section —— */
+.services {
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.services h2 {
+  font-family: 'Orgon', sans-serif;
+  font-size: 2rem;
+}
+.services h2 span {
+  color: #0057FF; /* site accent */
+  font-weight: 500;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.service-item {
+  background: #f7f7f7;
+  border: 2px solid #0057FF;
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.read-more-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0057FF;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.read-more-btn:hover {
+  background: #0247cf;
+}
+
+
+
+
+
+
+
+.service-section {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+figure {
+  margin: 0px;
+}
+
+figure img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+figure img:hover {
+  opacity: 0.6;
+  transition: all .3s linear;
+}
+.column {
+  box-sizing: border-box;
+  flex: 1 100%;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+.card-style {
+  border-radius: 12px;
+  border-image-slice: 1;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s linear;
+}
+.card-style:hover {
+  box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+  padding: 20px;
+  text-align: left;
+}
+
+    .ellipsis {
+      font-size: 1.1vw;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .card-text h1 {
+      margin: 0.5vw 0 1.5vw 0;
+      font-size: 1.8vw;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+
+@media (min-width: 600px) {
+  .column {
+      flex: 0 0 calc(100%/2 - 40px);
+  }
+    .card-style {
+    margin-top: 2rem;
+  }
+
+}
+
+@media (min-width: 900px) {
+    .column {
+      flex: 0 0 calc(100%/4 - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    margin: 0 4vw 4vw 4vw;
+  }
+  .services {
+    padding-bottom: 4rem;
+  }
+
+     .ellipsis {
+      font-size: 3vw;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .card-text h1 {
+      margin: 0.5vw 0 1.5vw 0;
+      font-size: 4.5vw;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+}
+
+
+
+
+
+/* —— Portfolio Section —— */
+.portfolio {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.portfolio h2 {
+  font-family: 'Orgon', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.portfolio h2 span {
+  color: #0057FF;
+  font-weight: 500;
+}
+
+/* two columns on desktop, one on mobile */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* card & image (16∶9, cover, hover-shift + darken) */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
+}
+.portfolio-item img {
+  position: absolute;
+  top: 0;
+  left: -8px;                    
+  width: calc(100% + 16px);  
+  max-width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.portfolio-item:hover img {
+  transform: translateX(8px);
+  filter: brightness(0.6);
+}
+
+/* always-visible top-left text block */
+.portfolio-item .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.overlay-content {
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+.overlay-content h3 {
+  font-size: 1.8vw;
+  margin: 0;
+  font-weight: 400;
+}
+.overlay-content .breaker {
+  width: 9vw;
+  height: 2px;
+  background: #fff;
+  margin: 0.5rem 0;
+}
+.overlay-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+.portfolio-item .overlay {
+  background: rgba(0,0,0,0.2);  /* subtle darkening behind text */
+  padding: 1rem 0 0 0;
+}
+}
+
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5vw 0 4vw 0;
+        gap: 0.5vw;
+      }
+
+      .footer-logo {
+        width: 2vw;
+      }
+
+      .footer-text {
+        font-size: 0.8vw;
+      }
+
+      @media (max-width: 768px) {
+        .footer-logo {
+          width: 4vw;
+        }
+
+        .footer-text {
+          font-size: 1.5vw;
+        }        
+      }
+
+      /* —— About Me Section —— */
+
+      .about {
+padding: 0rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.about‐inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;            
+  margin: 0 auto;
+}
+
+.about‐image {
+  flex: 0 0 25vw;         /* fixed 300px square on desktop */
+  margin-left: 3vw;
+}
+.about‐image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* force square */
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.about‐text {
+  flex: 1;                 /* take remaining space */
+  text-align: left;
+  padding: 0 3vw;
+  line-height: 1.7;
+  font-size: 1.1vw;
+    font-weight: 400;
+    color: #444;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+  .about‐inner {
+    flex-direction: column;
+    text-align: center;    /* center headline/text if you like */
+  }
+  .about‐image {
+    width: 60%;            /* make the image a bit narrower on mobile */
+    margin: 0 auto 2rem;
+  }
+  .about‐text {
+    font-size: 3vw;
+    font-weight: 400;
+    color: #444; 
+  }
+
+    .about‐text p {
+    font-size: 3vw;
+    font-weight: 400;
+    color: #444; 
+  }
+}
+
+/* —— Contacts Section —— */
+.contacts-section {
+  background: #fff;
+  padding: 0 2vw 4vw 2vw;
+        font-family: 'Orgon', sans-serif;
+      font-weight: 500;
+      font-size: 1.2vw;
+      letter-spacing: 0.5px;
+}
+
+#contacts {
+  padding: 3rem 2rem 3rem 3rem;
+}
+
+.contacts‐inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1vw;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Form container */
+.form-container {
+  background: #f7f7f7;
+  padding: 2vw;
+  border-radius: 1vw;
+  width: 40vw;
+  min-width: 40vw;
+  box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.1);
+}
+
+/* Labels */
+.contact-label {
+  display: block;
+  margin-top: 1vw;
+  color: #333;
+  font-size: 1.2vw;
+}
+.contact-label span {
+  color: #0247cf;
+  margin-left: 0.5vw;
+  font-size: 1.2vw;
+  vertical-align: middle;
+}
+
+/* Inputs & textarea */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 1vw;
+  margin-top: 0.8vw;
+  margin-bottom: 1.2vw;
+  border: 0.15vw solid #ccc;
+  border-radius: 0.8vw;
+  font-size: 1.2vw;
+      font-family: 'Orgon', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+  box-sizing: border-box;
+  resize: none;
+}
+.contact-textarea {
+  height: 10vw;
+}
+
+/* Disclaimer */
+.disclaimer {
+  font-size: 1vw;
+  color: #666;
+  margin-top: 1.5vw;
+  line-height: 1.5;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5vw;
+  background: #002368;
+  color: #fff;
+  border: none;
+  border-radius: 0.8vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submit-btn:hover {
+  background: #003aae;
+}
+
+/* Success message overlay */
+.success-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #002368;
+  color: #fff;
+  padding: 5vw;
+  font-size: 1.5vw;
+  border-radius: 1vw;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 1vw 2vw rgba(0,0,0,0.1);
+}
+
+
+      .success-message img  {
+        width: 4vw;
+      }
+
+/* Responsive: full-width on narrow screens */
+@media (max-width: 768px) {
+  .form-container {
+    width: 80vw;
+    padding-bottom: 3vw;
+  }
+  .contact-label {
+    font-size: 2.5vw;
+  }
+  .contact-label span {
+    font-size: 3vw;
+  }
+  .contact-input,
+  .contact-textarea {
+    font-size: 2.5vw;
+    padding: 2vw;
+    border-radius: 1.5vw;
+  }
+  .submit-btn {
+    font-size: 2.2vw;
+    padding: 2.5vw;
+    border-radius: 1.5vw;
+  }
+  .disclaimer {
+    font-size: 1.5vw;
+  }
+  .success-message {
+    font-size: 3vw;
+    padding: 3vw;
+    border-radius: 2vw;
+    text-align: center;
+  }
+}
+ img, iframe {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .split-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .left-text,
+      .right-image {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f7f7;
+      }
+
+      .left-text {
+        padding: 10vw 0;
+      }
+
+      @media (max-width: 768px) {
+        .split-container {
+          flex-direction: column;
+        }
+        .left-text,
+        .right-image {
+          width: 100%;
+        }
+      }
+
+      .hero-heading {
+        margin: 0.5vw 0 1.5vw 0vw;
+        font-size: 2vw;
+        line-height: 1.1;
+        font-weight: 300;
+        color: #111;
+        text-align: left;
+        padding: 0 4vw;
+      }
+
+      .hero-subheading {
+        font-size: 1.2vw;
+        line-height: 1.2;
+        display: inline-block;
+        margin: 3vw 0;
+        padding: 0;
+      }
+
+      .hero-heading button {
+        padding: 0.9vw 2.5vw;
+        font-size: 1.3vw;
+        font-weight: 500;
+        background: #0057FF;
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .hero-heading button:hover {
+        background-color: #0247cf;
+        color: #fff;
+      }
+
+      .hero-heading a {
+        display: inline-block;
+      }
+
+      @media (max-width: 768px) {
+        .hero-heading {
+          margin: 0.5vw 0 1.5vw 0;
+          font-size: 4vw;
+          line-height: 1.4;
+          font-weight: 300;
+          color: #111;
+          text-align: left;
+          padding: 4vw;
+        }
+        .hero-subheading {
+          font-size: 2.5vw;
+          line-height: 1.5;
+          display: inline-block;
+          margin: 3vw 0;
+          padding: 0;
+        }
+        .hero-heading button {
+          padding: 1.4vw 3.5vw;
+          font-size: 2.5vw;
+          font-weight: 500;
+          background: #0057FF;
+          color: #fff;
+          border: none;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+      
+ /* 1) Your big heading/divider stays as-is: */
+.text-divider-big {
+  padding: 15vw 30vw 2vw 29vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 2vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
+
+/* 2) Wrap the bullets in a centered container */
+.bullets-wrapper {
+  text-align: center;  /* center the block-level UL inside */
+  align-items: center;
+}
+
+/* 3) Style only your UL.bullets */
+ul.bullets {
+  list-style: none;
+  display: block;              /* let it be a normal block */
+  width: fit-content;          /* shrink‐wrap to its contents */
+  margin: 0 auto;              /* center this block */
+  padding-left: 3vw;             /* remove default indent */
+}
+
+h1.bullets {
+  list-style: none;
+  display: block;              /* let it be a normal block */
+  width: fit-content;          /* shrink‐wrap to its contents */
+  margin: 0 auto;              /* center this block */
+  padding-left: 3vw;             /* remove default indent */
+}
+
+/* 4) Keep the LI content left-aligned and add custom bullets */
+ul.bullets li {
+  position: relative;          /* for custom bullet positioning */
+  padding-left: 1em;           /* space for the bullet */
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-size: 1.2vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
+
+ul.bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;                     /* stick the bullet at the start */
+  top: 0;
+  color: #0057FF;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+
+      @media (max-width: 768px) {
+        .text-divider-big {
+          padding: 15vw 10vw 3vw 10vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: left;
+          font-size: 3.5vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;
+        }
+
+        .bullets {
+          text-align: left;
+          font-size: 3vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;
+        }
+
+        ul.bullets li {
+  position: relative;          /* for custom bullet positioning */
+  padding-left: 1em;           /* space for the bullet */
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-size: 2.2vw;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #111;
+}
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        margin: 15vw 0 15vw 3vw;
+      }
+
+      .video-frame {
+        width: 70%;
+        background: #000;
+        padding: 2.5%;
+        border-radius: 2vw;
+        display: block;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero-video-order {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 1.25vw;
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      .video-text {
+        width: 30%;
+        display: block;
+        text-align: left;
+        font-size: 1.8vw;
+        line-height: 1.1;
+        font-weight: 300;
+        color: #111;
+        margin-right: 3vw;
+      }
+
+@media (max-width: 768px) {
+  .video-container {
+    display: flex;
+    flex-direction: column;    /* stack video + text */
+    align-items: center;       /* center children horizontally */
+    gap: 0;                    
+    margin: 15vw 0;            /* vertical only */
+    padding: 0 7vw;            /* equal 3vw gutters left/right */
+  }
+
+  .video-frame,
+  .video-text {
+    width: 100%;               /* fill the padded container */
+  }
+
+  .video-text {
+    font-size: 3vw;
+    margin: 3vw 0 0;         /* small top margin if you like */
+  }
+}
+
+
+      .flutter-wrapper {
+        width: 80%;
+        max-width: 80vw;
+        aspect-ratio: 16/9;
+        position: relative;
+        overflow: hidden;
+        margin: 10vw auto;
+      }
+
+      .flutter-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        pointer-events: none;
+      }
+
+      .flutter-wrapper iframe {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        border: none;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5vw 0 4vw 0;
+        gap: 0.5vw;
+      }
+
+      .footer-logo {
+        width: 2vw;
+      }
+
+      .footer-text {
+        font-size: 0.8vw;
+      }
+
+      @media (max-width: 768px) {
+        .footer-logo {
+          width: 4vw;
+        }
+
+        .footer-text {
+          font-size: 1.5vw;
+        }        
+      .flutter-wrapper {
+        width: 90%;
+        max-width: 90vw;
+      }
+      }
+
+      .diagonal-wrapper {
+      width: 100%;
+      max-width: 100vw;
+      position: relative;
+      overflow: hidden;
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+      /*background-image: url("touchscreen_horisontal.jpg");*/
+    }
+
+        .right-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
+    #curiosity {
+      padding: 10vw 10vw;
+    }
+
+  #zmbm {
+    font-size: 1.3vw; 
+  }
+
+  .first {
+     padding: 0 5vw; 
+     padding-right: 25vw; 
+     text-align: left;
+     color: #fff;
+  }
+
+        /* Responsive: Stack columns on small screens */
+    @media (max-width: 768px) {
+ 
+	  #curiosity {
+	   padding: 10vw 15vw;
+	  }  
+    #zmbm {
+      font-size: 2.4vw;
+    }
+    .first {
+      padding-right: 5vw;
+    }
+    }
+
+
+/* style.css */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1%;
+  padding: 1%;
+}
+
+.feature {
+  /* subtract both the container’s side-padding and the two inter-item gaps */
+  width: calc(98% / 3);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 1%;
+}
+
+/* the slide-up overlay */
+.feature .overlay {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  width: 100%;
+  height: 25%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 0.5em;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.feature:hover .overlay {
+  bottom: 0;
+  opacity: 1;
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;        /* ← show it’s clickable */
+}
+
+.feature .overlay h3 {
+  margin: 0;
+  font-size: 1.1vw;
+  font-family: 'Orgon', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: rgb(222, 152, 0);
+}
+
+.feature .overlay p {
+  margin: 0.2em 0 0;
+  font-size: 1vw;
+  color: #555;
+  font-family: 'Orgon', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* — Mobile: stack & caption below each square — */
+@media (max-width: 600px) {
+  .feature {
+    width: 99.5%;        /* full-width */
+    aspect-ratio: auto;  /* let height grow to fit image + overlay */
+    overflow: visible;   /* allow .overlay to show below */
+    padding-bottom: 0;   /* remove extra bottom padding */
+  }
+
+  /* Force the IMG itself to stay square */
+  .feature img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  /* Turn .overlay into a normal block below the image */
+  .feature .overlay {
+    position: relative;     /* flow under the img */
+    bottom: auto;           /* cancel absolute positioning */
+    width: 100%;
+    height: auto;           /* grow to fit your text */
+    opacity: 1 !important;  /* always visible */
+    transition: none;       /* no slide or fade */
+    background: rgb(255,255,255);
+    padding: 0.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 8vw;
+  }
+
+  /* disable any hover‐based hiding */
+  .feature:hover .overlay {
+    bottom: auto;
+    opacity: 1;
+  }
+
+  .feature .overlay h3 {
+  font-size: 3.2vw;
+}
+
+.feature .overlay p {
+  font-size: 3vw;
+}
+}
+
+/* —————————————————————————
+   Modal “lightbox” styles
+   ————————————————————————— */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay .modal-img {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  transform: scale(0.5);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.open .modal-img {
+  transform: scale(1);
+}
