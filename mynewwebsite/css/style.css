@@ -126,12 +126,6 @@
   display: block;
   pointer-events: none;
 }
-
-#suji_logo:hover {
-  content: url("pages/images/suji_logo_small_white.jpg");
-}
-
-
     /* —— Responsive —— */
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
@@ -183,12 +177,6 @@
 .read-more-btn:hover {
   background: #0247cf;
 }
-
-
-
-
-
-
 
 .service-section {
   display: flex;
