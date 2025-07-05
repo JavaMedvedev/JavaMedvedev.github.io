@@ -52,21 +52,6 @@
       height: 36px;
       object-fit: contain;
     }
-.logo-link {
-  display: inline-block;
-  width: 36px; 
-  height: 36px;
-  background: url("pages/images/suji_logo_small_black.jpg") no-repeat center;
-  background-size: contain;
-}
-.logo-link img {
-  visibility: hidden;
-}
-.logo-link:hover {
-  background-image: url("pages/images/suji_logo_small_white.jpg");
-}
-
-
     .divider {
       width: 1px;
       height: 45px;
@@ -171,6 +156,10 @@
       pointer-events: none;
     }
 
+    #suji_logo:hover {
+      content: url("pages/images/suji_logo_small_white.jpg");
+    }
+
     /* —— Responsive —— */
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
@@ -210,8 +199,8 @@
 <body>
   <header>
     <div class="brand">
-      <a href="#/home" class="logo-link" aria-label="Suji Home">
-        <img src="pages/images/suji_logo_small_black.jpg" alt="" aria-hidden="true">
+      <a href="#/home">
+        <img src="pages/images/suji_logo_small_black.jpg" alt="Suji logo" id="suji_logo">
       </a>
       <div class="divider"></div>
       <div class="slogan">Digital <b>Services</b></div>
