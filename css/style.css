@@ -858,8 +858,15 @@ ul.bullets li::before {
   }
 
   .video-text {
-    font-size: 3vw;
-    margin: 3vw 0 0;         /* small top margin if you like */
+          padding: 4vw 10vw 15vw 10vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: left;
+          font-size: 3.5vw;
+          line-height: 1.1;
+          font-weight: 300;
+          color: #111;      /* small top margin if you like */
   }
 }
 
