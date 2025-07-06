@@ -860,6 +860,7 @@ ul.bullets li::before {
   .video-text {
     font-size: 3vw;
     margin: 3vw 0 0;         /* small top margin if you like */
+    text-align: center;
   }
 }
 
