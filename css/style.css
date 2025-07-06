@@ -858,12 +858,13 @@ ul.bullets li::before {
   }
 
   .video-text {
-          padding: 4vw 10vw 15vw 10vw;
+          padding: 4vw 0vw 0vw 2vw;
           display: flex;
           align-items: center;
           justify-content: center;
           text-align: left;
-          font-size: 3.5vw;
+          font-size: 4.5vw;
+          text-align: center;
           line-height: 1.1;
           font-weight: 300;
           color: #111;      /* small top margin if you like */
