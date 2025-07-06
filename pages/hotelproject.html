@@ -30,34 +30,19 @@
   </div>
 
   <!-- Embedded Flutter/web demo -->
-
-    <div class="video-container">
-    <div class="video-frame">
-      <video
-        id="heroVideo"
-        class="hero-video-order"
-        muted
-        loop
-        playsinline
-        preload="metadata"
-      >
-        <source src="video/order.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="video-text">
-      Guests can browse menus, place orders, and check out directly through the app.
+<div class="frame-wrapper">
+  <div class="device-frame">
+    <div class="screen-container">
+      <iframe
+        id="hotelFrame"
+        loading="lazy"
+        src="https://sergeimedvedev.com/hotel/"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
+</div>
 
-  
-  <div class="flutter-wrapper">
-    <img src="pages/images/project1/tablet_frame.png" alt="Tablet frame" />
-    <iframe
-      id="hotelFrame"
-      loading="lazy"
-      src="https://sergeimedvedev.com/hotel/"
-    ></iframe>
-  </div>
 
   <!-- Second split -->
   <div class="split-container">

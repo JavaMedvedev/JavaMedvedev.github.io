@@ -871,6 +871,71 @@ ul.bullets li::before {
   }
 }
 
+.frame-wrapper {
+  width: 70%;
+  max-width: 800px;        /* optional cap */
+  margin: 15vw auto;       /* center with same vertical margins */
+}
+
+.device-frame {
+  position: relative;
+  background: #f0f0f0;     /* bezel color */
+  border: 0.8vw solid #ccc;/* thickness of bezel */
+  border-radius: 2vw;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  padding: 1.5vw;          /* inner bezel padding */
+}
+
+.device-frame::before {
+  content: "";
+  position: absolute;
+  top: 1vw;                /* tweak to position “camera” */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1vw;
+  height: 1vw;
+  background: #333;        /* camera/sensor dot */
+  border-radius: 50%;
+}
+
+.screen-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;    /* lock to 16∶9 */
+  background: #000;        /* fallback while loading */
+  border-radius: 0.5vw;    /* screen corner rounding */
+  overflow: hidden;
+}
+
+.screen-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* mobile breakpoint */
+@media (max-width: 768px) {
+  .frame-wrapper {
+    width: 100%;
+    padding: 0 7vw;
+    margin: 15vw 0;
+  }
+  .device-frame {
+    border-width: 3vw;
+    padding: 2vw;
+    border-radius: 6vw;
+  }
+  .device-frame::before {
+    top: 2vw;
+    width: 2vw;
+    height: 2vw;
+  }
+  .screen-container {
+    border-radius: 1vw;
+  }
+}
+
+
       .flutter-wrapper {
         width: 80%;
         max-width: 80vw;
