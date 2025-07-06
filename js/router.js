@@ -10,7 +10,7 @@ if ('scrollRestoration' in history) {
 const routes = {
   '/':         'pages/home.html',
   '/home':     'pages/home.html',
-  '/project1': 'pages/project1.html',
+  '/hotelproject': 'pages/hotelproject.html',
   '/project2': 'pages/project2.html',
   '/project3': 'pages/project3.html',
   '/project4': 'pages/project4.html'
@@ -19,7 +19,7 @@ const routes = {
 let lastPath = null;
 
 async function loadRoute() {
-  // Get the full hash (e.g. "/home#services" or "/project1")
+  // Get the full hash (e.g. "/home#services" or "/hotelproject")
   const fullHash        = location.hash.slice(1) || '/';
   const [route, section] = fullHash.split('#');
   const path            = routes[route] || routes['/'];
@@ -42,8 +42,8 @@ async function loadRoute() {
     // (Optional) also nudge the window scroll in case you ever fall back to body‐scroll
     window.scrollTo(0, 0);
 
-    // 🔹 NEW: initialize project1-specific scripts if needed
-    if (route === '/project1') {
+    // 🔹 NEW: initialize hotelproject-specific scripts if needed
+    if (route === '/hotelproject') {
       initProject1Video();
       initProject1Iframe();
     }
@@ -142,7 +142,7 @@ document.addEventListener('submit', async e => {
   }
 });
 
-// 🔹 NEW: helper to autoplay/pause video in project1 via IntersectionObserver
+// 🔹 NEW: helper to autoplay/pause video in hotelproject via IntersectionObserver
 function initProject1Video() {
   const video = document.getElementById("heroVideo");
   if (!video) return;
@@ -157,7 +157,7 @@ function initProject1Video() {
   observer.observe(video);
 }
 
-// 🔹 NEW: helper to fix iframe background in project1 after load
+// 🔹 NEW: helper to fix iframe background in hotelproject after load
 function initProject1Iframe() {
   const iframe = document.getElementById("hotelFrame");
   if (!iframe) return;
