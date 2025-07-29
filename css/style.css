@@ -446,7 +446,7 @@ padding: 0rem 2rem;
     text-align: center;    /* center headline/text if you like */
   }
   .about‐image {
-    width: 60%;            /* make the image a bit narrower on mobile */
+    width: 100%;            /* make the image a bit narrower on mobile */
     margin: 0 auto 2rem;
   }
   .about‐text {
