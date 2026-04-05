@@ -43,7 +43,7 @@ async function loadRoute() {
     window.scrollTo(0, 0);
 
     // 🔹 NEW: initialize hotelproject-specific scripts if needed
-    if (route === '/hotelproject') {
+    if (route === '/hotel') {
       initProject1Video();
       initProject1Iframe();
     }
