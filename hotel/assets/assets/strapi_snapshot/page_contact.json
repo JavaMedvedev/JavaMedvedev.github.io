@@ -1,0 +1,106 @@
+{
+  "data": [
+    {
+      "id": 19,
+      "documentId": "vhd9b6q36v9cmtm8a9xroons",
+      "Card_Title": "Contact Reception",
+      "Visible": true,
+      "Page_ID": "contact",
+      "createdAt": "2025-06-15T19:25:19.091Z",
+      "updatedAt": "2025-06-16T15:17:10.977Z",
+      "publishedAt": "2025-06-16T15:17:11.121Z",
+      "Card_Image": {
+        "id": 39,
+        "documentId": "che4e7tmgk7fys9fsgc5upw8",
+        "name": "reception_e9248bfc9b.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1498,
+        "height": 1000,
+        "formats": {
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_reception_e9248bfc9b_1a6c38759b.jpg",
+            "hash": "thumbnail_reception_e9248bfc9b_1a6c38759b",
+            "mime": "image/jpeg",
+            "name": "thumbnail_reception_e9248bfc9b.jpg",
+            "path": null,
+            "size": 5.93,
+            "width": 233,
+            "height": 156,
+            "sizeInBytes": 5928
+          }
+        },
+        "hash": "reception_e9248bfc9b_1a6c38759b",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 250.69,
+        "url": "assets/strapi_snapshot/media/reception_e9248bfc9b_1a6c38759b.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:35.709Z",
+        "updatedAt": "2025-06-16T15:14:38.833Z",
+        "publishedAt": "2025-06-15T16:20:35.710Z"
+      },
+      "Tab": [
+        {
+          "id": 25,
+          "Title": "Contact Reception",
+          "Tab_ID": "101",
+          "Banner": {
+            "id": 56,
+            "documentId": "hcsrjedwz06vna21z7amr94f",
+            "name": "closeup_office_wired_telephone_e06088d459 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_closeup_office_wired_telephone_e06088d459_Copy_5537dbb25a.jpg",
+                "hash": "thumbnail_closeup_office_wired_telephone_e06088d459_Copy_5537dbb25a",
+                "mime": "image/jpeg",
+                "name": "thumbnail_closeup_office_wired_telephone_e06088d459 - Copy.jpg",
+                "path": null,
+                "size": 3.75,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 3747
+              }
+            },
+            "hash": "closeup_office_wired_telephone_e06088d459_Copy_5537dbb25a",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 189.8,
+            "url": "assets/strapi_snapshot/media/closeup_office_wired_telephone_e06088d459_Copy_5537dbb25a.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:29:59.996Z",
+            "updatedAt": "2025-06-16T15:17:07.875Z",
+            "publishedAt": "2025-06-15T16:29:59.996Z"
+          },
+          "Content": [
+            {
+              "id": 34,
+              "Title": "Simply Dial Zero",
+              "Text": "Our reception team is here to assist you with any enquiry, big or small.\nFrom arranging transport to recommending nearby attractions, simply **dial ‘0’** from your room phone or drop by the desk.\n\nShould you require special assistance - such as accessibility services, medical support, or travel arrangements - for the duration of your stay, please let us know, and we will be delighted to help.\n\n\n#### **Additional Services Available:**\n\n- Restaurant Reservations: We’re happy to recommend and book tables at local eateries or at our in-house dining venues.\n- Spa & Wellness Bookings: Unwind with relaxing treatments—let us organize your spa appointments.\n- Wake-up Calls: Let our team ensure you're awake and refreshed for any early commitments or excursions.\n- Room Supplies: From extra pillows to toiletries, simply inform us, and we’ll promptly deliver items to your room.\n- Luggage Assistance: Need help with your luggage on arrival or departure? Just dial ‘0’ and assistance will be provided swiftly.\n\n\nWe’re here to make your stay comfortable, memorable, and worry-free. \n\n#### **Simply dial ‘0’ anytime!**",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

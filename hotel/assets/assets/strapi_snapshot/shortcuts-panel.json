@@ -1,0 +1,241 @@
+{
+  "data": {
+    "id": 2,
+    "documentId": "o2ga77es38neandw9e277eun",
+    "Visible": true,
+    "createdAt": "2025-06-16T10:32:57.366Z",
+    "updatedAt": "2025-06-16T10:32:57.366Z",
+    "publishedAt": "2025-06-16T10:32:57.404Z",
+    "Links": [
+      {
+        "id": 4,
+        "Label": "Internet",
+        "URL": "https://www.google.com",
+        "Visible": true,
+        "Icon": {
+          "id": 5,
+          "documentId": "p2sly8cl9lv9q3baanu1kmez",
+          "name": "internet_7cbd61adb7.png",
+          "alternativeText": null,
+          "caption": null,
+          "width": 1596,
+          "height": 1595,
+          "formats": {
+            "large": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/large_internet_7cbd61adb7_4179c15e61.png",
+              "hash": "large_internet_7cbd61adb7_4179c15e61",
+              "mime": "image/png",
+              "name": "large_internet_7cbd61adb7.png",
+              "path": null,
+              "size": 199.43,
+              "width": 1000,
+              "height": 999,
+              "sizeInBytes": 199427
+            },
+            "small": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/small_internet_7cbd61adb7_4179c15e61.png",
+              "hash": "small_internet_7cbd61adb7_4179c15e61",
+              "mime": "image/png",
+              "name": "small_internet_7cbd61adb7.png",
+              "path": null,
+              "size": 53.12,
+              "width": 500,
+              "height": 500,
+              "sizeInBytes": 53118
+            },
+            "medium": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/medium_internet_7cbd61adb7_4179c15e61.png",
+              "hash": "medium_internet_7cbd61adb7_4179c15e61",
+              "mime": "image/png",
+              "name": "medium_internet_7cbd61adb7.png",
+              "path": null,
+              "size": 112.7,
+              "width": 750,
+              "height": 750,
+              "sizeInBytes": 112696
+            },
+            "thumbnail": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/thumbnail_internet_7cbd61adb7_4179c15e61.png",
+              "hash": "thumbnail_internet_7cbd61adb7_4179c15e61",
+              "mime": "image/png",
+              "name": "thumbnail_internet_7cbd61adb7.png",
+              "path": null,
+              "size": 11.01,
+              "width": 156,
+              "height": 156,
+              "sizeInBytes": 11005
+            }
+          },
+          "hash": "internet_7cbd61adb7_4179c15e61",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 86.77,
+          "url": "assets/strapi_snapshot/media/internet_7cbd61adb7_4179c15e61.png",
+          "previewUrl": null,
+          "provider": "strapi-provider-upload-strapi-cloud",
+          "provider_metadata": null,
+          "createdAt": "2025-06-15T15:59:15.487Z",
+          "updatedAt": "2025-06-15T15:59:15.487Z",
+          "publishedAt": "2025-06-15T15:59:15.488Z"
+        }
+      },
+      {
+        "id": 5,
+        "Label": "Google Maps",
+        "URL": "https://www.google.com/maps",
+        "Visible": true,
+        "Icon": {
+          "id": 3,
+          "documentId": "iuyhptwaxvcuz86o2acsnsew",
+          "name": "map_45bf9b1381.png",
+          "alternativeText": null,
+          "caption": null,
+          "width": 1596,
+          "height": 1595,
+          "formats": {
+            "large": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/large_map_45bf9b1381_e58448ee79.png",
+              "hash": "large_map_45bf9b1381_e58448ee79",
+              "mime": "image/png",
+              "name": "large_map_45bf9b1381.png",
+              "path": null,
+              "size": 196.58,
+              "width": 1000,
+              "height": 999,
+              "sizeInBytes": 196584
+            },
+            "small": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/small_map_45bf9b1381_e58448ee79.png",
+              "hash": "small_map_45bf9b1381_e58448ee79",
+              "mime": "image/png",
+              "name": "small_map_45bf9b1381.png",
+              "path": null,
+              "size": 51.34,
+              "width": 500,
+              "height": 500,
+              "sizeInBytes": 51340
+            },
+            "medium": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/medium_map_45bf9b1381_e58448ee79.png",
+              "hash": "medium_map_45bf9b1381_e58448ee79",
+              "mime": "image/png",
+              "name": "medium_map_45bf9b1381.png",
+              "path": null,
+              "size": 109.46,
+              "width": 750,
+              "height": 750,
+              "sizeInBytes": 109464
+            },
+            "thumbnail": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/thumbnail_map_45bf9b1381_e58448ee79.png",
+              "hash": "thumbnail_map_45bf9b1381_e58448ee79",
+              "mime": "image/png",
+              "name": "thumbnail_map_45bf9b1381.png",
+              "path": null,
+              "size": 10.2,
+              "width": 156,
+              "height": 156,
+              "sizeInBytes": 10195
+            }
+          },
+          "hash": "map_45bf9b1381_e58448ee79",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 88.64,
+          "url": "assets/strapi_snapshot/media/map_45bf9b1381_e58448ee79.png",
+          "previewUrl": null,
+          "provider": "strapi-provider-upload-strapi-cloud",
+          "provider_metadata": null,
+          "createdAt": "2025-06-15T15:59:14.608Z",
+          "updatedAt": "2025-06-15T15:59:14.608Z",
+          "publishedAt": "2025-06-15T15:59:14.608Z"
+        }
+      },
+      {
+        "id": 6,
+        "Label": "Our Website",
+        "URL": "https://www.sergeimedvedev.com",
+        "Visible": true,
+        "Icon": {
+          "id": 4,
+          "documentId": "u8nd8mo4hwhppg7qsqeiegr9",
+          "name": "website_236d17dad6.png",
+          "alternativeText": null,
+          "caption": null,
+          "width": 1596,
+          "height": 1595,
+          "formats": {
+            "large": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/large_website_236d17dad6_f640e99b67.png",
+              "hash": "large_website_236d17dad6_f640e99b67",
+              "mime": "image/png",
+              "name": "large_website_236d17dad6.png",
+              "path": null,
+              "size": 226.94,
+              "width": 1000,
+              "height": 999,
+              "sizeInBytes": 226935
+            },
+            "small": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/small_website_236d17dad6_f640e99b67.png",
+              "hash": "small_website_236d17dad6_f640e99b67",
+              "mime": "image/png",
+              "name": "small_website_236d17dad6.png",
+              "path": null,
+              "size": 59.73,
+              "width": 500,
+              "height": 500,
+              "sizeInBytes": 59725
+            },
+            "medium": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/medium_website_236d17dad6_f640e99b67.png",
+              "hash": "medium_website_236d17dad6_f640e99b67",
+              "mime": "image/png",
+              "name": "medium_website_236d17dad6.png",
+              "path": null,
+              "size": 124.9,
+              "width": 750,
+              "height": 750,
+              "sizeInBytes": 124901
+            },
+            "thumbnail": {
+              "ext": ".png",
+              "url": "assets/strapi_snapshot/media/thumbnail_website_236d17dad6_f640e99b67.png",
+              "hash": "thumbnail_website_236d17dad6_f640e99b67",
+              "mime": "image/png",
+              "name": "thumbnail_website_236d17dad6.png",
+              "path": null,
+              "size": 11.72,
+              "width": 156,
+              "height": 156,
+              "sizeInBytes": 11716
+            }
+          },
+          "hash": "website_236d17dad6_f640e99b67",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 100.47,
+          "url": "assets/strapi_snapshot/media/website_236d17dad6_f640e99b67.png",
+          "previewUrl": null,
+          "provider": "strapi-provider-upload-strapi-cloud",
+          "provider_metadata": null,
+          "createdAt": "2025-06-15T15:59:15.199Z",
+          "updatedAt": "2025-06-15T15:59:15.199Z",
+          "publishedAt": "2025-06-15T15:59:15.201Z"
+        }
+      }
+    ]
+  },
+  "meta": {}
+}

@@ -1,0 +1,202 @@
+{
+  "data": [
+    {
+      "id": 38,
+      "documentId": "yansj4iv8o8gwtuf3o03rkvn",
+      "Card_Title": "Hotel Information",
+      "Visible": true,
+      "Page_ID": "106",
+      "createdAt": "2025-06-16T16:12:36.730Z",
+      "updatedAt": "2025-06-22T22:59:47.519Z",
+      "publishedAt": "2025-06-22T22:59:47.657Z",
+      "Card_Image": {
+        "id": 83,
+        "documentId": "j6b0uj7ith3psopc1k7gv1gu",
+        "name": "card_hotel.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1487,
+        "height": 932,
+        "formats": {
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_card_hotel_e67ecf853d.jpg",
+            "hash": "thumbnail_card_hotel_e67ecf853d",
+            "mime": "image/jpeg",
+            "name": "thumbnail_card_hotel.jpg",
+            "path": null,
+            "size": 8.03,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 8031
+          }
+        },
+        "hash": "card_hotel_e67ecf853d",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 269.8,
+        "url": "assets/strapi_snapshot/media/card_hotel_e67ecf853d.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-21T20:54:09.211Z",
+        "updatedAt": "2025-06-22T22:59:42.743Z",
+        "publishedAt": "2025-06-21T20:54:09.214Z"
+      },
+      "Tab": [
+        {
+          "id": 67,
+          "Title": "Useful Information",
+          "Tab_ID": "1061",
+          "Banner": {
+            "id": 72,
+            "documentId": "jo1yiwtrxlmo89hdfhz3w192",
+            "name": "hotelinfo_43879e07e1.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_hotelinfo_43879e07e1_d47ceb37c2.jpg",
+                "hash": "thumbnail_hotelinfo_43879e07e1_d47ceb37c2",
+                "mime": "image/jpeg",
+                "name": "thumbnail_hotelinfo_43879e07e1.jpg",
+                "path": null,
+                "size": 6.55,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 6551
+              }
+            },
+            "hash": "hotelinfo_43879e07e1_d47ceb37c2",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 606.01,
+            "url": "assets/strapi_snapshot/media/hotelinfo_43879e07e1_d47ceb37c2.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:35.584Z",
+            "updatedAt": "2025-06-16T15:56:21.822Z",
+            "publishedAt": "2025-06-15T16:33:35.584Z"
+          },
+          "Content": [
+            {
+              "id": 81,
+              "Title": "We’re delighted to have you with us!",
+              "Text": "_Check-in_ is available from **3:00 PM** and check-out is until **11:00 AM**. Should you wish to arrange an early check-in or late check-out, please contact the front desk in advance; we’ll do our best to accommodate your schedule.\n\n**24-Hour Front Desk & Concierge**\n\n\nOur reception desk never closes. **Dial 0** at any time for:\n- Luggage storage or extra pillows, linens, toiletries\n- Restaurant reservations and local recommendations\n- Tickets to shows, tours or special events\n\n\n**Transportation Services**\n\n\nWe offer an airport shuttle service - please contact reception 24 hours in advance to book your transfer. Taxis can be arranged at any time by dialing 0. Public transit stops are within walking distance, and our concierge is happy to assist with directions or car rental arrangements.\n\n\nYour comfort and convenience are our top priorities - if there’s anything you need, just let us know.\n\n",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "Title": "Internet Access",
+          "Tab_ID": "1062",
+          "Banner": {
+            "id": 69,
+            "documentId": "l86ptkv3inmlirzpgo1jqlfp",
+            "name": "internet_4152f848f2.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_internet_4152f848f2_3706887ee6.jpg",
+                "hash": "thumbnail_internet_4152f848f2_3706887ee6",
+                "mime": "image/jpeg",
+                "name": "thumbnail_internet_4152f848f2.jpg",
+                "path": null,
+                "size": 2.83,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 2831
+              }
+            },
+            "hash": "internet_4152f848f2_3706887ee6",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 343.06,
+            "url": "assets/strapi_snapshot/media/internet_4152f848f2_3706887ee6.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:34.793Z",
+            "updatedAt": "2025-06-16T15:56:51.862Z",
+            "publishedAt": "2025-06-15T16:33:34.794Z"
+          },
+          "Content": [
+            {
+              "id": 82,
+              "Title": "Connect to our WiFi",
+              "Text": "Stay connected throughout your visit with our complimentary Wi-Fi. Network name and password are displayed here and can also be found on the card in your room wallet. Should you experience any issues logging on, simply reboot your device or contact reception for support.\n\n\n#### **WiFi name:** Suji Resort\n\n#### **Password:** sujiresort2025\n\nOur high-speed broadband allows you to stream, browse and video-call with ease. For business guests we provide secure access to VPN services and printing facilities; just ask at reception for any assistance or additional login credentials.",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "Title": "Breakfast",
+          "Tab_ID": "1063",
+          "Banner": {
+            "id": 52,
+            "documentId": "hpvsv9wab6knqdio1tfotnq6",
+            "name": "breakfast_31b254c020 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_breakfast_31b254c020_Copy_48fce55225.jpg",
+                "hash": "thumbnail_breakfast_31b254c020_Copy_48fce55225",
+                "mime": "image/jpeg",
+                "name": "thumbnail_breakfast_31b254c020 - Copy.jpg",
+                "path": null,
+                "size": 6.8,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 6799
+              }
+            },
+            "hash": "breakfast_31b254c020_Copy_48fce55225",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 380.87,
+            "url": "assets/strapi_snapshot/media/breakfast_31b254c020_Copy_48fce55225.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:29:53.218Z",
+            "updatedAt": "2025-06-16T16:00:41.346Z",
+            "publishedAt": "2025-06-15T16:29:53.289Z"
+          },
+          "Content": [
+            {
+              "id": 83,
+              "Title": "Start your day right with our breakfast offering",
+              "Text": "Our breakfast service is available in the main restaurant **from 7 am to 10 am Monday to Friday** and **until 11 am at the weekend**. Indulge in a plentiful buffet of freshly baked pastries, seasonal fruit, an array of cereals and creamy yoghurts. \n\n\nAlternatively, choose from our à la carte menu, where you can enjoy eggs cooked to your preference, back bacon, classic sausages and chargrilled tomatoes. Complement your meal with freshly brewed coffee, a selection of fine teas and a glass of freshly squeezed juice.\n\n\nIf you have any dietary requirements or special requests - **vegetarian, vegan, gluten-free** or otherwise - simply let a member of our team know and we’ll be delighted to assist. We look forward to helping you start the day just the way you like it.",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

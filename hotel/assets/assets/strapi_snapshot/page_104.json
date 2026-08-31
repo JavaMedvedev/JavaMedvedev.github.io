@@ -1,0 +1,190 @@
+{
+  "data": [
+    {
+      "id": 23,
+      "documentId": "arvhkdz2jseilf7ofky4n7ud",
+      "Card_Title": "Fitness & Pool",
+      "Visible": true,
+      "Page_ID": "104",
+      "createdAt": "2025-06-15T22:53:10.576Z",
+      "updatedAt": "2025-06-16T15:34:31.075Z",
+      "publishedAt": "2025-06-16T15:34:31.225Z",
+      "Card_Image": {
+        "id": 37,
+        "documentId": "guzgl0w9rquk2njtigfy1x93",
+        "name": "fitness_9289494491.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1595,
+        "height": 1000,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_fitness_9289494491_4a78104ce0.jpg",
+            "hash": "large_fitness_9289494491_4a78104ce0",
+            "mime": "image/jpeg",
+            "name": "large_fitness_9289494491.jpg",
+            "path": null,
+            "size": 68.19,
+            "width": 1000,
+            "height": 627,
+            "sizeInBytes": 68194
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_fitness_9289494491_4a78104ce0.jpg",
+            "hash": "small_fitness_9289494491_4a78104ce0",
+            "mime": "image/jpeg",
+            "name": "small_fitness_9289494491.jpg",
+            "path": null,
+            "size": 24.72,
+            "width": 500,
+            "height": 314,
+            "sizeInBytes": 24720
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_fitness_9289494491_4a78104ce0.jpg",
+            "hash": "medium_fitness_9289494491_4a78104ce0",
+            "mime": "image/jpeg",
+            "name": "medium_fitness_9289494491.jpg",
+            "path": null,
+            "size": 44.58,
+            "width": 750,
+            "height": 470,
+            "sizeInBytes": 44583
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_fitness_9289494491_4a78104ce0.jpg",
+            "hash": "thumbnail_fitness_9289494491_4a78104ce0",
+            "mime": "image/jpeg",
+            "name": "thumbnail_fitness_9289494491.jpg",
+            "path": null,
+            "size": 8.81,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 8806
+          }
+        },
+        "hash": "fitness_9289494491_4a78104ce0",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 139.56,
+        "url": "assets/strapi_snapshot/media/fitness_9289494491_4a78104ce0.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:33.697Z",
+        "updatedAt": "2025-06-15T16:20:33.697Z",
+        "publishedAt": "2025-06-15T16:20:33.697Z"
+      },
+      "Tab": [
+        {
+          "id": 33,
+          "Title": "Pool & Gym",
+          "Tab_ID": "1041",
+          "Banner": {
+            "id": 58,
+            "documentId": "b99blyytl110341ibape9w5j",
+            "name": "gym_6719562015 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_gym_6719562015_Copy_d996fabf43.jpg",
+                "hash": "thumbnail_gym_6719562015_Copy_d996fabf43",
+                "mime": "image/jpeg",
+                "name": "thumbnail_gym_6719562015 - Copy.jpg",
+                "path": null,
+                "size": 4.29,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 4294
+              }
+            },
+            "hash": "gym_6719562015_Copy_d996fabf43",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 178.29,
+            "url": "assets/strapi_snapshot/media/gym_6719562015_Copy_d996fabf43.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:30:01.039Z",
+            "updatedAt": "2025-06-16T15:59:16.685Z",
+            "publishedAt": "2025-06-15T16:30:01.040Z"
+          },
+          "Content": [
+            {
+              "id": 47,
+              "Title": null,
+              "Text": "Maintain your fitness routine or enjoy a refreshing swim in our well-appointed pool and gym. The fitness centre is equipped with cardio machines, free weights and functional training areas, while the pool offers lanes for laps and a shallow end for relaxation.\n\nOpening hours are 6 am to 9 pm daily. Towels and water stations are provided; personal trainers and swim instructors are available by appointment.\n\n![umbrella-chair.jpg](http://localhost:1337/uploads/umbrella_chair_526b6b5766.jpg)\n\n\n![22506.jpg](http://localhost:1337/uploads/22506_4baafe844d.jpg)\n\n",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "Title": "Book Your Pool Experience",
+          "Tab_ID": "1042",
+          "Banner": {
+            "id": 24,
+            "documentId": "zvwgdjdaa3nyhww229i3rhhk",
+            "name": "umbrella_chair_b2efc44de6.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1500,
+            "height": 1000,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_umbrella_chair_b2efc44de6_bd0801c982.jpg",
+                "hash": "thumbnail_umbrella_chair_b2efc44de6_bd0801c982",
+                "mime": "image/jpeg",
+                "name": "thumbnail_umbrella_chair_b2efc44de6.jpg",
+                "path": null,
+                "size": 12.4,
+                "width": 234,
+                "height": 156,
+                "sizeInBytes": 12396
+              }
+            },
+            "hash": "umbrella_chair_b2efc44de6_bd0801c982",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 790.74,
+            "url": "assets/strapi_snapshot/media/umbrella_chair_b2efc44de6_bd0801c982.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:14:12.632Z",
+            "updatedAt": "2025-06-16T15:34:24.954Z",
+            "publishedAt": "2025-06-15T16:14:12.633Z"
+          },
+          "Content": [
+            {
+              "id": 48,
+              "Title": "Book Your Pool Experience",
+              "Text": "Relax, refresh, and recharge at our inviting pool. To ensure you have a comfortable, serene swimming experience, we offer convenient 45-minute booking slots.\n\n**Pool Hours: Daily from 7:00 AM to 8:00 PM**\n\nWhether you’re starting your day with a refreshing morning swim or unwinding after exploring the city, our pool is your oasis for relaxation.\n\nComplimentary towels and loungers are available poolside, and refreshments can be ordered directly from your lounge chair.\n\nSimply contact reception by dialing '0', and we’ll gladly reserve your preferred time slot. We look forward to welcoming you to a peaceful poolside escape.\n\nEnjoy your swim!",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

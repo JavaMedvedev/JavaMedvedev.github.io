@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "id": 15,
+      "documentId": "ebfky2ddejujheppg8z4cuqd",
+      "Card_Title": "Room Service Menus",
+      "Visible": true,
+      "Page_ID": "menu",
+      "createdAt": "2025-06-16T10:27:34.005Z",
+      "updatedAt": "2025-06-16T11:34:59.326Z",
+      "publishedAt": "2025-06-16T11:34:59.486Z",
+      "Card_Image": {
+        "id": 36,
+        "documentId": "vq6fqynp93wgo5awuh1nogg1",
+        "name": "inroom_707ff6ada4.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1487,
+        "height": 932,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_inroom_707ff6ada4_0d986fabab.jpg",
+            "hash": "large_inroom_707ff6ada4_0d986fabab",
+            "mime": "image/jpeg",
+            "name": "large_inroom_707ff6ada4.jpg",
+            "path": null,
+            "size": 87.64,
+            "width": 1000,
+            "height": 627,
+            "sizeInBytes": 87643
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_inroom_707ff6ada4_0d986fabab.jpg",
+            "hash": "small_inroom_707ff6ada4_0d986fabab",
+            "mime": "image/jpeg",
+            "name": "small_inroom_707ff6ada4.jpg",
+            "path": null,
+            "size": 28.78,
+            "width": 500,
+            "height": 313,
+            "sizeInBytes": 28779
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_inroom_707ff6ada4_0d986fabab.jpg",
+            "hash": "medium_inroom_707ff6ada4_0d986fabab",
+            "mime": "image/jpeg",
+            "name": "medium_inroom_707ff6ada4.jpg",
+            "path": null,
+            "size": 54.16,
+            "width": 750,
+            "height": 470,
+            "sizeInBytes": 54160
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_inroom_707ff6ada4_0d986fabab.jpg",
+            "hash": "thumbnail_inroom_707ff6ada4_0d986fabab",
+            "mime": "image/jpeg",
+            "name": "thumbnail_inroom_707ff6ada4.jpg",
+            "path": null,
+            "size": 9.62,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 9616
+          }
+        },
+        "hash": "inroom_707ff6ada4_0d986fabab",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 173.74,
+        "url": "assets/strapi_snapshot/media/inroom_707ff6ada4_0d986fabab.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:32.492Z",
+        "updatedAt": "2025-06-15T16:20:32.492Z",
+        "publishedAt": "2025-06-15T16:20:32.493Z"
+      },
+      "Tab": [
+        {
+          "id": 21,
+          "Title": "HOW TO ORDER",
+          "Tab_ID": "1051",
+          "Banner": {
+            "id": 81,
+            "documentId": "txk6m4f6xphknr27dkknxjv7",
+            "name": "dessert_Menu_7fec07345f.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_dessert_Menu_7fec07345f_f42fac6dcb.jpg",
+                "hash": "thumbnail_dessert_Menu_7fec07345f_f42fac6dcb",
+                "mime": "image/jpeg",
+                "name": "thumbnail_dessert_Menu_7fec07345f.jpg",
+                "path": null,
+                "size": 5.17,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 5167
+              }
+            },
+            "hash": "dessert_Menu_7fec07345f_f42fac6dcb",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 641.45,
+            "url": "assets/strapi_snapshot/media/dessert_Menu_7fec07345f_f42fac6dcb.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-16T11:34:28.899Z",
+            "updatedAt": "2025-06-16T11:34:28.899Z",
+            "publishedAt": "2025-06-16T11:34:28.899Z"
+          },
+          "Content": [
+            {
+              "id": 30,
+              "Title": "How to Order",
+              "Text": "Ordering delicious meals and refreshing beverages directly to your room has never been easier! Follow these simple steps:\n\n\n\n#### **Using the App:**\n1. Browse our enticing menus and select the items you'd like to enjoy.\n2. Add your choices to the checkout basket.\n3. Enter your details and click \"Confirm Order.\"\n4. Await a quick confirmation call from our friendly staff.\n\n\n\n#### **Delivery Hours:**\nFood & Snacks: 1:00 PM – 11:00 PM\n\nBar & Beverages: 4:00 PM – 2:00 AM\n\n\n\n#### **Payment:**\nYour selected payment card will be charged upon confirming your order.\n\n\n\n#### **Prefer Ordering by Phone?**\nSimply **dial 0** on your room telephone, and our staff will gladly assist you.\n\n\n**Enjoy your stay and bon appétit!**",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

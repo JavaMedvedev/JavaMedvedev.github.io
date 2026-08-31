@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "id": 35,
+      "documentId": "ksdv27220ahhy32lo387psfb",
+      "Card_Title": "What’s Around",
+      "Visible": true,
+      "Page_ID": "110",
+      "createdAt": "2025-06-16T17:48:52.006Z",
+      "updatedAt": "2025-06-16T17:48:52.006Z",
+      "publishedAt": "2025-06-16T17:48:52.086Z",
+      "Card_Image": {
+        "id": 40,
+        "documentId": "gb43ychyh75przkj31arer9g",
+        "name": "local_2ff51bbcd5.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1595,
+        "height": 1000,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_local_2ff51bbcd5_0848a48b53.jpg",
+            "hash": "large_local_2ff51bbcd5_0848a48b53",
+            "mime": "image/jpeg",
+            "name": "large_local_2ff51bbcd5.jpg",
+            "path": null,
+            "size": 114.62,
+            "width": 1000,
+            "height": 627,
+            "sizeInBytes": 114618
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_local_2ff51bbcd5_0848a48b53.jpg",
+            "hash": "small_local_2ff51bbcd5_0848a48b53",
+            "mime": "image/jpeg",
+            "name": "small_local_2ff51bbcd5.jpg",
+            "path": null,
+            "size": 32.48,
+            "width": 500,
+            "height": 314,
+            "sizeInBytes": 32477
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_local_2ff51bbcd5_0848a48b53.jpg",
+            "hash": "medium_local_2ff51bbcd5_0848a48b53",
+            "mime": "image/jpeg",
+            "name": "medium_local_2ff51bbcd5.jpg",
+            "path": null,
+            "size": 68.12,
+            "width": 750,
+            "height": 470,
+            "sizeInBytes": 68119
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_local_2ff51bbcd5_0848a48b53.jpg",
+            "hash": "thumbnail_local_2ff51bbcd5_0848a48b53",
+            "mime": "image/jpeg",
+            "name": "thumbnail_local_2ff51bbcd5.jpg",
+            "path": null,
+            "size": 9.06,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 9058
+          }
+        },
+        "hash": "local_2ff51bbcd5_0848a48b53",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 263.2,
+        "url": "assets/strapi_snapshot/media/local_2ff51bbcd5_0848a48b53.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:35.911Z",
+        "updatedAt": "2025-06-15T16:20:35.911Z",
+        "publishedAt": "2025-06-15T16:20:35.912Z"
+      },
+      "Tab": [
+        {
+          "id": 63,
+          "Title": "What’s Around",
+          "Tab_ID": "1101",
+          "Banner": {
+            "id": 66,
+            "documentId": "q6tjvrbi4mom4d8u6hpscglt",
+            "name": "local_a9507892a0 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1997,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_local_a9507892a0_Copy_5dea148e3e.jpg",
+                "hash": "thumbnail_local_a9507892a0_Copy_5dea148e3e",
+                "mime": "image/jpeg",
+                "name": "thumbnail_local_a9507892a0 - Copy.jpg",
+                "path": null,
+                "size": 4.69,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 4693
+              }
+            },
+            "hash": "local_a9507892a0_Copy_5dea148e3e",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 363.33,
+            "url": "assets/strapi_snapshot/media/local_a9507892a0_Copy_5dea148e3e.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:33.291Z",
+            "updatedAt": "2025-06-16T15:57:14.876Z",
+            "publishedAt": "2025-06-15T16:33:33.293Z"
+          },
+          "Content": [
+            {
+              "id": 77,
+              "Title": "Local Activities",
+              "Text": "Discover the very best the region has to offer with our handpicked guide to local attractions. From scenic walking trails and heritage sites to guided tours, artisan markets and family-friendly experiences, there's something for every pace and interest.\n\nWhether you're after a peaceful afternoon exploring historic streets or an active day out in nature, our team is here to help you make the most of your stay.\n\nSpeak with our concierge for insider tips on hidden gems, seasonal events and cultural highlights. Use this tab to browse suggested itineraries or request bespoke plans tailored to your preferences - including transport, dining and ticket arrangements.\n\nLet us help you unlock the charm and character of the area, one experience at a time.",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

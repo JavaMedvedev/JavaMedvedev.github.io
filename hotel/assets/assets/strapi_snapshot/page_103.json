@@ -1,0 +1,190 @@
+{
+  "data": [
+    {
+      "id": 22,
+      "documentId": "c74lvql0xa35y4h7myuvzcib",
+      "Card_Title": "Eco Commitment",
+      "Visible": true,
+      "Page_ID": "103",
+      "createdAt": "2025-06-15T19:44:23.562Z",
+      "updatedAt": "2025-06-16T15:33:04.791Z",
+      "publishedAt": "2025-06-16T15:33:04.996Z",
+      "Card_Image": {
+        "id": 44,
+        "documentId": "cmg5xfroq1dhj150v66sr2gh",
+        "name": "eco_865ca29d4b.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1595,
+        "height": 1000,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_eco_865ca29d4b_1125df15e2.jpg",
+            "hash": "large_eco_865ca29d4b_1125df15e2",
+            "mime": "image/jpeg",
+            "name": "large_eco_865ca29d4b.jpg",
+            "path": null,
+            "size": 211.16,
+            "width": 1000,
+            "height": 627,
+            "sizeInBytes": 211164
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_eco_865ca29d4b_1125df15e2.jpg",
+            "hash": "small_eco_865ca29d4b_1125df15e2",
+            "mime": "image/jpeg",
+            "name": "small_eco_865ca29d4b.jpg",
+            "path": null,
+            "size": 60.55,
+            "width": 500,
+            "height": 314,
+            "sizeInBytes": 60549
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_eco_865ca29d4b_1125df15e2.jpg",
+            "hash": "medium_eco_865ca29d4b_1125df15e2",
+            "mime": "image/jpeg",
+            "name": "medium_eco_865ca29d4b.jpg",
+            "path": null,
+            "size": 127.04,
+            "width": 750,
+            "height": 470,
+            "sizeInBytes": 127039
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_eco_865ca29d4b_1125df15e2.jpg",
+            "hash": "thumbnail_eco_865ca29d4b_1125df15e2",
+            "mime": "image/jpeg",
+            "name": "thumbnail_eco_865ca29d4b.jpg",
+            "path": null,
+            "size": 16.28,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 16280
+          }
+        },
+        "hash": "eco_865ca29d4b_1125df15e2",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 487.54,
+        "url": "assets/strapi_snapshot/media/eco_865ca29d4b_1125df15e2.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:37.753Z",
+        "updatedAt": "2025-06-15T16:20:37.753Z",
+        "publishedAt": "2025-06-15T16:20:37.753Z"
+      },
+      "Tab": [
+        {
+          "id": 31,
+          "Title": "Philosophy",
+          "Tab_ID": "1031",
+          "Banner": {
+            "id": 60,
+            "documentId": "ik9d21iyfgvn5ftd3awbbp83",
+            "name": "empty_hammock_by_tree_bdf4859ec1 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2001,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a.jpg",
+                "hash": "thumbnail_empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a",
+                "mime": "image/jpeg",
+                "name": "thumbnail_empty_hammock_by_tree_bdf4859ec1 - Copy.jpg",
+                "path": null,
+                "size": 8.3,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 8303
+              }
+            },
+            "hash": "empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 601.16,
+            "url": "assets/strapi_snapshot/media/empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:30:01.237Z",
+            "updatedAt": "2025-06-16T15:33:01.251Z",
+            "publishedAt": "2025-06-15T16:30:01.237Z"
+          },
+          "Content": [
+            {
+              "id": 45,
+              "Title": "Our Ethos",
+              "Text": "We believe in holistic wellbeing and genuine hospitality. Our approach blends attentive service with a tranquil environment, so that every guest can relax, rejuvenate and rediscover balance.\n\nWe champion natural materials and soothing design throughout our spa spaces, ensuring that each treatment fosters harmony between mind, body and spirit. Our ethos is rooted in respect for both you and the environment, guiding every aspect of our service.\n\n\n",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "Title": "Sustainability",
+          "Tab_ID": "1032",
+          "Banner": {
+            "id": 60,
+            "documentId": "ik9d21iyfgvn5ftd3awbbp83",
+            "name": "empty_hammock_by_tree_bdf4859ec1 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2001,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a.jpg",
+                "hash": "thumbnail_empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a",
+                "mime": "image/jpeg",
+                "name": "thumbnail_empty_hammock_by_tree_bdf4859ec1 - Copy.jpg",
+                "path": null,
+                "size": 8.3,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 8303
+              }
+            },
+            "hash": "empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 601.16,
+            "url": "assets/strapi_snapshot/media/empty_hammock_by_tree_bdf4859ec1_Copy_a1eb3a7d8a.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:30:01.237Z",
+            "updatedAt": "2025-06-16T15:33:01.251Z",
+            "publishedAt": "2025-06-15T16:30:01.237Z"
+          },
+          "Content": [
+            {
+              "id": 46,
+              "Title": "Sustainable Practices",
+              "Text": "We are committed to **sustainable practices** that protect the environment and support our local community. From energy-efficient lighting and solar heating to waste-reduction initiatives, we strive to minimise our carbon footprint.\n\nWe partner with local suppliers for seasonal produce and **eco-friendly** amenities, and our housekeeping team follows guidelines to conserve water and reduce laundry loads. Discover more about our green policies, recycling stations, and how you can join us in making a positive impact.\n\n#### **Our Sustainable Initiatives include:**\n\n- Green Stay Options: Opt-in to our eco-friendly housekeeping program to help conserve water and energy during your stay.\n- Recycling and Waste Management: Convenient recycling points located throughout the hotel for plastics, glass, paper, and general waste.\n- Eco-friendly Amenities: We choose biodegradable and refillable bathroom products to minimize plastic waste.\n- Local & Seasonal Cuisine: Enjoy dishes featuring fresh, locally sourced ingredients, reducing our environmental impact and supporting nearby farms.\n- Biodiversity Protection: Our gardens and green spaces are designed to encourage native wildlife, providing natural habitats for local species.\n\n\nTogether, we can make a meaningful difference for a healthier planet. Join our journey towards sustainability today!",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

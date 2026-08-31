@@ -1,0 +1,190 @@
+{
+  "data": [
+    {
+      "id": 33,
+      "documentId": "evdh1ev6maw5kyobxqralcl5",
+      "Card_Title": "Wellness & SPA",
+      "Visible": true,
+      "Page_ID": "109",
+      "createdAt": "2025-06-16T17:46:59.438Z",
+      "updatedAt": "2025-06-16T17:46:59.438Z",
+      "publishedAt": "2025-06-16T17:46:59.521Z",
+      "Card_Image": {
+        "id": 43,
+        "documentId": "an0zh01fwf02uh920upckaba",
+        "name": "spa_0be55a8c71.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1398,
+        "height": 1000,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_spa_0be55a8c71_9e2b506b7c.jpg",
+            "hash": "large_spa_0be55a8c71_9e2b506b7c",
+            "mime": "image/jpeg",
+            "name": "large_spa_0be55a8c71.jpg",
+            "path": null,
+            "size": 71.04,
+            "width": 1000,
+            "height": 715,
+            "sizeInBytes": 71042
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_spa_0be55a8c71_9e2b506b7c.jpg",
+            "hash": "small_spa_0be55a8c71_9e2b506b7c",
+            "mime": "image/jpeg",
+            "name": "small_spa_0be55a8c71.jpg",
+            "path": null,
+            "size": 24.58,
+            "width": 500,
+            "height": 358,
+            "sizeInBytes": 24581
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_spa_0be55a8c71_9e2b506b7c.jpg",
+            "hash": "medium_spa_0be55a8c71_9e2b506b7c",
+            "mime": "image/jpeg",
+            "name": "medium_spa_0be55a8c71.jpg",
+            "path": null,
+            "size": 45.24,
+            "width": 750,
+            "height": 536,
+            "sizeInBytes": 45241
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_spa_0be55a8c71_9e2b506b7c.jpg",
+            "hash": "thumbnail_spa_0be55a8c71_9e2b506b7c",
+            "mime": "image/jpeg",
+            "name": "thumbnail_spa_0be55a8c71.jpg",
+            "path": null,
+            "size": 7.07,
+            "width": 218,
+            "height": 156,
+            "sizeInBytes": 7065
+          }
+        },
+        "hash": "spa_0be55a8c71_9e2b506b7c",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 121.16,
+        "url": "assets/strapi_snapshot/media/spa_0be55a8c71_9e2b506b7c.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:37.399Z",
+        "updatedAt": "2025-06-15T16:20:37.399Z",
+        "publishedAt": "2025-06-15T16:20:37.399Z"
+      },
+      "Tab": [
+        {
+          "id": 60,
+          "Title": "SPA Treatments",
+          "Tab_ID": "1091",
+          "Banner": {
+            "id": 74,
+            "documentId": "m3wl6t60atnzz3m2k3jbwtfz",
+            "name": "young_woman_relaxing_jacuzzi_7b5b1cb738 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_young_woman_relaxing_jacuzzi_7b5b1cb738_Copy_2948b125e7.jpg",
+                "hash": "thumbnail_young_woman_relaxing_jacuzzi_7b5b1cb738_Copy_2948b125e7",
+                "mime": "image/jpeg",
+                "name": "thumbnail_young_woman_relaxing_jacuzzi_7b5b1cb738 - Copy.jpg",
+                "path": null,
+                "size": 4.92,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 4921
+              }
+            },
+            "hash": "young_woman_relaxing_jacuzzi_7b5b1cb738_Copy_2948b125e7",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 275.8,
+            "url": "assets/strapi_snapshot/media/young_woman_relaxing_jacuzzi_7b5b1cb738_Copy_2948b125e7.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:35:58.399Z",
+            "updatedAt": "2025-06-16T15:55:33.521Z",
+            "publishedAt": "2025-06-15T16:35:58.404Z"
+          },
+          "Content": [
+            {
+              "id": 74,
+              "Title": "SPA",
+              "Text": "Indulge in a range of spa rituals designed to restore and revitalise. From signature massages to aromatherapy facials, each treatment is tailored to your individual needs and performed using premium skincare brands.\n\nTreatment durations vary from 30 to 90 minutes and can be combined into bespoke packages. Detailed descriptions, prices and suggested booking times are available on our website.\n\n![1509_4b8a25d8a9.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/1509_4b8a25d8a9_7265c85960.jpg)\n\n",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "Title": "Spa Facilities",
+          "Tab_ID": "1092",
+          "Banner": {
+            "id": 63,
+            "documentId": "cwog0jzsaryg0n65szqtwu1y",
+            "name": "spa_concept_with_woman_relaxing_water_a4da456b94 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_spa_concept_with_woman_relaxing_water_a4da456b94_Copy_e4c88a1a1d.jpg",
+                "hash": "thumbnail_spa_concept_with_woman_relaxing_water_a4da456b94_Copy_e4c88a1a1d",
+                "mime": "image/jpeg",
+                "name": "thumbnail_spa_concept_with_woman_relaxing_water_a4da456b94 - Copy.jpg",
+                "path": null,
+                "size": 3.45,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 3454
+              }
+            },
+            "hash": "spa_concept_with_woman_relaxing_water_a4da456b94_Copy_e4c88a1a1d",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 202.07,
+            "url": "assets/strapi_snapshot/media/spa_concept_with_woman_relaxing_water_a4da456b94_Copy_e4c88a1a1d.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:28.892Z",
+            "updatedAt": "2025-06-16T15:58:05.716Z",
+            "publishedAt": "2025-06-15T16:33:28.893Z"
+          },
+          "Content": [
+            {
+              "id": 75,
+              "Title": "Tranquillity Facilities",
+              "Text": "Discover tranquillity in our state-of-the-art spa facilities. Enjoy the warmth of the sauna, the detoxifying heat of the steam room and the soothing ambience of our relaxation lounge.\n\nGuests also have access to hydrotherapy pools and vitality showers. Changing rooms are equipped with lockers, towels and toiletries; please bring your spa robe from your room or purchase one at reception.\n\n![3948_5669e607f8.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/3948_5669e607f8_cec848c038.jpg)",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

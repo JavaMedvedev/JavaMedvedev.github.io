@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "id": 31,
+      "documentId": "s27tipcbmgijjpk3ggvz22z6",
+      "Card_Title": "Tie the Knot",
+      "Visible": true,
+      "Page_ID": "108",
+      "createdAt": "2025-06-16T17:43:16.473Z",
+      "updatedAt": "2025-06-16T17:43:16.473Z",
+      "publishedAt": "2025-06-16T17:43:16.580Z",
+      "Card_Image": {
+        "id": 42,
+        "documentId": "dyaiewdcm5augosga56h87og",
+        "name": "wedding_ffd0874e71.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1500,
+        "height": 1000,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_wedding_ffd0874e71_3ec8a55b0b.jpg",
+            "hash": "large_wedding_ffd0874e71_3ec8a55b0b",
+            "mime": "image/jpeg",
+            "name": "large_wedding_ffd0874e71.jpg",
+            "path": null,
+            "size": 86.43,
+            "width": 1000,
+            "height": 667,
+            "sizeInBytes": 86432
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_wedding_ffd0874e71_3ec8a55b0b.jpg",
+            "hash": "small_wedding_ffd0874e71_3ec8a55b0b",
+            "mime": "image/jpeg",
+            "name": "small_wedding_ffd0874e71.jpg",
+            "path": null,
+            "size": 29.05,
+            "width": 500,
+            "height": 333,
+            "sizeInBytes": 29049
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_wedding_ffd0874e71_3ec8a55b0b.jpg",
+            "hash": "medium_wedding_ffd0874e71_3ec8a55b0b",
+            "mime": "image/jpeg",
+            "name": "medium_wedding_ffd0874e71.jpg",
+            "path": null,
+            "size": 55.01,
+            "width": 750,
+            "height": 500,
+            "sizeInBytes": 55009
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_wedding_ffd0874e71_3ec8a55b0b.jpg",
+            "hash": "thumbnail_wedding_ffd0874e71_3ec8a55b0b",
+            "mime": "image/jpeg",
+            "name": "thumbnail_wedding_ffd0874e71.jpg",
+            "path": null,
+            "size": 9.3,
+            "width": 234,
+            "height": 156,
+            "sizeInBytes": 9302
+          }
+        },
+        "hash": "wedding_ffd0874e71_3ec8a55b0b",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 171.32,
+        "url": "assets/strapi_snapshot/media/wedding_ffd0874e71_3ec8a55b0b.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:36.823Z",
+        "updatedAt": "2025-06-15T16:20:36.823Z",
+        "publishedAt": "2025-06-15T16:20:36.824Z"
+      },
+      "Tab": [
+        {
+          "id": 57,
+          "Title": "Luxury Wedding Venue",
+          "Tab_ID": "1081",
+          "Banner": {
+            "id": 76,
+            "documentId": "gxkzp1qddcbspsg5wz9zjvp4",
+            "name": "wedding_table_decorations_1915f6a102 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1998,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_wedding_table_decorations_1915f6a102_Copy_057b98c806.jpg",
+                "hash": "thumbnail_wedding_table_decorations_1915f6a102_Copy_057b98c806",
+                "mime": "image/jpeg",
+                "name": "thumbnail_wedding_table_decorations_1915f6a102 - Copy.jpg",
+                "path": null,
+                "size": 4.42,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 4423
+              }
+            },
+            "hash": "wedding_table_decorations_1915f6a102_Copy_057b98c806",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 236.62,
+            "url": "assets/strapi_snapshot/media/wedding_table_decorations_1915f6a102_Copy_057b98c806.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:35:59.003Z",
+            "updatedAt": "2025-06-16T15:55:04.778Z",
+            "publishedAt": "2025-06-15T16:35:59.004Z"
+          },
+          "Content": [
+            {
+              "id": 71,
+              "Title": "Celebrate Your Big Day with Us",
+              "Text": "Celebrate your special day in style at our idyllic wedding venue. With beautiful indoor and outdoor spaces, customised catering and expert event planning, we turn dreams into reality.\n\nWhether you envision an intimate ceremony or a grand celebration, our dedicated weddings team will guide you through every detail. Explore elegant décor packages, bespoke menus and accommodation options for you and your guests.\n\nPlease **call 3** from your room's telephone and we'll be happy to help you with your special day.\n\n![wedding_b9feedfe52.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/wedding_b9feedfe52_dc80b35c9e.jpg)",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

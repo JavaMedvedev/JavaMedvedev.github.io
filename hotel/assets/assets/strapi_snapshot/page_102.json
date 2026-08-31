@@ -1,0 +1,747 @@
+{
+  "data": [
+    {
+      "id": 20,
+      "documentId": "eucl0awwt80g085rp3abgco0",
+      "Card_Title": "Dining",
+      "Visible": true,
+      "Page_ID": "102",
+      "createdAt": "2025-06-15T19:41:06.801Z",
+      "updatedAt": "2025-06-16T15:29:59.108Z",
+      "publishedAt": "2025-06-16T15:29:59.296Z",
+      "Card_Image": {
+        "id": 41,
+        "documentId": "kolg29a81pph77hftwug72h2",
+        "name": "dining_7b7aa9b930.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1487,
+        "height": 932,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_dining_7b7aa9b930_a18e28c360.jpg",
+            "hash": "large_dining_7b7aa9b930_a18e28c360",
+            "mime": "image/jpeg",
+            "name": "large_dining_7b7aa9b930.jpg",
+            "path": null,
+            "size": 95.79,
+            "width": 1000,
+            "height": 627,
+            "sizeInBytes": 95786
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_dining_7b7aa9b930_a18e28c360.jpg",
+            "hash": "small_dining_7b7aa9b930_a18e28c360",
+            "mime": "image/jpeg",
+            "name": "small_dining_7b7aa9b930.jpg",
+            "path": null,
+            "size": 33.81,
+            "width": 500,
+            "height": 313,
+            "sizeInBytes": 33805
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_dining_7b7aa9b930_a18e28c360.jpg",
+            "hash": "medium_dining_7b7aa9b930_a18e28c360",
+            "mime": "image/jpeg",
+            "name": "medium_dining_7b7aa9b930.jpg",
+            "path": null,
+            "size": 61.4,
+            "width": 750,
+            "height": 470,
+            "sizeInBytes": 61396
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_dining_7b7aa9b930_a18e28c360.jpg",
+            "hash": "thumbnail_dining_7b7aa9b930_a18e28c360",
+            "mime": "image/jpeg",
+            "name": "thumbnail_dining_7b7aa9b930.jpg",
+            "path": null,
+            "size": 11.45,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 11449
+          }
+        },
+        "hash": "dining_7b7aa9b930_a18e28c360",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 185.54,
+        "url": "assets/strapi_snapshot/media/dining_7b7aa9b930_a18e28c360.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:36.693Z",
+        "updatedAt": "2025-06-15T16:20:36.693Z",
+        "publishedAt": "2025-06-15T16:20:36.693Z"
+      },
+      "Tab": [
+        {
+          "id": 26,
+          "Title": "Café Edera",
+          "Tab_ID": "1021",
+          "Banner": {
+            "id": 51,
+            "documentId": "t3exjf0907830szhia3waze4",
+            "name": "cafe_5b03d200d6 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_cafe_5b03d200d6_Copy_9f8979947c.jpg",
+                "hash": "thumbnail_cafe_5b03d200d6_Copy_9f8979947c",
+                "mime": "image/jpeg",
+                "name": "thumbnail_cafe_5b03d200d6 - Copy.jpg",
+                "path": null,
+                "size": 5.31,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 5310
+              }
+            },
+            "hash": "cafe_5b03d200d6_Copy_9f8979947c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 312.46,
+            "url": "assets/strapi_snapshot/media/cafe_5b03d200d6_Copy_9f8979947c.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:29:51.093Z",
+            "updatedAt": "2025-06-16T15:21:05.033Z",
+            "publishedAt": "2025-06-15T16:29:51.094Z"
+          },
+          "Content": [
+            {
+              "id": 35,
+              "Title": "Café Edera",
+              "Text": "**Café Edera** is your cozy escape just steps away — a stylish spot to enjoy fresh coffee, pastries, and light bites in a lush, modern setting. Relax, recharge or meet up in the vibrant heart of the hotel.\n\nMenus change seasonally to feature **locally sourced ingredients**, from savoury quiches and sandwiches to daily soup and salad specials.",
+              "Media": null,
+              "Photoslider": [
+                {
+                  "id": 33,
+                  "documentId": "wsmx43lankwm0swimk83v6dm",
+                  "name": "freepik_the_style_is_candid_image_photography_with_natural_87185_504b10d8bc.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87185_504b10d8bc_b8209f9b7e.jpeg",
+                      "hash": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87185_504b10d8bc_b8209f9b7e",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87185_504b10d8bc.jpeg",
+                      "path": null,
+                      "size": 10.65,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 10646
+                    }
+                  },
+                  "hash": "freepik_the_style_is_candid_image_photography_with_natural_87185_504b10d8bc_b8209f9b7e",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 111.35,
+                  "url": "assets/strapi_snapshot/media/freepik_the_style_is_candid_image_photography_with_natural_87185_504b10d8bc_b8209f9b7e.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T16:16:36.534Z",
+                  "updatedAt": "2025-06-16T15:22:13.442Z",
+                  "publishedAt": "2025-06-15T16:16:36.534Z"
+                },
+                {
+                  "id": 32,
+                  "documentId": "sausbj27r97sdu6zhn98yqqi",
+                  "name": "freepik_the_style_is_candid_image_photography_with_natural_87183_73ab4b375e.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87183_73ab4b375e_0ea30322fb.jpeg",
+                      "hash": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87183_73ab4b375e_0ea30322fb",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87183_73ab4b375e.jpeg",
+                      "path": null,
+                      "size": 9.46,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 9464
+                    }
+                  },
+                  "hash": "freepik_the_style_is_candid_image_photography_with_natural_87183_73ab4b375e_0ea30322fb",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 138.53,
+                  "url": "assets/strapi_snapshot/media/freepik_the_style_is_candid_image_photography_with_natural_87183_73ab4b375e_0ea30322fb.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T16:16:36.197Z",
+                  "updatedAt": "2025-06-16T15:23:27.143Z",
+                  "publishedAt": "2025-06-15T16:16:36.198Z"
+                },
+                {
+                  "id": 31,
+                  "documentId": "cmwqz4vxmuwtaml34ndn8mh5",
+                  "name": "freepik_the_style_is_candid_image_photography_with_natural_87184_a5fac3f518.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87184_a5fac3f518_5e1f3c4364.jpeg",
+                      "hash": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87184_a5fac3f518_5e1f3c4364",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87184_a5fac3f518.jpeg",
+                      "path": null,
+                      "size": 10.53,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 10529
+                    }
+                  },
+                  "hash": "freepik_the_style_is_candid_image_photography_with_natural_87184_a5fac3f518_5e1f3c4364",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 148.05,
+                  "url": "assets/strapi_snapshot/media/freepik_the_style_is_candid_image_photography_with_natural_87184_a5fac3f518_5e1f3c4364.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T16:16:36.099Z",
+                  "updatedAt": "2025-06-16T15:23:47.585Z",
+                  "publishedAt": "2025-06-15T16:16:36.099Z"
+                }
+              ]
+            },
+            {
+              "id": 36,
+              "Title": null,
+              "Text": null,
+              "Media": {
+                "id": 21,
+                "documentId": "q8hw2uump1cvte48p05niiqo",
+                "name": "edera1_cb85e0ee5f.jpg",
+                "alternativeText": null,
+                "caption": null,
+                "width": 2000,
+                "height": 1418,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".jpg",
+                    "url": "assets/strapi_snapshot/media/thumbnail_edera1_cb85e0ee5f_ad8d1c73d5.jpg",
+                    "hash": "thumbnail_edera1_cb85e0ee5f_ad8d1c73d5",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_edera1_cb85e0ee5f.jpg",
+                    "path": null,
+                    "size": 7.88,
+                    "width": 220,
+                    "height": 156,
+                    "sizeInBytes": 7883
+                  }
+                },
+                "hash": "edera1_cb85e0ee5f_ad8d1c73d5",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "size": 581.96,
+                "url": "assets/strapi_snapshot/media/edera1_cb85e0ee5f_ad8d1c73d5.jpg",
+                "previewUrl": null,
+                "provider": "strapi-provider-upload-strapi-cloud",
+                "provider_metadata": null,
+                "createdAt": "2025-06-15T16:12:12.890Z",
+                "updatedAt": "2025-06-16T15:24:31.324Z",
+                "publishedAt": "2025-06-15T16:12:12.890Z"
+              },
+              "Photoslider": null
+            },
+            {
+              "id": 37,
+              "Title": null,
+              "Text": null,
+              "Media": {
+                "id": 19,
+                "documentId": "lud2c4vz24otvainv4m8ippg",
+                "name": "edera2_1df1d342e0.jpg",
+                "alternativeText": null,
+                "caption": null,
+                "width": 2000,
+                "height": 1418,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".jpg",
+                    "url": "assets/strapi_snapshot/media/thumbnail_edera2_1df1d342e0_91a13912c8.jpg",
+                    "hash": "thumbnail_edera2_1df1d342e0_91a13912c8",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_edera2_1df1d342e0.jpg",
+                    "path": null,
+                    "size": 9.58,
+                    "width": 220,
+                    "height": 156,
+                    "sizeInBytes": 9578
+                  }
+                },
+                "hash": "edera2_1df1d342e0_91a13912c8",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "size": 799.58,
+                "url": "assets/strapi_snapshot/media/edera2_1df1d342e0_91a13912c8.jpg",
+                "previewUrl": null,
+                "provider": "strapi-provider-upload-strapi-cloud",
+                "provider_metadata": null,
+                "createdAt": "2025-06-15T16:12:11.606Z",
+                "updatedAt": "2025-06-16T15:24:54.595Z",
+                "publishedAt": "2025-06-15T16:12:11.606Z"
+              },
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "Title": "The Gilded Lily",
+          "Tab_ID": "1022",
+          "Banner": {
+            "id": 71,
+            "documentId": "tyqqhfuaubwnvc16i0kuadj9",
+            "name": "lilybanner2_243491bca1.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_lilybanner2_243491bca1_076055bc28.jpg",
+                "hash": "thumbnail_lilybanner2_243491bca1_076055bc28",
+                "mime": "image/jpeg",
+                "name": "thumbnail_lilybanner2_243491bca1.jpg",
+                "path": null,
+                "size": 5.84,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 5840
+              }
+            },
+            "hash": "lilybanner2_243491bca1_076055bc28",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 591.48,
+            "url": "assets/strapi_snapshot/media/lilybanner2_243491bca1_076055bc28.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:35.474Z",
+            "updatedAt": "2025-06-16T15:25:58.466Z",
+            "publishedAt": "2025-06-15T16:33:35.474Z"
+          },
+          "Content": [
+            {
+              "id": 38,
+              "Title": "THE GILDED LILY RESTAURANT",
+              "Text": "Experience fine dining in our signature restaurant, open for dinner from 6 pm to 10 pm. Our chef curates a menu of modern Irish classics paired with international flair, showcasing the best of local produce. Sophisticated yet welcoming — your table is waiting.\n\nCall 084 754 94 to book a table.",
+              "Media": null,
+              "Photoslider": [
+                {
+                  "id": 80,
+                  "documentId": "wn21fbffqd2anb4qihmho3sa",
+                  "name": "sliderLily1.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_slider_Lily1_6009b6733b.jpeg",
+                      "hash": "thumbnail_slider_Lily1_6009b6733b",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_sliderLily1.jpeg",
+                      "path": null,
+                      "size": 9.31,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 9306
+                    }
+                  },
+                  "hash": "slider_Lily1_6009b6733b",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 259.97,
+                  "url": "assets/strapi_snapshot/media/slider_Lily1_6009b6733b.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T19:36:58.957Z",
+                  "updatedAt": "2025-06-16T15:26:55.941Z",
+                  "publishedAt": "2025-06-15T19:36:58.957Z"
+                },
+                {
+                  "id": 79,
+                  "documentId": "x3fa2wlab9wcivxu17r0wcke",
+                  "name": "sliderLily2.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_slider_Lily2_b37220c438.jpeg",
+                      "hash": "thumbnail_slider_Lily2_b37220c438",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_sliderLily2.jpeg",
+                      "path": null,
+                      "size": 9.96,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 9957
+                    }
+                  },
+                  "hash": "slider_Lily2_b37220c438",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 299.36,
+                  "url": "assets/strapi_snapshot/media/slider_Lily2_b37220c438.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T19:36:58.574Z",
+                  "updatedAt": "2025-06-16T15:27:13.747Z",
+                  "publishedAt": "2025-06-15T19:36:58.575Z"
+                },
+                {
+                  "id": 78,
+                  "documentId": "vpg146ckqku08pq979zie53s",
+                  "name": "sliderLily3.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_slider_Lily3_0bbf13b7d1.jpeg",
+                      "hash": "thumbnail_slider_Lily3_0bbf13b7d1",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_sliderLily3.jpeg",
+                      "path": null,
+                      "size": 9.24,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 9238
+                    }
+                  },
+                  "hash": "slider_Lily3_0bbf13b7d1",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 291.66,
+                  "url": "assets/strapi_snapshot/media/slider_Lily3_0bbf13b7d1.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T19:36:58.477Z",
+                  "updatedAt": "2025-06-16T15:27:29.220Z",
+                  "publishedAt": "2025-06-15T19:36:58.479Z"
+                }
+              ]
+            },
+            {
+              "id": 39,
+              "Title": null,
+              "Text": null,
+              "Media": {
+                "id": 20,
+                "documentId": "cp3fk23x26p4ihujit3mw0o1",
+                "name": "gildedlily_Menu_c1234289ed.jpg",
+                "alternativeText": null,
+                "caption": null,
+                "width": 1400,
+                "height": 1980,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".jpg",
+                    "url": "assets/strapi_snapshot/media/thumbnail_gildedlily_Menu_c1234289ed_b8aa1579f9.jpg",
+                    "hash": "thumbnail_gildedlily_Menu_c1234289ed_b8aa1579f9",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_gildedlily_Menu_c1234289ed.jpg",
+                    "path": null,
+                    "size": 2.68,
+                    "width": 111,
+                    "height": 156,
+                    "sizeInBytes": 2679
+                  }
+                },
+                "hash": "gildedlily_Menu_c1234289ed_b8aa1579f9",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "size": 828.16,
+                "url": "assets/strapi_snapshot/media/gildedlily_Menu_c1234289ed_b8aa1579f9.jpg",
+                "previewUrl": null,
+                "provider": "strapi-provider-upload-strapi-cloud",
+                "provider_metadata": null,
+                "createdAt": "2025-06-15T16:12:12.333Z",
+                "updatedAt": "2025-06-16T15:29:01.262Z",
+                "publishedAt": "2025-06-15T16:12:12.333Z"
+              },
+              "Photoslider": null
+            },
+            {
+              "id": 40,
+              "Title": null,
+              "Text": null,
+              "Media": {
+                "id": 18,
+                "documentId": "hmkath297coqd1bjbe6cpye8",
+                "name": "gildedlilyhorizontalmenu_20f48b9f24.jpg",
+                "alternativeText": null,
+                "caption": null,
+                "width": 1400,
+                "height": 924,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".jpg",
+                    "url": "assets/strapi_snapshot/media/thumbnail_gildedlilyhorizontalmenu_20f48b9f24_2d8ae5a0b4.jpg",
+                    "hash": "thumbnail_gildedlilyhorizontalmenu_20f48b9f24_2d8ae5a0b4",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_gildedlilyhorizontalmenu_20f48b9f24.jpg",
+                    "path": null,
+                    "size": 3.62,
+                    "width": 236,
+                    "height": 156,
+                    "sizeInBytes": 3618
+                  }
+                },
+                "hash": "gildedlilyhorizontalmenu_20f48b9f24_2d8ae5a0b4",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "size": 354.45,
+                "url": "assets/strapi_snapshot/media/gildedlilyhorizontalmenu_20f48b9f24_2d8ae5a0b4.jpg",
+                "previewUrl": null,
+                "provider": "strapi-provider-upload-strapi-cloud",
+                "provider_metadata": null,
+                "createdAt": "2025-06-15T16:12:11.518Z",
+                "updatedAt": "2025-06-16T15:29:16.065Z",
+                "publishedAt": "2025-06-15T16:12:11.590Z"
+              },
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "Title": "6th Floor Bar",
+          "Tab_ID": "1023",
+          "Banner": {
+            "id": 64,
+            "documentId": "kalluct2ttctvwd3hquzbkom",
+            "name": "modern_elegant_living_room_with_comfortable_sofa_chair_generated_by_artificial_intelligence_d65d18e75d - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1999,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_modern_elegant_living_room_with_comfortable_sofa_chair_generated_by_artificial_intelligence_d65d18e75d_Copy_899c08ea52.jpg",
+                "hash": "thumbnail_modern_elegant_living_room_with_comfortable_sofa_chair_generated_by_artificial_intelligence_d65d18e75d_Copy_899c08ea52",
+                "mime": "image/jpeg",
+                "name": "thumbnail_modern_elegant_living_room_with_comfortable_sofa_chair_generated_by_artificial_intelligence_d65d18e75d - Copy.jpg",
+                "path": null,
+                "size": 6.44,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 6444
+              }
+            },
+            "hash": "modern_elegant_living_room_with_comfortable_sofa_chair_generated_by_artificial_intelligence_d65d18e75d_Copy_899c08ea52",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 352.64,
+            "url": "assets/strapi_snapshot/media/modern_elegant_living_room_with_comfortable_sofa_chair_generated_by_artificial_intelligence_d65d18e75d_Copy_899c08ea52.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:30.291Z",
+            "updatedAt": "2025-06-16T15:59:32.353Z",
+            "publishedAt": "2025-06-15T16:33:30.293Z"
+          },
+          "Content": [
+            {
+              "id": 41,
+              "Title": "6th Floor Bar",
+              "Text": "Relax in the stylish surroundings of our bar, open daily from 12 pm until late. Sip on handcrafted cocktails, sample fine whiskies or choose from an impressive selection of artisanal gins.\n\nLight bar snacks and sharing platters are available throughout the afternoon and evening. Download the bar menu here to explore our full range of beverages and discover featured seasonal tipples.",
+              "Media": null,
+              "Photoslider": [
+                {
+                  "id": 30,
+                  "documentId": "toi89si1tdch5rj9taqsmc9d",
+                  "name": "freepik_the_style_is_candid_image_photography_with_natural_71063_55e1509e10.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_freepik_the_style_is_candid_image_photography_with_natural_71063_55e1509e10_e2a6fda8f6.jpeg",
+                      "hash": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_71063_55e1509e10_e2a6fda8f6",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_71063_55e1509e10.jpeg",
+                      "path": null,
+                      "size": 8.59,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 8588
+                    }
+                  },
+                  "hash": "freepik_the_style_is_candid_image_photography_with_natural_71063_55e1509e10_e2a6fda8f6",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 86.51,
+                  "url": "assets/strapi_snapshot/media/freepik_the_style_is_candid_image_photography_with_natural_71063_55e1509e10_e2a6fda8f6.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T16:16:35.000Z",
+                  "updatedAt": "2025-06-16T15:28:13.446Z",
+                  "publishedAt": "2025-06-15T16:16:35.001Z"
+                },
+                {
+                  "id": 34,
+                  "documentId": "c7qe5ffrelsjc2cgtpucyyr0",
+                  "name": "freepik_the_style_is_candid_image_photography_with_natural_87186_63e7bef068.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87186_63e7bef068_33af083300.jpeg",
+                      "hash": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87186_63e7bef068_33af083300",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_87186_63e7bef068.jpeg",
+                      "path": null,
+                      "size": 7.66,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 7659
+                    }
+                  },
+                  "hash": "freepik_the_style_is_candid_image_photography_with_natural_87186_63e7bef068_33af083300",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 80.77,
+                  "url": "assets/strapi_snapshot/media/freepik_the_style_is_candid_image_photography_with_natural_87186_63e7bef068_33af083300.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T16:16:36.704Z",
+                  "updatedAt": "2025-06-16T15:27:55.940Z",
+                  "publishedAt": "2025-06-15T16:16:36.705Z"
+                },
+                {
+                  "id": 29,
+                  "documentId": "i6oopibobthnhb12d29hzbot",
+                  "name": "freepik_the_style_is_candid_image_photography_with_natural_71064_2ec8cc9e97.jpeg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1344,
+                  "height": 768,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpeg",
+                      "url": "assets/strapi_snapshot/media/thumbnail_freepik_the_style_is_candid_image_photography_with_natural_71064_2ec8cc9e97_f8dc2ecd1c.jpeg",
+                      "hash": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_71064_2ec8cc9e97_f8dc2ecd1c",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_freepik_the_style_is_candid_image_photography_with_natural_71064_2ec8cc9e97.jpeg",
+                      "path": null,
+                      "size": 8.23,
+                      "width": 245,
+                      "height": 140,
+                      "sizeInBytes": 8225
+                    }
+                  },
+                  "hash": "freepik_the_style_is_candid_image_photography_with_natural_71064_2ec8cc9e97_f8dc2ecd1c",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "size": 101.9,
+                  "url": "assets/strapi_snapshot/media/freepik_the_style_is_candid_image_photography_with_natural_71064_2ec8cc9e97_f8dc2ecd1c.jpeg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2025-06-15T16:16:34.694Z",
+                  "updatedAt": "2025-06-16T15:28:27.664Z",
+                  "publishedAt": "2025-06-15T16:16:34.695Z"
+                }
+              ]
+            },
+            {
+              "id": 42,
+              "Title": null,
+              "Text": null,
+              "Media": {
+                "id": 22,
+                "documentId": "vpbrfoyusdg3j7cnskhdugds",
+                "name": "6thfloor_3772ff6b31 - Copy.jpg",
+                "alternativeText": null,
+                "caption": null,
+                "width": 2551,
+                "height": 3579,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".jpg",
+                    "url": "assets/strapi_snapshot/media/thumbnail_6thfloor_3772ff6b31_Copy_340f7ecbed.jpg",
+                    "hash": "thumbnail_6thfloor_3772ff6b31_Copy_340f7ecbed",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_6thfloor_3772ff6b31 - Copy.jpg",
+                    "path": null,
+                    "size": 5.07,
+                    "width": 111,
+                    "height": 156,
+                    "sizeInBytes": 5068
+                  }
+                },
+                "hash": "6thfloor_3772ff6b31_Copy_340f7ecbed",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "size": 993.96,
+                "url": "assets/strapi_snapshot/media/6thfloor_3772ff6b31_Copy_340f7ecbed.jpg",
+                "previewUrl": null,
+                "provider": "strapi-provider-upload-strapi-cloud",
+                "provider_metadata": null,
+                "createdAt": "2025-06-15T16:12:13.308Z",
+                "updatedAt": "2025-06-16T15:29:55.115Z",
+                "publishedAt": "2025-06-15T16:12:13.309Z"
+              },
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

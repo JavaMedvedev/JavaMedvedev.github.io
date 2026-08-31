@@ -1,0 +1,286 @@
+{
+  "data": [
+    {
+      "id": 40,
+      "documentId": "lgkc25d9feaxdc28ydvqpb97",
+      "Card_Title": "Plan Your Event",
+      "Visible": true,
+      "Page_ID": "107",
+      "createdAt": "2025-06-16T16:24:02.784Z",
+      "updatedAt": "2025-07-21T19:41:19.977Z",
+      "publishedAt": "2025-07-21T19:41:20.261Z",
+      "Card_Image": {
+        "id": 35,
+        "documentId": "yjupk3k8zmu0qmxptkp479r5",
+        "name": "events_6f740ccef0.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 1595,
+        "height": 1000,
+        "formats": {
+          "large": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/large_events_6f740ccef0_f33b66285f.jpg",
+            "hash": "large_events_6f740ccef0_f33b66285f",
+            "mime": "image/jpeg",
+            "name": "large_events_6f740ccef0.jpg",
+            "path": null,
+            "size": 95.96,
+            "width": 1000,
+            "height": 627,
+            "sizeInBytes": 95962
+          },
+          "small": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/small_events_6f740ccef0_f33b66285f.jpg",
+            "hash": "small_events_6f740ccef0_f33b66285f",
+            "mime": "image/jpeg",
+            "name": "small_events_6f740ccef0.jpg",
+            "path": null,
+            "size": 29.82,
+            "width": 500,
+            "height": 314,
+            "sizeInBytes": 29819
+          },
+          "medium": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/medium_events_6f740ccef0_f33b66285f.jpg",
+            "hash": "medium_events_6f740ccef0_f33b66285f",
+            "mime": "image/jpeg",
+            "name": "medium_events_6f740ccef0.jpg",
+            "path": null,
+            "size": 57.1,
+            "width": 750,
+            "height": 470,
+            "sizeInBytes": 57101
+          },
+          "thumbnail": {
+            "ext": ".jpg",
+            "url": "assets/strapi_snapshot/media/thumbnail_events_6f740ccef0_f33b66285f.jpg",
+            "hash": "thumbnail_events_6f740ccef0_f33b66285f",
+            "mime": "image/jpeg",
+            "name": "thumbnail_events_6f740ccef0.jpg",
+            "path": null,
+            "size": 10.21,
+            "width": 245,
+            "height": 154,
+            "sizeInBytes": 10209
+          }
+        },
+        "hash": "events_6f740ccef0_f33b66285f",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 257.33,
+        "url": "assets/strapi_snapshot/media/events_6f740ccef0_f33b66285f.jpg",
+        "previewUrl": null,
+        "provider": "strapi-provider-upload-strapi-cloud",
+        "provider_metadata": null,
+        "createdAt": "2025-06-15T16:20:31.594Z",
+        "updatedAt": "2025-06-15T16:20:31.594Z",
+        "publishedAt": "2025-06-15T16:20:31.594Z"
+      },
+      "Tab": [
+        {
+          "id": 74,
+          "Title": "Weddings",
+          "Tab_ID": "1071",
+          "Banner": {
+            "id": 65,
+            "documentId": "nn4ronf3avaafpjn2zkrsd9r",
+            "name": "restaurant_hall_with_tables_decorated_with_tall_vases_with_roses_977fb77089 - Copy.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 550,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_restaurant_hall_with_tables_decorated_with_tall_vases_with_roses_977fb77089_Copy_237af4d1c2.jpg",
+                "hash": "thumbnail_restaurant_hall_with_tables_decorated_with_tall_vases_with_roses_977fb77089_Copy_237af4d1c2",
+                "mime": "image/jpeg",
+                "name": "thumbnail_restaurant_hall_with_tables_decorated_with_tall_vases_with_roses_977fb77089 - Copy.jpg",
+                "path": null,
+                "size": 5.41,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 5412
+              }
+            },
+            "hash": "restaurant_hall_with_tables_decorated_with_tall_vases_with_roses_977fb77089_Copy_237af4d1c2",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 327.47,
+            "url": "assets/strapi_snapshot/media/restaurant_hall_with_tables_decorated_with_tall_vases_with_roses_977fb77089_Copy_237af4d1c2.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:33:31.208Z",
+            "updatedAt": "2025-06-16T15:57:32.454Z",
+            "publishedAt": "2025-06-15T16:33:31.208Z"
+          },
+          "Content": [
+            {
+              "id": 88,
+              "Title": "Weddings",
+              "Text": "Celebrate your special day in style at our idyllic wedding venue. With beautiful indoor and outdoor spaces, customised catering and expert event planning, we turn dreams into reality.\n\nWhether you envision an intimate ceremony or a grand celebration, our dedicated weddings team will guide you through every detail. Explore elegant décor packages, bespoke menus and accommodation options for you and your guests.\n\nPlease **call 3** from your room's telephone and we'll be happy to help you with your special day.\n\n![wedding_b9feedfe52.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/wedding_b9feedfe52_dc80b35c9e.jpg)",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 75,
+          "Title": "Celebrations",
+          "Tab_ID": "1072",
+          "Banner": {
+            "id": 57,
+            "documentId": "jwzmbhraf66rpln2vf58uvxx",
+            "name": "celebrations_e7cb87f87d.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1500,
+            "height": 413,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_celebrations_e7cb87f87d_7bfeb2564e.jpg",
+                "hash": "thumbnail_celebrations_e7cb87f87d_7bfeb2564e",
+                "mime": "image/jpeg",
+                "name": "thumbnail_celebrations_e7cb87f87d.jpg",
+                "path": null,
+                "size": 3.73,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 3728
+              }
+            },
+            "hash": "celebrations_e7cb87f87d_7bfeb2564e",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 258.95,
+            "url": "assets/strapi_snapshot/media/celebrations_e7cb87f87d_7bfeb2564e.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:30:01.035Z",
+            "updatedAt": "2025-06-16T15:59:47.274Z",
+            "publishedAt": "2025-06-15T16:30:01.036Z"
+          },
+          "Content": [
+            {
+              "id": 89,
+              "Title": "Celebrations at Our Hotel",
+              "Text": "Life’s special moments deserve to be celebrated beautifully, whether it’s an intimate family gathering, milestone birthday, romantic anniversary, or festive cocktail party. Our dedicated events team is here to ensure your celebration is unforgettable, thoughtfully tailored just for you.\n\nExplore our customizable party packages, each designed to suit various styles and preferences. From stunning décor themes and floral arrangements to entertainment, music, and audiovisual support, we handle every detail so you can simply enjoy your special day.\n\nDelight your guests with our carefully crafted menus showcasing local and seasonal ingredients, beautifully paired with premium wines, signature cocktails, or bespoke drinks options.\n\nShare your vision with us - tell us your guest count, preferences, and special requests, and let our professional team create a celebration that exceeds your expectations.\n\nWe’re excited to help make your event truly memorable.\n\n![810_6aa89132ca.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/810_6aa89132ca_62de6a73a9.jpg)",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 76,
+          "Title": "Corporate Events",
+          "Tab_ID": "1073",
+          "Banner": {
+            "id": 62,
+            "documentId": "qt6oxgkejy77y06ytblvltbn",
+            "name": "corporate_jpg_2361a88fa4.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1500,
+            "height": 413,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "assets/strapi_snapshot/media/thumbnail_corporate_jpg_2361a88fa4_4e97f75073.png",
+                "hash": "thumbnail_corporate_jpg_2361a88fa4_4e97f75073",
+                "mime": "image/png",
+                "name": "thumbnail_corporate_jpg_2361a88fa4.png",
+                "path": null,
+                "size": 47.46,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 47464
+              }
+            },
+            "hash": "corporate_jpg_2361a88fa4_4e97f75073",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 719.98,
+            "url": "assets/strapi_snapshot/media/corporate_jpg_2361a88fa4_4e97f75073.png",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:30:01.965Z",
+            "updatedAt": "2025-06-16T15:58:22.477Z",
+            "publishedAt": "2025-06-15T16:30:01.966Z"
+          },
+          "Content": [
+            {
+              "id": 90,
+              "Title": "Corporate Events",
+              "Text": "Host your next corporate event in style - impress your colleagues and clients in our contemporary meeting and conference spaces. Designed for comfort and efficiency, our venues offer high-speed Wi-Fi, HD projectors and seamless video-conferencing capabilities to make every meeting run smoothly.\n\nOur flexible half-day and full-day packages feature tailored catering, stationery supplies and dedicated support from our experienced event professionals.\n\nWhether you're organising a board meeting, training session, seminar or team-building retreat, we’ll customise our services to your specific requirements, allowing you to focus fully on the success of your event.\n\nRequest a bespoke proposal today - we're ready to help you deliver a memorable and productive corporate gathering.\n\n![2148245024_e83aad87ad.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/2148245024_e83aad87ad_c00d218994.jpg)\n\n![16082_e59c9875a5.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/16082_e59c9875a5_081932c58f.jpg)\n\n![1771_8358e2ae96.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/1771_8358e2ae96_7506754d01.jpg)",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        },
+        {
+          "id": 77,
+          "Title": "Conferences",
+          "Tab_ID": "1074",
+          "Banner": {
+            "id": 59,
+            "documentId": "oidnbom6j46il17h58j3vo76",
+            "name": "conferences_905401cabb.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1500,
+            "height": 413,
+            "formats": {
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "assets/strapi_snapshot/media/thumbnail_conferences_905401cabb_85aa3a6151.jpg",
+                "hash": "thumbnail_conferences_905401cabb_85aa3a6151",
+                "mime": "image/jpeg",
+                "name": "thumbnail_conferences_905401cabb.jpg",
+                "path": null,
+                "size": 7.53,
+                "width": 245,
+                "height": 67,
+                "sizeInBytes": 7533
+              }
+            },
+            "hash": "conferences_905401cabb_85aa3a6151",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 809.67,
+            "url": "assets/strapi_snapshot/media/conferences_905401cabb_85aa3a6151.jpg",
+            "previewUrl": null,
+            "provider": "strapi-provider-upload-strapi-cloud",
+            "provider_metadata": null,
+            "createdAt": "2025-06-15T16:30:01.197Z",
+            "updatedAt": "2025-06-16T15:58:59.274Z",
+            "publishedAt": "2025-06-15T16:30:01.198Z"
+          },
+          "Content": [
+            {
+              "id": 91,
+              "Title": "Conferences",
+              "Text": "Host impactful, large-scale conferences in our spacious ballroom - ideal for up to 200 delegates seated theatre-style. Designed for versatility and comfort, the space is supported by breakout rooms, networking lounges and dedicated exhibition areas.\n\nWe offer flexible delegate packages that can include coffee breaks, working lunches and evening receptions, all curated to enhance engagement and productivity throughout the day.\n\nOur events team will work closely with you to ensure every detail is covered - from setup and signage to tech support and catering. Submit your preferred dates and requirements through this tab and we’ll provide a tailored quotation and event plan.\n\nMake your next conference seamless, professional and unforgettable.\n\n![6721_4813fcb8ff.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/6721_4813fcb8ff_b2cce6afcc.jpg)\n\n![6717_2e3b5e34d5.jpg](https://dedicated-bear-2ac79917c8.media.strapiapp.com/6717_2e3b5e34d5_8a510c0fd2.jpg)",
+              "Media": null,
+              "Photoslider": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}
