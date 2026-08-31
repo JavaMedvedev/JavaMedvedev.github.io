@@ -10,10 +10,10 @@ if ('scrollRestoration' in history) {
 const routes = {
   '/':         'pages/home.html',
   '/home':     'pages/home.html',
-  '/hotelproject': 'pages/hotelproject.html',
-  '/project2': 'pages/project2.html',
-  '/project3': 'pages/project3.html',
-  '/project4': 'pages/project4.html'
+  '/hotel': 'pages/hotel.html',
+  '/museum': 'pages/museum.html',
+  '/university': 'pages/university.html',
+  '/design': 'pages/design.html'
 };
 
 let lastPath = null;
@@ -43,7 +43,7 @@ async function loadRoute() {
     window.scrollTo(0, 0);
 
     // 🔹 NEW: initialize hotelproject-specific scripts if needed
-    if (route === '/hotelproject') {
+    if (route === '/hotel') {
       initProject1Video();
       initProject1Iframe();
     }
